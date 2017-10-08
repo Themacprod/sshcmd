@@ -1,6 +1,6 @@
 {
-  "name": "EDIDTool",
-  "description": "EDID Tool Web Edition",
+  "name": "SshCmd",
+  "description": "SSH cmd",
   "private": "true",
   "version": "1.0.0",
   "engines": {
@@ -14,7 +14,6 @@
     "cleancss": "cleancss -o public/bundle.css public/bundle.css",
     "build": "npm run browserify && npm run sass",
     "release": "npm run build && npm run cleancss",
-    "test": "mocha --recursive --require should",
     "start": "node index.js"
   },
   "contributors": [

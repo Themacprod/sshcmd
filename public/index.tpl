@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-	<title>EDID tool</title>
+	<title>SSH cmd</title>
 
 	<link rel="stylesheet" href="/bundle.css">
 	<link rel="icon" href="/favicon.ico?v=2" />
