@@ -2,8 +2,7 @@
 
 "use strict";
 
-var React = require("react"),
-    ssh2 = require("ssh2");
+var React = require("react");
 
 module.exports = React.createClass({
     render: function() {

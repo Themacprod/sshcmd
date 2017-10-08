@@ -13,7 +13,8 @@ var path = require("path"),
 	indexTemplate = _.template(fs.readFileSync(path.join(__dirname, "/public/index.tpl"), {
 		encoding: "utf8"
 	})),
-	url = require("url");
+	url = require("url"),
+	ssh2 = require("ssh2");
 
 // Server setup.
 
