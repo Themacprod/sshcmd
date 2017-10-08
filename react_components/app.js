@@ -2,14 +2,15 @@
 
 "use strict";
 
-var React = require("react");
+var React = require("react"),
+    sshconnect = require("./sshconnect");
 
 module.exports = React.createClass({
     render: function() {
         return React.DOM.div({
                 className: "app"
             },
-            "Test"
+            React.createElement(sshconnect)
         );
     }
 });
