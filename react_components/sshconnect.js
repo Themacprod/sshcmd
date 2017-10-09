@@ -8,7 +8,13 @@ var React = require("react"),
 module.exports = React.createClass({
     componentWillMount: function() {
     request
-        .get("/api/cmd/192.168.1.188")
+        .post("/api/cmd")
+        .send({
+            ip: "192.168.1.188",
+            port: "22",
+            username: "pi",
+            password: "raspberry"
+        })
         .end(function(err, res) {
             if (err) {
                 console.log(err);

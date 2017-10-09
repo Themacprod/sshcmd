@@ -18,9 +18,9 @@ module.exports.getCmdResult = function(req, res) {
             });
         });
     }).connect({
-        host: req.params.ip,
-        port: 22,
-        username: 'pi',
-        password: "raspberry"
+        host: req.body.ip,
+        port: req.body.port,
+        username: req.body.username,
+        password: req.body.password
     });
 };

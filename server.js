@@ -54,7 +54,7 @@ server.use(function(req, res, next) {
 	}
 });
 
-server.get("/api/cmd/:ip", cmd.getCmdResult);
+server.post("/api/cmd", cmd.getCmdResult);
 
 server.get("*", function(req, res) {
 	res.send(indexTemplate({
