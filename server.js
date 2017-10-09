@@ -14,7 +14,7 @@ var path = require("path"),
 		encoding: "utf8"
 	})),
 	url = require("url"),
-	ssh2 = require("ssh2");
+	cmd = require("./cmd");
 
 // Server setup.
 
@@ -53,6 +53,8 @@ server.use(function(req, res, next) {
 		res.redirect(301, url.format(urlObj));
 	}
 });
+
+server.get("/api/cmd/:ip", cmd.getCmdResult);
 
 server.get("*", function(req, res) {
 	res.send(indexTemplate({
