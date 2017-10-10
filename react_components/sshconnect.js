@@ -17,7 +17,6 @@ module.exports = React.createClass({
             .post("/api/cmd")
             .send({
                 ip: this.refs.ip.value.trim(),
-                port: this.refs.port.value.trim(),
                 username: this.refs.username.value.trim(),
                 password: this.refs.password.value.trim(),
                 cmd: this.refs.cmd.value.trim()
@@ -27,8 +26,8 @@ module.exports = React.createClass({
                     console.log(err);
                 } else {
                     this.setState({
-						sshresult: res.body
-					});
+                        sshresult: res.body
+                    });
                 }
             }.bind(this));
 
@@ -37,12 +36,14 @@ module.exports = React.createClass({
     render: function() {
         return React.DOM.div(
             null,
-            React.DOM.form({
+            React.DOM.form(
+                {
                     name: "form",
                     noValidate: "",
                     onSubmit: this.handleSubmit
                 },
-                React.DOM.div({
+                React.DOM.div(
+                    {
                         className: "form-group"
                     },
                     React.DOM.label(null, "Username"),
@@ -55,7 +56,8 @@ module.exports = React.createClass({
                         required: true
                     })
                 ),
-                React.DOM.div({
+                React.DOM.div(
+                    {
                         className: "form-group"
                     },
                     React.DOM.label(null, "Password"),
@@ -66,7 +68,8 @@ module.exports = React.createClass({
                         name: "password"
                     })
                 ),
-                React.DOM.div({
+                React.DOM.div(
+                    {
                         className: "form-group"
                     },
                     React.DOM.label(null, "IP"),
@@ -75,11 +78,12 @@ module.exports = React.createClass({
                         type: "text",
                         ref: "ip",
                         name: "ip",
-                        defaultValue: "192.168.1.1",
+                        defaultValue: "192.168.152.1",
                         required: true
                     })
                 ),
-                React.DOM.div({
+                React.DOM.div(
+                    {
                         className: "form-group"
                     },
                     React.DOM.label(null, "Command"),
@@ -94,7 +98,7 @@ module.exports = React.createClass({
                 ),
                 React.DOM.div({
                     className: "ssh-response"
-                }, ),
+                }),
                 React.DOM.button({
                     className: "btn btn-lg btn-primary btn-block",
                     type: "submit"

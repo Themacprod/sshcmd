@@ -1,25 +1,25 @@
 "use strict";
 
-var ssh2Client = require("ssh2").Client;
+var Ssh2Client = require("ssh2").Client;
 
 module.exports.getCmdResult = function(req, res) {
-    var conn = new ssh2Client();
-    conn.on('ready', function() {
-        console.log('Client :: ready');
-        conn.exec('ls', function(err, stream) {
-            if (err) throw err;
-            stream.on('close', function(code, signal) {
-                console.log('Stream :: close :: code: ' + code + ', signal: ' + signal);
+    var conn = new Ssh2Client();
+    conn.on("ready", function() {
+        conn.exec(req.body.cmd, function(err, stream) {
+            if (err) {
+                throw err;
+            }
+            stream.on("close", function() {
                 conn.end();
-            }).on('data', function(data) {
-                console.log('STDOUT: ' + data);
-            }).stderr.on('data', function(data) {
-                console.log('STDERR: ' + data);
+            }).on("data", function(data) {
+                res.json(data.toString());
+            }).stderr.on("data", function(data) {
+                res.json(data.toString());
             });
         });
     }).connect({
         host: req.body.ip,
-        port: req.body.port,
+        port: 22,
         username: req.body.username,
         password: req.body.password
     });
