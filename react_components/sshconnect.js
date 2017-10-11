@@ -22,7 +22,7 @@ module.exports = React.createClass({
     getInitialState: function() {
         return {
             sshresult: "",
-            boardlayout: ""
+            boardlayout: null
         };
     },
     handleSubmit: function(e) {
@@ -49,10 +49,16 @@ module.exports = React.createClass({
     },
     createBoardCard: function(ips) {
         var boardlayout = _.map(ips, function(ip, index) {
-            return React.createElement(boardcard, {
-				cardtitle: "Board #" + index,
-                cardtext: ip
-            });
+            return React.DOM.div(
+                {
+                    className: "boardcard",
+                    key: index
+                },
+                React.createElement(boardcard, {
+                    cardtitle: "Board #" + index,
+                    cardtext: ip
+                })
+            );
         });
 
 		this.setState({
@@ -63,7 +69,7 @@ module.exports = React.createClass({
         return React.DOM.div(
             null,
             React.DOM.div({
-                className: "boardcard"
+                className: "boardcards"
             }, this.state.boardlayout),
             React.DOM.form(
                 {
