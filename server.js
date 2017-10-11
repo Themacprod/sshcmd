@@ -14,7 +14,8 @@ var path = require("path"),
 		encoding: "utf8"
 	})),
 	url = require("url"),
-	cmd = require("./cmd");
+	cmd = require("./cmd"),
+	user = require("./user");
 
 // Server setup.
 
@@ -55,6 +56,8 @@ server.use(function(req, res, next) {
 });
 
 server.post("/api/cmd", cmd.getCmdResult);
+
+server.get("/api/user", user.getConfig);
 
 server.get("*", function(req, res) {
 	res.send(indexTemplate({
