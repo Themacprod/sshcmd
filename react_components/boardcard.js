@@ -11,15 +11,18 @@ module.exports = React.createClass({
                     width: "20rem"
                 }
             },
-            React.DOM.div({
+            React.DOM.div(
+                {
                     className: "card-body"
                 },
-                React.DOM.h4({
+                React.DOM.h4(
+                    {
                         className: "card-title"
                     },
                     this.props.cardtitle
                 ),
-                React.DOM.p({
+                React.DOM.p(
+                    {
                         className: "card-text"
                     },
                     this.props.cardtext
