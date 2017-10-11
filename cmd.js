@@ -20,7 +20,7 @@ module.exports.getCmdResult = function(req, res) {
     }).connect({
         host: req.body.ip,
         port: 22,
-        username: req.body.username,
-        password: req.body.password
+        username: "root",
+        password: ""
     });
 };

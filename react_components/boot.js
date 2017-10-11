@@ -13,9 +13,13 @@ var Boot = React.createClass({
                 history: ReactRouter.browserHistory
             },
             React.createElement(ReactRouter.Route, {
-                path: "/:lang",
-                component: require("./app")
-            })
+                    path: "/:lang",
+                    component: require("./app")
+                }),
+            React.createElement(ReactRouter.Route, {
+                    path: "/:lang/:ip",
+                    component: require("./board")
+                })
         );
     }
 });

@@ -19,15 +19,17 @@ module.exports = React.createClass({
                         })
                     });
                 }
-            }, 100);
+            }, 250);
 
             this.img.onload = function() {
-                that.inUse = false;
-                that.setState({
-                    statelayout: React.DOM.i({
-                        className: "fa fa-check"
-                    })
-                });
+                if (that.inUse) {
+                    that.inUse = false;
+                    that.setState({
+                        statelayout: React.DOM.i({
+                            className: "fa fa-check"
+                        })
+                    });
+                }
             };
 
             this.img.onerror = function() {
@@ -60,23 +62,29 @@ module.exports = React.createClass({
                     width: "20rem"
                 }
             },
-            React.DOM.div(
+            React.DOM.a(
                 {
-                    className: "card-body"
-                },
-                React.DOM.h4(
+                    className: "nav-link",
+					href: this.props.boardIp + "/"
+				},
+                React.DOM.div(
                     {
-                        className: "card-title"
+                        className: "card-body"
                     },
-                    this.props.boardName
-                ),
-                React.DOM.p(
-                    {
-                        className: "card-text"
-                    },
-                    this.props.boardIp
-                ),
-                this.state.statelayout
+                    React.DOM.h4(
+                        {
+                            className: "card-title"
+                        },
+                        this.props.boardName
+                    ),
+                    React.DOM.p(
+                        {
+                            className: "card-text"
+                        },
+                        this.props.boardIp
+                    ),
+                    this.state.statelayout
+                )
             )
         );
     }
