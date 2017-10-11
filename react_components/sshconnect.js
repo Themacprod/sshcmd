@@ -3,7 +3,8 @@
 "use strict";
 
 var React = require("react"),
-    request = require("superagent");
+    request = require("superagent"),
+    boardcard = require("./boardcard");
 
 module.exports = React.createClass({
     getInitialState: function() {
@@ -36,6 +37,10 @@ module.exports = React.createClass({
     render: function() {
         return React.DOM.div(
             null,
+            React.createElement(boardcard, {
+				cardtitle: "test",
+                cardtext: "toop"
+			}),
             React.DOM.form(
                 {
                     name: "form",
