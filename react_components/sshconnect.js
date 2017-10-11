@@ -55,8 +55,8 @@ module.exports = React.createClass({
                     key: index
                 },
                 React.createElement(boardcard, {
-                    cardtitle: "Board #" + index,
-                    cardtext: ip
+                    boardName: "Board #" + index,
+                    boardIp: ip
                 })
             );
         });
