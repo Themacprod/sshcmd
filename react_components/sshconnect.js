@@ -21,7 +21,7 @@ module.exports = React.createClass({
     },
     getInitialState: function() {
         return {
-            boardlayout: null
+            boardlayout: "Getting configuration ..."
         };
     },
     createBoardCard: function(ips) {

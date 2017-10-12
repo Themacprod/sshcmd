@@ -4,11 +4,13 @@ var React = require("react"),
     request = require("superagent");
 
 module.exports = React.createClass({
-    componentDidMount: function() {
+    checkConnection: function() {
         request
             .get("/api/ping/" + this.props.boardIp)
             .end(function(err, res) {
                 if (err) {
+                    // Stop ping loop process of server does not respond anymore.
+                    clearInterval(this.checkConnection);
                     console.log(err);
                 } else {
                     var state = null;
@@ -27,6 +29,9 @@ module.exports = React.createClass({
                     });
                 }
             }.bind(this));
+    },
+    componentDidMount: function() {
+        setInterval(this.checkConnection, 750);
     },
     getInitialState: function() {
         return {
