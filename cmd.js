@@ -1,6 +1,7 @@
 "use strict";
 
-var Ssh2Client = require("ssh2").Client;
+var Ssh2Client = require("ssh2").Client,
+    ping = require("ping");
 
 module.exports.getCmdResult = function(req, res) {
     var conn = new Ssh2Client();
@@ -23,4 +24,14 @@ module.exports.getCmdResult = function(req, res) {
         username: "root",
         password: ""
     });
+};
+
+module.exports.pingIp = function(req, res) {
+    ping.promise.probe(req.params.ip, {
+        timeout: 0.5
+    })
+    .then(function(res2) {
+        res.json(res2.alive);
+    })
+    .done();
 };

@@ -57,6 +57,8 @@ server.use(function(req, res, next) {
 
 server.post("/api/cmd", cmd.getCmdResult);
 
+server.get("/api/ping/:ip", cmd.pingIp);
+
 server.get("/api/user", user.getConfig);
 
 server.get("*", function(req, res) {

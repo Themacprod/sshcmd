@@ -1,51 +1,32 @@
 "use strict";
 
-var React = require("react");
+var React = require("react"),
+    request = require("superagent");
 
 module.exports = React.createClass({
-    ping: function(ip) {
-        if (!this.inUse) {
-            this.inUse = true;
-            var that = this;
-            this.img = new Image();
-            this.img.src = "http://" + ip;
-
-            setTimeout(function() {
-                if (that.inUse) {
-                    that.inUse = false;
-                    that.setState({
-                        statelayout: React.DOM.i({
-                            className: "fa fa-times"
-                        })
-                    });
-                }
-            }, 250);
-
-            this.img.onload = function() {
-                if (that.inUse) {
-                    that.inUse = false;
-                    that.setState({
-                        statelayout: React.DOM.i({
-                            className: "fa fa-check"
-                        })
-                    });
-                }
-            };
-
-            this.img.onerror = function() {
-                if (that.inUse) {
-                    that.inUse = false;
-                    that.setState({
-                        statelayout: React.DOM.i({
-                            className: "fa fa-check"
-                        })
-                    });
-                }
-            };
-        }
-    },
     componentDidMount: function() {
-        this.ping(this.props.boardIp);
+        request
+            .get("/api/ping/" + this.props.boardIp)
+            .end(function(err, res) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    var state = null;
+                    if (res.body) {
+                        state = React.DOM.i({
+                            className: "fa fa-check"
+                        });
+                    } else {
+                        state = React.DOM.i({
+                            className: "fa fa-times"
+                        });
+                    }
+
+                    this.setState({
+                        statelayout: state
+                    });
+                }
+            }.bind(this));
     },
     getInitialState: function() {
         return {
@@ -65,8 +46,8 @@ module.exports = React.createClass({
             React.DOM.a(
                 {
                     className: "nav-link",
-					href: this.props.boardIp + "/"
-				},
+                    href: this.props.boardIp + "/"
+                },
                 React.DOM.div(
                     {
                         className: "card-body"
