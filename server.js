@@ -15,7 +15,8 @@ var path = require("path"),
 	})),
 	url = require("url"),
 	cmd = require("./cmd"),
-	user = require("./user");
+	user = require("./user"),
+	board = require("./board");
 
 // Server setup.
 
@@ -60,6 +61,8 @@ server.post("/api/cmd", cmd.getCmdResult);
 server.get("/api/ping/:ip", cmd.pingIp);
 
 server.get("/api/user", user.getConfig);
+
+server.get("/api/board/:ip", board.getInfo);
 
 server.get("*", function(req, res) {
 	res.send(indexTemplate({

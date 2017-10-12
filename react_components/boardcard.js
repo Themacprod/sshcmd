@@ -30,17 +30,37 @@ module.exports = React.createClass({
                 }
             }.bind(this));
     },
+    getBoardInfo: function() {
+        console.log("/api/board/" + this.props.boardIp);
+        request
+            .get("/api/board/" + this.props.boardIp)
+            .end(function(err, res) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    this.setState({
+                        boardInfo: res.body
+                    });
+                }
+            }.bind(this));
+    },
     componentDidMount: function() {
+        this.getBoardInfo();
         setInterval(this.checkConnection, 750);
     },
     getInitialState: function() {
         return {
             statelayout: React.DOM.i({
                 className: "fa fa-refresh fa-spin"
-            })
+            }),
+            boardInfo: null
         };
     },
     render: function() {
+        var boardName = (this.state.boardInfo === null) ? null : this.state.boardInfo.ProductName;
+        var serialNumber = (this.state.boardInfo === null) ? null : this.state.boardInfo.SerialNumber;
+        var pcbNumber = (this.state.boardInfo === null) ? null : this.state.boardInfo.PcbNumber;
+
         return React.DOM.div(
             {
                 className: "grid-item card",
@@ -59,13 +79,19 @@ module.exports = React.createClass({
                         {
                             className: "card-title"
                         },
-                        this.props.boardName
+                        boardName
+                    ),
+                    React.DOM.h6(
+                        {
+                            className: "card-subtitle"
+                        },
+                        this.props.boardIp
                     ),
                     React.DOM.p(
                         {
                             className: "card-text"
                         },
-                        this.props.boardIp
+                        "Serial : " + serialNumber + " (PCB : " + pcbNumber + ")"
                     ),
                     this.state.statelayout
                 )
