@@ -12,8 +12,7 @@ module.exports = React.createClass({
             .end(function(err, res) {
                 if (err) {
                     // Stop ping loop process of server does not respond anymore.
-                    clearInterval(this.checkConnection);
-                    console.log(err);
+                    clearInterval(this.myInterval);
                 } else {
                     var alertState = "alert-danger";
                     if (res.body === true) {
@@ -27,7 +26,7 @@ module.exports = React.createClass({
             }.bind(this));
     },
     componentDidMount: function() {
-        setInterval(this.checkConnection, 2000);
+        this.myInterval = setInterval(this.checkConnection, 2000);
     },
     getInitialState: function() {
         return {

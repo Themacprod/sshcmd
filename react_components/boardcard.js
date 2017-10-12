@@ -10,8 +10,7 @@ module.exports = React.createClass({
             .end(function(err, res) {
                 if (err) {
                     // Stop ping loop process of server does not respond anymore.
-                    clearInterval(this.checkConnection);
-                    console.log(err);
+                    clearInterval(this.myInterval);
                 } else {
                     var state = null;
                     if (res.body === true) {
@@ -31,7 +30,6 @@ module.exports = React.createClass({
             }.bind(this));
     },
     getBoardInfo: function() {
-        console.log("/api/board/" + this.props.boardIp);
         request
             .get("/api/board/" + this.props.boardIp)
             .end(function(err, res) {
@@ -46,7 +44,7 @@ module.exports = React.createClass({
     },
     componentDidMount: function() {
         this.getBoardInfo();
-        setInterval(this.checkConnection, 2000);
+        this.myInterval = setInterval(this.checkConnection, 2000);
     },
     getInitialState: function() {
         return {
