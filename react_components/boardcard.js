@@ -46,7 +46,7 @@ module.exports = React.createClass({
     },
     componentDidMount: function() {
         this.getBoardInfo();
-        setInterval(this.checkConnection, 750);
+        setInterval(this.checkConnection, 2000);
     },
     getInitialState: function() {
         return {

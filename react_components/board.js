@@ -27,7 +27,7 @@ module.exports = React.createClass({
             }.bind(this));
     },
     componentDidMount: function() {
-        setInterval(this.checkConnection, 750);
+        setInterval(this.checkConnection, 2000);
     },
     getInitialState: function() {
         return {
