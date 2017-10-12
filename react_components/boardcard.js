@@ -12,7 +12,7 @@ module.exports = React.createClass({
                     console.log(err);
                 } else {
                     var state = null;
-                    if (res.body) {
+                    if (res.body === true) {
                         state = React.DOM.i({
                             className: "fa fa-check"
                         });
