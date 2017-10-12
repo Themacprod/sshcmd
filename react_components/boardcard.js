@@ -43,10 +43,8 @@ module.exports = React.createClass({
     render: function() {
         return React.DOM.div(
             {
-                className: "card",
-                style: {
-                    width: "20rem"
-                }
+                className: "grid-item card",
+                key: this.props.boardIp
             },
             React.DOM.a(
                 {
