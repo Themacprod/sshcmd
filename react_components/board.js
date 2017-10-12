@@ -6,9 +6,28 @@ var React = require("react"),
     request = require("superagent");
 
 module.exports = React.createClass({
+    componentDidMount: function() {
+        request
+            .get("/api/ping/" + this.props.params.ip)
+            .end(function(err, res) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    var alertState = "alert-danger";
+                    if (res.body === true) {
+                        alertState = "alert-success";
+                    }
+
+                    this.setState({
+                        alertState: alertState
+                    });
+                }
+            }.bind(this));
+    },
     getInitialState: function() {
         return {
-            sshresult: ""
+            sshresult: "",
+            alertState: "alert-light"
         };
     },
     handleSubmit: function(e) {
@@ -34,12 +53,10 @@ module.exports = React.createClass({
     render: function() {
         return React.DOM.div(
             null,
-            React.DOM.h4(
-                {
-                    className: "board-title"
-                },
-                this.props.params.ip
-            ),
+            React.DOM.div({
+                className: "alert " + this.state.alertState,
+                role: "alert"
+            }, this.props.params.ip),
             React.DOM.form(
                 {
                     name: "form",
