@@ -14,13 +14,9 @@ module.exports = React.createClass({
                 } else {
                     var state = null;
                     if (res.body === true) {
-                        state = React.DOM.i({
-                            className: "fa fa-check"
-                        });
+                        state = "fa fa-check";
                     } else {
-                        state = React.DOM.i({
-                            className: "fa fa-times"
-                        });
+                        state = "fa fa-times";
                     }
 
                     this.setState({
@@ -48,9 +44,7 @@ module.exports = React.createClass({
     },
     getInitialState: function() {
         return {
-            statelayout: React.DOM.i({
-                className: "fa fa-refresh fa-spin"
-            }),
+            statelayout: "fa fa-refresh fa-spin",
             boardInfo: null
         };
     },
@@ -91,7 +85,9 @@ module.exports = React.createClass({
                         },
                         "Serial : " + serialNumber + " (PCB : " + pcbNumber + ")"
                     ),
-                    this.state.statelayout
+                    React.DOM.i({
+                        className: this.state.statelayout
+                    })
                 )
             )
         );
