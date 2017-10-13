@@ -6,7 +6,7 @@ var React = require("react"),
     request = require("superagent"),
     _ = require("lodash"),
     Masonry = require("react-masonry-component"),
-    boardcard = require("./boardcard");
+    boardcardgroup = require("./boardcardgroup");
 
 module.exports = React.createClass({
     componentWillMount: function() {
@@ -25,11 +25,10 @@ module.exports = React.createClass({
             boardlayout: "Getting configuration ..."
         };
     },
-    createBoardCard: function(ips) {
-        var boardlayout = _.map(ips, function(ip, index) {
-            return React.createElement(boardcard, {
-                boardName: "Board #" + index,
-                boardIp: ip,
+    createBoardCard: function(groupsData) {
+        var boardlayout = _.map(groupsData, function(groupData, index) {
+            return React.createElement(boardcardgroup, {
+                data: groupData,
                 key: index
             });
         });
