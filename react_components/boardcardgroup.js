@@ -5,37 +5,32 @@ var React = require("react"),
     boardcard = require("./boardcard");
 
 module.exports = React.createClass({
-    componentDidMount: function() {
-        this.getBoardInfo();
-        this.myInterval = setInterval(this.checkConnection, 2000);
-    },
-    getInitialState: function() {
-        return {
-            statelayout: "fa fa-refresh fa-spin",
-            boardInfo: null
-        };
-    },
     render: function() {
         return React.DOM.div(
             {
-                className: "card"
+                className: "boardgroup"
             },
-            React.DOM.div(
+                React.DOM.div(
                 {
-                    className: "card-body"
+                    className: "card"
                 },
-                React.DOM.h4(
+                React.DOM.div(
                     {
-                        className: "card-title"
+                        className: "card-body"
                     },
-                    this.props.data.name
-                ),
-                _.map(this.props.data.ip, function(ip, index) {
-                    return React.createElement(boardcard, {
-                        boardIp: ip,
-                        key: index
-                    });
-                })
+                    React.DOM.h4(
+                        {
+                            className: "card-title"
+                        },
+                        this.props.data.name
+                    ),
+                    _.map(this.props.data.ip, function(ip, index) {
+                        return React.createElement(boardcard, {
+                            boardIp: ip,
+                            key: index
+                        });
+                    })
+                )
             )
         );
     }
