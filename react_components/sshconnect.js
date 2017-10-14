@@ -4,8 +4,6 @@
 
 var React = require("react"),
     request = require("superagent"),
-    _ = require("lodash"),
-    Masonry = require("react-masonry-component"),
     boardcardgroup = require("./boardcardgroup");
 
 module.exports = React.createClass({
@@ -25,12 +23,9 @@ module.exports = React.createClass({
             boardlayout: "Getting configuration ..."
         };
     },
-    createBoardCard: function(groupsData) {
-        var boardlayout = _.map(groupsData, function(groupData, index) {
-            return React.createElement(boardcardgroup, {
-                data: groupData,
-                key: index
-            });
+    createBoardCard: function(data) {
+        var boardlayout = React.createElement(boardcardgroup, {
+            data: data
         });
 
         this.setState({
@@ -38,14 +33,8 @@ module.exports = React.createClass({
         });
     },
     render: function() {
-        return React.createElement(
-            Masonry, {
-                className: "masonry",
-                options: {
-                    gutter: 14
-                },
-                disableImagesLoaded: false
-            },
+        return React.DOM.div(
+            null,
             this.state.boardlayout
         );
     }

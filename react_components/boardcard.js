@@ -33,7 +33,9 @@ module.exports = React.createClass({
                     console.log(err);
                 } else {
                     this.setState({
-                        boardInfo: res.body
+                        boardName: res.body.ProductName,
+                        serialNumber: res.body.SerialNumber,
+                        pcbNumber: res.body.PcbNumber
                     });
                 }
             }.bind(this));
@@ -45,14 +47,12 @@ module.exports = React.createClass({
     getInitialState: function() {
         return {
             statelayout: "fa fa-refresh fa-spin",
-            boardInfo: null
+            productName: "Unknown",
+            serialNumber: "Unknown",
+            pcbNumber: "Unknown"
         };
     },
     render: function() {
-        var boardName = (this.state.boardInfo === null) ? null : this.state.boardInfo.ProductName;
-        var serialNumber = (this.state.boardInfo === null) ? null : this.state.boardInfo.SerialNumber;
-        var pcbNumber = (this.state.boardInfo === null) ? null : this.state.boardInfo.PcbNumber;
-
         return React.DOM.div(
             {
                 className: "grid-item card",
@@ -71,7 +71,7 @@ module.exports = React.createClass({
                         {
                             className: "card-title"
                         },
-                        boardName
+                        this.state.productName
                     ),
                     React.DOM.h6(
                         {
@@ -83,7 +83,7 @@ module.exports = React.createClass({
                         {
                             className: "card-text"
                         },
-                        "Serial : " + serialNumber + " (PCB : " + pcbNumber + ")"
+                        "Serial : " + this.state.serialNumber + " (PCB : " + this.state.pcbNumber + ")"
                     ),
                     React.DOM.i({
                         className: this.state.statelayout
