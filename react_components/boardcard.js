@@ -19,11 +19,21 @@ module.exports = React.createClass({
                         state = "fa fa-times";
                     }
 
+                    // Get board info only when going from dead to alive connection.
+                    if ((this.state.statelayout !== "fa fa-check") && (state === "fa fa-check")) {
+                        this.checkBoardInfo = true;
+                    }
+
                     this.setState({
                         statelayout: state
                     });
                 }
             }.bind(this));
+
+        if (this.checkBoardInfo === true) {
+            this.getBoardInfo();
+            this.checkBoardInfo = false;
+        }
     },
     getBoardInfo: function() {
         request
@@ -33,7 +43,7 @@ module.exports = React.createClass({
                     console.log(err);
                 } else {
                     this.setState({
-                        boardName: res.body.ProductName,
+                        productName: res.body.ProductName,
                         serialNumber: res.body.SerialNumber,
                         pcbNumber: res.body.PcbNumber
                     });
@@ -41,7 +51,7 @@ module.exports = React.createClass({
             }.bind(this));
     },
     componentDidMount: function() {
-        this.getBoardInfo();
+        this.checkBoardInfo = false;
         this.myInterval = setInterval(this.checkConnection, 2000);
     },
     getInitialState: function() {
