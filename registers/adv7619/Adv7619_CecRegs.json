@@ -1,0 +1,46 @@
+{
+    "offset": "0x00",
+    "name": "ADV7619_CEC_REGISTER00H",
+    "data": {
+        "uCecTxFrameHeader": {
+            "size": 8,
+            "description": "Header block in the transmitted frame"
+        }
+    }
+}, {
+    "offset": "0x01",
+    "name": "ADV7619_CEC_REGISTER01H",
+    "data": {
+        "uCecTxFrameData0": {
+            "size": 8,
+            "description": "Opcode block in the transmitted frame"
+        }
+    }
+}, {
+    "offset": "0x02",
+    "name": "ADV7619_CEC_REGISTER02H",
+    "data": {
+        "uCecTxFrameData1": {
+            "size": 8,
+            "description": "Operand 1 in the transmitted frame"
+        }
+    }
+}, {
+    "offset": "0x03",
+    "name": "ADV7619_CEC_REGISTER03H",
+    "data": {
+        "uCecTxFrameData2": {
+            "size": 8,
+            "description": "Operand 2 in the transmitted frame"
+        }
+    }
+}, {
+    "offset": "0x04",
+    "name": "ADV7619_CEC_REGISTER04H",
+    "data": {
+        "uCecTxFrameData3": {
+            "size": 8,
+            "description": "Operand 3 in the transmitted frame"
+        }
+    }
+};
