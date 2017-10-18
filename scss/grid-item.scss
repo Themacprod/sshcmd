@@ -16,4 +16,12 @@
 	@include media-grid-col(md, 3);
 	@include media-grid-col(lg, 3);
 	@include media-grid-col(xl, 4);
+
+	.ok {
+		background-color: $color-green-background;
+	}
+
+	.nok {
+		background-color: $color-red-background;
+	}
 }

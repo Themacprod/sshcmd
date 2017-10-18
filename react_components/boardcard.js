@@ -13,10 +13,12 @@ module.exports = React.createClass({
                     clearInterval(this.myInterval);
                 } else {
                     var state = null;
+                    var connexion = "ok";
                     if (res.body === true) {
                         state = "fa fa-check";
                     } else {
                         state = "fa fa-times";
+                        connexion = "nok";
                     }
 
                     // Get board info only when going from dead to alive connection.
@@ -25,7 +27,8 @@ module.exports = React.createClass({
                     }
 
                     this.setState({
-                        statelayout: state
+                        statelayout: state,
+                        cardstatus: connexion
                     });
                 }
             }.bind(this));
@@ -59,7 +62,8 @@ module.exports = React.createClass({
             statelayout: "fa fa-refresh fa-spin",
             productName: "Unknown",
             serialNumber: "Unknown",
-            pcbNumber: "Unknown"
+            pcbNumber: "Unknown",
+            cardstatus: "check"
         };
     },
     render: function() {
@@ -70,7 +74,7 @@ module.exports = React.createClass({
             },
             React.DOM.a(
                 {
-                    className: "nav-link",
+                    className: this.state.cardstatus + " nav-link",
                     href: this.props.boardIp + "/"
                 },
                 React.DOM.div(
