@@ -3,7 +3,8 @@
 "use strict";
 
 var React = require("react"),
-    request = require("superagent");
+    request = require("superagent"),
+    boardsystem = require("./boardsystem");
 
 module.exports = React.createClass({
     checkConnection: function() {
@@ -99,7 +100,23 @@ module.exports = React.createClass({
                     },
                     this.state.sshresult
                 )
-            )
+            ),
+            React.createElement(boardsystem, {
+                title: "Input #1",
+                subtitle: "ADV1"
+            }),
+            React.createElement(boardsystem, {
+                title: "Input #2",
+                subtitle: "ADV2"
+            }),
+            React.createElement(boardsystem, {
+                title: "Input #3",
+                subtitle: "ADV3"
+            }),
+            React.createElement(boardsystem, {
+                title: "Input #4",
+                subtitle: "ADV4"
+            })
         );
     }
 });

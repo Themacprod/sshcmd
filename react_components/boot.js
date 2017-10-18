@@ -19,6 +19,10 @@ var Boot = React.createClass({
             React.createElement(ReactRouter.Route, {
                     path: "/:lang/:ip",
                     component: require("./board")
+                }),
+            React.createElement(ReactRouter.Route, {
+                    path: "/:lang/:ip/adv:id",
+                    component: require("./adv")
                 })
         );
     }
