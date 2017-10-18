@@ -1,5 +1,5 @@
 [{
-	"offset": "0x00",
+	"offset": 0,
 	"name": "ADV7619_CEC_REGISTER00H",
 	"data": [{
 		"uCecTxFrameHeader": {
@@ -8,7 +8,7 @@
 		}
 	}]
 }, {
-	"offset": "0x01",
+	"offset": 1,
 	"name": "ADV7619_CEC_REGISTER01H",
 	"data": [{
 		"uCecTxFrameData0": {
@@ -17,7 +17,7 @@
 		}
 	}]
 }, {
-	"offset": "0x02",
+	"offset": 2,
 	"name": "ADV7619_CEC_REGISTER02H",
 	"data": {
 		"uCecTxFrameData1": {
@@ -26,7 +26,7 @@
 		}
 	}
 }, {
-	"offset": "0x03",
+	"offset": 3,
 	"name": "ADV7619_CEC_REGISTER03H",
 	"data": {
 		"uCecTxFrameData2": {
@@ -35,7 +35,7 @@
 		}
 	}
 }, {
-	"offset": "0x04",
+	"offset": 4,
 	"name": "ADV7619_CEC_REGISTER04H",
 	"data": [{
 		"uCecTxFrameData3": {

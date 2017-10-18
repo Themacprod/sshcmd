@@ -6,6 +6,13 @@ var React = require("react"),
     _ = require("lodash");
 
 module.exports = React.createClass({
+    toHexadecimal: function(integer) {
+        if (integer < 10) {
+            return "0x0" + integer.toString(16).toUpperCase();
+        }
+
+        return "0x" + integer.toString(16).toUpperCase();
+    },
     createLine: function(data) {
         return React.DOM.tbody(
             {
@@ -18,7 +25,7 @@ module.exports = React.createClass({
                         className: "offset",
                         scope: "row"
                     },
-                    data.offset
+                    this.toHexadecimal(data.offset)
                 ),
                 React.DOM.td(
                     null,
