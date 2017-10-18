@@ -6,6 +6,30 @@ var React = require("react"),
     _ = require("lodash");
 
 module.exports = React.createClass({
+    componentDidMount: function() {
+        var prevOffset = -1;
+        var startOffset = -1;
+        var nbofdata = 0;
+        var array = [];
+        _.forEach(this.props.data, function(data) {
+            if (startOffset === -1) {
+                startOffset = data.offset;
+            }
+
+            if (prevOffset !== -1) {
+                if ((prevOffset + 1) === data.offset) {
+                    nbofdata += 1;
+                } else {
+                    array.push(startOffset);
+                    console.log(startOffset + " " + (nbofdata + 1));
+                    nbofdata = 0;
+                    startOffset = data.offset;
+                }
+            }
+
+            prevOffset = data.offset;
+        });
+    },
     toHexadecimal: function(integer) {
         if (integer < 10) {
             return "0x0" + integer.toString(16).toUpperCase();
