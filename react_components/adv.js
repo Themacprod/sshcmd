@@ -4,12 +4,12 @@
 
 var React = require("react"),
     register = require("./register"),
-    AdvCecReg = require("../registers/adv7619/Adv7619_CecRegs");
+    RegsIo = require("../registers/adv7619/RegsIo");
 
 module.exports = React.createClass({
     render: function() {
         return React.createElement(register, {
-            data: AdvCecReg
+            data: RegsIo
         });
     }
 });
