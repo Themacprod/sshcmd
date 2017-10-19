@@ -1,51 +1,51 @@
 [{
 	"offset": 0,
-	"name": "IDX_ADV7619_VIDEO_STANDARD"
+	"name": "ADV7619_VIDEO_STANDARD"
 }, {
 	"offset": 1,
-	"name": "IDX_ADV7619_PRIMARY_MODE"
+	"name": "ADV7619_PRIMARY_MODE"
 }, {
 	"offset": 2,
-	"name": "IDX_ADV7619_IO_REG_02"
+	"name": "ADV7619_IO_REG_02"
 }, {
 	"offset": 3,
 	"name": "ADV7619_IO_REG_03"
 }, {
 	"offset": 4,
-	"name": "IDX_ADV7619_IO_REG_04"
+	"name": "ADV7619_IO_REG_04"
 }, {
 	"offset": 5,
-	"name": "IDX_ADV7619_IO_REG_05"
+	"name": "ADV7619_IO_REG_05"
 }, {
 	"offset": 6,
-	"name": "IDX_ADV7619_IO_REG_06"
+	"name": "ADV7619_IO_REG_06"
 }, {
 	"offset": 11,
-	"name": "IDX_ADV7619_IO_REG_0B"
+	"name": "ADV7619_IO_REG_0B"
 }, {
 	"offset": 12,
-	"name": "IDX_ADV7619_IO_REG_0C"
+	"name": "ADV7619_IO_REG_0C"
 }, {
 	"offset": 18,
-	"name": "IDX_ADV7619_IO_REG_12"
+	"name": "ADV7619_IO_REG_12"
 }, {
 	"offset": 20,
-	"name": "IDX_ADV7619_IO_REG_14"
+	"name": "ADV7619_IO_REG_14"
 }, {
 	"offset": 21,
-	"name": "IDX_ADV7619_IO_REG_15"
+	"name": "ADV7619_IO_REG_15"
 }, {
 	"offset": 22,
-	"name": "IDX_ADV7619_IO_REG_16"
+	"name": "ADV7619_IO_REG_16"
 }, {
 	"offset": 23,
-	"name": "IDX_ADV7619_IO_REG_17"
+	"name": "ADV7619_IO_REG_17"
 }, {
 	"offset": 25,
-	"name": "IDX_ADV7619_LLC_DLL"
+	"name": "ADV7619_LLC_DLL"
 }, {
 	"offset": 27,
-	"name": "IDX_ADV7619_ALSB_CONTROL"
+	"name": "ADV7619_ALSB_CONTROL"
 }, {
 	"offset": 32,
 	"name": "ADV7619_HPA_REG1"
