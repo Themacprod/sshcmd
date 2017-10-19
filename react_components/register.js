@@ -35,7 +35,7 @@ module.exports = React.createClass({
         });
     },
     toHexadecimal: function(integer) {
-        if (integer < 10) {
+        if (integer < 16) {
             return "0x0" + integer.toString(16).toUpperCase();
         }
 
