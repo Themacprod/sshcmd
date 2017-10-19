@@ -9,7 +9,11 @@ var React = require("react"),
 module.exports = React.createClass({
     render: function() {
         return React.createElement(register, {
-            data: RegsIo
+            data: RegsIo,
+            ip: this.props.params.ip,
+            address: "0x98",
+            offsetsize: 8,
+            bus: 3
         });
     }
 });

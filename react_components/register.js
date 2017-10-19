@@ -3,7 +3,8 @@
 "use strict";
 
 var React = require("react"),
-    _ = require("lodash");
+    _ = require("lodash"),
+    request = require("superagent");
 
 module.exports = React.createClass({
     getConsecutiveOffsetChunk: function() {
@@ -66,6 +67,31 @@ module.exports = React.createClass({
                 )
             )
         );
+    },
+    readData: function(data) {
+        request
+            .post("/api/i2cread/")
+            .send({
+                ip: this.props.ip,
+				cmd: "I2cRead",
+                bus: this.props.bus,
+                address: this.props.address,
+                offsetsize: this.props.offsetsize,
+                startoffset: data.startoffset,
+				datacount: data.count
+			})
+            .end(function(err, res) {
+                if (err) {
+                    console.log("Read failed!");
+                } else {
+                    console.log(res.body);
+                }
+            });
+    },
+    componentDidMount: function() {
+        _.forEach(this.getConsecutiveOffsetChunk(), function(data) {
+            this.readData(data);
+        }.bind(this));
     },
     render: function() {
         return React.DOM.div(
