@@ -25,8 +25,7 @@ module.exports = React.createClass({
             result.push(temp);
         }
 
-        // From [0,1,2] [4,5] [7]
-        // Get [0,3] [4,2] [7,1]
+        // From [0,1,2] [4,5] [7] get [0,3] [4,2] [7,1]
         return _.map(result, function(chunk) {
             return {
                 startoffset: chunk[0],
