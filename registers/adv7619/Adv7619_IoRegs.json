@@ -1,0 +1,319 @@
+[{
+	"offset": 0,
+	"name": "IDX_ADV7619_VIDEO_STANDARD"
+}, {
+	"offset": 1,
+	"name": "IDX_ADV7619_PRIMARY_MODE"
+}, {
+	"offset": 2,
+	"name": "IDX_ADV7619_IO_REG_02"
+}, {
+	"offset": 3,
+	"name": "ADV7619_IO_REG_03"
+}, {
+	"offset": 4,
+	"name": "IDX_ADV7619_IO_REG_04"
+}, {
+	"offset": 5,
+	"name": "IDX_ADV7619_IO_REG_05"
+}, {
+	"offset": 6,
+	"name": "IDX_ADV7619_IO_REG_06"
+}, {
+	"offset": 11,
+	"name": "IDX_ADV7619_IO_REG_0B"
+}, {
+	"offset": 12,
+	"name": "IDX_ADV7619_IO_REG_0C"
+}, {
+	"offset": 18,
+	"name": "IDX_ADV7619_IO_REG_12"
+}, {
+	"offset": 20,
+	"name": "IDX_ADV7619_IO_REG_14"
+}, {
+	"offset": 21,
+	"name": "IDX_ADV7619_IO_REG_15"
+}, {
+	"offset": 22,
+	"name": "IDX_ADV7619_IO_REG_16"
+}, {
+	"offset": 23,
+	"name": "IDX_ADV7619_IO_REG_17"
+}, {
+	"offset": 25,
+	"name": "IDX_ADV7619_LLC_DLL"
+}, {
+	"offset": 27,
+	"name": "IDX_ADV7619_ALSB_CONTROL"
+}, {
+	"offset": 32,
+	"name": "ADV7619_HPA_REG1"
+}, {
+	"offset": 33,
+	"name": "ADV7619_HPA_REG2"
+}, {
+	"offset": 48,
+	"name": "ADV7619_IO_REG_30"
+}, {
+	"offset": 51,
+	"name": "ADV7619_IO_REG_33"
+}, {
+	"offset": 63,
+	"name": "ADV7619_INT_STATUS"
+}, {
+	"offset": 64,
+	"name": "ADV7619_INT1_CONFIGURATION"
+}, {
+	"offset": 65,
+	"name": "ADV7619_INT2_CONFIGURATION"
+}, {
+	"offset": 66,
+	"name": "ADV7619_IO_REG_42"
+}, {
+	"offset": 67,
+	"name": "ADV7619_IO_REG_43"
+}, {
+	"offset": 68,
+	"name": "ADV7619_IO_REG_44"
+}, {
+	"offset": 69,
+	"name": "ADV7619_IO_REG_45"
+}, {
+	"offset": 70,
+	"name": "ADV7619_IO_REG_46"
+}, {
+	"offset": 71,
+	"name": "ADV7619_IO_REG_47"
+}, {
+	"offset": 72,
+	"name": "ADV7619_IO_REG_48"
+}, {
+	"offset": 73,
+	"name": "ADV7619_IO_REG_49"
+}, {
+	"offset": 74,
+	"name": "ADV7619_IO_REG_4A"
+}, {
+	"offset": 75,
+	"name": "ADV7619_IO_REG_4B"
+}, {
+	"offset": 91,
+	"name": "ADV7619_IO_REG_5B"
+}, {
+	"offset": 92,
+	"name": "ADV7619_IO_REG_5C"
+}, {
+	"offset": 93,
+	"name": "ADV7619_IO_REG_5D"
+}, {
+	"offset": 94,
+	"name": "ADV7619_IO_REG_5E"
+}, {
+	"offset": 95,
+	"name": "ADV7619_IO_REG_5F"
+}, {
+	"offset": 96,
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS1"
+}, {
+	"offset": 97,
+	"name": "ADV7619_HDMI_LVL_INTSTATUS1"
+}, {
+	"offset": 98,
+	"name": "ADV7619_HDMI_LVL_INTCLR1"
+}, {
+	"offset": 99,
+	"name": "ADV7619_HDMI_LVL_INT2MASKB1"
+}, {
+	"offset": 100,
+	"name": "ADV7619_HDMI_LVL_INTMASKB1"
+}, {
+	"offset": 101,
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS2"
+}, {
+	"offset": 102,
+	"name": "ADV7619_HDMI_LVL_INTSTATUS2"
+}, {
+	"offset": 103,
+	"name": "ADV7619_HDMI_LVL_INTCLR2"
+}, {
+	"offset": 104,
+	"name": "ADV7619_HDMI_LVL_INT2MASKB2"
+}, {
+	"offset": 105,
+	"name": "ADV7619_HDMI_LVL_INTMASKB2"
+}, {
+	"offset": 106,
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS3"
+}, {
+	"offset": 107,
+	"name": "ADV7619_HDMI_LVL_INTSTATUS3"
+}, {
+	"offset": 108,
+	"name": "ADV7619_HDMI_LVL_INTCLR3"
+}, {
+	"offset": 109,
+	"name": "ADV7619_HDMI_LVL_INT2MASKB3"
+}, {
+	"offset": 110,
+	"name": "ADV7619_HDMI_LVL_INTMASKB3"
+}, {
+	"offset": 111,
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS4"
+}, {
+	"offset": 112,
+	"name": "ADV7619_HDMI_LVL_INTSTATUS4"
+}, {
+	"offset": 113,
+	"name": "ADV7619_HDMI_LVL_INTCLR4"
+}, {
+	"offset": 114,
+	"name": "ADV7619_HDMI_LVL_INT2MASKB4"
+}, {
+	"offset": 115,
+	"name": "ADV7619_HDMI_LVL_INTMASKB4"
+}, {
+	"offset": 121,
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS1"
+}, {
+	"offset": 122,
+	"name": "ADV7619_HDMI_EDG_INTSTATUS1"
+}, {
+	"offset": 123,
+	"name": "ADV7619_HDMI_EDG_INT_CLR1"
+}, {
+	"offset": 124,
+	"name": "ADV7619_HDMI_EDG_INT2MASKB1"
+}, {
+	"offset": 125,
+	"name": "ADV7619_HDMI_EDG_INTMASKB1"
+}, {
+	"offset": 126,
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS2"
+}, {
+	"offset": 127,
+	"name": "ADV7619_HDMI_EDG_INTSTATUS2"
+}, {
+	"offset": 128,
+	"name": "ADV7619_HDMI_EDG_INTCLR2"
+}, {
+	"offset": 129,
+	"name": "ADV7619_HDMI_EDG_INT2MASKB2"
+}, {
+	"offset": 130,
+	"name": "ADV7619_HDMI_EDG_INTMASKB2"
+}, {
+	"offset": 131,
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS3"
+}, {
+	"offset": 132,
+	"name": "ADV7619_HDMI_EDG_STATUS3"
+}, {
+	"offset": 133,
+	"name": "ADV7619_HDMI_EDG_INTCLR3"
+}, {
+	"offset": 134,
+	"name": "ADV7619_HDMI_EDG_INT2MASKB3"
+}, {
+	"offset": 135,
+	"name": "ADV7619_HDMI_EDG_INTMASKB3"
+}, {
+	"offset": 136,
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS4"
+}, {
+	"offset": 137,
+	"name": "ADV7619_HDMI_EDG_STATUS4"
+}, {
+	"offset": 138,
+	"name": "ADV7619_HDMI_EDG_INTCLR4"
+}, {
+	"offset": 139,
+	"name": "ADV7619_HDMI_EDG_INT2MASKB4"
+}, {
+	"offset": 140,
+	"name": "ADV7619_HDMI_EDG_INTMASKB4"
+}, {
+	"offset": 141,
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS5"
+}, {
+	"offset": 142,
+	"name": "ADV7619_HDMI_EDG_STATUS5"
+}, {
+	"offset": 143,
+	"name": "ADV7619_HDMI_EDG_INTCLR5"
+}, {
+	"offset": 144,
+	"name": "ADV7619_HDMI_EDG_INT2MASKB5"
+}, {
+	"offset": 145,
+	"name": "ADV7619_HDMI_EDG_INTMASKB5"
+}, {
+	"offset": 146,
+	"name": "ADV7619_CEC_STATUS1RAW"
+}, {
+	"offset": 147,
+	"name": "ADV7619_CEC_STATUS1INTSTATUS"
+}, {
+	"offset": 148,
+	"name": "ADV7619_CEC_STATUS1INTCLEAR"
+}, {
+	"offset": 149,
+	"name": "ADV7619_CEC_STATUS1INT2MASKB"
+}, {
+	"offset": 150,
+	"name": "ADV7619_CEC_STATUS1INT1MASKB"
+}, {
+	"offset": 151,
+	"name": "ADV7619_CEC_RAW_STATUS2"
+}, {
+	"offset": 152,
+	"name": "ADV7619_CEC_INTERRUPT_STATUS2"
+}, {
+	"offset": 153,
+	"name": "ADV7619_CEC_INTERRUPT_CLEAR2"
+}, {
+	"offset": 154,
+	"name": "ADV7619_CEC_INTERRUPT2_MASKB"
+}, {
+	"offset": 155,
+	"name": "ADV7619_CEC_INTERRUPT_MASKB"
+}, {
+	"offset": 191,
+	"name": "ADV7619_CP_CORE_BYPASSING"
+}, {
+	"offset": 224,
+	"name": "ADV7619_IO_REG_E0"
+}, {
+	"offset": 231,
+	"name": "ADV7619_IO_REG_E7"
+}, {
+	"offset": 234,
+	"name": "ADV7619_IO_REG_EA"
+}, {
+	"offset": 235,
+	"name": "ADV7619_IO_REB_EB"
+}, {
+	"offset": 244,
+	"name": "ADV7619_CEC_SLAVE_ADDR"
+}, {
+	"offset": 245,
+	"name": "ADV7619_INFOFRAME_SLAVE_ADDR"
+}, {
+	"offset": 248,
+	"name": "ADV7619_AFE_SLAVE_ADDR"
+}, {
+	"offset": 249,
+	"name": "ADV7619_KSV_SLAVE_ADDR"
+}, {
+	"offset": 250,
+	"name": "ADV7619_EDID_SLAVE_ADDR"
+}, {
+	"offset": 251,
+	"name": "ADV7619_HDMI_SLAVE_ADDR"
+}, {
+	"offset": 253,
+	"name": "ADV7619_CP_SLAVE_ADDR"
+}, {
+	"offset": 255,
+	"name": "ADV7619_IO_REG_FF"
+}]
