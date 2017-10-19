@@ -62,7 +62,7 @@ module.exports = React.createClass({
                     {
                         className: "value"
                     },
-                    "0x00"
+                    this.props.data.value || "-"
                 )
             )
         );
