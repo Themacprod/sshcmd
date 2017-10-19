@@ -6,28 +6,32 @@ var React = require("react"),
     _ = require("lodash");
 
 module.exports = React.createClass({
-    componentDidMount: function() {
-        var prevOffset = -1;
-        var startOffset = -1;
-        var nbofdata = 0;
-        var array = [];
-        _.forEach(this.props.data, function(data) {
-            if (startOffset === -1) {
-                startOffset = data.offset;
-            }
-
-            if (prevOffset !== -1) {
-                if ((prevOffset + 1) === data.offset) {
-                    nbofdata += 1;
-                } else {
-                    array.push(startOffset);
-                    console.log(startOffset + " " + (nbofdata + 1));
-                    nbofdata = 0;
-                    startOffset = data.offset;
+    getConsecutiveOffsetChunk: function() {
+        var difference = -1,
+            temp = [],
+            result = [];
+        _.forEach(this.props.data, function(data, index) {
+            if (difference !== (data.offset - index)) {
+                if (difference !== -1) {
+                    result.push(temp);
+                    temp = [];
                 }
+                difference = data.offset - index;
             }
+            temp.push(data.offset);
+        });
 
-            prevOffset = data.offset;
+        if (temp.length) {
+            result.push(temp);
+        }
+
+        // From [0,1,2] [4,5] [7]
+        // Get [0,3] [4,2] [7,1]
+        return _.map(result, function(chunk) {
+            return {
+                startoffset: chunk[0],
+                count: chunk.length
+            };
         });
     },
     toHexadecimal: function(integer) {
