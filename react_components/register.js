@@ -41,7 +41,7 @@ module.exports = React.createClass({
 
         return "0x" + integer.toString(16).toUpperCase();
     },
-    createLine: function(data) {
+    createLine: function(data, index) {
         return React.DOM.tbody(
             {
                 key: data.offset
@@ -63,7 +63,7 @@ module.exports = React.createClass({
                     {
                         className: "value"
                     },
-                    this.props.data.value || "-"
+                    this.state.readData[index]
                 )
             )
         );
@@ -84,14 +84,27 @@ module.exports = React.createClass({
                 if (err) {
                     console.log("Read failed!");
                 } else {
-                    console.log(res.body);
+                    var startIndex = _.findIndex(this.props.data, function(o) {
+                        return o.offset === data.startoffset;
+                    });
+
+                    for (var i = 0; i < data.count; i += 1) {
+                        this.state.readData[startIndex + i] = res.body.data[i];
+                    }
+
+                    this.forceUpdate();
                 }
-            });
+            }.bind(this));
     },
     componentDidMount: function() {
         _.forEach(this.getConsecutiveOffsetChunk(), function(data) {
             this.readData(data);
         }.bind(this));
+    },
+    getInitialState: function() {
+        return {
+            readData: _.fill(Array(this.props.data.length), "-")
+        };
     },
     render: function() {
         return React.DOM.div(
@@ -124,8 +137,8 @@ module.exports = React.createClass({
                             )
                         )
                     ),
-                    _.map(this.props.data, function(data) {
-                        return this.createLine(data);
+                    _.map(this.props.data, function(data, index) {
+                        return this.createLine(data, index);
                     }.bind(this))
                 )
             )
