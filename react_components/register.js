@@ -73,13 +73,13 @@ module.exports = React.createClass({
             .post("/api/i2cread/")
             .send({
                 ip: this.props.ip,
-				cmd: "I2cRead",
+                cmd: "I2cRead",
                 bus: this.props.bus,
                 address: this.props.address,
                 offsetsize: this.props.offsetsize,
                 startoffset: data.startoffset,
-				datacount: data.count
-			})
+                datacount: data.count
+            })
             .end(function(err, res) {
                 if (err) {
                     console.log("Read failed!");
