@@ -8,13 +8,7 @@ var buildMtxI2cCmd = function(params) {
     var cmd = "/usr/local/bin/MtxI2cTool ";
     cmd += ("-b " + params.bus + " ");
     cmd += ("-a " + params.address + " ");
-
-    if (params.offsetsize === 8) {
-        cmd += ("-o8 " + params.startoffset + " ");
-    } else {
-        cmd += ("-o16 " + params.startoffset + " ");
-    }
-
+    cmd += ("-o" + params.offsetsize + " " + params.startoffset + " ");
     cmd += ("-r " + params.datacount);
 
     return cmd;
