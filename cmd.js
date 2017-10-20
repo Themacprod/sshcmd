@@ -3,6 +3,22 @@
 var Ssh2Client = require("ssh2").Client,
     ping = require("ping");
 
+var buildMtxI2cCmd = function(params) {
+    var cmd = "/usr/local/bin/MtxI2cTool ";
+    cmd += ("-b " + params.bus + " ");
+    cmd += ("-a " + params.address + " ");
+
+    if (params.offsetsize === 8) {
+        cmd += ("-o8 " + params.startoffset + " ");
+    } else {
+        cmd += ("-o16 " + params.startoffset + " ");
+    }
+
+    cmd += ("-r " + params.datacount);
+
+    return cmd;
+};
+
 module.exports.getCmdResult = function(req, res) {
     var conn = new Ssh2Client();
     conn.on("ready", function() {
@@ -29,21 +45,7 @@ module.exports.getCmdResult = function(req, res) {
 module.exports.i2cread = function(req, res) {
     var conn = new Ssh2Client();
     conn.on("ready", function() {
-        var cmd = "/usr/local/bin/MtxI2cTool ";
-        cmd += ("-b " + req.body.bus + " ");
-        cmd += ("-a " + req.body.address + " ");
-
-        if (req.body.offsetsize === 8) {
-            cmd += ("-o8 " + req.body.startoffset + " ");
-        } else {
-            cmd += ("-o16 " + req.body.startoffset + " ");
-        }
-
-        cmd += ("-r " + req.body.datacount);
-
-        console.log(cmd);
-
-        conn.exec(cmd, function(err, stream) {
+        conn.exec(buildMtxI2cCmd(req.body), function(err, stream) {
             if (err) {
                 throw err;
             }
