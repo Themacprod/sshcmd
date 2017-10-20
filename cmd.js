@@ -1,7 +1,8 @@
 "use strict";
 
 var Ssh2Client = require("ssh2").Client,
-    ping = require("ping");
+    ping = require("ping"),
+    _ = require("lodash");
 
 var buildMtxI2cCmd = function(params) {
     var cmd = "/usr/local/bin/MtxI2cTool ";
@@ -52,8 +53,20 @@ module.exports.i2cread = function(req, res) {
             stream.on("close", function() {
                 conn.end();
             }).on("data", function(data) {
-                // Only return data I2C tool return offset + data
-                res.json(data.toString());
+                // Only return data because I2C tool return offset + data.
+                var extracted = _.map(data.toString().split("\n"), function(line) {
+                    return line.slice(5, 9);
+                });
+
+                // Remove extra empty line, valid data value (0xXX) as length of 4.
+                extracted = _.filter(extracted, function(o) {
+                    return (o.length === 4);
+                });
+
+                res.json({
+                    startoffset: req.body.startoffset,
+                    data: extracted
+                });
             }).stderr.on("data", function(data) {
                 res.json(data.toString());
             });
@@ -68,10 +81,10 @@ module.exports.i2cread = function(req, res) {
 
 module.exports.pingIp = function(req, res) {
     ping.promise.probe(req.params.ip, {
-        timeout: 0.5
-    })
-    .then(function(res2) {
-        res.json(res2.alive);
-    })
-    .done();
+            timeout: 0.5
+        })
+        .then(function(res2) {
+            res.json(res2.alive);
+        })
+        .done();
 };
