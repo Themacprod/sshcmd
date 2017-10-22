@@ -31,29 +31,8 @@ module.exports = React.createClass({
     },
     getInitialState: function() {
         return {
-            sshresult: "",
             alertState: "alert-light"
         };
-    },
-    handleSubmit: function(e) {
-        e.preventDefault();
-        request
-            .post("/api/cmd")
-            .send({
-                ip: this.props.params.ip,
-                cmd: this.refs.cmd.value.trim()
-            })
-            .end(function(err, res) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    this.setState({
-                        sshresult: res.body
-                    });
-                }
-            }.bind(this));
-
-        return false;
     },
     render: function() {
         return React.DOM.div(
@@ -62,45 +41,6 @@ module.exports = React.createClass({
                 className: "alert " + this.state.alertState,
                 role: "alert"
             }, this.props.params.ip),
-            React.DOM.form(
-                {
-                    name: "form",
-                    noValidate: "",
-                    onSubmit: this.handleSubmit
-                },
-                React.DOM.div(
-                    {
-                        className: "form-group"
-                    },
-                    React.DOM.label(null, "Command"),
-                    React.DOM.input({
-                        className: "form-control",
-                        type: "text",
-                        ref: "cmd",
-                        name: "cmd",
-                        defaultValue: "ls",
-                        required: true
-                    })
-                ),
-                React.DOM.div({
-                    className: "ssh-response"
-                }),
-                React.DOM.button({
-                    className: "btn btn-lg btn-primary btn-block",
-                    type: "submit"
-                }, "Submit")
-            ),
-            React.DOM.div(
-                {
-                    className: "card"
-                },
-                React.DOM.div(
-                    {
-                        className: "card-body"
-                    },
-                    this.state.sshresult
-                )
-            ),
             React.createElement(boardsystem, {
                 title: "Input #1",
                 subtitle: "ADV1"

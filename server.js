@@ -56,8 +56,6 @@ server.use(function(req, res, next) {
 	}
 });
 
-server.post("/api/cmd", cmd.getCmdResult);
-
 server.post("/api/i2cread", cmd.i2cread);
 
 server.get("/api/ping/:ip", cmd.pingIp);
