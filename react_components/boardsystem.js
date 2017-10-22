@@ -15,7 +15,7 @@ module.exports = React.createClass({
                 React.DOM.a(
                     {
                         className: "nav-link",
-                        href: this.props.subtitle + "/"
+                        href: this.props.link + "/"
                     },
                     React.DOM.div(
                         {
@@ -31,7 +31,7 @@ module.exports = React.createClass({
                             {
                                 className: "card-subtitle"
                             },
-                            this.props.subtitle
+                            this.props.deviceName
                         )
                     )
                 )

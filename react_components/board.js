@@ -41,22 +41,31 @@ module.exports = React.createClass({
                 className: "alert " + this.state.alertState,
                 role: "alert"
             }, this.props.params.ip),
-            React.createElement(boardsystem, {
-                title: "Input #1",
-                subtitle: "ADV1"
-            }),
-            React.createElement(boardsystem, {
-                title: "Input #2",
-                subtitle: "ADV2"
-            }),
-            React.createElement(boardsystem, {
-                title: "Input #3",
-                subtitle: "ADV3"
-            }),
-            React.createElement(boardsystem, {
-                title: "Input #4",
-                subtitle: "ADV4"
-            })
+            React.DOM.div(
+                {
+                    className: "decoders"
+                },
+                React.createElement(boardsystem, {
+                    title: "Input #1",
+                    deviceName: "ADV7619",
+                    link: "ADV1"
+                }),
+                React.createElement(boardsystem, {
+                    title: "Input #2",
+                    deviceName: "ADV7619",
+                    link: "ADV2"
+                }),
+                React.createElement(boardsystem, {
+                    title: "Input #3",
+                    deviceName: "ADV7619",
+                    link: "ADV3"
+                }),
+                React.createElement(boardsystem, {
+                    title: "Input #4",
+                    deviceName: "ADV7619",
+                    link: "ADV4"
+                })
+            )
         );
     }
 });
