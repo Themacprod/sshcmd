@@ -46,11 +46,11 @@ module.exports = React.createClass({
                         className: "offset",
                         scope: "row"
                     },
-                    this.toHexadecimal(this.props.offset || 0)
+                    this.toHexadecimal(this.props.offset)
                 ),
                 React.DOM.td(
                     null,
-                    this.props.name || "None"
+                    this.props.name
                 ),
                 React.DOM.td(
                     {
