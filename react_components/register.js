@@ -4,7 +4,8 @@
 
 var React = require("react"),
     _ = require("lodash"),
-    request = require("superagent");
+    request = require("superagent"),
+    registerline = require("./registerline");
 
 module.exports = React.createClass({
     getConsecutiveOffsetChunk: function() {
@@ -33,40 +34,6 @@ module.exports = React.createClass({
                 count: chunk.length
             };
         });
-    },
-    toHexadecimal: function(integer) {
-        if (integer < 16) {
-            return "0x0" + integer.toString(16).toUpperCase();
-        }
-
-        return "0x" + integer.toString(16).toUpperCase();
-    },
-    createLine: function(data, index) {
-        return React.DOM.tbody(
-            {
-                key: data.offset
-            },
-            React.DOM.tr(
-                null,
-                React.DOM.th(
-                    {
-                        className: "offset",
-                        scope: "row"
-                    },
-                    this.toHexadecimal(data.offset)
-                ),
-                React.DOM.td(
-                    null,
-                    data.name
-                ),
-                React.DOM.td(
-                    {
-                        className: "value"
-                    },
-                    this.state.readData[index]
-                )
-            )
-        );
     },
     readData: function(data) {
         request
@@ -138,7 +105,12 @@ module.exports = React.createClass({
                         )
                     ),
                     _.map(this.props.data, function(data, index) {
-                        return this.createLine(data, index);
+                        return React.createElement(registerline, {
+                            key: index,
+                            offset: data.offset,
+                            name: data.name,
+                            value: this.state.readData[index]
+                        });
                     }.bind(this))
                 )
             )
