@@ -1,319 +1,519 @@
 [{
 	"offset": 0,
-	"name": "ADV7619_VIDEO_STANDARD"
+	"name": "ADV7619_VIDEO_STANDARD",
+	"data": [
+		{
+			"name": "uVidStd",
+			"size": 6,
+			"description": ["Sets the input video standard mode. Configuration is dependant on ",
+							"PRIM_MODE[3:0]. Setting appropriate mode is important to get Free Run mode ",
+							"working.",
+							"2 - Default value"]
+		},
+		{
+			"name": "uReserved7_6",
+			"size": 2,
+			"description": ["Reserved"]
+		}
+	]
 }, {
 	"offset": 1,
-	"name": "ADV7619_PRIMARY_MODE"
+	"name": "ADV7619_PRIMARY_MODE",
+	"data": [
+		{
+			"name": "uPrimMode",
+			"size": 4,
+			"description": ["A control to selects the primary mode of operation of the decoder. Setting ",
+							"appropriate HDMI mode is important to get FreeRun mode working. To be used ",
+							"with VID_STD[5:0]",
+							"5 - HDMI-Comp",
+							"6 - HDMI-GR"]
+		},
+		{
+			"name": "uVFreq",
+			"size": 3,
+			"description": ["A control to set vertical frequency.",
+							"0 - 60 Hz",
+							"1 - 50 Hz",
+							"2 - 30 Hz",
+							"3 - 25 Hz",
+							"4 - 24 Hz"]
+		},
+		{
+			"name": "uReserved7",
+			"size": 1,
+			"description": ["Reserved"]
+		}
+	]
 }, {
 	"offset": 2,
-	"name": "ADV7619_IO_REG_02"
+	"name": "ADV7619_IO_REG_02",
+	"data": [
+		{
+			"name": "uAltDataSat",
+			"size": 1,
+			"description": ["A control to disable the data saturator that limits the output range ",
+							"independently of OP_656_RANGE. This bit is used to support extended data range ",
+							"modes.",
+							"0 - Data saturator enabled or disabled according to OP_656_RANGE setting.",
+							"1 - Reverses OP_656_RANGE decision to enable or disable the data saturator"]
+		},
+		{
+			"name": "uRgbOut",
+			"size": 1,
+			"description": ["A control to select output color space and the correct digital blank level and ",
+							"offsets on the RGB or YPrPb outputs. It is used in conjunction with the ",
+							"INP_COLOR_SPACE[3:0] and ALT_GAMMA bits to select the applied CSC.",
+							"0 - YPbPr color space output",
+							"1 - RGB color space output"]
+		},
+		{
+			"name": "uOp656Range",
+			"size": 2,
+			"description": ["A control to set the output range of the digital data. It also automatically",
+							"the data saturator setting.",
+							"0 - Enables full output range (0 to 255)",
+							"1 - Enables limited output range (16 to 235)"]
+		},
+		{
+			"name": "uAltGamma",
+			"size": 1,
+			"description": ["A control to set the colorspace of the input video. To be used in conjunction",
+							"with ALT_GAMMA and RGB_OUT to configure the color space converter. A value of",
+							"4'b1111 selects automatic setting of the input color space base on the primary",
+							"mode and video standard settings. Settings 1000 to 1110 are undefined.",
+							"0 - No conversion",
+							"1 - YUV601 to YUV709 conversion applied if input is YUV601. YUV709 to YUV601",
+							"conversion applied if input is YUV709"]
+		},
+		{
+			"name": "uInpColorSpace",
+			"size": 4,
+			"description": ["A control to set the colorspace of the input video. To be used in conjunction",
+							"with ALT_GAMMA and RGB_OUT to configure the color space converter. A value of ",
+							"4'b1111 selects automatic setting of the input color space base on the primary",
+							"mode and video standard settings. Settings 1000 to 1110 are undefined.",
+							"0 - Forces RGB (range 16 to 235) input",
+							"1 - Forces RGB (range 0 to 255) input",
+							"2 - Forces YCrCb input (601 color space) (range 16 to 235)",
+							"3 - Forces YCrCb input (709 color space) (range 16 to 235)",
+							"4 - Forces XVYCC 601",
+							"5 - Forces XVYCC 709",
+							"6 - Forces YCrCb input (601 color space) (range 0 to 255)",
+							"7 - Forces YCrCb input (709 color space) (range 0 to 255)",
+							"15 - Input color space depends on color space reported by HDMI block."]
+		}
+	]
 }, {
 	"offset": 3,
-	"name": "ADV7619_IO_REG_03"
+	"name": "ADV7619_IO_REG_03",
+	"data": []
 }, {
 	"offset": 4,
-	"name": "ADV7619_IO_REG_04"
+	"name": "ADV7619_IO_REG_04",
+	"data": []
 }, {
 	"offset": 5,
-	"name": "ADV7619_IO_REG_05"
+	"name": "ADV7619_IO_REG_05",
+	"data": []
 }, {
 	"offset": 6,
-	"name": "ADV7619_IO_REG_06"
+	"name": "ADV7619_IO_REG_06",
+	"data": []
 }, {
 	"offset": 11,
-	"name": "ADV7619_IO_REG_0B"
+	"name": "ADV7619_IO_REG_0B",
+	"data": []
 }, {
 	"offset": 12,
-	"name": "ADV7619_IO_REG_0C"
+	"name": "ADV7619_IO_REG_0C",
+	"data": []
 }, {
 	"offset": 18,
-	"name": "ADV7619_IO_REG_12"
+	"name": "ADV7619_IO_REG_12",
+	"data": []
 }, {
 	"offset": 20,
-	"name": "ADV7619_IO_REG_14"
+	"name": "ADV7619_IO_REG_14",
+	"data": []
 }, {
 	"offset": 21,
-	"name": "ADV7619_IO_REG_15"
+	"name": "ADV7619_IO_REG_15",
+	"data": []
 }, {
 	"offset": 22,
-	"name": "ADV7619_IO_REG_16"
+	"name": "ADV7619_IO_REG_16",
+	"data": []
 }, {
 	"offset": 23,
-	"name": "ADV7619_IO_REG_17"
+	"name": "ADV7619_IO_REG_17",
+	"data": []
 }, {
 	"offset": 25,
-	"name": "ADV7619_LLC_DLL"
+	"name": "ADV7619_LLC_DLL",
+	"data": []
 }, {
 	"offset": 27,
-	"name": "ADV7619_ALSB_CONTROL"
+	"name": "ADV7619_ALSB_CONTROL",
+	"data": []
 }, {
 	"offset": 32,
-	"name": "ADV7619_HPA_REG1"
+	"name": "ADV7619_HPA_REG1",
+	"data": []
 }, {
 	"offset": 33,
-	"name": "ADV7619_HPA_REG2"
+	"name": "ADV7619_HPA_REG2",
+	"data": []
 }, {
 	"offset": 48,
-	"name": "ADV7619_IO_REG_30"
+	"name": "ADV7619_IO_REG_30",
+	"data": []
 }, {
 	"offset": 51,
-	"name": "ADV7619_IO_REG_33"
+	"name": "ADV7619_IO_REG_33",
+	"data": []
 }, {
 	"offset": 63,
-	"name": "ADV7619_INT_STATUS"
+	"name": "ADV7619_INT_STATUS",
+	"data": []
 }, {
 	"offset": 64,
-	"name": "ADV7619_INT1_CONFIGURATION"
+	"name": "ADV7619_INT1_CONFIGURATION",
+	"data": []
 }, {
 	"offset": 65,
-	"name": "ADV7619_INT2_CONFIGURATION"
+	"name": "ADV7619_INT2_CONFIGURATION",
+	"data": []
 }, {
 	"offset": 66,
-	"name": "ADV7619_IO_REG_42"
+	"name": "ADV7619_IO_REG_42",
+	"data": []
 }, {
 	"offset": 67,
-	"name": "ADV7619_IO_REG_43"
+	"name": "ADV7619_IO_REG_43",
+	"data": []
 }, {
 	"offset": 68,
-	"name": "ADV7619_IO_REG_44"
+	"name": "ADV7619_IO_REG_44",
+	"data": []
 }, {
 	"offset": 69,
-	"name": "ADV7619_IO_REG_45"
+	"name": "ADV7619_IO_REG_45",
+	"data": []
 }, {
 	"offset": 70,
-	"name": "ADV7619_IO_REG_46"
+	"name": "ADV7619_IO_REG_46",
+	"data": []
 }, {
 	"offset": 71,
-	"name": "ADV7619_IO_REG_47"
+	"name": "ADV7619_IO_REG_47",
+	"data": []
 }, {
 	"offset": 72,
-	"name": "ADV7619_IO_REG_48"
+	"name": "ADV7619_IO_REG_48",
+	"data": []
 }, {
 	"offset": 73,
-	"name": "ADV7619_IO_REG_49"
+	"name": "ADV7619_IO_REG_49",
+	"data": []
 }, {
 	"offset": 74,
-	"name": "ADV7619_IO_REG_4A"
+	"name": "ADV7619_IO_REG_4A",
+	"data": []
 }, {
 	"offset": 75,
-	"name": "ADV7619_IO_REG_4B"
+	"name": "ADV7619_IO_REG_4B",
+	"data": []
 }, {
 	"offset": 91,
-	"name": "ADV7619_IO_REG_5B"
+	"name": "ADV7619_IO_REG_5B",
+	"data": []
 }, {
 	"offset": 92,
-	"name": "ADV7619_IO_REG_5C"
+	"name": "ADV7619_IO_REG_5C",
+	"data": []
 }, {
 	"offset": 93,
-	"name": "ADV7619_IO_REG_5D"
+	"name": "ADV7619_IO_REG_5D",
+	"data": []
 }, {
 	"offset": 94,
-	"name": "ADV7619_IO_REG_5E"
+	"name": "ADV7619_IO_REG_5E",
+	"data": []
 }, {
 	"offset": 95,
-	"name": "ADV7619_IO_REG_5F"
+	"name": "ADV7619_IO_REG_5F",
+	"data": []
 }, {
 	"offset": 96,
-	"name": "ADV7619_HDMI_LVL_RAWSTATUS1"
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS1",
+	"data": []
 }, {
 	"offset": 97,
-	"name": "ADV7619_HDMI_LVL_INTSTATUS1"
+	"name": "ADV7619_HDMI_LVL_INTSTATUS1",
+	"data": []
 }, {
 	"offset": 98,
-	"name": "ADV7619_HDMI_LVL_INTCLR1"
+	"name": "ADV7619_HDMI_LVL_INTCLR1",
+	"data": []
 }, {
 	"offset": 99,
-	"name": "ADV7619_HDMI_LVL_INT2MASKB1"
+	"name": "ADV7619_HDMI_LVL_INT2MASKB1",
+	"data": []
 }, {
 	"offset": 100,
-	"name": "ADV7619_HDMI_LVL_INTMASKB1"
+	"name": "ADV7619_HDMI_LVL_INTMASKB1",
+	"data": []
 }, {
 	"offset": 101,
-	"name": "ADV7619_HDMI_LVL_RAWSTATUS2"
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS2",
+	"data": []
 }, {
 	"offset": 102,
-	"name": "ADV7619_HDMI_LVL_INTSTATUS2"
+	"name": "ADV7619_HDMI_LVL_INTSTATUS2",
+	"data": []
 }, {
 	"offset": 103,
-	"name": "ADV7619_HDMI_LVL_INTCLR2"
+	"name": "ADV7619_HDMI_LVL_INTCLR2",
+	"data": []
 }, {
 	"offset": 104,
-	"name": "ADV7619_HDMI_LVL_INT2MASKB2"
+	"name": "ADV7619_HDMI_LVL_INT2MASKB2",
+	"data": []
 }, {
 	"offset": 105,
-	"name": "ADV7619_HDMI_LVL_INTMASKB2"
+	"name": "ADV7619_HDMI_LVL_INTMASKB2",
+	"data": []
 }, {
 	"offset": 106,
-	"name": "ADV7619_HDMI_LVL_RAWSTATUS3"
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS3",
+	"data": []
 }, {
 	"offset": 107,
-	"name": "ADV7619_HDMI_LVL_INTSTATUS3"
+	"name": "ADV7619_HDMI_LVL_INTSTATUS3",
+	"data": []
 }, {
 	"offset": 108,
-	"name": "ADV7619_HDMI_LVL_INTCLR3"
+	"name": "ADV7619_HDMI_LVL_INTCLR3",
+	"data": []
 }, {
 	"offset": 109,
-	"name": "ADV7619_HDMI_LVL_INT2MASKB3"
+	"name": "ADV7619_HDMI_LVL_INT2MASKB3",
+	"data": []
 }, {
 	"offset": 110,
-	"name": "ADV7619_HDMI_LVL_INTMASKB3"
+	"name": "ADV7619_HDMI_LVL_INTMASKB3",
+	"data": []
 }, {
 	"offset": 111,
-	"name": "ADV7619_HDMI_LVL_RAWSTATUS4"
+	"name": "ADV7619_HDMI_LVL_RAWSTATUS4",
+	"data": []
 }, {
 	"offset": 112,
-	"name": "ADV7619_HDMI_LVL_INTSTATUS4"
+	"name": "ADV7619_HDMI_LVL_INTSTATUS4",
+	"data": []
 }, {
 	"offset": 113,
-	"name": "ADV7619_HDMI_LVL_INTCLR4"
+	"name": "ADV7619_HDMI_LVL_INTCLR4",
+	"data": []
 }, {
 	"offset": 114,
-	"name": "ADV7619_HDMI_LVL_INT2MASKB4"
+	"name": "ADV7619_HDMI_LVL_INT2MASKB4",
+	"data": []
 }, {
 	"offset": 115,
-	"name": "ADV7619_HDMI_LVL_INTMASKB4"
+	"name": "ADV7619_HDMI_LVL_INTMASKB4",
+	"data": []
 }, {
 	"offset": 121,
-	"name": "ADV7619_HDMI_EDG_RAWSTATUS1"
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS1",
+	"data": []
 }, {
 	"offset": 122,
-	"name": "ADV7619_HDMI_EDG_INTSTATUS1"
+	"name": "ADV7619_HDMI_EDG_INTSTATUS1",
+	"data": []
 }, {
 	"offset": 123,
-	"name": "ADV7619_HDMI_EDG_INT_CLR1"
+	"name": "ADV7619_HDMI_EDG_INT_CLR1",
+	"data": []
 }, {
 	"offset": 124,
-	"name": "ADV7619_HDMI_EDG_INT2MASKB1"
+	"name": "ADV7619_HDMI_EDG_INT2MASKB1",
+	"data": []
 }, {
 	"offset": 125,
-	"name": "ADV7619_HDMI_EDG_INTMASKB1"
+	"name": "ADV7619_HDMI_EDG_INTMASKB1",
+	"data": []
 }, {
 	"offset": 126,
-	"name": "ADV7619_HDMI_EDG_RAWSTATUS2"
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS2",
+	"data": []
 }, {
 	"offset": 127,
-	"name": "ADV7619_HDMI_EDG_INTSTATUS2"
+	"name": "ADV7619_HDMI_EDG_INTSTATUS2",
+	"data": []
 }, {
 	"offset": 128,
-	"name": "ADV7619_HDMI_EDG_INTCLR2"
+	"name": "ADV7619_HDMI_EDG_INTCLR2",
+	"data": []
 }, {
 	"offset": 129,
-	"name": "ADV7619_HDMI_EDG_INT2MASKB2"
+	"name": "ADV7619_HDMI_EDG_INT2MASKB2",
+	"data": []
 }, {
 	"offset": 130,
-	"name": "ADV7619_HDMI_EDG_INTMASKB2"
+	"name": "ADV7619_HDMI_EDG_INTMASKB2",
+	"data": []
 }, {
 	"offset": 131,
-	"name": "ADV7619_HDMI_EDG_RAWSTATUS3"
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS3",
+	"data": []
 }, {
 	"offset": 132,
-	"name": "ADV7619_HDMI_EDG_STATUS3"
+	"name": "ADV7619_HDMI_EDG_STATUS3",
+	"data": []
 }, {
 	"offset": 133,
-	"name": "ADV7619_HDMI_EDG_INTCLR3"
+	"name": "ADV7619_HDMI_EDG_INTCLR3",
+	"data": []
 }, {
 	"offset": 134,
-	"name": "ADV7619_HDMI_EDG_INT2MASKB3"
+	"name": "ADV7619_HDMI_EDG_INT2MASKB3",
+	"data": []
 }, {
 	"offset": 135,
-	"name": "ADV7619_HDMI_EDG_INTMASKB3"
+	"name": "ADV7619_HDMI_EDG_INTMASKB3",
+	"data": []
 }, {
 	"offset": 136,
-	"name": "ADV7619_HDMI_EDG_RAWSTATUS4"
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS4",
+	"data": []
 }, {
 	"offset": 137,
-	"name": "ADV7619_HDMI_EDG_STATUS4"
+	"name": "ADV7619_HDMI_EDG_STATUS4",
+	"data": []
 }, {
 	"offset": 138,
-	"name": "ADV7619_HDMI_EDG_INTCLR4"
+	"name": "ADV7619_HDMI_EDG_INTCLR4",
+	"data": []
 }, {
 	"offset": 139,
-	"name": "ADV7619_HDMI_EDG_INT2MASKB4"
+	"name": "ADV7619_HDMI_EDG_INT2MASKB4",
+	"data": []
 }, {
 	"offset": 140,
-	"name": "ADV7619_HDMI_EDG_INTMASKB4"
+	"name": "ADV7619_HDMI_EDG_INTMASKB4",
+	"data": []
 }, {
 	"offset": 141,
-	"name": "ADV7619_HDMI_EDG_RAWSTATUS5"
+	"name": "ADV7619_HDMI_EDG_RAWSTATUS5",
+	"data": []
 }, {
 	"offset": 142,
-	"name": "ADV7619_HDMI_EDG_STATUS5"
+	"name": "ADV7619_HDMI_EDG_STATUS5",
+	"data": []
 }, {
 	"offset": 143,
-	"name": "ADV7619_HDMI_EDG_INTCLR5"
+	"name": "ADV7619_HDMI_EDG_INTCLR5",
+	"data": []
 }, {
 	"offset": 144,
-	"name": "ADV7619_HDMI_EDG_INT2MASKB5"
+	"name": "ADV7619_HDMI_EDG_INT2MASKB5",
+	"data": []
 }, {
 	"offset": 145,
-	"name": "ADV7619_HDMI_EDG_INTMASKB5"
+	"name": "ADV7619_HDMI_EDG_INTMASKB5",
+	"data": []
 }, {
 	"offset": 146,
-	"name": "ADV7619_CEC_STATUS1RAW"
+	"name": "ADV7619_CEC_STATUS1RAW",
+	"data": []
 }, {
 	"offset": 147,
-	"name": "ADV7619_CEC_STATUS1INTSTATUS"
+	"name": "ADV7619_CEC_STATUS1INTSTATUS",
+	"data": []
 }, {
 	"offset": 148,
-	"name": "ADV7619_CEC_STATUS1INTCLEAR"
+	"name": "ADV7619_CEC_STATUS1INTCLEAR",
+	"data": []
 }, {
 	"offset": 149,
-	"name": "ADV7619_CEC_STATUS1INT2MASKB"
+	"name": "ADV7619_CEC_STATUS1INT2MASKB",
+	"data": []
 }, {
 	"offset": 150,
-	"name": "ADV7619_CEC_STATUS1INT1MASKB"
+	"name": "ADV7619_CEC_STATUS1INT1MASKB",
+	"data": []
 }, {
 	"offset": 151,
-	"name": "ADV7619_CEC_RAW_STATUS2"
+	"name": "ADV7619_CEC_RAW_STATUS2",
+	"data": []
 }, {
 	"offset": 152,
-	"name": "ADV7619_CEC_INTERRUPT_STATUS2"
+	"name": "ADV7619_CEC_INTERRUPT_STATUS2",
+	"data": []
 }, {
 	"offset": 153,
-	"name": "ADV7619_CEC_INTERRUPT_CLEAR2"
+	"name": "ADV7619_CEC_INTERRUPT_CLEAR2",
+	"data": []
 }, {
 	"offset": 154,
-	"name": "ADV7619_CEC_INTERRUPT2_MASKB"
+	"name": "ADV7619_CEC_INTERRUPT2_MASKB",
+	"data": []
 }, {
 	"offset": 155,
-	"name": "ADV7619_CEC_INTERRUPT_MASKB"
+	"name": "ADV7619_CEC_INTERRUPT_MASKB",
+	"data": []
 }, {
 	"offset": 191,
-	"name": "ADV7619_CP_CORE_BYPASSING"
+	"name": "ADV7619_CP_CORE_BYPASSING",
+	"data": []
 }, {
 	"offset": 224,
-	"name": "ADV7619_IO_REG_E0"
+	"name": "ADV7619_IO_REG_E0",
+	"data": []
 }, {
 	"offset": 231,
-	"name": "ADV7619_IO_REG_E7"
+	"name": "ADV7619_IO_REG_E7",
+	"data": []
 }, {
 	"offset": 234,
-	"name": "ADV7619_IO_REG_EA"
+	"name": "ADV7619_IO_REG_EA",
+	"data": []
 }, {
 	"offset": 235,
-	"name": "ADV7619_IO_REB_EB"
+	"name": "ADV7619_IO_REB_EB",
+	"data": []
 }, {
 	"offset": 244,
-	"name": "ADV7619_CEC_SLAVE_ADDR"
+	"name": "ADV7619_CEC_SLAVE_ADDR",
+	"data": []
 }, {
 	"offset": 245,
-	"name": "ADV7619_INFOFRAME_SLAVE_ADDR"
+	"name": "ADV7619_INFOFRAME_SLAVE_ADDR",
+	"data": []
 }, {
 	"offset": 248,
-	"name": "ADV7619_AFE_SLAVE_ADDR"
+	"name": "ADV7619_AFE_SLAVE_ADDR",
+	"data": []
 }, {
 	"offset": 249,
-	"name": "ADV7619_KSV_SLAVE_ADDR"
+	"name": "ADV7619_KSV_SLAVE_ADDR",
+	"data": []
 }, {
 	"offset": 250,
-	"name": "ADV7619_EDID_SLAVE_ADDR"
+	"name": "ADV7619_EDID_SLAVE_ADDR",
+	"data": []
 }, {
 	"offset": 251,
-	"name": "ADV7619_HDMI_SLAVE_ADDR"
+	"name": "ADV7619_HDMI_SLAVE_ADDR",
+	"data": []
 }, {
 	"offset": 253,
-	"name": "ADV7619_CP_SLAVE_ADDR"
+	"name": "ADV7619_CP_SLAVE_ADDR",
+	"data": []
 }, {
 	"offset": 255,
-	"name": "ADV7619_IO_REG_FF"
+	"name": "ADV7619_IO_REG_FF",
+	"data": []
 }]
