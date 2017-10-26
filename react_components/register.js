@@ -5,7 +5,8 @@
 var React = require("react"),
     _ = require("lodash"),
     request = require("superagent"),
-    registerline = require("./registerline");
+    registerline = require("./registerline"),
+    registerdetail = require("./registerdetail");
 
 module.exports = React.createClass({
     getConsecutiveOffsetChunk: function() {
@@ -75,7 +76,9 @@ module.exports = React.createClass({
     },
     render: function() {
         return React.DOM.div(
-            null,
+            {
+                className: "registercontainer"
+            },
             React.DOM.div(
                 {
                     className: "registerlist"
@@ -113,7 +116,8 @@ module.exports = React.createClass({
                         });
                     }.bind(this))
                 )
-            )
+            ),
+            React.createElement(registerdetail)
         );
     }
 });

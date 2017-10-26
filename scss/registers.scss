@@ -1,4 +1,5 @@
 .registerlist {
+	display: inline-block;
 	width: 45%;
 
 	.offset {
@@ -20,5 +21,41 @@
 	.item-fadeout{
 		background-color: $color-green-background;
 		transition: visibility 0s 1.5s, opacity 1.5s linear;
+	}
+}
+
+.registerdetail {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin: 2.5%;
+
+	.registername{
+		display: inline-block;
+		width: 50%;
+		font-weight: bold;
+	}
+
+	.resetvalue{
+		display: inline-block;
+		width: 50%;
+		text-align: right;
+		font-style: italic;
+	}
+
+	.field-description-title{
+		font-weight: bold;
+	}
+
+	.field-description{
+		margin-bottom: 20px;
+	}
+
+	.field-values-title{
+		font-weight: bold;
+	}
+
+	.field-values{
+		margin-bottom: 20px;
 	}
 }
