@@ -71,9 +71,23 @@ module.exports = React.createClass({
     },
     getInitialState: function() {
         return {
-            readData: _.fill(Array(this.props.data.length), "-")
+            readData: _.fill(Array(this.props.data.length), "-"),
+            detail: "",
+            value: "0x00"
         };
     },
+    handleClick: function(offset) {
+        var index = _.findIndex(this.props.data, function(o) {
+            return o.offset === offset;
+        });
+
+        if (index >= 0) {
+            this.setState({
+                detail: this.props.data[index],
+                value: this.state.readData[index]
+            });
+        }
+	},
     render: function() {
         return React.DOM.div(
             {
@@ -112,12 +126,16 @@ module.exports = React.createClass({
                             key: index,
                             offset: data.offset,
                             name: data.name,
-                            value: this.state.readData[index]
+                            value: this.state.readData[index],
+                            callBack: this.handleClick
                         });
                     }.bind(this))
                 )
             ),
-            React.createElement(registerdetail)
+            React.createElement(registerdetail, {
+                detail: this.state.detail,
+                value: this.state.value
+            })
         );
     }
 });

@@ -33,11 +33,15 @@ module.exports = React.createClass({
             }, 1500);
         }
     },
+    handleClick: function(offset) {
+        this.props.callBack(offset);
+	},
     render: function() {
         return React.DOM.tbody(
             {
                 className: "item" + this.state.fade,
-                key: this.props.key
+                key: this.props.key,
+                onClick: this.handleClick.bind(this, this.props.offset)
             },
             React.DOM.tr(
                 null,

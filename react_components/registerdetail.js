@@ -18,13 +18,13 @@ module.exports = React.createClass({
                     {
                         className: "registername"
                     },
-                    "Register - " + (this.props.registername || "REGISTER_NAME")
+                    "Register - " + (this.props.detail.name || "REGISTER_NAME")
                 ),
                 React.DOM.div(
                     {
                         className: "resetvalue"
                     },
-                    "(reset value = " + (this.props.resetvalue || "0x00") + ")"
+                    "(reset value = " + (this.props.detail.resetvalue || "0x00") + ")"
                 )
             ),
             React.DOM.hr(null),
