@@ -99,7 +99,7 @@ module.exports = React.createClass({
                 },
                 React.DOM.table(
                     {
-                        className: "table table-sm table-bordered"
+                        className: "table table-hover table-sm table-bordered"
                     },
                     React.DOM.thead(
                         null,
