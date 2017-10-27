@@ -63,9 +63,26 @@
 		text-align: center;
 	}
 
-	.field-detail-title{
+	.field-detail-column{
 		width: 35px;
+		height: 250px;
+		margin: 0px;
+		display: inline-block;
+	}
+
+	.field-detail-bit-index{
 		text-align: center;
 		font-weight: bold;
+		border: 1px solid black;
+	}
+
+	.field-detail-bit-detail{
+		border: 1px solid black;
+		transform: rotate(90deg);
+		transform-origin: bottom left;
+		height: 35px;
+		width: 200px;
+		position: absolute;
+		margin-top: -35px;
 	}
 }

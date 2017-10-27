@@ -2,23 +2,10 @@
 
 "use strict";
 
-var React = require("react");
+var React = require("react"),
+    registerfield = require("./registerfield");
 
 module.exports = React.createClass({
-    drawfield: function() {
-        var data = [];
-
-        for (var i = 7; i >= 0; i -= 1) {
-            data.push(React.DOM.input({
-                            className: "field-detail-title",
-                            type: "text",
-                            value: i,
-                            readOnly: "readOnly"
-                        }));
-        }
-
-        return data;
-    },
     render: function() {
         return React.DOM.div(
             {
@@ -42,12 +29,9 @@ module.exports = React.createClass({
                 )
             ),
             React.DOM.hr(null),
-            React.DOM.div(
-                {
-                    className: "field-detail-container"
-                },
-                this.drawfield()
-            ),
+            React.createElement(registerfield, {
+                parent: this.props
+            }),
             React.DOM.div(
                 {
                     className: "field-description-title"
