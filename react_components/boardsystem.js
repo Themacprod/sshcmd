@@ -7,10 +7,12 @@ var React = require("react");
 module.exports = React.createClass({
     render: function() {
         return React.DOM.div(
-            null,
+            {
+                className: "boardsystem"
+            },
             React.DOM.div(
                 {
-                    className: "card text-center boardsystem"
+                    className: "card text-center"
                 },
                 React.DOM.a(
                     {
@@ -38,7 +40,7 @@ module.exports = React.createClass({
             ),
             React.DOM.div(
                 {
-                    className: "boardsystem-sep"
+                    className: "padding"
                 },
                 ""
             )
