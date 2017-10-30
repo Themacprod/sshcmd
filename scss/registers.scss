@@ -1,3 +1,7 @@
+$field-width: 35px;
+$field-height: 250px;
+$field-description: 200px;
+
 .registerlist {
 	display: inline-block;
 	width: 45%;
@@ -33,32 +37,27 @@
 		width: 50%;
 	}
 
-	.field-description {
-		margin-bottom: 20px;
-	}
-
-	.field-values {
-		margin-bottom: 20px;
-	}
-
 	.field-detail-column {
-		width: 35px;
-		height: 250px;
+		width: $field-width;
+		height: $field-height;
 		margin: 0;
 		display: inline-block;
 	}
 
-	.field-detail-bit-index {
+	.table-bordered {
 		border: 1px solid black;
 	}
 
 	.field-detail-bit-detail {
-		border: 1px solid black;
 		transform: rotate(90deg);
 		transform-origin: bottom left;
-		height: 35px;
-		width: 200px;
+		height: $field-width;
+		width: $field-description;
 		position: absolute;
-		margin-top: -35px;
+		margin-top: -$field-width;
+	}
+
+	.margin-sep {
+		margin-bottom: 20px;
 	}
 }

@@ -3,9 +3,68 @@
 "use strict";
 
 var React = require("react"),
+    _ = require("lodash"),
     registerfield = require("./registerfield");
 
 module.exports = React.createClass({
+    getDataIndex: function(bitIndex) {
+        // Check if current register has detail data.
+        if (this.props.detail.data) {
+            // Parse all register details.
+            var startindex = 0;
+            for (var i = 0; i < this.props.detail.data.length; i += 1) {
+                if ((bitIndex >= startindex) && (bitIndex <= (startindex + this.props.detail.data.length))) {
+                    return i;
+                }
+
+                startindex += this.props.detail.data.length;
+            }
+        }
+
+        return -1;
+    },
+    listOfValue: function(bitIndex) {
+        var index = this.getDataIndex(bitIndex);
+        if (index >= 0) {
+            var tmp = _.map(this.props.detail.data[index].values, function(value, key) {
+                return React.DOM.div(
+                    {
+                        key: key
+                    },
+                    value.value + " : " + value.description
+                );
+            });
+
+            this.setState({
+                values: tmp
+            });
+        } else {
+            this.setState({
+                values: "No value description"
+            });
+        }
+    },
+    handleClick: function(bitIndex) {
+        this.listOfValue(bitIndex);
+        var index = this.getDataIndex(bitIndex);
+        if (index >= 0) {
+            this.setState({
+                description: _.map(this.props.detail.data[index].description, function(msg) {
+                    return msg;
+                })
+            });
+        } else {
+            this.setState({
+                description: "No description"
+            });
+        }
+	},
+    getInitialState: function() {
+        return {
+            description: "No description",
+            values: "No value description"
+        };
+    },
     render: function() {
         return React.DOM.div(
             {
@@ -30,7 +89,8 @@ module.exports = React.createClass({
             ),
             React.DOM.hr(null),
             React.createElement(registerfield, {
-                parent: this.props
+                parent: this.props.detail.data,
+                callBack: this.handleClick
             }),
             React.DOM.div(
                 {
@@ -41,9 +101,9 @@ module.exports = React.createClass({
             React.DOM.hr(null),
             React.DOM.div(
                 {
-                    className: "field-description"
+                    className: "margin-sep"
                 },
-                this.props.fielddescription || " No description"
+                this.state.description
             ),
             React.DOM.div(
                 {
@@ -54,9 +114,9 @@ module.exports = React.createClass({
             React.DOM.hr(null),
             React.DOM.div(
                 {
-                    className: "field-values"
+                    className: "margin-sep"
                 },
-                this.props.fielddvalue || " No value description"
+                this.state.values
             )
         );
     }

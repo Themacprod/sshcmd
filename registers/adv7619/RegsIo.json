@@ -7,8 +7,13 @@
 			"size": 6,
 			"description": ["Sets the input video standard mode. Configuration is dependant on ",
 							"PRIM_MODE[3:0]. Setting appropriate mode is important to get Free Run mode ",
-							"working.",
-							"2 - Default value"]
+							"working."],
+			"values": [
+				{
+					"value": 2,
+					"description": "Default value"
+				}
+			]
 		},
 		{
 			"name": "uReserved7_6",
@@ -25,19 +30,44 @@
 			"size": 4,
 			"description": ["A control to selects the primary mode of operation of the decoder. Setting ",
 							"appropriate HDMI mode is important to get FreeRun mode working. To be used ",
-							"with VID_STD[5:0]",
-							"5 - HDMI-Comp",
-							"6 - HDMI-GR"]
+							"with VID_STD[5:0]"],
+			"values": [
+				{
+					"value": 5,
+					"description": "HDMI-Comp"
+				},
+				{
+					"value": 6,
+					"description": "HDMI-GR"
+				}
+			]
 		},
 		{
 			"name": "uVFreq",
 			"size": 3,
-			"description": ["A control to set vertical frequency.",
-							"0 - 60 Hz",
-							"1 - 50 Hz",
-							"2 - 30 Hz",
-							"3 - 25 Hz",
-							"4 - 24 Hz"]
+			"description": ["A control to set vertical frequency."],
+			"values": [
+				{
+					"value": 0,
+					"description": "60 Hz"
+				},
+				{
+					"value": 1,
+					"description": "50 Hz"
+				},
+				{
+					"value": 2,
+					"description": "30 Hz"
+				},
+				{
+					"value": 3,
+					"description": "25 Hz"
+				},
+				{
+					"value": 4,
+					"description": "24 Hz"
+				}
+			]
 		},
 		{
 			"name": "uReserved7",
@@ -54,9 +84,11 @@
 			"size": 1,
 			"description": ["A control to disable the data saturator that limits the output range ",
 							"independently of OP_656_RANGE. This bit is used to support extended data range ",
-							"modes.",
-							"0 - Data saturator enabled or disabled according to OP_656_RANGE setting.",
-							"1 - Reverses OP_656_RANGE decision to enable or disable the data saturator"]
+							"modes."],
+			"values": [
+				"0 - Data saturator enabled or disabled according to OP_656_RANGE setting.",
+				"1 - Reverses OP_656_RANGE decision to enable or disable the data saturator"
+			]
 		},
 		{
 			"name": "uRgbOut",
