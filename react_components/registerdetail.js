@@ -39,16 +39,7 @@ module.exports = React.createClass({
             this.setState({
                 values: tmp
             });
-        } else {
-            this.setState({
-                values: "No value description"
-            });
-        }
-    },
-    handleClick: function(bitIndex) {
-        this.listOfValue(bitIndex);
-        var index = this.getDataIndex(bitIndex);
-        if (index >= 0) {
+
             this.setState({
                 description: _.map(this.props.detail.data[index].description, function(msg) {
                     return msg;
@@ -56,9 +47,13 @@ module.exports = React.createClass({
             });
         } else {
             this.setState({
+                values: "No value description",
                 description: "No description"
             });
         }
+    },
+    handleClick: function(bitIndex) {
+        this.listOfValue(bitIndex);
 	},
     getInitialState: function() {
         return {
