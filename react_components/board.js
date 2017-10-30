@@ -42,9 +42,7 @@ module.exports = React.createClass({
                 role: "alert"
             }, this.props.params.ip),
             React.DOM.div(
-                {
-                    className: "decoders"
-                },
+                null,
                 React.createElement(boardsystem, {
                     title: "Input #1",
                     deviceName: "ADV7619",
