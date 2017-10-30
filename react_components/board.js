@@ -38,7 +38,7 @@ module.exports = React.createClass({
         return React.DOM.div(
             null,
             React.DOM.div({
-                className: "alert " + this.state.alertState,
+                className: "alert " + this.state.alertState + " text-center",
                 role: "alert"
             }, this.props.params.ip),
             React.DOM.div(

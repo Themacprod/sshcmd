@@ -47,7 +47,7 @@ module.exports = React.createClass({
                 null,
                 React.DOM.th(
                     {
-                        className: "offset",
+                        className: "text-center",
                         scope: "row"
                     },
                     this.toHexadecimal(this.props.offset)
@@ -58,7 +58,7 @@ module.exports = React.createClass({
                 ),
                 React.DOM.td(
                     {
-                        className: "value"
+                        className: "text-center"
                     },
                     this.state.value
                 )

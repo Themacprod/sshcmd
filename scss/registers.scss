@@ -2,14 +2,6 @@
 	display: inline-block;
 	width: 45%;
 
-	.offset {
-		text-align: center;
-	}
-
-	.value {
-		text-align: center;
-	}
-
 	.table {
 		font-size: small;
 		cursor: pointer;
@@ -19,7 +11,7 @@
 		transition: visibility 0s 1.5s, opacity 1.5s linear;
 	}
 
-	.item-fadeout{
+	.item-fadeout {
 		background-color: $color-green-background;
 		transition: visibility 0s 1.5s, opacity 1.5s linear;
 	}
@@ -32,53 +24,36 @@
 	margin: 2.5%;
 	position: fixed;
 
-	.registername{
+	.registername {
 		display: inline-block;
 		width: 50%;
-		font-weight: bold;
 	}
 
-	.resetvalue{
+	.resetvalue {
 		display: inline-block;
 		width: 50%;
-		text-align: right;
-		font-style: italic;
 	}
 
-	.field-description-title{
-		font-weight: bold;
-	}
-
-	.field-description{
+	.field-description {
 		margin-bottom: 20px;
 	}
 
-	.field-values-title{
-		font-weight: bold;
-	}
-
-	.field-values{
+	.field-values {
 		margin-bottom: 20px;
 	}
 
-	.field-detail-container{
-		text-align: center;
-	}
-
-	.field-detail-column{
+	.field-detail-column {
 		width: 35px;
 		height: 250px;
-		margin: 0px;
+		margin: 0;
 		display: inline-block;
 	}
 
-	.field-detail-bit-index{
-		text-align: center;
-		font-weight: bold;
+	.field-detail-bit-index {
 		border: 1px solid black;
 	}
 
-	.field-detail-bit-detail{
+	.field-detail-bit-detail {
 		border: 1px solid black;
 		transform: rotate(90deg);
 		transform-origin: bottom left;

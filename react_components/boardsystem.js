@@ -10,7 +10,7 @@ module.exports = React.createClass({
             null,
             React.DOM.div(
                 {
-                    className: "boardsystem card"
+                    className: "card text-center boardsystem"
                 },
                 React.DOM.a(
                     {

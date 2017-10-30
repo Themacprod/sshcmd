@@ -17,13 +17,13 @@ module.exports = React.createClass({
                 },
                 React.DOM.div(
                     {
-                        className: "registername"
+                        className: "registername text-bold"
                     },
                     "Register - " + (this.props.detail.name || "REGISTER_NAME")
                 ),
                 React.DOM.div(
                     {
-                        className: "resetvalue"
+                        className: "resetvalue text-italic text-right"
                     },
                     "(reset value = " + (this.props.detail.resetvalue || "0x00") + ")"
                 )
@@ -34,7 +34,7 @@ module.exports = React.createClass({
             }),
             React.DOM.div(
                 {
-                    className: "field-description-title"
+                    className: "text-bold"
                 },
                 "Description"
             ),
@@ -47,7 +47,7 @@ module.exports = React.createClass({
             ),
             React.DOM.div(
                 {
-                    className: "field-values-title"
+                    className: "text-bold"
                 },
                 "List of value"
             ),

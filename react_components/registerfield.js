@@ -14,7 +14,7 @@ module.exports = React.createClass({
                     className: "field-detail-column",
                     key: i
                 }, React.DOM.div({
-                    className: "field-detail-bit-index"
+                    className: "field-detail-bit-index text-center text-bold"
                 }, i),
             React.DOM.div({
                 className: "field-detail-bit-detail"
@@ -24,7 +24,7 @@ module.exports = React.createClass({
 
         return React.DOM.div(
             {
-                className: "field-detail-container"
+                className: "text-center"
             },
             data
         );
