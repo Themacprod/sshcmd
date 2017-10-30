@@ -86,8 +86,14 @@
 							"independently of OP_656_RANGE. This bit is used to support extended data range ",
 							"modes."],
 			"values": [
-				"0 - Data saturator enabled or disabled according to OP_656_RANGE setting.",
-				"1 - Reverses OP_656_RANGE decision to enable or disable the data saturator"
+				{
+					"value": 0,
+					"description": "Data saturator enabled or disabled according to OP_656_RANGE setting."
+				},
+				{
+					"value": 1,
+					"description": "Reverses OP_656_RANGE decision to enable or disable the data saturator."
+				}
 			]
 		},
 		{
@@ -95,17 +101,33 @@
 			"size": 1,
 			"description": ["A control to select output color space and the correct digital blank level and ",
 							"offsets on the RGB or YPrPb outputs. It is used in conjunction with the ",
-							"INP_COLOR_SPACE[3:0] and ALT_GAMMA bits to select the applied CSC.",
-							"0 - YPbPr color space output",
-							"1 - RGB color space output"]
+							"INP_COLOR_SPACE[3:0] and ALT_GAMMA bits to select the applied CSC."],
+			"values": [
+				{
+					"value": 0,
+					"description": "YPbPr color space output."
+				},
+				{
+					"value": 1,
+					"description": "RGB color space output."
+				}
+			]
 		},
 		{
 			"name": "uOp656Range",
 			"size": 2,
 			"description": ["A control to set the output range of the digital data. It also automatically",
-							"the data saturator setting.",
-							"0 - Enables full output range (0 to 255)",
-							"1 - Enables limited output range (16 to 235)"]
+							"the data saturator setting."],
+			"values": [
+				{
+					"value": 0,
+					"description": "Enables full output range (0 to 255)."
+				},
+				{
+					"value": 1,
+					"description": "Enables limited output range (16 to 235)."
+				}
+			]
 		},
 		{
 			"name": "uAltGamma",
@@ -113,10 +135,17 @@
 			"description": ["A control to set the colorspace of the input video. To be used in conjunction",
 							"with ALT_GAMMA and RGB_OUT to configure the color space converter. A value of",
 							"4'b1111 selects automatic setting of the input color space base on the primary",
-							"mode and video standard settings. Settings 1000 to 1110 are undefined.",
-							"0 - No conversion",
-							"1 - YUV601 to YUV709 conversion applied if input is YUV601. YUV709 to YUV601",
-							"conversion applied if input is YUV709"]
+							"mode and video standard settings. Settings 1000 to 1110 are undefined."],
+			"values": [
+				{
+					"value": 0,
+					"description": "No conversion."
+				},
+				{
+					"value": 1,
+					"description": "YUV601 to YUV709 conversion applied if input is YUV601. YUV709 to YUV601 conversion applied if input is YUV709."
+				}
+			]
 		},
 		{
 			"name": "uInpColorSpace",
@@ -124,16 +153,49 @@
 			"description": ["A control to set the colorspace of the input video. To be used in conjunction",
 							"with ALT_GAMMA and RGB_OUT to configure the color space converter. A value of ",
 							"4'b1111 selects automatic setting of the input color space base on the primary",
-							"mode and video standard settings. Settings 1000 to 1110 are undefined.",
-							"0 - Forces RGB (range 16 to 235) input",
-							"1 - Forces RGB (range 0 to 255) input",
-							"2 - Forces YCrCb input (601 color space) (range 16 to 235)",
-							"3 - Forces YCrCb input (709 color space) (range 16 to 235)",
-							"4 - Forces XVYCC 601",
-							"5 - Forces XVYCC 709",
-							"6 - Forces YCrCb input (601 color space) (range 0 to 255)",
-							"7 - Forces YCrCb input (709 color space) (range 0 to 255)",
-							"15 - Input color space depends on color space reported by HDMI block."]
+							"mode and video standard settings. Settings 1000 to 1110 are undefined."],
+			"values": [
+				{
+					"value": 0,
+					"description": "Forces RGB (range 16 to 235) input."
+				},
+				{
+					"value": 1,
+					"description": "Forces RGB (range 0 to 255) input."
+				},
+				{
+					"value": 2,
+					"description": "Forces YCrCb input (601 color space) (range 16 to 235)."
+				},
+				{
+					"value": 3,
+					"description": "Forces YCrCb input (709 color space) (range 16 to 235)."
+				},
+				{
+					"value": 4,
+					"description": "Forces XVYCC 601."
+				},
+				{
+					"value": 5,
+					"description": "Forces XVYCC 709."
+				},
+				{
+					"value": 5,
+					"description": "Forces YCrCb input (601 color space) (range 0 to 255)."
+				},
+				{
+					"value": 6,
+					"description": "Forces YCrCb input (601 color space) (range 0 to 255)."
+				},
+				{
+					"value": 7,
+					"description": "Forces YCrCb input (709 color space) (range 0 to 255)."
+				},
+				{
+					"value": 15,
+					"description": "Input color space depends on color space reported by HDMI block."
+				}
+			]
 		}
 	]
 }, {
