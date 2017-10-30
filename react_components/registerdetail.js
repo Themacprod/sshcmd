@@ -29,6 +29,7 @@ module.exports = React.createClass({
             var tmp = _.map(this.props.detail.data[index].values, function(value, key) {
                 return React.DOM.div(
                     {
+                        className: "values",
                         key: key
                     },
                     value.value + " : " + value.description

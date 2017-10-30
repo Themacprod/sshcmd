@@ -49,6 +49,7 @@ $field-description: 200px;
 	}
 
 	.field-detail-bit-detail {
+		cursor: pointer;
 		transform: rotate(90deg);
 		transform-origin: bottom left;
 		height: $field-width;
@@ -59,5 +60,9 @@ $field-description: 200px;
 
 	.margin-sep {
 		margin-bottom: 20px;
+	}
+
+	.values {
+		cursor: pointer;
 	}
 }
