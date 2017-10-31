@@ -5,6 +5,7 @@
 		{
 			"name": "uVidStd",
 			"size": 6,
+			"range": [0,5],
 			"description": ["Sets the input video standard mode. Configuration is dependant on ",
 							"PRIM_MODE[3:0]. Setting appropriate mode is important to get Free Run mode ",
 							"working."],
@@ -18,6 +19,7 @@
 		{
 			"name": "uReserved7_6",
 			"size": 2,
+			"range": [6,7],
 			"description": ["Reserved"]
 		}
 	]
@@ -28,6 +30,7 @@
 		{
 			"name": "uPrimMode",
 			"size": 4,
+			"range": [0,3],
 			"description": ["A control to selects the primary mode of operation of the decoder. Setting ",
 							"appropriate HDMI mode is important to get FreeRun mode working. To be used ",
 							"with VID_STD[5:0]"],
@@ -45,6 +48,7 @@
 		{
 			"name": "uVFreq",
 			"size": 3,
+			"range": [4,6],
 			"description": ["A control to set vertical frequency."],
 			"values": [
 				{
@@ -72,6 +76,7 @@
 		{
 			"name": "uReserved7",
 			"size": 1,
+			"range": [7],
 			"description": ["Reserved"]
 		}
 	]
@@ -82,6 +87,7 @@
 		{
 			"name": "uAltDataSat",
 			"size": 1,
+			"range": [0],
 			"description": ["A control to disable the data saturator that limits the output range ",
 							"independently of OP_656_RANGE. This bit is used to support extended data range ",
 							"modes."],
@@ -99,6 +105,7 @@
 		{
 			"name": "uRgbOut",
 			"size": 1,
+			"range": [1],
 			"description": ["A control to select output color space and the correct digital blank level and ",
 							"offsets on the RGB or YPrPb outputs. It is used in conjunction with the ",
 							"INP_COLOR_SPACE[3:0] and ALT_GAMMA bits to select the applied CSC."],
@@ -115,7 +122,8 @@
 		},
 		{
 			"name": "uOp656Range",
-			"size": 2,
+			"size": 1,
+			"range": [2],
 			"description": ["A control to set the output range of the digital data. It also automatically",
 							"the data saturator setting."],
 			"values": [
@@ -132,6 +140,7 @@
 		{
 			"name": "uAltGamma",
 			"size": 1,
+			"range": [3],
 			"description": ["A control to set the colorspace of the input video. To be used in conjunction",
 							"with ALT_GAMMA and RGB_OUT to configure the color space converter. A value of",
 							"4'b1111 selects automatic setting of the input color space base on the primary",
@@ -150,6 +159,7 @@
 		{
 			"name": "uInpColorSpace",
 			"size": 4,
+			"range": [4,7],
 			"description": ["A control to set the colorspace of the input video. To be used in conjunction",
 							"with ALT_GAMMA and RGB_OUT to configure the color space converter. A value of ",
 							"4'b1111 selects automatic setting of the input color space base on the primary",
