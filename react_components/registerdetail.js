@@ -13,11 +13,11 @@ module.exports = React.createClass({
             // Parse all register details.
             var startindex = 0;
             for (var i = 0; i < this.props.detail.data.length; i += 1) {
-                if ((bitIndex >= startindex) && (bitIndex <= (startindex + this.props.detail.data.length))) {
+                if ((bitIndex >= startindex) && (bitIndex < (startindex + this.props.detail.data[i].size))) {
                     return i;
                 }
 
-                startindex += this.props.detail.data.length;
+                startindex += this.props.detail.data[i].size;
             }
         }
 
