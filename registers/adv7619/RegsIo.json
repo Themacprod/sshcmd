@@ -428,23 +428,430 @@
 }, {
     "offset": 5,
     "name": "ADV7619_IO_REG_05",
-    "data": []
+    "data": [{
+            "name": "uReserved7_5",
+            "size": 3,
+            "description": [
+                "Reserved."
+            ]
+        },
+		{
+            "name": "uFOutSel",
+            "size": 1,
+            "description": [
+                "A control to select DE signal or Field signal to be output on the FIELD/DE pin."
+            ],
+            "values": [{
+                    "value": 0,
+                    "description": "DE output selected."
+                },
+                {
+                    "value": 1,
+                    "description": "Field output selected."
+                }
+            ]
+        },
+		{
+			"name": "uDataBlankEn",
+			"size": 1,
+			"description": [
+				"A control to blank data during video blanking sections."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Do not blank data during horizontal and vertical blanking periods."
+				},
+				{
+					"value": 1,
+					"description": "Blank data during horizontal and vertical blanking periods."
+				}
+			]
+		},
+		{
+			"name": "uAvcodeInsertEn",
+			"size": 1,
+			"description": [
+				"A control to select AV code insertion into the data stream."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Does not insert AV codes into data stream."
+				},
+				{
+					"value": 1,
+					"description": "Inserts AV codes into data stream."
+				}
+			]
+		},
+		{
+			"name": "uReplAvCode",
+			"size": 1,
+			"description": [
+				"A control to select the duplication of the AV codes and insertion on all data channels of ",
+				"the output data stream."
+			],
+			"values": [{
+					"value": 0,
+					"description": [
+						"Outputs complete SAV/EAV codes on all Channels, Channel A, Channel B and Channel C."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Spreads AV code across the three channels. Channel B and Channel C contain the ",
+						"first two ten bit words, 0x3FF and 0x000. Channel A contains the final two ten bit",
+						"words 0x00 and 0xXYZ."
+					]
+				}
+			]
+		},
+		{
+			"name": "uOpSwapCbCr",
+			"size": 1,
+			"description": [
+				"A controls the swapping of Cr and Cb data on the pixel buses."
+			],
+			"values": [{
+					"value": 0,
+					"description": [
+						"Outputs Cr and Cb as per OP_FORMAT_SEL."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Inverts the order of Cb and Cr in the interleaved data stream."
+					]
+				}
+			]
+		}
+	]
 }, {
     "offset": 6,
     "name": "ADV7619_IO_REG_06",
-    "data": []
+    "data": [
+		{
+			"name": "uVsOutSel",
+			"size": 1,
+			"description": [
+				"A control to select VSync signal or Field signal to be output on VS/Field pin."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Field output on VS/FIELD pin."
+				},
+				{
+					"value": 1,
+					"description": "VSync output on VS/FIELD pin."
+				}
+			]
+		},
+		{
+            "name": "uReserved6_4",
+            "size": 3,
+            "description": [
+                "Reserved."
+            ]
+        },
+		{
+			"name": "uInvFPol",
+			"size": 1,
+			"description": [
+				"A control to select the polarity of FIELD/DE signal."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Negative FIELD/DE polarity."
+				},
+				{
+					"value": 1,
+					"description": "Positive FIELD/DE polarity."
+				}
+			]
+		},
+		{
+			"name": "uInvVsPol",
+			"size": 1,
+			"description": [
+				"A control to select the polarity of VS/FIELD signal."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Negative polarity VS/FIELD."
+				},
+				{
+					"value": 1,
+					"description": "Positive polarity VS/FIELD."
+				}
+			]
+		},
+		{
+			"name": "uInvHsPol",
+			"size": 1,
+			"description": [
+				"A control to select the polarity of HS signal."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Negative polarity HS."
+				},
+				{
+					"value": 1,
+					"description": "Positive polarity HS."
+				}
+			]
+		},
+		{
+			"name": "uInvLlcPol",
+			"size": 1,
+			"description": [
+				"A control to select the polarity of the LLC."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Does not invert LLC."
+				},
+				{
+					"value": 1,
+					"description": "Inverts LLC."
+				}
+			]
+		}
+	]
 }, {
     "offset": 11,
     "name": "ADV7619_IO_REG_0B",
-    "data": []
+    "data": [
+		{
+			"name": "uReserved7_2",
+			"size": 6,
+			"description": [
+				"Reserved."
+			]
+		},
+		{
+			"name": "uCorePdn",
+			"size": 1,
+			"description": [
+				"A power-down control for the DPP, CP core and digital sections of the HDMI core."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Powers up CP and digital sections of HDMI block."
+				},
+				{
+					"value": 1,
+					"description": "Powers down the CP and digital section of HDMI block."
+				}
+			]
+		},
+		{
+			"name": "uXtalPdn",
+			"size": 1,
+			"description": [
+				"A power-down control for the XTAL in the digital blocks."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Powers up XTAL buffer to the digital core."
+				},
+				{
+					"value": 1,
+					"description": "Powers down XTAL buffer to the digital core."
+				}
+			]
+		}
+	]
 }, {
     "offset": 12,
     "name": "ADV7619_IO_REG_0C",
-    "data": []
+    "data": [
+		{
+			"name": "uReserved7_6",
+			"size": 2,
+			"description": [
+				"Reserved."
+			]
+		},
+		{
+			"name": "uPowerDown",
+			"size": 1,
+			"description": [
+				"A control to enable power-down mode. This is the main I2C power-down control."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Chip is operational."
+				},
+				{
+					"value": 1,
+					"description": "Enables chip power down."
+				}
+			]
+		},
+		{
+			"name": "uReserved4_3",
+			"size": 2,
+			"description": [
+				"Reserved."
+			]
+		},
+		{
+			"name": "uCpPwrdn",
+			"size": 1,
+			"description": [
+				"A power-down control for the CP core."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Powers up the clock to the CP core."
+				},
+				{
+					"value": 1,
+					"description": "Powers down the clock to the CP core. HDMI block will not be affected by this bit."
+				}
+			]
+		},
+		{
+			"name": "uReserved1",
+			"size": 1,
+			"description": [
+				"Reserved."
+			]
+		},
+		{
+			"name": "uPadsPdn",
+			"size": 1,
+			"description": [
+				"A power down control for pads of the digital output pins. When enabled pads are tristated ",
+				"and the input path is disabled. This control applies to the DE, HS, VS, INT, LLC pads and ",
+				"the pixel pads P0 to P47."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Powers up the pads of the digital output pins."
+				},
+				{
+					"value": 1,
+					"description": "Powers down the pads of the digital output pins."
+				}
+			]
+		}
+	]
 }, {
     "offset": 18,
     "name": "ADV7619_IO_REG_12",
-    "data": []
+    "data": [
+		{
+			"name": "uReserved7_5",
+			"size": 3,
+			"description": [
+				"Reserved."
+			]
+		},
+		{
+			"name": "uCpStdiInterlaced",
+			"size": 1,
+			"description": [
+				"A readback to indicate the interlaced status of the currently selected STDI block applied ",
+				"to the CP core."
+			],
+			"values": [{
+					"value": 0,
+					"description": "Selected STDI has detected a progressive input."
+				},
+				{
+					"value": 1,
+					"description": "Selected STDI has detected a interlaced input."
+				}
+			]
+		},
+		{
+			"name": "uCpInterlaced",
+			"size": 1,
+			"description": [
+				"A readback to indicate the interlaced status of the CP core based on configuration of ",
+				"Video standard and INTERLACED bit in the CP map."
+			],
+			"values": [{
+					"value": 0,
+					"description": "CP core is processing the input as a progressive input."
+				},
+				{
+					"value": 1,
+					"description": "CP core is processing the input as a interlaced input."
+				}
+			]
+		},
+		{
+			"name": "uCpProgParmForInt",
+			"size": 1,
+			"description": [
+				"A readback to indicate the if the CP core is processing for progressive standard while are ",
+				"the Video standard and the INTERLACED bit in the CP Map are configured for an interlaced ",
+				"standard."
+			],
+			"values": [{
+					"value": 0,
+					"description": [
+						"CP core processing for a progressive standard while Video standard and the ",
+						"INTERLACED bits are configured for an interlaced standard."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"CP core processing for a progressive standard while Video standard and the ",
+						"INTERLACED bits are configured for an progressive standard"
+					]
+				}
+			]
+		},
+		{
+			"name": "uCpForceInterlaced",
+			"size": 1,
+			"description": [
+				"A readback to indicate forced-interlaced status of the CP core based on configuration of ",
+				"Video standard and INTERLACED bit in the CP Map.."
+			],
+			"values": [{
+					"value": 0,
+					"description": [
+						"Input is detected as interlaced and the CP is programmed in an interlaced mode via ",
+						"VID_STD[5:0]."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Input is detected as progressive and the CP is programmed in an interlaced mode"
+					]
+				}
+			]
+		},
+		{
+			"name": "uCpNonStdVideo",
+			"size": 1,
+			"description": [
+				"A control to indicate that the CP core has detected a non standard number of lines on the ",
+				"incoming video compared to the standard specified by VID_STD[5:0]"
+			],
+			"values": [{
+					"value": 0,
+					"description": [
+						"Input has same number of lines as that of the format programmed."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Input has different number of lines to that of format programmed"
+					]
+				}
+			]
+		}
+	]
 }, {
     "offset": 20,
     "name": "ADV7619_IO_REG_14",
