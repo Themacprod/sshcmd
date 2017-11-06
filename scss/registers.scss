@@ -37,9 +37,8 @@ $field-description: 200px;
 		width: 50%;
 	}
 
-	.field-detail-column {
+	.field-detail-bit-index {
 		width: $field-width;
-		height: $field-height;
 		margin: 0;
 		display: inline-block;
 	}
@@ -48,13 +47,22 @@ $field-description: 200px;
 		border: 1px solid black;
 	}
 
+	.field-detail-bit-detail-container {
+		height: $field-description;
+	}
+
+	.field-detail-bit-detail1 {
+		margin: 0;
+		display: inline-block;
+		height: 100%;
+	}
+
 	.field-detail-bit-detail {
 		cursor: pointer;
 		transform: rotate(90deg);
 		transform-origin: bottom left;
-		height: $field-width;
 		width: $field-description;
-		position: absolute;
+		height: $field-width;
 		margin-top: -$field-width;
 	}
 
