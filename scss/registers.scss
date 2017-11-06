@@ -52,13 +52,14 @@ $field-description: 200px;
 	}
 
 	.field-detail-bit-detail1 {
+		cursor: pointer;
 		margin: 0;
 		display: inline-block;
 		height: 100%;
+
 	}
 
 	.field-detail-bit-detail {
-		cursor: pointer;
 		transform: rotate(90deg);
 		transform-origin: bottom left;
 		width: $field-description;

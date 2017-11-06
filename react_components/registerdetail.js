@@ -7,24 +7,7 @@ var React = require("react"),
     registerfield = require("./registerfield");
 
 module.exports = React.createClass({
-    getDataIndex: function(bitIndex) {
-        // Check if current register has detail data.
-        if (this.props.detail.data) {
-            // Parse all register details.
-            var startindex = 0;
-            for (var i = 0; i < this.props.detail.data.length; i += 1) {
-                if ((bitIndex >= startindex) && (bitIndex < (startindex + this.props.detail.data[i].size))) {
-                    return i;
-                }
-
-                startindex += this.props.detail.data[i].size;
-            }
-        }
-
-        return -1;
-    },
-    listOfValue: function(bitIndex) {
-        var index = this.getDataIndex(bitIndex);
+    listOfValue: function(index) {
         if (index >= 0) {
             var tmp = _.map(this.props.detail.data[index].values, function(value, key) {
                 return React.DOM.div(

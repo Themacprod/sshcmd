@@ -12,6 +12,7 @@ module.exports = React.createClass({
                 {
                     className: "field-detail-bit-detail1 table-bordered",
                     key: index,
+                    onClick: this.handleClick.bind(this, index),
                     style: {
                         width: (35 * field.size) + "px"
                     }
@@ -20,7 +21,7 @@ module.exports = React.createClass({
                     className: "field-detail-bit-detail"
                 }, field.name)
             );
-        });
+        }.bind(this));
 
         this.setState({
             value: tmp
