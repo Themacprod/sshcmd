@@ -855,385 +855,2349 @@
 }, {
     "offset": 20,
     "name": "ADV7619_IO_REG_14",
-    "data": []
+    "data": [{
+        "name": "uReserved7_6",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uDrStr",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uDrStrClk",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uDrStrSync",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 21,
     "name": "ADV7619_IO_REG_15",
-    "data": []
+    "data": [{
+        "name": "uReserved7_5",
+        "size": "3",
+        "description": "Description to do"
+    }, {
+        "name": "uTriAudio",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTriSyncs",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTriLlc",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTriPix",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 22,
     "name": "ADV7619_IO_REG_16",
-    "data": []
+    "data": [{
+        "name": "uPllDivManEn",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_5",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uPllDivRatio",
+        "size": "5",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 23,
     "name": "ADV7619_IO_REG_17",
-    "data": []
+    "data": [{
+        "name": "uPllDivRatio",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 25,
     "name": "ADV7619_LLC_DLL",
-    "data": []
+    "data": [{
+        "name": "uLlcDllEn",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_5",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uLlcDllPhase",
+        "size": "5",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 27,
     "name": "ADV7619_ALSB_CONTROL",
-    "data": []
+    "data": [{
+        "name": "uReserved7_1",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uSampleAlsb",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 32,
     "name": "ADV7619_HPA_REG1",
-    "data": []
+    "data": [{
+        "name": "uHpaManValueA",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHpaManValueB",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved5_4",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uHpaTristateA",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHpaTristateB",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved1_0",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 33,
     "name": "ADV7619_HPA_REG2",
-    "data": []
+    "data": [{
+        "name": "uReserved7_4",
+        "size": "4",
+        "description": "Description to do"
+    }, {
+        "name": "uHpaStatusPortA",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHpaStatusPortB",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved1_0",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 48,
     "name": "ADV7619_IO_REG_30",
-    "data": []
+    "data": [{
+        "name": "uReserved7_5",
+        "size": "3",
+        "description": "Description to do"
+    }, {
+        "name": "uPixbusMsbToLsbReorder",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved3_0",
+        "size": "4",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 51,
     "name": "ADV7619_IO_REG_33",
-    "data": []
+    "data": [{
+        "name": "uReserved7",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uLlcDllMux",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved5_0",
+        "size": "6",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 63,
     "name": "ADV7619_INT_STATUS",
-    "data": []
+    "data": [{
+        "name": "uReserved7_2",
+        "size": "6",
+        "description": "Description to do"
+    }, {
+        "name": "uIntrqRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIntrq2Raw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 64,
     "name": "ADV7619_INT1_CONFIGURATION",
-    "data": []
+    "data": [{
+        "name": "uIntrqDurSel",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved5",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uStoreUnmaskedIrqs",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uEnUmaskRawIntrq",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uMpuStimIntrq",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIntrqOpSel",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 65,
     "name": "ADV7619_INT2_CONFIGURATION",
-    "data": []
+    "data": [{
+        "name": "uIntrq2DurSel",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockUnlockEdgeSel",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDataValidEdgeSel",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uEnUmaskRawIntrq2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uInt2Pol",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIntrq2MuxSel",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 66,
     "name": "ADV7619_IO_REG_42",
-    "data": []
+    "data": [{
+        "name": "uReserved7_5",
+        "size": "3",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDataValidRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved1_0",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 67,
     "name": "ADV7619_IO_REG_43",
-    "data": []
+    "data": [{
+        "name": "uReserved7_5",
+        "size": "3",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDataValidSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved1_0",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 68,
     "name": "ADV7619_IO_REG_44",
-    "data": []
+    "data": [{
+        "name": "uReserved7_5",
+        "size": "3",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDataValidClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved1_0",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 69,
     "name": "ADV7619_IO_REG_45",
-    "data": []
+    "data": [{
+        "name": "uReserved7_5",
+        "size": "3",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDataValidMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved1_0",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 70,
     "name": "ADV7619_IO_REG_46",
-    "data": []
+    "data": [{
+        "name": "uReserved7_5",
+        "size": "3",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDataValidMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved1_0",
+        "size": "2",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 71,
     "name": "ADV7619_IO_REG_47",
-    "data": []
+    "data": [{
+        "name": "uMpuStimIntrqRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_0",
+        "size": "7",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 72,
     "name": "ADV7619_IO_REG_48",
-    "data": []
+    "data": [{
+        "name": "uMpuStimIntrqSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_0",
+        "size": "7",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 73,
     "name": "ADV7619_IO_REG_49",
-    "data": []
+    "data": [{
+        "name": "uMpuStimIntrqClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_0",
+        "size": "7",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 74,
     "name": "ADV7619_IO_REG_4A",
-    "data": []
+    "data": [{
+        "name": "uMpuStimIntrqMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_0",
+        "size": "7",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 75,
     "name": "ADV7619_IO_REG_4B",
-    "data": []
+    "data": [{
+        "name": "uMpuStimIntrqMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_0",
+        "size": "7",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 91,
     "name": "ADV7619_IO_REG_5B",
-    "data": []
+    "data": [{
+        "name": "uReserved7_4",
+        "size": "4",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockCh1Raw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockCh1Raw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDvalidCh1Raw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 92,
     "name": "ADV7619_IO_REG_5C",
-    "data": []
+    "data": [{
+        "name": "uReserved7_4",
+        "size": "4",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockCh1St",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockCh1St",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDvalidCh1St",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 93,
     "name": "ADV7619_IO_REG_5D",
-    "data": []
+    "data": [{
+        "name": "uReserved7_4",
+        "size": "4",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockCh1Clr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockCh1Clr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDvalidCh1Clr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 94,
     "name": "ADV7619_IO_REG_5E",
-    "data": []
+    "data": [{
+        "name": "uReserved7_4",
+        "size": "4",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockCh1Mb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockCh1Mb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDvalidCh1Mb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 95,
     "name": "ADV7619_IO_REG_5F",
-    "data": []
+    "data": [{
+        "name": "uReserved7_4",
+        "size": "4",
+        "description": "Description to do"
+    }, {
+        "name": "uCpLockCh1Mb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCpUnlockCh1Mb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uStdiDvalidCh1Mb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 96,
     "name": "ADV7619_HDMI_LVL_RAWSTATUS1",
-    "data": []
+    "data": [{
+        "name": "uIsrc2PcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIsrc1PcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAcpPcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uMsInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 97,
     "name": "ADV7619_HDMI_LVL_INTSTATUS1",
-    "data": []
+    "data": [{
+        "name": "uIsrc2PcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIsrc1PcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAcpPcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uMsInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 98,
     "name": "ADV7619_HDMI_LVL_INTCLR1",
-    "data": []
+    "data": [{
+        "name": "uIsrc2PcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIsrc1PcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAcpPcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uMsInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 99,
     "name": "ADV7619_HDMI_LVL_INT2MASKB1",
-    "data": []
+    "data": [{
+        "name": "uIsrc2PcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIsrc1PcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAcpPcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uMsInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 100,
     "name": "ADV7619_HDMI_LVL_INTMASKB1",
-    "data": []
+    "data": [{
+        "name": "uIsrc2PcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uIsrc1PcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAcpPcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uMsInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 101,
     "name": "ADV7619_HDMI_LVL_RAWSTATUS2",
-    "data": []
+    "data": [{
+        "name": "uCsDataValidRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uInternalMuteRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAvMuteRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioChMdRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiModeRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGenCtlPcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioCPcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGamutMdataRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 102,
     "name": "ADV7619_HDMI_LVL_INTSTATUS2",
-    "data": []
+    "data": [{
+        "name": "uCsDataValidSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uInternalMuteSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAvMuteSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioChMdSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiModeSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGenCtlPcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioCPcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGamutMdataSt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 103,
     "name": "ADV7619_HDMI_LVL_INTCLR2",
-    "data": []
+    "data": [{
+        "name": "uCsDataValidClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uInternalMuteClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAvMuteClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioChMdClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiModeClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGenCtlPcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioCPcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGamutMdataClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 104,
     "name": "ADV7619_HDMI_LVL_INT2MASKB2",
-    "data": []
+    "data": [{
+        "name": "uCsDataValidMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uInternalMuteMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAvMuteMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioChMdMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiModeMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGenCtlPcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioCPcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGamutMdataMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 105,
     "name": "ADV7619_HDMI_LVL_INTMASKB2",
-    "data": []
+    "data": [{
+        "name": "uCsDataValidMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uInternalMuteMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAvMuteMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioChMdMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiModeMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGenCtlPcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioCPcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uGamutMdataMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 106,
     "name": "ADV7619_HDMI_LVL_RAWSTATUS3",
-    "data": []
+    "data": [{
+        "name": "uCableDetBRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckARaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckBRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkARaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkBRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVideo3dRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVLockedRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uDeRegenLckRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 107,
     "name": "ADV7619_HDMI_LVL_INTSTATUS3",
-    "data": []
+    "data": [{
+        "name": "uCableDetBSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckASt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckBSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkASt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkBSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVideo3dSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVLockedSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uDeRegenLckSt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 108,
     "name": "ADV7619_HDMI_LVL_INTCLR3",
-    "data": []
+    "data": [{
+        "name": "uCableDetBClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckAClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckBClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkAClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkBClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVideo3dClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVLockedClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uDeRegenLckClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 109,
     "name": "ADV7619_HDMI_LVL_INT2MASKB3",
-    "data": []
+    "data": [{
+        "name": "uCableDetBMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckAMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckBMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkAMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkBMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVideo3dMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVLockedMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uDeRegenLckMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 110,
     "name": "ADV7619_HDMI_LVL_INTMASKB3",
-    "data": []
+    "data": [{
+        "name": "uCableDetBMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckAMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdspllLckBMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkAMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uTmdsClkBMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVideo3dMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVLockedMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uDeRegenLckMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 111,
     "name": "ADV7619_HDMI_LVL_RAWSTATUS4",
-    "data": []
+    "data": [{
+        "name": "uReserved7_3",
+        "size": "5",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptARaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptBRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCableDetARaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 112,
     "name": "ADV7619_HDMI_LVL_INTSTATUS4",
-    "data": []
+    "data": [{
+        "name": "uReserved7_3",
+        "size": "5",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptASt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptBSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCableDetASt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 113,
     "name": "ADV7619_HDMI_LVL_INTCLR4",
-    "data": []
+    "data": [{
+        "name": "uReserved7_3",
+        "size": "5",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptAClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptBClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCableDetAClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 114,
     "name": "ADV7619_HDMI_LVL_INT2MASKB4",
-    "data": []
+    "data": [{
+        "name": "uReserved7_3",
+        "size": "5",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptAMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptBMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCableDetAMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 115,
     "name": "ADV7619_HDMI_LVL_INTMASKB4",
-    "data": []
+    "data": [{
+        "name": "uReserved7_3",
+        "size": "5",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptAMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uHdmiEncrptBMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCableDetAMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 121,
     "name": "ADV7619_HDMI_EDG_RAWSTATUS1",
-    "data": []
+    "data": [{
+        "name": "uNewIsrc2PcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewIsrc1PcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAcpPcktRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewVsInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewMsInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSpdInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAudioInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAviInfoRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 122,
     "name": "ADV7619_HDMI_EDG_INTSTATUS1",
-    "data": []
+    "data": [{
+        "name": "uNewIsrc2PcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewIsrc1PcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAcpPcktSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewVsInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewMsInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSpdInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAudioInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAviInfoSt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 123,
     "name": "ADV7619_HDMI_EDG_INT_CLR1",
-    "data": []
+    "data": [{
+        "name": "uNewIsrc2PcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewIsrc1PcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAcpPcktClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewVsInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewMsInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSpdInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAudioInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAviInfoClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 124,
     "name": "ADV7619_HDMI_EDG_INT2MASKB1",
-    "data": []
+    "data": [{
+        "name": "uNewIsrc2PcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewIsrc1PcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAcpPcktMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewVsInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewMsInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSpdInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAudioInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAviInfoMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 125,
     "name": "ADV7619_HDMI_EDG_INTMASKB1",
-    "data": []
+    "data": [{
+        "name": "uNewIsrc2PcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewIsrc1PcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAcpPcktMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewVsInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewMsInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSpdInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAudioInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewAviInfoMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 126,
     "name": "ADV7619_HDMI_EDG_RAWSTATUS2",
-    "data": []
+    "data": [{
+        "name": "uFifoNearOvflRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoUnderfloRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoOverfloRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCtsPassThrshRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uChangeNRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uPacketErrorRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioPcktErrRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewGamutMdataRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 127,
     "name": "ADV7619_HDMI_EDG_INTSTATUS2",
-    "data": []
+    "data": [{
+        "name": "uFifoNearOvflSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoUnderfloSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoOverfloSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCtsPassThrshSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uChangeNSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uPacketErrorSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioPcktErrSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewGamutMdataSt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 128,
     "name": "ADV7619_HDMI_EDG_INTCLR2",
-    "data": []
+    "data": [{
+        "name": "uFifoNearOvflClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoUnderfloClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoOverfloClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCtsPassThrshClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uChangeNClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uPacketErrorClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioPcktErrClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewGamutMdataClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 129,
     "name": "ADV7619_HDMI_EDG_INT2MASKB2",
-    "data": []
+    "data": [{
+        "name": "uFifoNearOvflMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoUnderfloMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoOverfloMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCtsPassThrshMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uChangeNMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uPacketErrorMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioPcktErrMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewGamutMdataMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 130,
     "name": "ADV7619_HDMI_EDG_INTMASKB2",
-    "data": []
+    "data": [{
+        "name": "uFifoNearOvflMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoUnderfloMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoOverfloMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCtsPassThrshMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uChangeNMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uPacketErrorMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioPcktErrMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewGamutMdataMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 131,
     "name": "ADV7619_HDMI_EDG_RAWSTATUS3",
-    "data": []
+    "data": [{
+        "name": "uDeepColorChngRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVclkChngRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioModeChngRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uParityErrorRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSampRtRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioFltLineRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewTmdsFrqRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoNearUfloRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 132,
     "name": "ADV7619_HDMI_EDG_STATUS3",
-    "data": []
+    "data": [{
+        "name": "uDeepColorChngSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVclkChngSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioModeChngSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uParityErrorSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSampRtSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioFltLineSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewTmdsFrqSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoNearUfloSt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 133,
     "name": "ADV7619_HDMI_EDG_INTCLR3",
-    "data": []
+    "data": [{
+        "name": "uDeepColorChngClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVclkChngClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioModeChngClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uParityErrorClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSampRtClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioFltLineClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewTmdsFrqClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoNearUfloClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 134,
     "name": "ADV7619_HDMI_EDG_INT2MASKB3",
-    "data": []
+    "data": [{
+        "name": "uDeepColorChngMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVclkChngMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioModeChngMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uParityErrorMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSampRtMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioFltLineMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewTmdsFrqMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoNearUfloMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 135,
     "name": "ADV7619_HDMI_EDG_INTMASKB3",
-    "data": []
+    "data": [{
+        "name": "uDeepColorChngMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVclkChngMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioModeChngMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uParityErrorMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewSampRtMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudioFltLineMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uNewTmdsFrqMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uFifoNearUfloMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 136,
     "name": "ADV7619_HDMI_EDG_RAWSTATUS4",
-    "data": []
+    "data": [{
+        "name": "uMsInfCksErrRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfCksErrRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudInfCksErrRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfCksErrRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredBRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredARaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateBRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateARaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 137,
     "name": "ADV7619_HDMI_EDG_STATUS4",
-    "data": []
+    "data": [{
+        "name": "uMsInfCksErrSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfCksErrSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudInfCksErrSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfCksErrSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredBSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredASt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateBSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateASt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 138,
     "name": "ADV7619_HDMI_EDG_INTCLR4",
-    "data": []
+    "data": [{
+        "name": "uMsInfCksErrClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfCksErrClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudInfCksErrClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfCksErrClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredBClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredAClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateBClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateAClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 139,
     "name": "ADV7619_HDMI_EDG_INT2MASKB4",
-    "data": []
+    "data": [{
+        "name": "uMsInfCksErrMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfCksErrMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudInfCksErrMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfCksErrMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredBMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredAMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateBMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateAMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 140,
     "name": "ADV7619_HDMI_EDG_INTMASKB4",
-    "data": []
+    "data": [{
+        "name": "uMsInfCksErrMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uSpdInfCksErrMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAudInfCksErrMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAviInfCksErrMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredBMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uRiExpiredAMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateBMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uAksvUpdateAMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 141,
     "name": "ADV7619_HDMI_EDG_RAWSTATUS5",
-    "data": []
+    "data": [{
+        "name": "uReserved7_2",
+        "size": "6",
+        "description": "Description to do"
+    }, {
+        "name": "uBgMeasDoneRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfCksErrRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 142,
     "name": "ADV7619_HDMI_EDG_STATUS5",
-    "data": []
+    "data": [{
+        "name": "uReserved7_2",
+        "size": "6",
+        "description": "Description to do"
+    }, {
+        "name": "uBgMeasDoneSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfCksErrSt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 143,
     "name": "ADV7619_HDMI_EDG_INTCLR5",
-    "data": []
+    "data": [{
+        "name": "uReserved7_2",
+        "size": "6",
+        "description": "Description to do"
+    }, {
+        "name": "uBgMeasDoneClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfCksErrClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 144,
     "name": "ADV7619_HDMI_EDG_INT2MASKB5",
-    "data": []
+    "data": [{
+        "name": "uReserved7_2",
+        "size": "6",
+        "description": "Description to do"
+    }, {
+        "name": "uBgMeasDoneMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfCksErrMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 145,
     "name": "ADV7619_HDMI_EDG_INTMASKB5",
-    "data": []
+    "data": [{
+        "name": "uReserved7_2",
+        "size": "6",
+        "description": "Description to do"
+    }, {
+        "name": "uBgMeasDoneMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uVsInfCksErrMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 146,
     "name": "ADV7619_CEC_STATUS1RAW",
-    "data": []
+    "data": [{
+        "name": "uReserved7_6",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy2Raw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy1Raw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy0Raw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxRetryTimeoutRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxArbitrationLostRaw",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxReadyRaw",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 147,
     "name": "ADV7619_CEC_STATUS1INTSTATUS",
-    "data": []
+    "data": [{
+        "name": "uReserved7_6",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy2St",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy1St",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy0St",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxRetryTimeoutSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxArbitrationLostSt",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxReadySt",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 148,
     "name": "ADV7619_CEC_STATUS1INTCLEAR",
-    "data": []
+    "data": [{
+        "name": "uReserved7_6",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy2Clr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy1Clr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy0Clr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxRetryTimeoutClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxArbitrationLostClr",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxReadyClr",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 149,
     "name": "ADV7619_CEC_STATUS1INT2MASKB",
-    "data": []
+    "data": [{
+        "name": "uReserved7_6",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy2Mb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy1Mb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy0Mb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxRetryTimeoutMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxArbitrationLostMb2",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxReadyMb2",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 150,
     "name": "ADV7619_CEC_STATUS1INT1MASKB",
-    "data": []
+    "data": [{
+        "name": "uReserved7_6",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy2Mb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy1Mb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecRxRdy0Mb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxRetryTimeoutMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxArbitrationLostMb1",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uCecTxReadyMb1",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 151,
     "name": "ADV7619_CEC_RAW_STATUS2",
-    "data": []
+    "data": [{
+        "name": "uCecInterruptByte",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 152,
     "name": "ADV7619_CEC_INTERRUPT_STATUS2",
-    "data": []
+    "data": [{
+        "name": "uCecInterruptByteSt",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 153,
     "name": "ADV7619_CEC_INTERRUPT_CLEAR2",
-    "data": []
+    "data": [{
+        "name": "uCecInterruptByteClr",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 154,
     "name": "ADV7619_CEC_INTERRUPT2_MASKB",
-    "data": []
+    "data": [{
+        "name": "uCecInterruptByteMb2",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 155,
     "name": "ADV7619_CEC_INTERRUPT_MASKB",
-    "data": []
+    "data": [{
+        "name": "uCecInterruptByteMb1",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 191,
     "name": "ADV7619_CP_CORE_BYPASSING",
-    "data": []
+    "data": [{
+        "name": "uReserved7_1",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uCpCompleteBypassEnable",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 224,
     "name": "ADV7619_IO_REG_E0",
-    "data": []
+    "data": [{
+        "name": "uDsWithoutFilter",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_0",
+        "size": "7",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 231,
     "name": "ADV7619_IO_REG_E7",
-    "data": []
+    "data": [{
+        "name": "uReserved7_6",
+        "size": "2",
+        "description": "Description to do"
+    }, {
+        "name": "uDppLumaHbwSel",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uDppChromaLowEn",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved3_0",
+        "size": "4",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 234,
     "name": "ADV7619_IO_REG_EA",
-    "data": []
+    "data": [{
+        "name": "uRdInfo",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 235,
     "name": "ADV7619_IO_REB_EB",
-    "data": []
+    "data": [{
+        "name": "uRdInfo",
+        "size": "8",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 244,
     "name": "ADV7619_CEC_SLAVE_ADDR",
-    "data": []
+    "data": [{
+        "name": "uCecSlaveAddr",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 245,
     "name": "ADV7619_INFOFRAME_SLAVE_ADDR",
-    "data": []
+    "data": [{
+        "name": "uInfoframeSlaveAddr",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 248,
     "name": "ADV7619_AFE_SLAVE_ADDR",
-    "data": []
+    "data": [{
+        "name": "uDpllSlaveAddr",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 249,
     "name": "ADV7619_KSV_SLAVE_ADDR",
-    "data": []
+    "data": [{
+        "name": "uKsvSlaveAddr",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 250,
     "name": "ADV7619_EDID_SLAVE_ADDR",
-    "data": []
+    "data": [{
+        "name": "uEdidSlaveAddr",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 251,
     "name": "ADV7619_HDMI_SLAVE_ADDR",
-    "data": []
+    "data": [{
+        "name": "uHdmiSlaveAddr",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 253,
     "name": "ADV7619_CP_SLAVE_ADDR",
-    "data": []
+    "data": [{
+        "name": "uCpSlaveAddr",
+        "size": "7",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved0",
+        "size": "1",
+        "description": "Description to do"
+    }]
 }, {
     "offset": 255,
     "name": "ADV7619_IO_REG_FF",
-    "data": []
+    "data": [{
+        "name": "uMainReset",
+        "size": "1",
+        "description": "Description to do"
+    }, {
+        "name": "uReserved6_0",
+        "size": "7",
+        "description": "Description to do"
+    }]
 }]
