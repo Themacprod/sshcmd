@@ -72,7 +72,7 @@ module.exports = React.createClass({
     getInitialState: function() {
         return {
             readData: _.fill(Array(this.props.data.length), "-"),
-            detail: "",
+            detail: this.props.data[0],
             value: "0x00"
         };
     },

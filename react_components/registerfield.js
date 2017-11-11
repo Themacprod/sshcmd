@@ -6,56 +6,15 @@ var React = require("react"),
     _ = require("lodash");
 
 module.exports = React.createClass({
-    componentWillReceiveProps: function(nextProps) {
-        var tmp = _.map(nextProps.parent, function(field, index) {
-            return React.DOM.div(
-                {
-                    className: "field-detail-bit-detail1 table-bordered",
-                    key: index,
-                    onClick: this.handleClick.bind(this, index),
-                    style: {
-                        width: (35 * field.size) + "px"
-                    }
-                },
-                React.DOM.div({
-                    className: "field-detail-bit-detail"
-                }, field.name)
-            );
-        }.bind(this));
-
-        this.setState({
-            value: tmp
-        });
-    },
-    getInitialState: function() {
-        var value = [];
-
-        for (let i = 0; i < 7; i += 1) {
-            var tmp = React.DOM.div({
-                    className: "field-detail-bit-detail table-bordered",
-                    key: i,
-                    style: {
-                        width: "200px",
-                        marginTop: "-35px"
-                    }
-                }, "Description field");
-
-            value.push(tmp);
-        }
-
-        return {
-            value: value
-        };
-    },
     renderColumn: function(index) {
         return React.DOM.div({
-                className: "field-detail-bit-index table-bordered text-center text-bold",
-                key: index
-            }, index);
+            className: "field-detail-bit-index table-bordered text-center text-bold",
+            key: index
+        }, index);
     },
     handleClick: function(index) {
         this.props.callBack(index);
-	},
+    },
     render: function() {
         var indexDiv = [];
 
@@ -77,7 +36,21 @@ module.exports = React.createClass({
                 {
                     className: "field-detail-bit-detail-container text-center"
                 },
-                this.state.value
+                _.map(this.props.parent, function(field, index) {
+                    return React.DOM.div(
+                        {
+                            className: "field-detail-bit-detail1 table-bordered",
+                            key: index,
+                            onClick: this.handleClick.bind(this, index),
+                            style: {
+                                width: (35 * field.size) + "px"
+                            }
+                        },
+                        React.DOM.div({
+                            className: "field-detail-bit-detail"
+                        }, field.name)
+                    );
+                }.bind(this))
             )
         );
     }
