@@ -855,51 +855,190 @@
 }, {
     "offset": 20,
     "name": "ADV7619_IO_REG_14",
-    "data": [{
-        "name": "uReserved7_6",
-        "size": "2",
-        "description": "Description to do"
-    }, {
-        "name": "uDrStr",
-        "size": "2",
-        "description": "Description to do"
-    }, {
-        "name": "uDrStrClk",
-        "size": "2",
-        "description": "Description to do"
-    }, {
-        "name": "uDrStrSync",
-        "size": "2",
-        "description": "Description to do"
-    }]
+    "data": [
+        {
+            "name": "uReserved7_6",
+            "size": 2,
+            "description": [
+                "Reserved."
+            ]
+        }, {
+            "name": "uDrStr",
+            "size": 2,
+            "description": [
+                "A control to set the drive strength of the data output drivers."
+            ],
+            "values": [{
+					"value": 1,
+					"description": [
+						"Medium low(2 x)."
+					]
+				},
+				{
+					"value": 2,
+					"description": [
+						"Medium high(3 x)"
+					]
+				},
+				{
+					"value": 3,
+					"description": [
+						"High(4 x)"
+					]
+				}
+			]
+        },{
+            "name": "uDrStrClk",
+            "size": 2,
+            "description": [
+                "A control to set the drive strength control for the output pixel clock out signal on the LLC pin."
+            ],
+            "values": [{
+					"value": 1,
+					"description": [
+						"Medium low(2 x) for LLC up to 60 MHz."
+					]
+				},
+				{
+					"value": 2,
+					"description": [
+						"Medium high(3 x) for LLC from 44 MHz to 105 MHz."
+					]
+				},
+				{
+					"value": 3,
+					"description": [
+						"High(4 x) for LLC greater than 100 MHz."
+					]
+				}
+			]
+        },
+        {
+            "name": "uDrStrSync",
+            "size": 2,
+            "description": [
+                "A control to set the drive strength the synchronization pins, HS, VS and DE."
+            ],
+            "values": [{
+					"value": 1,
+					"description": [
+						"Medium low(2 x)."
+					]
+				},
+				{
+					"value": 2,
+					"description": [
+						"Medium high(3 x)."
+					]
+				},
+				{
+					"value": 3,
+					"description": [
+						"High(4 x)."
+					]
+				}
+			]
+        }
+    ]
 }, {
     "offset": 21,
     "name": "ADV7619_IO_REG_15",
-    "data": [{
-        "name": "uReserved7_5",
-        "size": "3",
-        "description": "Description to do"
-    }, {
-        "name": "uTriAudio",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uTriSyncs",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uTriLlc",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uTriPix",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uReserved0",
-        "size": "1",
-        "description": "Description to do"
-    }]
+    "data": [
+        {
+            "name": "uReserved7_5",
+            "size": 3,
+            "description": [
+                "Reserved"
+            ]
+        }, {
+            "name": "uTriAudio",
+            "size": 1,
+            "description": [
+                "A control to tristate the audio output interface pins (AP0, AP1/I2S_TDM, AP2 ... AP5)."
+            ],
+            "values": [{
+					"value": 0,
+					"description": [
+						"Audio output pins active."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Tristate audio output pins."
+					]
+				}
+			]
+        },
+        {
+            "name": "uTriSyncs",
+            "size": 1,
+            "description": [
+                "Synchronization output pins tristate control. The synchronization pins under this control ",
+                "are HS, VS and DE."
+            ],
+            "values": [{
+					"value": 0,
+					"description": [
+						"Sync output pins active."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Tristate sync output pins."
+					]
+				}
+			]
+        },
+        {
+            "name": "uTriLlc",
+            "size": 1,
+            "description": [
+                "A control to tristate the output pixel clock on the LLC pin."
+            ],
+            "values": [{
+					"value": 0,
+					"description": [
+						"LLC pin active."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Tristate LLC pin."
+					]
+				}
+			]
+        },
+        {
+            "name": "uTriPix",
+            "size": 1,
+            "description": [
+                "A control to tristate the pixel data on the pixel pins P[47:0]."
+            ],
+            "values": [{
+					"value": 0,
+					"description": [
+						"Pixel bus active."
+					]
+				},
+				{
+					"value": 1,
+					"description": [
+						"Tristate pixel bus."
+					]
+				}
+			]
+        },
+        {
+            "name": "uReserved0",
+            "size": 1,
+            "description": [
+                "Reserved."
+            ]
+        }
+    ]
 }, {
     "offset": 22,
     "name": "ADV7619_IO_REG_16",
