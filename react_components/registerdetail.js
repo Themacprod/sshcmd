@@ -9,21 +9,16 @@ var React = require("react"),
 module.exports = React.createClass({
     listOfValue: function(index) {
         if (index >= 0) {
-            var tmp = _.map(this.props.detail.data[index].values, function(value, key) {
-                return React.DOM.div(
-                    {
-                        className: "values",
-                        key: key
-                    },
-                    value.value + " : " + value.description
-                );
-            });
-
             this.setState({
-                values: tmp
-            });
-
-            this.setState({
+                values: _.map(this.props.detail.data[index].values, function(value, key) {
+                    return React.DOM.div(
+                        {
+                            className: "values",
+                            key: key
+                        },
+                        value.value + " : " + value.description
+                    );
+                }),
                 description: _.map(this.props.detail.data[index].description, function(msg) {
                     return msg;
                 })
@@ -40,8 +35,18 @@ module.exports = React.createClass({
 	},
     getInitialState: function() {
         return {
-            description: "No description",
-            values: "No value description"
+            values: _.map(this.props.detail.data[0].values, function(value, key) {
+                return React.DOM.div(
+                    {
+                        className: "values",
+                        key: key
+                    },
+                    value.value + " : " + value.description
+                );
+            }),
+            description: _.map(this.props.detail.data[0].description, function(msg) {
+                return msg;
+            })
         };
     },
     render: function() {
