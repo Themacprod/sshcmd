@@ -1,0 +1,5140 @@
+[
+    {
+        "offset": 11,
+        "name": "ADV7619_CSC_COEFF_RB1",
+        "data": [
+            {
+                "name": "uRbCscScale",
+                "size": 2,
+                "description": [
+                    "R Readback of CSC scale applied to CSC coefficients\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uReserved5",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbA4",
+                "size": 5,
+                "description": [
+                    "R Readback of CSC coefficient A4 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 12,
+        "name": "ADV7619_CSC_COEFF_RB2",
+        "data": [
+            {
+                "name": "uRbA4",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coefficient A4 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 13,
+        "name": "ADV7619_CSC_COEFF_RB3",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbA3",
+                "size": 7,
+                "description": [
+                    "R Readback of CSC coefficient A3 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 14,
+        "name": "ADV7619_CSC_COEFF_RB4",
+        "data": [
+            {
+                "name": "uRbA3",
+                "size": 6,
+                "description": [
+                    "R Readback of CSC coefficient A3 modified by video adjustment block.\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbA2",
+                "size": 2,
+                "description": [
+                    "R Readback of CSC coefficient A2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 15,
+        "name": "ADV7619_CSC_COEFF_RB5",
+        "data": [
+            {
+                "name": "uRbA2",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coefficient A2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 16,
+        "name": "ADV7619_CSC_COEFF_RB6",
+        "data": [
+            {
+                "name": "uRbA2",
+                "size": 3,
+                "description": [
+                    "R Readback of CSC coefficient A2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbA1",
+                "size": 5,
+                "description": [
+                    "R Readback of CSC coefficient A1 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 17,
+        "name": "ADV7619_CSC_COEFF_RB7",
+        "data": [
+            {
+                "name": "uRbA1",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coefficient A1 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 18,
+        "name": "ADV7619_CSC_COEFF_RB8",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbB4",
+                "size": 5,
+                "description": [
+                    "R Readback of CSC coefficient B4 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 19,
+        "name": "ADV7619_CSC_COEFF_RB9",
+        "data": [
+            {
+                "name": "uRbB4",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coefficient B4 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 20,
+        "name": "ADV7619_CSC_COEFF_RB10",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbB3",
+                "size": 7,
+                "description": [
+                    "R Readback of CSC coeff B3 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 21,
+        "name": "ADV7619_CSC_COEFF_RB11",
+        "data": [
+            {
+                "name": "uRbB3",
+                "size": 6,
+                "description": [
+                    "R Readback of CSC coeff B3 modified by video adjustment block.\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbB2",
+                "size": 2,
+                "description": [
+                    "R Readback of CSC coeff B2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 22,
+        "name": "ADV7619_CSC_COEFF_RB12",
+        "data": [
+            {
+                "name": "uRbB2",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coeff B2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 23,
+        "name": "ADV7619_CSC_COEFF_RB13",
+        "data": [
+            {
+                "name": "uRbB2",
+                "size": 3,
+                "description": [
+                    "R Readback of CSC coeff B2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbB1",
+                "size": 5,
+                "description": [
+                    "R Readback of CSC coeff B1 modified by video adjustment block\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 24,
+        "name": "ADV7619_CSC_COEFF_RB14",
+        "data": [
+            {
+                "name": "uRbB1",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coeff B1 modified by video adjustment block\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 25,
+        "name": "ADV7619_CSC_COEFF_RB15",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbC4",
+                "size": 5,
+                "description": [
+                    "R Readback of CSC coefficient C4 modified by video adjustment block\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 26,
+        "name": "ADV7619_CSC_COEFF_RB16",
+        "data": [
+            {
+                "name": "uRbC4",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coefficient C4 modified by video adjustment block\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 27,
+        "name": "ADV7619_CSC_COEFF_RB17",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbC3",
+                "size": 7,
+                "description": [
+                    "R Readback of CSC coefficient C3 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 28,
+        "name": "ADV7619_CSC_COEFF_RB18",
+        "data": [
+            {
+                "name": "uRbC3",
+                "size": 6,
+                "description": [
+                    "R Readback of CSC coefficient C3 modified by video adjustment block.\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbC2",
+                "size": 2,
+                "description": [
+                    "R Readback of CSC coefficient C2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 29,
+        "name": "ADV7619_CSC_COEFF_RB19",
+        "data": [
+            {
+                "name": "uRbC2",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coefficient C2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 30,
+        "name": "ADV7619_CSC_COEFF_RB20",
+        "data": [
+            {
+                "name": "uRbC2",
+                "size": 3,
+                "description": [
+                    "R Readback of CSC coefficient C2 modified by video adjustment block.\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uRbC1",
+                "size": 5,
+                "description": [
+                    "R Readback of CSC coeff C1 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 31,
+        "name": "ADV7619_CSC_COEFF_RB21",
+        "data": [
+            {
+                "name": "uRbC1",
+                "size": 8,
+                "description": [
+                    "R Readback of CSC coeff C1 modified by video adjustment block.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 34,
+        "name": "ADV7619_HS_POS_CNTRL1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpStartHs",
+                "size": 5,
+                "description": [
+                    "R/W A control to set the position of the start of the HSync output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 35,
+        "name": "ADV7619_HS_POS_CNTRL2",
+        "data": [
+            {
+                "name": "uCpStartHs",
+                "size": 8,
+                "description": [
+                    "R/W A control to set the position of the start of the HSync output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 36,
+        "name": "ADV7619_HS_POS_CNTRL3",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpEndHs",
+                "size": 5,
+                "description": [
+                    "R/W A control to set the position of the end of the HSync output signal in the CP core in Autographic mode \r",
+                    "only. Programming of this parameter is optional and should only be performed when the part is set in auto \r",
+                    "graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 37,
+        "name": "ADV7619_HS_POS_CNTRL4",
+        "data": [
+            {
+                "name": "uCpEndHs",
+                "size": 8,
+                "description": [
+                    "R/W A control to set the position of the end of the HSync output signal in the CP core in Autographic mode \r",
+                    "only. Programming of this parameter is optional and should only be performed when the part is set in auto \r",
+                    "graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 38,
+        "name": "ADV7619_DE_POS_CNTRL1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpStartSav",
+                "size": 5,
+                "description": [
+                    "R/W Manual value for Start of Active Video (SAV) position. Sets the total number of pixels between the \r",
+                    "start of non active video and the start of active video. Programming of this parameter is optional and \r",
+                    "should only be performed when the part is set in auto graphics mode. The value is unsigned. For more \r",
+                    "information on auto-graphics mode, refer to the Hardware manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 39,
+        "name": "ADV7619_DE_POS_CNTRL2",
+        "data": [
+            {
+                "name": "uCpStartSav",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for Start of Active Video (SAV) position. Sets the total number of pixels between the \r",
+                    "start of non active video and the start of active video. Programming of this parameter is optional and \r",
+                    "should only be performed when the part is set in auto graphics mode. The value is unsigned. For more \r",
+                    "information on auto-graphics mode, refer to the Hardware manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 40,
+        "name": "ADV7619_DE_POS_CNTRL3",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpStartEav",
+                "size": 5,
+                "description": [
+                    "R/W Manual value for End of Active Video (EAV) position. Sets the total number of pixels between the end \r",
+                    "of non active video and the end of active video. Programming of this parameter is optional and should only \r",
+                    "be performed when the part is set in auto graphics mode. The value is unsigned. For more information on \r",
+                    "auto-graphics mode, refer to the Hardware manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 41,
+        "name": "ADV7619_DE_POS_CNTRL4",
+        "data": [
+            {
+                "name": "uCpStartEav",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for End of Active Video (EAV) position. Sets the total number of pixels between the end \r",
+                    "of non active video and the end of active video. Programming of this parameter is optional and should only \r",
+                    "be performed when the part is set in auto graphics mode. The value is unsigned. For more information on \r",
+                    "auto-graphics mode, refer to the Hardware manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "Unsigned value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 42,
+        "name": "ADV7619_DE_POS_CNTRL5",
+        "data": [
+            {
+                "name": "uCpStartVbiR",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for start of vbi position of the extra blank region preceding the odd R field in 3d TV \r",
+                    "field alternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 43,
+        "name": "ADV7619_DE_POS_CNTRL6",
+        "data": [
+            {
+                "name": "uCpStartVbiR",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for start of vbi position of the extra blank region preceding the odd R field in 3d TV \r",
+                    "field alternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpEndVbiR",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for end of vbi position of the extra blank region preceding the odd R field in 3d TV \r",
+                    "field a lternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 44,
+        "name": "ADV7619_DE_POS_CNTRL7",
+        "data": [
+            {
+                "name": "uCpEndVbiR",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for end of vbi position of the extra blank region preceding the odd R field in 3d TV \r",
+                    "field a lternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 45,
+        "name": "ADV7619_DE_POS_CNTRL8",
+        "data": [
+            {
+                "name": "uCpStartVbiEvenR",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for start of vbi position of the extra blank region preceding the even R field in 3d TV \r",
+                    "field alternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 46,
+        "name": "ADV7619_DE_POS_CNTRL9",
+        "data": [
+            {
+                "name": "uCpStartVbiEvenR",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for start of vbi position of the extra blank region preceding the even R field in 3d TV \r",
+                    "field alternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpEndVbiEvenR",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for end of vbi position of the extra blank region preceding the even R field in 3d TV \r",
+                    "field a lternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 47,
+        "name": "ADV7619_DE_POS_CNTRL10",
+        "data": [
+            {
+                "name": "uCpEndVbiEvenR",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for end of vbi position of the extra blank region preceding the even R field in 3d TV \r",
+                    "field a lternative packing format through hdmi.Normally not required to program since this parameter is \r",
+                    "calculated automatically from input. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 48,
+        "name": "ADV7619_DE_POS_ADJ1",
+        "data": [
+            {
+                "name": "uDeVStartR",
+                "size": 4,
+                "description": [
+                    "A control to vary the position of the start of the extra VBI region between L and R fieds during odd field \r",
+                    "in field alternative packing in 3D TV video format. \r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of DE_V_END_EVEN[9:0] \r",
+                    "is one pixel clock. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uDeVEndR",
+                "size": 4,
+                "description": [
+                    "A control to vary the position of the end of the extra VBI region between L and R fieds during odd field \r",
+                    "in field alternative packing in 3D TV video format. \r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of DE_V_END_EVEN[9:0] \r",
+                    "is one pixel clock. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 49,
+        "name": "ADV7619_DE_POS_ADJ2",
+        "data": [
+            {
+                "name": "uDeVStartEvenR",
+                "size": 4,
+                "description": [
+                    "A control to vary the position of the start of the extra VBI region between L and R fieds during even \r",
+                    "field in  field alternative packing in 3D TV video format through HDMI. \r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of DE_V_END_EVEN[9:0] \r",
+                    "is one pixel clock. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uDeVEndEvenR",
+                "size": 4,
+                "description": [
+                    "A control to vary the position of the end of the extra VBI region between L and R fieds during even field \r",
+                    "in field alternative packing in 3D TV video format through HDMI. \r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of DE_V_END_EVEN[9:0] \r",
+                    "is one pixel clock. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 54,
+        "name": "ADV7619_BIT_REDUCTION_DITHER",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uBrNoiseShapingEn",
+                "size": 1,
+                "description": [
+                    "R/W Enables a noise shaped truncation of the data from 12 bits to 10 bits or 8 bits (as specified by \r",
+                    "CP_PREC[1:0]) \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disables noise shaped bit reduction. Simple rounding is used for bit reduction\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Enables noise shaped bit width reduction.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBrNoiseShapingMode",
+                "size": 1,
+                "description": [
+                    "R/W Enables the addition of random noise to the output data.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Does not add random dither to noise.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Adds random dither to noise\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBrNoiseShapingGain",
+                "size": 2,
+                "description": [
+                    "R/W Selects the gain of the noise added to the output data when RND_DITHER_EN is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "00",
+                        "description": "pseudo random dither gained by 1\r"
+                    },
+                    {
+                        "value": "01",
+                        "description": "pseudo random dither gained by 2\r"
+                    },
+                    {
+                        "value": "10",
+                        "description": "pseudo random dither gained by 4\r"
+                    },
+                    {
+                        "value": "11",
+                        "description": "pseudo random dither gained by 8\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uTenToEightConv",
+                "size": 1,
+                "description": [
+                    "A control to indicate if the precision of the data to be rounded and truncated to 8-bit has 10 bit \r",
+                    "precision. This control is for HDMI use only. \r",
+                    "channel. If the input data has got 10 bit precision - then the output data will have 10-bits per channel. \r",
+                    "If the input data has got 8 bit precision - then the output data will have 8-bits per channel. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "If the input data has got 12 bit precision"
+                    },
+                    {
+                        "value": "1",
+                        "description": "If The input data has got 10 bit precision, the output data will be 8 bits per channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 58,
+        "name": "ADV7619_CONTRAST_CNTRL",
+        "data": [
+            {
+                "name": "uCpContrast",
+                "size": 8,
+                "description": [
+                    "A control to set the contrast. This field is a unsigned value represented in a 1.7 binary format. The MSB \r",
+                    "represents the integer part of the contrast value which is either 0 or 1. The seven LSBs represents the \r",
+                    "fractional part of the contrast value. The fractional part has the range [0 to 0.99]. This control is \r",
+                    "functional if VID_ADJ_EN is set to 1. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Contrast set to minimum\r"
+                    },
+                    {
+                        "value": "128",
+                        "description": "Default\r"
+                    },
+                    {
+                        "value": "255",
+                        "description": "Contrast set to maximum\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 59,
+        "name": "ADV7619_SATURATION_CNTRL",
+        "data": [
+            {
+                "name": "uCpSaturation",
+                "size": 8,
+                "description": [
+                    "A control to set the saturation. This field is a unsigned value represented in a 1.7 binary format. The \r",
+                    "MSB represents the integer part of the contrast value which is either 0 or 1. The seven LSBs represent the \r",
+                    "fractional part of the saturation value. The fractional part has a [0 to 0.99] range. This control is \r",
+                    "functional if VID_ADJ_EN is set to 1. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Saturation set to minimum\r"
+                    },
+                    {
+                        "value": "128",
+                        "description": "Default\r"
+                    },
+                    {
+                        "value": "255",
+                        "description": "Saturation set to maximum\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 60,
+        "name": "ADV7619_BRIGHTNESS_CNTRL",
+        "data": [
+            {
+                "name": "uCpBrightness",
+                "size": 8,
+                "description": [
+                    "A control to set the brightness. This field is a signed value. The effective brightness value applied to \r",
+                    "the Luma is obtained by multiplying the programmed value CP_BRIGHTNESS with a gain of 4. The brightness \r",
+                    "applied to the Luma has a range of [-512 to 508]. This control is functional if VID_ADJ_EN is set to 1. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The offset applied to the Luma is 0 .\r"
+                    },
+                    {
+                        "value": "127",
+                        "description": "The offset applied to the Luma is 508d. This value corresponds to the brightness setting.\r"
+                    },
+                    {
+                        "value": "255",
+                        "description": "The offset applied to the Luma is -512d. This value corresponds to the darkest setting.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 61,
+        "name": "ADV7619_HUE_CNTRL",
+        "data": [
+            {
+                "name": "uCpHue",
+                "size": 8,
+                "description": [
+                    "A control to set the hue. This register a represent an unsigned value which provides hue adjustment. The \r",
+                    "effective hue applied to the Chroma is [(CP_HUE[7:0] * 180)/256 - 90]. The range of the effective hue \r",
+                    "applied to the Chroma is [-90` to 90`]. This control is functional if VID_ADJ_EN is set to 1. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "A hue of -90` is applied to the Chroma\r"
+                    },
+                    {
+                        "value": "15",
+                        "description": "A hue of 0` is applied to the Chroma\r"
+                    },
+                    {
+                        "value": "255",
+                        "description": "A hue of 90` is applied to the Chroma\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 62,
+        "name": "ADV7619_CP_REGISTER3EH",
+        "data": [
+            {
+                "name": "uVidAdjEn",
+                "size": 1,
+                "description": [
+                    "Video Adjustment Enable. This control selects whether or not the color controls feature is enabled. The \r",
+                    "color controls feature is configured via the parameters CP_CONTRAST[7:0], CP_SATURATION[7:0], \r",
+                    "CP_BRIGHTNESS[7:0] and CP_HUE[7:0]. The CP CSC must also be enabled for the color controls to be \r",
+                    "effective. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disable color controls.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Enable color controls.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved6",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpUvAlignSel",
+                "size": 2,
+                "description": [
+                    "Alignment of uv_data_valid internal signal generated by the CP core. The uv_data_valid signal is used to \r",
+                    "map U and V pixels data into one single signal when the part is configured to output a 4:2:2 digital video \r",
+                    "stream. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The uv_data_signal is synchronized with the Start of Active Video (SAV)\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The uv_data_signal is synchronized with the leading edge of the HSync\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "uv_data_signal is synchronized with the leading edge of the DE\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "The uv_data_signal is synchronized with the Start of Active Video (SAV)\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpUvDvalInv",
+                "size": 1,
+                "description": [
+                    "This controls the polarity of the uv_data_valid signal generated by the CP. The uv_data_valid signal is \r",
+                    "used to map U and V pixels data into one single signal when the part is configured to output a 4:2:2 \r",
+                    "digital video stream. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No change to data_valid signal\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Invert uv_data_valid signal\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpModeGainAdjEn",
+                "size": 1,
+                "description": [
+                    "A control to enable pregain\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The pregain block is bypassed\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The pregain block is enabled\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAltSatUvMan",
+                "size": 1,
+                "description": [
+                    "U and V Saturation Range Control\r",
+                    "ALT_DATA_SAT. \r",
+                    "OP_656_RANGE or ALT_DATA_SAT is set to 0. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The range of the saturator on the Cr and the Cb channels are determined by OP_656_RANGE and \r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The range of the saturator on the Cr and the Cb channels are determined by ALT_SAT_UV if either \r"
+                    }
+                ]
+            },
+            {
+                "name": "uAltSatUv",
+                "size": 1,
+                "description": [
+                    "Cr and Cb Saturation Range. Refer to ALT_SAT_UV_MAN for additional detail.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The range of the saturators on channels Cr and Cb is 15-to-235.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The range of the saturators on channels Cr and Cb is 16-to-240.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 64,
+        "name": "ADV7619_CP_PRE_GAIN_CNTRL",
+        "data": [
+            {
+                "name": "uCpModeGainAdj",
+                "size": 8,
+                "description": [
+                    "Pregain adjustment to compensate for the gain of the Analog Front End. This register stores a value in a \r"
+                ],
+                "values": [
+                    {
+                        "value": "1.7 binary format. \r",
+                        "description": "undefined"
+                    },
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Gain of (0 + (xxxxxxx / 128))\r"
+                    },
+                    {
+                        "value": "10000000",
+                        "description": "Default pregain (pregain of 1.0)\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Gain of (1 + (xxxxxxx / 128))\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 82,
+        "name": "ADV7619_CSC_COEFFS1",
+        "data": [
+            {
+                "name": "uCscScale",
+                "size": 2,
+                "description": [
+                    "A control to set the CSC coefficient scalar.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "CSC scalar set to 1\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "CSC scalar set to 2\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved5",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uA4",
+                "size": 5,
+                "description": [
+                    "CSC Coefficient A4. Contains 13-bit A4 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A4 coefficient for the A channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 83,
+        "name": "ADV7619_CSC_COEFFS2",
+        "data": [
+            {
+                "name": "uA4",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient A4. Contains 13-bit A4 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A4 coefficient for the A channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 84,
+        "name": "ADV7619_CSC_COEFFS3",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uA3",
+                "size": 7,
+                "description": [
+                    "CSC Coefficient A3. Contains 13-bit A3 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A3 coefficient for the A channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 85,
+        "name": "ADV7619_CSC_COEFFS4",
+        "data": [
+            {
+                "name": "uA3",
+                "size": 6,
+                "description": [
+                    "CSC Coefficient A3. Contains 13-bit A3 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A3 coefficient for the A channel.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uA2",
+                "size": 2,
+                "description": [
+                    "CSC Coefficient A2. Contains 13-bit A2 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A2 coefficient for the A channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 86,
+        "name": "ADV7619_CSC_COEFFS5",
+        "data": [
+            {
+                "name": "uA2",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient A2. Contains 13-bit A2 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A2 coefficient for the A channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 87,
+        "name": "ADV7619_CSC_COEFFS6",
+        "data": [
+            {
+                "name": "uA2",
+                "size": 3,
+                "description": [
+                    "CSC Coefficient A2. Contains 13-bit A2 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A2 coefficient for the A channel.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uA1",
+                "size": 5,
+                "description": [
+                    "CSC Coefficient A1. Contains 13-bit A1 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0800",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A1 coefficient for the A channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 88,
+        "name": "ADV7619_CSC_COEFFS7",
+        "data": [
+            {
+                "name": "uA1",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient A1. Contains 13-bit A1 coefficient for the A channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0800",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "A1 coefficient for the A channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 89,
+        "name": "ADV7619_CSC_COEFFS8",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uB4",
+                "size": 5,
+                "description": [
+                    "CSC Coefficient B4. Contains 13-bitB4 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B4 coefficient for the B channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 90,
+        "name": "ADV7619_CSC_COEFFS9",
+        "data": [
+            {
+                "name": "uB4",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient B4. Contains 13-bitB4 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B4 coefficient for the B channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 91,
+        "name": "ADV7619_CSC_COEFFS10",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uB3",
+                "size": 7,
+                "description": [
+                    "CSC Coefficient B3. Contains 13-bit B3 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B3 coefficient for the B channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 92,
+        "name": "ADV7619_CSC_COEFFS11",
+        "data": [
+            {
+                "name": "uB3",
+                "size": 6,
+                "description": [
+                    "CSC Coefficient B3. Contains 13-bit B3 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B3 coefficient for the B channel.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uB2",
+                "size": 2,
+                "description": [
+                    "CSC Coefficient B2. Contains 13-bit B2 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0800",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B2 coefficient for the B channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 93,
+        "name": "ADV7619_CSC_COEFFS12",
+        "data": [
+            {
+                "name": "uB2",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient B2. Contains 13-bit B2 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0800",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B2 coefficient for the B channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 94,
+        "name": "ADV7619_CSC_COEFFS13",
+        "data": [
+            {
+                "name": "uB2",
+                "size": 3,
+                "description": [
+                    "CSC Coefficient B2. Contains 13-bit B2 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0800",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B2 coefficient for the B channel.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uB1",
+                "size": 5,
+                "description": [
+                    "CSC Coefficient B1. Contains 13-bit B1 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B1 coefficient for the B channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 95,
+        "name": "ADV7619_CSC_COEFFS14",
+        "data": [
+            {
+                "name": "uB1",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient B1. Contains 13-bit B1 coefficient for the B channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "B1 coefficient for the B channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 96,
+        "name": "ADV7619_CSC_COEFFS15",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uC4",
+                "size": 5,
+                "description": [
+                    "CSC Coefficient C4. Contains 13-bit C4 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C4 coefficient for the C channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 97,
+        "name": "ADV7619_CSC_COEFFS16",
+        "data": [
+            {
+                "name": "uC4",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient C4. Contains 13-bit C4 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C4 coefficient for the C channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 98,
+        "name": "ADV7619_CSC_COEFFS17",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uC3",
+                "size": 7,
+                "description": [
+                    "CSC Coefficient C3. Contains 13-bit C3 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0800",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C3 coefficient for the C channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 99,
+        "name": "ADV7619_CSC_COEFFS18",
+        "data": [
+            {
+                "name": "uC3",
+                "size": 6,
+                "description": [
+                    "CSC Coefficient C3. Contains 13-bit C3 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0800",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C3 coefficient for the C channel.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uC2",
+                "size": 2,
+                "description": [
+                    "CSC Coefficient C2. Contains 13-bit C2 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C2 coefficient for the C channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 100,
+        "name": "ADV7619_CSC_COEFFS19",
+        "data": [
+            {
+                "name": "uC2",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient C2. Contains 13-bit C2 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C2 coefficient for the C channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 101,
+        "name": "ADV7619_CSC_COEFFS20",
+        "data": [
+            {
+                "name": "uC2",
+                "size": 3,
+                "description": [
+                    "CSC Coefficient C2. Contains 13-bit C2 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C2 coefficient for the C channel.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uC1",
+                "size": 5,
+                "description": [
+                    "CSC Coefficient C1. Contains 13-bit C1 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C1 coefficient for the C channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 102,
+        "name": "ADV7619_CSC_COEFFS21",
+        "data": [
+            {
+                "name": "uC1",
+                "size": 8,
+                "description": [
+                    "CSC Coefficient C1. Contains 13-bit C1 coefficient for the C channel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxxx",
+                        "description": "C1 coefficient for the C channel.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 103,
+        "name": "ADV7619_CP_REGISTER67H",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uEmbSyncOnAll",
+                "size": 1,
+                "description": [
+                    "synchronization on channels A, B and C. Used only in case of RGB input and RGB output with Color -Controls \r",
+                    "enabled \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Embedded synchronization is present only on the Luma channel (i.e. channel A)\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "All three input channels have and embedded synchronization\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4_0",
+                "size": 5,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 104,
+        "name": "ADV7619_CSC_DECIM_CNTRL",
+        "data": [
+            {
+                "name": "uCscCoeffSel",
+                "size": 4,
+                "description": [
+                    "A control to select the mode the CP CSC operates in.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "CP CSC configuration in manual mode\r"
+                    },
+                    {
+                        "value": "15",
+                        "description": "CP CSC configured in automatic mode\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpChromaLowEn",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "High bandwidth, sharp transition filter for channels B/C\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Soft filter with minimized ringing for channels B/C\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved2_0",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 105,
+        "name": "ADV7619_CP_REGISTER69H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uManCpCscEn",
+                "size": 1,
+                "description": [
+                    "A control to manually enable the CP CSC. By default the CP CSC will be automatically enabled in the case \r",
+                    "that either a color-space conversion or video-adjustments (Hue, Saturation, Contrast, Brightness) is \r",
+                    "determined to be required due to other I2C settings. If MAN_CP_CSC_EN is set to one the CP CSC is forced \r",
+                    "into the enabled state. \r",
+                    "video-adjustments (Hue, Saturation, Contrast, Brightness) is determined to be required due to other I2C \r",
+                    "settings. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "CP CSC will be automatically enabled if required. For example if either a color-space conversion or \r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Manual override to force CP-CSC to be enabled\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uEia861Compliance",
+                "size": 1,
+                "description": [
+                    "Control for compliance to 861B for 525p.This bit set the start of the VBI for the 525p standard only.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The VBI region starts on line 1.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The VBI region starts on line 523. The start of the VBI region is compliant with the 861 specification.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1_0",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 108,
+        "name": "ADV7619_CLMP_CNTRL1",
+        "data": [
+            {
+                "name": "uClmpAMan",
+                "size": 1,
+                "description": [
+                    "Manual clamping enable for channel A.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Ignore internal digital fine clamp loop result. Use CLMP_A[11:0]\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Use the digital fine clamp value determined by the on-chip clamp loop\r"
+                    }
+                ]
+            },
+            {
+                "name": "uClmpBcMan",
+                "size": 1,
+                "description": [
+                    "Manual clamping enable for channel B and C.\r",
+                    "channel C. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Ignore internal digital fine clamp loop result. use CLMP_B[11:0] for channel B and CLMP_C[11:0] for \r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Use the digital fine clamp value determined by the on-chip clamp loop.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uClmpFreeze",
+                "size": 1,
+                "description": [
+                    "Stops the digital fine clamp loops for channels A, B and C from updating.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Clamp value updated on every active video line.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Clamp loops are stopped and not updated.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uClmpA",
+                "size": 4,
+                "description": [
+                    "Manual clamp value for channel A. This field is an unsigned 12-bit value to be subtracted from the \r",
+                    "incoming video signal. This value programmed in this register is effective if the CLMP_A_MAN is set to 1. \r",
+                    "To change the CLMP_A[11:0], the register addresses 0x6C and 0x6D must be updated with the desired clamp \r",
+                    "value written to in this order and with no other I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range,\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual clamp value for channel A.\r"
+                    },
+                    {
+                        "value": "0xFFF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 109,
+        "name": "ADV7619_CLMP_CNTRL2",
+        "data": [
+            {
+                "name": "uClmpA",
+                "size": 8,
+                "description": [
+                    "Manual clamp value for channel A. This field is an unsigned 12-bit value to be subtracted from the \r",
+                    "incoming video signal. This value programmed in this register is effective if the CLMP_A_MAN is set to 1. \r",
+                    "To change the CLMP_A[11:0], the register addresses 0x6C and 0x6D must be updated with the desired clamp \r",
+                    "value written to in this order and with no other I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range,\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual clamp value for channel A.\r"
+                    },
+                    {
+                        "value": "0xFFF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 110,
+        "name": "ADV7619_CLMP_CNTRL3",
+        "data": [
+            {
+                "name": "uClmpB",
+                "size": 8,
+                "description": [
+                    "Manual clamp value for channel B. This field is an unsigned 12-bit value to be subtracted from the \r",
+                    "incoming video signal. This value programmed in this register is effective if the CLMP_BC_MAN is set to 1. \r",
+                    "To change the CLMP_B[11:0], the register addresses 0x6E and 0x6F must be updated with the desired clamp \r",
+                    "value written to in this order and with no other I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual clamp value\r"
+                    },
+                    {
+                        "value": "0xFFF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 111,
+        "name": "ADV7619_CLMP_CNTRL4",
+        "data": [
+            {
+                "name": "uClmpB",
+                "size": 4,
+                "description": [
+                    "Manual clamp value for channel B. This field is an unsigned 12-bit value to be subtracted from the \r",
+                    "incoming video signal. This value programmed in this register is effective if the CLMP_BC_MAN is set to 1. \r",
+                    "To change the CLMP_B[11:0], the register addresses 0x6E and 0x6F must be updated with the desired clamp \r",
+                    "value written to in this order and with no other I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual clamp value\r"
+                    },
+                    {
+                        "value": "0xFFF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            },
+            {
+                "name": "uClmpC",
+                "size": 4,
+                "description": [
+                    "Manual clamp value for channel C. This field is an unsigned 12-bit value to be subtracted from the \r",
+                    "incoming video signal. This value programmed in this register is effective if the CLMP_BC_MAN is set to 1. \r",
+                    "To change the CLMP_C[11:0], the register addresses 0x6F and 0x70 must be updated with the desired clamp \r",
+                    "value written to in this order and with no other I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual clamp value\r"
+                    },
+                    {
+                        "value": "0xFFF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 112,
+        "name": "ADV7619_CLMP_CNTRL5",
+        "data": [
+            {
+                "name": "uClmpC",
+                "size": 8,
+                "description": [
+                    "Manual clamp value for channel C. This field is an unsigned 12-bit value to be subtracted from the \r",
+                    "incoming video signal. This value programmed in this register is effective if the CLMP_BC_MAN is set to 1. \r",
+                    "To change the CLMP_C[11:0], the register addresses 0x6F and 0x70 must be updated with the desired clamp \r",
+                    "value written to in this order and with no other I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual clamp value\r"
+                    },
+                    {
+                        "value": "0xFFF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 113,
+        "name": "ADV7619_GAIN_CNTRL1",
+        "data": [
+            {
+                "name": "uAgcTar",
+                "size": 2,
+                "description": [
+                    "R/W Manual AGC Target Value Enable. The register is used to set the target value for horizontal \r",
+                    "synchronization depth after gain has been applied. The field represents an unsigned value. Manual AGC \r",
+                    "Target Value. See also description of AGC_TAR_MAN, AGC_FREEZE, AGC_TIM. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual AGC target value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAgcTarMan",
+                "size": 1,
+                "description": [
+                    "between the two. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The AGC operates based on a 300 mV or 286 mV horizontal synchronization depth. Use HS_NORM to select \r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "AGC operates based on AGC_TAR[9:0].\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAgcFreeze",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The AGC loop is operational\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The AGC loop is frozen and not updated further. the last gain value becomes static.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHsNorm",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The AGC target scales the video as per 300 mV horizontal synchronization depth\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The AGC target scales the video as per 286 mV horizontal synchronization depth\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAgcTim",
+                "size": 3,
+                "description": [
+                    "R/W AGC Time Constant Selection.\r"
+                ],
+                "values": [
+                    {
+                        "value": "000",
+                        "description": "100 lines\r"
+                    },
+                    {
+                        "value": "001",
+                        "description": "1 frame\r"
+                    },
+                    {
+                        "value": "010",
+                        "description": "0.5 sec\r"
+                    },
+                    {
+                        "value": "011",
+                        "description": "1 sec\r"
+                    },
+                    {
+                        "value": "100",
+                        "description": "2 sec\r"
+                    },
+                    {
+                        "value": "101",
+                        "description": "3 sec\r"
+                    },
+                    {
+                        "value": "110",
+                        "description": "5 sec\r"
+                    },
+                    {
+                        "value": "111",
+                        "description": "7 sec\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 114,
+        "name": "ADV7619_GAIN_CNTRL2",
+        "data": [
+            {
+                "name": "uAgcTar",
+                "size": 8,
+                "description": [
+                    "R/W Manual AGC Target Value Enable. The register is used to set the target value for horizontal \r",
+                    "synchronization depth after gain has been applied. The field represents an unsigned value. Manual AGC \r",
+                    "Target Value. See also description of AGC_TAR_MAN, AGC_FREEZE, AGC_TIM. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "minimum range\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual AGC target value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "maximum range\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 115,
+        "name": "ADV7619_GAIN_CNTRL3",
+        "data": [
+            {
+                "name": "uGainMan",
+                "size": 1,
+                "description": [
+                    "Enables the gain factor to be set by the AGC or manually.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "AGC controls the gain for all three channels,\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Manual gains are used for all three channels\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAgcModeMan",
+                "size": 1,
+                "description": [
+                    "A control to set how the gains for all 3 channels is configured\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The gain is dependant on the type of input and OP_656_RANGE\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Gain operation controlled by GAIN_MAN\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAGain",
+                "size": 6,
+                "description": [
+                    "A control to set the manual gain value for channel A.\r",
+                    "This register is an unsigned value in a 2.8 binary format. To change A_GAIN[9:0], the register at \r",
+                    "addresses 0x73 and 0x74 must be written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Gain of 0\r"
+                    },
+                    {
+                        "value": "0x100",
+                        "description": "Unity Gain\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual gain value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "Gain of 3.99\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 116,
+        "name": "ADV7619_GAIN_CNTRL4",
+        "data": [
+            {
+                "name": "uAGain",
+                "size": 4,
+                "description": [
+                    "A control to set the manual gain value for channel A.\r",
+                    "This register is an unsigned value in a 2.8 binary format. To change A_GAIN[9:0], the register at \r",
+                    "addresses 0x73 and 0x74 must be written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Gain of 0\r"
+                    },
+                    {
+                        "value": "0x100",
+                        "description": "Unity Gain\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual gain value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "Gain of 3.99\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBGain",
+                "size": 4,
+                "description": [
+                    "A control to set the manual gain value for channel B.\r",
+                    "This register stores an unsigned value in a 2.8 binary format. To change A_GAIN[9:0], the register at \r",
+                    "addresses 0x74 and 0x75 must be written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Gain of 0\r"
+                    },
+                    {
+                        "value": "0x100",
+                        "description": "Unity Gain\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual gain value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "Gain of 3.99\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 117,
+        "name": "ADV7619_GAIN_CNTRL5",
+        "data": [
+            {
+                "name": "uBGain",
+                "size": 6,
+                "description": [
+                    "A control to set the manual gain value for channel B.\r",
+                    "This register stores an unsigned value in a 2.8 binary format. To change A_GAIN[9:0], the register at \r",
+                    "addresses 0x74 and 0x75 must be written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Gain of 0\r"
+                    },
+                    {
+                        "value": "0x100",
+                        "description": "Unity Gain\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual gain value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "Gain of 3.99\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCGain",
+                "size": 2,
+                "description": [
+                    "A control to set the manual gain value for channel C.\r",
+                    "This register stores an unsigned value in a 2.8 binary format. To change C_GAIN[9:0], the register at \r",
+                    "addresses 0x75 and 0x76 must be written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Gain of 0\r"
+                    },
+                    {
+                        "value": "0x100",
+                        "description": "Unity Gain\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual gain value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "Gain of 3.99\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 118,
+        "name": "ADV7619_GAIN_CNTRL6",
+        "data": [
+            {
+                "name": "uCGain",
+                "size": 8,
+                "description": [
+                    "A control to set the manual gain value for channel C.\r",
+                    "This register stores an unsigned value in a 2.8 binary format. To change C_GAIN[9:0], the register at \r",
+                    "addresses 0x75 and 0x76 must be written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Gain of 0\r"
+                    },
+                    {
+                        "value": "0x100",
+                        "description": "Unity Gain\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual gain value\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "Gain of 3.99\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 119,
+        "name": "ADV7619_OFFSET_CNTRL1",
+        "data": [
+            {
+                "name": "uCpPrec",
+                "size": 2,
+                "description": [
+                    "A control to set the precision of the data output by the CP core for channels A, B and C.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Rounds and truncates data in channels A, B and C to 10-bit precision\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Rounds and truncates data in channels A, B and C to 12-bit precision\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Rounds and truncates data in channels A, B and C to 8 bit precision\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Rounds and truncates data in channels A, B, and C to the precision set in OP_FORMAT_SEL[6:0]\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAOffset",
+                "size": 6,
+                "description": [
+                    "A control to set the manual offset for channel A.\r",
+                    "This field stores an unsigned value. To change A_OFFSET[9:0], the register addresses 0x77 and 0x78 must be \r",
+                    "written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x3FF",
+                        "description": "Auto Offset to Ch A\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Ch A offset\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 120,
+        "name": "ADV7619_OFFSET_CNTRL2",
+        "data": [
+            {
+                "name": "uAOffset",
+                "size": 4,
+                "description": [
+                    "A control to set the manual offset for channel A.\r",
+                    "This field stores an unsigned value. To change A_OFFSET[9:0], the register addresses 0x77 and 0x78 must be \r",
+                    "written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x3FF",
+                        "description": "Auto Offset to Ch A\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Ch A offset\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBOffset",
+                "size": 4,
+                "description": [
+                    "A control to set the manual offset for channel B.\r",
+                    "This field stores an unsigned value. To change B_OFFSET[9:0], the register addresses 0x78 and 0x79 must be \r",
+                    "written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x3FF",
+                        "description": "Auto Offset to Ch B\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Ch B offset.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 121,
+        "name": "ADV7619_OFFSET_CNTRL3",
+        "data": [
+            {
+                "name": "uBOffset",
+                "size": 6,
+                "description": [
+                    "A control to set the manual offset for channel B.\r",
+                    "This field stores an unsigned value. To change B_OFFSET[9:0], the register addresses 0x78 and 0x79 must be \r",
+                    "written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x3FF",
+                        "description": "Auto Offset to Ch B\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Ch B offset.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCOffset",
+                "size": 2,
+                "description": [
+                    "A control to set the manual offset for channel C.\r",
+                    "This field stores an unsigned value. To change C_OFFSET[9:0], the register addresses 0x79 and 0x7A must be \r",
+                    "written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x3FF",
+                        "description": "Auto Offset to Ch C\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Ch C offset.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 122,
+        "name": "ADV7619_OFFSET_CNTRL4",
+        "data": [
+            {
+                "name": "uCOffset",
+                "size": 8,
+                "description": [
+                    "A control to set the manual offset for channel C.\r",
+                    "This field stores an unsigned value. To change C_OFFSET[9:0], the register addresses 0x79 and 0x7A must be \r",
+                    "written to in this order with no I2C access in between. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x3FF",
+                        "description": "Auto Offset to Ch C\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Ch C offset.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 123,
+        "name": "ADV7619_AVCODE_CNTRL",
+        "data": [
+            {
+                "name": "uAvInvF",
+                "size": 1,
+                "description": [
+                    "A control to invert the F bit in the AV codes.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Inserts the F bit with default polarity,\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Inverts the F bit before inserting it into the AV code\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAvInvV",
+                "size": 1,
+                "description": [
+                    "A control to invert V bit in AV codes.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Do not invert V bit polarity before inserting it into the AV code,\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Invert V bit polarity before inserting it into the AV code\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved5_3",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uAvPosSel",
+                "size": 1,
+                "description": [
+                    "A control to select AV codes position\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "SAV code at HS falling edge and EAV code at HS rising edge.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Uses predetermined (default) positions for AV codes.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uDeWithAvcode",
+                "size": 1,
+                "description": [
+                    "A control to insert AV codes in relation to the DE output signal\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "AV codes locked to default values. DE position can be moved independently of AV codes.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Inserted AV codes moves in relation to DE position change.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 124,
+        "name": "ADV7619_SYNC_CNTRL1",
+        "data": [
+            {
+                "name": "uCpInvHs",
+                "size": 1,
+                "description": [
+                    "A control to set the polarity of the HSync output by the CP core. This control is not recommended for use. \r",
+                    "INV_HS_POL in IO Map, Register 0x06 [1] should be used instead. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The CP outputs a HSync with negative polarity\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The CP outputs a HSync with positive polarity\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpInvVs",
+                "size": 1,
+                "description": [
+                    "A control to set the polarity of the VSync output by the CP core. This control is not recommended for use. \r",
+                    "INV_VS_POL in IO Map, Register 0x06 [2] should be used instead. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The CP outputs a VSync with negative polarity\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The CP outputs a VSync with positive polarity\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved5",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpInvDe",
+                "size": 1,
+                "description": [
+                    "A control to set the polarity of the FIELD/DE output by the CP core. This control is not recommended for \r",
+                    "use. INV_F_POL in IO Map, Register 0x06 [3] should be used instead. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The CP outputs FIELD/DE with negative polarity\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The CP outputs FIELD/DE with positive polarity\r"
+                    }
+                ]
+            },
+            {
+                "name": "uStartHs",
+                "size": 2,
+                "description": [
+                    "R/W A control to shift the position of the leading edge of the HSync output by the CP core. This register \r",
+                    "stores a signed value in a 2's complement format. START_HS[9:0] is the number of pixel clocks by which the \r",
+                    "leading edge of the HSync is shifted (e.g. 0x3FF corresponds to a shift of 1 pixel clock away form the \r",
+                    "active video, 0x005 corresponds to a shift of 5 pixel clocks toward the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x000 to 0x1FF",
+                        "description": "The leading edge of the HSync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x200 to 0x3FF",
+                        "description": "The leading edge of the HSync is shifted away from the active video.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uEndHs",
+                "size": 2,
+                "description": [
+                    "A control to shift the position of the trailing edge of the HSync output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. HS_END[9:0] is the number of pixel clock \r",
+                    "by which the leading edge of the HSync is shifted (e.g. 0x3FF corresponds to a shift of 1 pixel clock away \r",
+                    "form the active video, 0x005 corresponds to a shift of 5 pixel clocks toward the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x000 to 0x1FF",
+                        "description": "The trailing edge of the HSync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x200 to 0x3FF",
+                        "description": "The trailing edge of the HSync is shifted away from the active video.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 125,
+        "name": "ADV7619_SYNC_CNTRL2",
+        "data": [
+            {
+                "name": "uEndHs",
+                "size": 8,
+                "description": [
+                    "A control to shift the position of the trailing edge of the HSync output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. HS_END[9:0] is the number of pixel clock \r",
+                    "by which the leading edge of the HSync is shifted (e.g. 0x3FF corresponds to a shift of 1 pixel clock away \r",
+                    "form the active video, 0x005 corresponds to a shift of 5 pixel clocks toward the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x000 to 0x1FF",
+                        "description": "The trailing edge of the HSync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x200 to 0x3FF",
+                        "description": "The trailing edge of the HSync is shifted away from the active video.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 126,
+        "name": "ADV7619_SYNC_CNTRL3",
+        "data": [
+            {
+                "name": "uStartHs",
+                "size": 8,
+                "description": [
+                    "R/W A control to shift the position of the leading edge of the HSync output by the CP core. This register \r",
+                    "stores a signed value in a 2's complement format. START_HS[9:0] is the number of pixel clocks by which the \r",
+                    "leading edge of the HSync is shifted (e.g. 0x3FF corresponds to a shift of 1 pixel clock away form the \r",
+                    "active video, 0x005 corresponds to a shift of 5 pixel clocks toward the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x000 to 0x1FF",
+                        "description": "The leading edge of the HSync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x200 to 0x3FF",
+                        "description": "The leading edge of the HSync is shifted away from the active video.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 127,
+        "name": "ADV7619_SYNC_CNTRL4",
+        "data": [
+            {
+                "name": "uStartVs",
+                "size": 4,
+                "description": [
+                    "A control to shift the position of the leading edge of the VSync output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. START_VS[3:0] is the number of lines by \r",
+                    "which the leading edge of the VSync is shifted (e.g. 0x0F corresponds to a shift by 1 line toward the \r",
+                    "active video, 0x01 corresponds to a shift of 1 line away from the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x0 to 0x7",
+                        "description": "The leading edge of the VSync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x8 to 0xF",
+                        "description": "The leading edge of the VSync is shifted away from the active video.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uEndVs",
+                "size": 4,
+                "description": [
+                    "A control to shift the position of the trailing edge of the VSync output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. SEND_VS[3:0] is the number of lines by \r",
+                    "which the trailing edge of the VSync is shifted (e.g. 0x0F corresponds to a shift of 1 line toward the \r",
+                    "active video, 0x01 corresponds to a shift of 1 line away from the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x0 to 0x7",
+                        "description": "The trailing edge of the VSync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x8 to 0xF",
+                        "description": "The trailing edge of the VSync is shifted away from the active video.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 128,
+        "name": "ADV7619_SYNC_CNTRL5",
+        "data": [
+            {
+                "name": "uStartFe",
+                "size": 4,
+                "description": [
+                    "A control to shift the position of the start of even field edge of the FIELD signal output by the CP core\r",
+                    "This register stores a signed value in a 2's complement format. START_FE[3:0] the number of lines by which \r",
+                    "the start of the even fields edge of the FIELD signal is shifted (e.g. 0x0D corresponds to a shift of 3 \r",
+                    "lines toward the active video, 0x05 corresponds to a shift of 5 line away from the active video). \r",
+                    "the active video. \r",
+                    "from the active video. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x0 to 0x7",
+                        "description": "The edge of the FIELD signal corresponding to the start of the even field is shifted toward \r"
+                    },
+                    {
+                        "value": "0x8 to 0xF",
+                        "description": "The trailing of the FIELD signal corresponding to the start of the even field is shifted away \r"
+                    }
+                ]
+            },
+            {
+                "name": "uStartFo",
+                "size": 4,
+                "description": [
+                    "A control to shift the position of the start of odd field edge of the FIELD signal output by the CP core\r",
+                    "This register stores a signed value in a 2's complement format. START_FO[3:0] the number of lines by which \r",
+                    "the start of the odd fields edge of the FIELD signal is shifted (e.g. 0x0D corresponds to a shift of 3 \r",
+                    "lines toward the active video, 0x05 corresponds to a shift of 5 line away from the active video). \r",
+                    "the active video. \r",
+                    "from the active video. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0",
+                        "description": "Default value.\r"
+                    },
+                    {
+                        "value": "0x0 to 0x7",
+                        "description": "The edge of the FIELD signal corresponding to the start of the odd field is shifted toward \r"
+                    },
+                    {
+                        "value": "0x8 to 0xF",
+                        "description": "The trailing of the FIELD signal corresponding to the start of the odd field is shifted away \r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 132,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_1",
+        "data": [
+            {
+                "name": "uCpGainFilt",
+                "size": 4,
+                "description": [
+                    "A control to set the coefficient A of the IIF filter to filter the gain applied to the video signal when \r",
+                    "the gain is manually set. The value set in this register is effective only when manual gain is enabled. \r",
+                    "The filter is designed as and IIR filter with a transfer function of the form Y[N]=(1-A)*y[N-1]+A*X[N] \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No filtering, i.e. coefficient A = 1\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Coefficient A = 1/128 lines\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Coefficient A = 1/256 lines\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Coefficient A = 1/512 lines\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "Coefficient A = 1/1024 lines\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "Coefficient A = 1/2048 lines\r"
+                    },
+                    {
+                        "value": "6",
+                        "description": "Coefficient A = 1/4096 lines\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "Coefficient A = 1/8192 lines\r"
+                    },
+                    {
+                        "value": "8",
+                        "description": "Coefficient A = 1/16 384 lines\r"
+                    },
+                    {
+                        "value": "9",
+                        "description": "Coefficient A = 1/32 768 lines\r"
+                    },
+                    {
+                        "value": "10",
+                        "description": "Coefficient A = 1/65 536 lines\r"
+                    },
+                    {
+                        "value": "11",
+                        "description": "Coefficient A = 1/131 072 lines\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_0",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 134,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_2",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCh1TrigStdi",
+                "size": 1,
+                "description": [
+                    "Trigger synchronization source and polarity detector for sync channel 1 STDI. A 0 to 1 transition in this \r",
+                    "bit restarts the auto-sync detection algorithm. This is not a self-clearing bit and must be set to 0 to \r",
+                    "prepare for next trigger. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Default value"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Transition 0 to 1 restarts auto-sync detection algorithm\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCh1StdiCont",
+                "size": 1,
+                "description": [
+                    "A control to select the sync channel 1 STDI mode of operation\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "sync channel 1 STDI works in one-shot mode (triggered by a 0 to 1 transition on the CH1_TRIG_STDI bit)\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "sync channel 1 STDI works in continuous mode\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved0",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 136,
+        "name": "ADV7619_DE_POS_ADJ3",
+        "data": [
+            {
+                "name": "uDeVStartEven",
+                "size": 4,
+                "description": [
+                    "A control to vary the start position of the VBI region in even field.\r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of \r",
+                    "DE_V_START_EVEN[9:0] is one pixel clock. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uDeVEndEven",
+                "size": 4,
+                "description": [
+                    "A control to vary the position of the end of the VBI region in even field.\r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of DE_V_END_EVEN[9:0] \r",
+                    "is one pixel clock. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 137,
+        "name": "ADV7619_SYNC_CNTRL6",
+        "data": [
+            {
+                "name": "uStartVsEven",
+                "size": 4,
+                "description": [
+                    "A control to shift the position of the leading edge of the Vsync output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. START_VS_EVEN[3:0] is the number of lines \r",
+                    "by which the leading edge of the Vsync is shifted (e.g. 0x0F corresponds to a shift by 1 line toward the \r",
+                    "active video, 0x01 corresponds to a shift of 1 line away from the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0 to 0x7",
+                        "description": "The leading edge of the even Vsync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x8 to 0xF",
+                        "description": "The leading edge of the even Vsync is shifted away from the active video.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uEndVsEven",
+                "size": 4,
+                "description": [
+                    "A control to shift the position of the trailing edge of the Vsync output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. SEND_VS_EVEN[3:0] is the number of lines \r",
+                    "by which the trailing edge of the Vsync is shifted (e.g. 0x0F corresponds to a shift of 1 line toward the \r",
+                    "active video, 0x01 corresponds to a shift of 1 line away from the active video). \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x0 to 0x7",
+                        "description": "The trailing edge of the even Vsync is shifted toward the active video.\r"
+                    },
+                    {
+                        "value": "0x8 to 0xF",
+                        "description": "The trailing edge of the even Vsync is shifted away from the active video.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 139,
+        "name": "ADV7619_DE_POS_ADJ4",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uDeHStart",
+                "size": 2,
+                "description": [
+                    "R/W A control to vary the leading edge position of the DE signal output by the CP core. This register \r",
+                    "stores a signed value in a 2's complement format. The unit of DE_H_START[9:0] is one pixel clock. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x200",
+                        "description": "-512 pixels of shift\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "-1 pixel of shift\r"
+                    },
+                    {
+                        "value": "0x000",
+                        "description": "Default value (no shift)\r"
+                    },
+                    {
+                        "value": "0x001",
+                        "description": "+1 pixel of shift\r"
+                    },
+                    {
+                        "value": "0x1FF",
+                        "description": "+511 pixels\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDeHEnd",
+                "size": 2,
+                "description": [
+                    "A control to vary the trailing edge position of the DE signal output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. The unit of DE_H_END[9:0] is one pixel \r",
+                    "clock. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 140,
+        "name": "ADV7619_DE_POS_ADJ5",
+        "data": [
+            {
+                "name": "uDeHEnd",
+                "size": 8,
+                "description": [
+                    "A control to vary the trailing edge position of the DE signal output by the CP core.\r",
+                    "This register stores a signed value in a 2's complement format. The unit of DE_H_END[9:0] is one pixel \r",
+                    "clock. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 141,
+        "name": "ADV7619_DE_POS_ADJ6",
+        "data": [
+            {
+                "name": "uDeHStart",
+                "size": 8,
+                "description": [
+                    "R/W A control to vary the leading edge position of the DE signal output by the CP core. This register \r",
+                    "stores a signed value in a 2's complement format. The unit of DE_H_START[9:0] is one pixel clock. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x200",
+                        "description": "-512 pixels of shift\r"
+                    },
+                    {
+                        "value": "0x3FF",
+                        "description": "-1 pixel of shift\r"
+                    },
+                    {
+                        "value": "0x000",
+                        "description": "Default value (no shift)\r"
+                    },
+                    {
+                        "value": "0x001",
+                        "description": "+1 pixel of shift\r"
+                    },
+                    {
+                        "value": "0x1FF",
+                        "description": "+511 pixels\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 142,
+        "name": "ADV7619_DE_POS_ADJ7",
+        "data": [
+            {
+                "name": "uDeVStart",
+                "size": 4,
+                "description": [
+                    "A control to vary the start position of the VBI region.\r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of DE_V_START[9:0] is \r",
+                    "one line. \r"
+                ],
+                "values": [
+                    {
+                        "value": "8",
+                        "description": "-8 lines of shift\r"
+                    },
+                    {
+                        "value": "15",
+                        "description": "-1 line of shift\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Default\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "+1 line of shift\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "+7 lines of shift\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDeVEnd",
+                "size": 4,
+                "description": [
+                    "A control to vary the position of the end of the VBI region.\r",
+                    "This register stores a signed value represented in a 2's complement format. The unit of DE_V_START[9:0] is \r",
+                    "one line. \r"
+                ],
+                "values": [
+                    {
+                        "value": "8",
+                        "description": "-8 lines of shift\r"
+                    },
+                    {
+                        "value": "15",
+                        "description": "-1 line of shift\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Default\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "+1 line of shift\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "+7 lines of shift\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 143,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_4_1",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCh1FrLl",
+                "size": 3,
+                "description": [
+                    "Free run line length in number of crystal clock cycles in one line of video for sync channel 1 STDI. This \r",
+                    "register should only be programmed video standards that are not supported by PRIM_MODE[3:0] and \r",
+                    "VID_STD[5:0]. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Internal free run line length is decoded from PRIM_MODE[3:0] and VID_STD[5:0].\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Number of crystal clocks in the ideal line length. Used to enter or exit free run mode.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 144,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_4_2",
+        "data": [
+            {
+                "name": "uCh1FrLl",
+                "size": 8,
+                "description": [
+                    "Free run line length in number of crystal clock cycles in one line of video for sync channel 1 STDI. This \r",
+                    "register should only be programmed video standards that are not supported by PRIM_MODE[3:0] and \r",
+                    "VID_STD[5:0]. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Internal free run line length is decoded from PRIM_MODE[3:0] and VID_STD[5:0].\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Number of crystal clocks in the ideal line length. Used to enter or exit free run mode.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 145,
+        "name": "ADV7619_CP_REGISTER91H",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uInterlaced",
+                "size": 1,
+                "description": [
+                    "Sets the interlaced/progressive mode of the incoming video processed in CP mode.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The CP core expects video mode is progressive\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "the CP core expects video mode is interlaced\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved5_0",
+                "size": 6,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 154,
+        "name": "ADV7619_VS_POS_CNTRL1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpStartVs",
+                "size": 5,
+                "description": [
+                    "R/W 00000000 00000000 A control to set the position of the start of the VSync output signal in the CP core \r",
+                    "in Autographic mode only. In the case of an interlaced signal this register adjusts the odd VS signal. \r",
+                    "Programming of this parameter is optional and should only be performed when the part is set in auto \r",
+                    "graphics mode. The value is unsigned. \r",
+                    "xxxxxx - Start of VSync pos.(unsigned)\r"
+                ],
+                "values": [
+                    {
+                        "value": "000000",
+                        "description": "Default value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 155,
+        "name": "ADV7619_VS_POS_CNTRL2",
+        "data": [
+            {
+                "name": "uCpStartVs",
+                "size": 1,
+                "description": [
+                    "R/W 00000000 00000000 A control to set the position of the start of the VSync output signal in the CP core \r",
+                    "in Autographic mode only. In the case of an interlaced signal this register adjusts the odd VS signal. \r",
+                    "Programming of this parameter is optional and should only be performed when the part is set in auto \r",
+                    "graphics mode. The value is unsigned. \r",
+                    "xxxxxx - Start of VSync pos.(unsigned)\r"
+                ],
+                "values": [
+                    {
+                        "value": "000000",
+                        "description": "Default value\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpEndVs",
+                "size": 6,
+                "description": [
+                    "R/W A control to set the position of the end of the VSync output signal in the CP core in Autographic mode \r",
+                    "only. In the case of an interlaced signal this register adjusts the odd VS signal. Programming of this \r",
+                    "parameter is optional and should only be performed when the part is set in auto graphics mode. The value \r",
+                    "is unsigned. \r",
+                    "xxxxxx - End of VSync pos.(unsigned)\r"
+                ],
+                "values": [
+                    {
+                        "value": "000000",
+                        "description": "Default value\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved0",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 156,
+        "name": "ADV7619_VS_POS_CNTRL3",
+        "data": [
+            {
+                "name": "uCpStartVsEven",
+                "size": 8,
+                "description": [
+                    "R/W A control to set the position of the start of the even VSync output signal in the CP core in \r",
+                    "Autographic mode only. Programming of this parameter is optional and should only be performed when the \r",
+                    "part is set in auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Start of even VSync pos.(unsigned)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 157,
+        "name": "ADV7619_VS_POS_CNTRL4",
+        "data": [
+            {
+                "name": "uCpStartVsEven",
+                "size": 3,
+                "description": [
+                    "R/W A control to set the position of the start of the even VSync output signal in the CP core in \r",
+                    "Autographic mode only. Programming of this parameter is optional and should only be performed when the \r",
+                    "part is set in auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Start of even VSync pos.(unsigned)\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpEndVsEven",
+                "size": 5,
+                "description": [
+                    "R/W A control to set the position of the end of the even VSync output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "End of even VSync pos.(unsigned)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 158,
+        "name": "ADV7619_VS_POS_CNTRL5",
+        "data": [
+            {
+                "name": "uCpEndVsEven",
+                "size": 6,
+                "description": [
+                    "R/W A control to set the position of the end of the even VSync output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "End of even VSync pos.(unsigned)\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1_0",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 159,
+        "name": "ADV7619_FLD_POS_CNTRL1",
+        "data": [
+            {
+                "name": "uCpStartFOdd",
+                "size": 8,
+                "description": [
+                    "R/W A control to set the position of the end of the odd field output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "End of odd FI signal pos.(unsigned)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 160,
+        "name": "ADV7619_FLD_POS_CNTRL2",
+        "data": [
+            {
+                "name": "uCpStartFOdd",
+                "size": 3,
+                "description": [
+                    "R/W A control to set the position of the end of the odd field output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "End of odd FI signal pos.(unsigned)\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpStartFEven",
+                "size": 5,
+                "description": [
+                    "R/W A control to set the position of the end of the even field output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "End of even FI signal pos.(unsigned)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 161,
+        "name": "ADV7619_FLD_POS_CNTRL3",
+        "data": [
+            {
+                "name": "uCpStartFEven",
+                "size": 6,
+                "description": [
+                    "R/W A control to set the position of the end of the even field output signal in the CP core in Autographic \r",
+                    "mode only. Programming of this parameter is optional and should only be performed when the part is set in \r",
+                    "auto graphics mode. The value is unsigned. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "End of even FI signal pos.(unsigned)\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1_0",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 163,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_RB_1",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCh1Lcf",
+                "size": 4,
+                "description": [
+                    "A readback for the sync channel 1 Line Count in a Field \r",
+                    "Number of lines between two VSyncs measured on sync channel 1. The readback from this field is valid if \r",
+                    "CH1_STDI_DVALID is high. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 164,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_RB_2",
+        "data": [
+            {
+                "name": "uCh1Lcf",
+                "size": 8,
+                "description": [
+                    "A readback for the sync channel 1 Line Count in a Field \r",
+                    "Number of lines between two VSyncs measured on sync channel 1. The readback from this field is valid if \r",
+                    "CH1_STDI_DVALID is high. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 165,
+        "name": "ADV7619_VBI_POS_CNTRL1",
+        "data": [
+            {
+                "name": "uCpStartVbi",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for start of VBI region position (of odd fields in case of interlaced output). This is an \r",
+                    "unsigned value. It set the total number of lines at the start of a frame of non-interlaced standard video. \r",
+                    "It sets the total number of lines at the start of the odd frame of interlaced standard video. Programming \r",
+                    "of this parameter is optional and should only be performed when the part is set in auto-graphics mode. For \r",
+                    "information on auto graphics mode, refer to the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for start of VBI region position\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 166,
+        "name": "ADV7619_VBI_POS_CNTRL2",
+        "data": [
+            {
+                "name": "uCpStartVbi",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for start of VBI region position (of odd fields in case of interlaced output). This is an \r",
+                    "unsigned value. It set the total number of lines at the start of a frame of non-interlaced standard video. \r",
+                    "It sets the total number of lines at the start of the odd frame of interlaced standard video. Programming \r",
+                    "of this parameter is optional and should only be performed when the part is set in auto-graphics mode. For \r",
+                    "information on auto graphics mode, refer to the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for start of VBI region position\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpEndVbi",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for end of VBI region position (of odd fields in case of interlaced output). This is an \r",
+                    "unsigned value. It sets the total number of lines at the end of a frame of non-interlaced standard video. \r",
+                    "It sets the total number of lines at the end of the odd frame of interlaced standard video. Programming of \r",
+                    "this parameter is optional and should only be performed when the part is set in auto-graphics mode. For \r",
+                    "information on auto graphics mode, refer to the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for end of VBI region position\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 167,
+        "name": "ADV7619_VBI_POS_CNTRL3",
+        "data": [
+            {
+                "name": "uCpEndVbi",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for end of VBI region position (of odd fields in case of interlaced output). This is an \r",
+                    "unsigned value. It sets the total number of lines at the end of a frame of non-interlaced standard video. \r",
+                    "It sets the total number of lines at the end of the odd frame of interlaced standard video. Programming of \r",
+                    "this parameter is optional and should only be performed when the part is set in auto-graphics mode. For \r",
+                    "information on auto graphics mode, refer to the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for end of VBI region position\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 168,
+        "name": "ADV7619_VBI_POS_CNTRL4",
+        "data": [
+            {
+                "name": "uCpStartVbiEven",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for start of VBI in even fields. This is an unsigned value. Total number of lines at the \r",
+                    "start of the even frame of interlaced standard. Programming of this parameter is optional and should only \r",
+                    "be performed when the part is set in auto-graphics mode. For information on auto graphics mode, refer to \r",
+                    "the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for start of VBI in even fields.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 169,
+        "name": "ADV7619_VBI_POS_CNTRL5",
+        "data": [
+            {
+                "name": "uCpStartVbiEven",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for start of VBI in even fields. This is an unsigned value. Total number of lines at the \r",
+                    "start of the even frame of interlaced standard. Programming of this parameter is optional and should only \r",
+                    "be performed when the part is set in auto-graphics mode. For information on auto graphics mode, refer to \r",
+                    "the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for start of VBI in even fields.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpEndVbiEven",
+                "size": 4,
+                "description": [
+                    "R/W Manual value for end of VBI region position for even fields. This is an unsigned value. Total number \r",
+                    "of lines at the end of the even frame of interlaced standard. Programming of this parameter is optional \r",
+                    "and should only be performed when the part is set in auto graphics mode. For information on auto graphics \r",
+                    "mode, refer to the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for end of VBI region position for even fields.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 170,
+        "name": "ADV7619_VBI_POS_CNTRL6",
+        "data": [
+            {
+                "name": "uCpEndVbiEven",
+                "size": 8,
+                "description": [
+                    "R/W Manual value for end of VBI region position for even fields. This is an unsigned value. Total number \r",
+                    "of lines at the end of the even frame of interlaced standard. Programming of this parameter is optional \r",
+                    "and should only be performed when the part is set in auto graphics mode. For information on auto graphics \r",
+                    "mode, refer to the Hardware Manual. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "manual value for end of VBI region position for even fields.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 171,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_3",
+        "data": [
+            {
+                "name": "uCpLcountMax",
+                "size": 8,
+                "description": [
+                    "Manual value for total number of lines in a frame expected by the CP core. CP_LCOUNT_MAX[11:0] is an \r",
+                    "unsigned value. This register is used for manual configuration of the free run feature. The value \r",
+                    "programmed in this register is used for sync channel 1. The value programmed in this register is used also \r",
+                    "for sync channel 2 if CH2_FR_FIELD_LENGTH[10:0] set to 0x000. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Ideal number of lines per frame is decoded from PRIM_MODE[3:0] and VID_STD[5:0] for sync channel 1.\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Use the programmed value as ideal number of lines per frame in free run decision for sync channel \r"
+                    },
+                    {
+                        "value": "1. \r",
+                        "description": "undefined"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 172,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_4",
+        "data": [
+            {
+                "name": "uCpLcountMax",
+                "size": 4,
+                "description": [
+                    "Manual value for total number of lines in a frame expected by the CP core. CP_LCOUNT_MAX[11:0] is an \r",
+                    "unsigned value. This register is used for manual configuration of the free run feature. The value \r",
+                    "programmed in this register is used for sync channel 1. The value programmed in this register is used also \r",
+                    "for sync channel 2 if CH2_FR_FIELD_LENGTH[10:0] set to 0x000. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0x000",
+                        "description": "Ideal number of lines per frame is decoded from PRIM_MODE[3:0] and VID_STD[5:0] for sync channel 1.\r"
+                    },
+                    {
+                        "value": "0xxxx",
+                        "description": "Use the programmed value as ideal number of lines per frame in free run decision for sync channel \r"
+                    },
+                    {
+                        "value": "1. \r",
+                        "description": "undefined"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_0",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 177,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_RB_3",
+        "data": [
+            {
+                "name": "uCh1StdiDvalid",
+                "size": 1,
+                "description": [
+                    "This bit is set when the measurements performed by sync channel 1 STDI are completed. High level signals \r",
+                    "validity for CH1_BL, CH1_LCF, CH1_LCVS, CH1_FCL, and CH1_STDI_INTLCD parameters. To prevent false \r",
+                    "readouts, especially during signal acquisition, CH1_SDTI_DVALID only goes high after four fields with same \r",
+                    "length are recorded. As a result, STDI measurements can take up to five fields to finish. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Sync channel 1 STDI measurement are not valid\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Sync channel 1 STDI measurement are valid\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCh1StdiIntlcd",
+                "size": 1,
+                "description": [
+                    "Interlaced vs. progressive mode detected by sync channel 1 STDI. The readback from this register is valid \r",
+                    "if CH1_STDI_DVALID is high. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Indicates a video signal on sync channel 1 with non interlaced timing.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Indicates a signal on sync channel 1 with interlaced timing.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCh1Bl",
+                "size": 6,
+                "description": [
+                    "A readback for the Block Length for sync channel 1. Number of crystal cycle cycles in a block of eight \r",
+                    "lines of incoming video. This readback is valid if CH1_STDI_DVALID is high. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 178,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_RB_4",
+        "data": [
+            {
+                "name": "uCh1Bl",
+                "size": 8,
+                "description": [
+                    "A readback for the Block Length for sync channel 1. Number of crystal cycle cycles in a block of eight \r",
+                    "lines of incoming video. This readback is valid if CH1_STDI_DVALID is high. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 179,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_RB_5",
+        "data": [
+            {
+                "name": "uCh1Lcvs",
+                "size": 5,
+                "description": [
+                    "A readback for the sync channel 1 Line Count in a VSync. \r",
+                    "Number of lines in a VSync period measured on sync channel 1. The readback from this field is valid if \r",
+                    "CH1_STDI_DVALID is high. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uReserved2_0",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 184,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_RB_6_1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCh1Fcl",
+                "size": 5,
+                "description": [
+                    "A readback for the sync channel 1 Field Count Length\r",
+                    "Number of crystal clock cycles between successive VSyncs measured by sync channel 1 STDI or in 1/256th of \r",
+                    "a field. The readback from this field is valid if CH1_STDI_DVALID is high. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 185,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_RB_6_2",
+        "data": [
+            {
+                "name": "uCh1Fcl",
+                "size": 8,
+                "description": [
+                    "A readback for the sync channel 1 Field Count Length\r",
+                    "Number of crystal clock cycles between successive VSyncs measured by sync channel 1 STDI or in 1/256th of \r",
+                    "a field. The readback from this field is valid if CH1_STDI_DVALID is high. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 186,
+        "name": "ADV7619_HDMI_CP_CNTRL1",
+        "data": [
+            {
+                "name": "uReserved7_2",
+                "size": 6,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uHdmiFrunMode",
+                "size": 1,
+                "description": [
+                    "A control to configure the free run feature in HDMI mode.\r",
+                    "port or it the video resolution of HDMI stream processed by the part does not match the video resolution \r",
+                    "programmed in PRIM_MODE[3:0] and VID_STD[5:0]. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "HDMI free run mode 0. The part free runs when the TMDS clock is not detected on the selected HDMI port\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HDMI free run mode 1. The CP core free runs when the TMDS clock is not detected on the selected HDMI \r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdmiFrunEn",
+                "size": 1,
+                "description": [
+                    "A control to enable free run in HDMI mode.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disable the free run feature in HDMI mode\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Enable the free run feature in HDMI mode\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 189,
+        "name": "ADV7619_COAST_CNTRL1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uDppBypassEn",
+                "size": 1,
+                "description": [
+                    "Manual control to enable DPP block.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "DPP Bypassed\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "DPP Enabled\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_0",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 190,
+        "name": "ADV7619_CP_REGISTERBEH",
+        "data": [
+            {
+                "name": "uDlyA",
+                "size": 1,
+                "description": [
+                    "A control to delay the data on channel A by one pixel clock cycle.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Delay the data of channel A by 1 pixel clock cycle\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Do not delay the data of channel A\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDlyB",
+                "size": 1,
+                "description": [
+                    "A control to delay the data on channel B by one pixel clock cycle.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Delay the data of channel B by 1 pixel clock cycle\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Do not delay the data of channel B\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDlyC",
+                "size": 1,
+                "description": [
+                    "A control to delay the data on channel C by one pixel clock cycle.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Delay the data of channel C by 1 pixel clock cycle\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Do not delay the data of channel C\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4_2",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uHcountAlignAdj",
+                "size": 2,
+                "description": [
+                    "Manual adjustment for internally generated hcount offset . This register allows an adjustment of 15 pixels \r",
+                    "to the left or to the right. The MSB sets the direction (left or right) and the 4 LSBs set the number of \r",
+                    "pixels to move. This is an unsigned control. \r",
+                    "xxxxx - manual adjustment for internally generated hcount offset.\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000",
+                        "description": "Default value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 191,
+        "name": "ADV7619_FR_COLOR_SEL1",
+        "data": [
+            {
+                "name": "uHcountAlignAdj",
+                "size": 3,
+                "description": [
+                    "Manual adjustment for internally generated hcount offset . This register allows an adjustment of 15 pixels \r",
+                    "to the left or to the right. The MSB sets the direction (left or right) and the 4 LSBs set the number of \r",
+                    "pixels to move. This is an unsigned control. \r",
+                    "xxxxx - manual adjustment for internally generated hcount offset.\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000",
+                        "description": "Default value\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4_3",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpDefColManVal",
+                "size": 1,
+                "description": [
+                    "A control to enable manual selection of the color used when the CP core free runs.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Uses default color blue\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Outputs default colors as given in CP_DEF_COL_CHA, CP_DEF_COL_B and CP_DEF_COL_C\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpDefColAuto",
+                "size": 1,
+                "description": [
+                    "A control to enable the insertion of default color when the CP free runs.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disable automatic insertion of default color\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Output default colors when the CP free runs\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCpForceFreerun",
+                "size": 1,
+                "description": [
+                    "A control to force the CP to free run.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Do not force the CP core free run.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Force the CP core to free run.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 192,
+        "name": "ADV7619_FR_COLOR_SEL2",
+        "data": [
+            {
+                "name": "uDefColCha",
+                "size": 8,
+                "description": [
+                    "A control the set the default color for channel A. To be used if CP_DEF_COL_MAN_VAL is 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x00",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxx",
+                        "description": "color for channel A.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 193,
+        "name": "ADV7619_FR_COLOR_SEL3",
+        "data": [
+            {
+                "name": "uDefColChb",
+                "size": 8,
+                "description": [
+                    "A control to set the default color for channel B. To be used if CP_DEF_COL_MAN_VAL is 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x00",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxx",
+                        "description": "color for channel B.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 194,
+        "name": "ADV7619_FR_COLOR_SEL4",
+        "data": [
+            {
+                "name": "uDefColChc",
+                "size": 8,
+                "description": [
+                    "A control to set the default color for channel C. To be used if CP_DEF_COL_MAN_VAL is 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "0x00",
+                        "description": "Default value\r"
+                    },
+                    {
+                        "value": "0xxx",
+                        "description": "color for channel C.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 201,
+        "name": "ADV7619_CP_REGISTERC9H",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uSwapSplitAv",
+                "size": 1,
+                "description": [
+                    "A control to swap the Luma and Chroma AV codes in DDR modes\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Swap the Luma and Chroma AV codes in DDR mode\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Do not swap the Luma and Chroma AV codes in DDR mode\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uDisAutoParamBuff",
+                "size": 1,
+                "description": [
+                    "A control to disable the buffering of the timing parameters used for free run in HDMI mode.\r",
+                    "into. \r",
+                    "PRIM_MODE[3:0], VID_STD[5:0] and V_FREQ[2:0] \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Buffer the last measured parameters in HDMI mode used to determine video resolution the part free runs \r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Disable the buffering of measured parameters in HDMI mode. Free run standard determined by \r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 203,
+        "name": "ADV7619_HDMI_CP_CNTRL2",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uAutoSlFilterFreezeEn",
+                "size": 1,
+                "description": [
+                    "R/W This bit determines if the internally generated parameter for the position of the HSync trailing edge \r",
+                    "is updated during the VBI region. This control is only intended for auto-graphics mode. It is recommended \r",
+                    "to leave AUTO_SL_FILTER_FREEZE_EN to default. Unless AUTO_SL_FILTER_FREEZE_EN is left to default, the part \r",
+                    "may generat e an incorrect HSync trailing edge position parameter if the input synchronization is embedded \r",
+                    "and has serration pulses \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Do not freeze the trailing edge position of the HSync during the VBI region.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Freeze the trailing edge position of the HSync during the VBI region.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4_2",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uHdmiCpLockThreshold",
+                "size": 2,
+                "description": [
+                    "Locking time of filter used for buffering of timing parameters in HDMI mode.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Slowest locking time\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Medium locking time\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Fastest locking time\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Fixed step size of 0.5 pixel\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 224,
+        "name": "ADV7619_CP_REGISTERE0H",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uHdmiCpAutoparmLocked",
+                "size": 1,
+                "description": [
+                    "A readback to report the lock status of the parameter buffering in HDMI mode\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The parameter buffering block has not lock to the synchronization signal from the HDMI core.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The parameter buffering block has lock to the synchronization signal from the HDMI core.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdmiAutoparmSts",
+                "size": 2,
+                "description": [
+                    "CP status for HDMI mode\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The CP is free running with according to timing parameters programmed in PRIM_MODE and VID_STD\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The timing buffer filter has locked to the HDMI input\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "The CP is free running according to the HDMI buffered parameters\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_2",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpAgcGain",
+                "size": 2,
+                "description": [
+                    "R A readback value of the gain used gain on the data of channel A. The value stored in this register has \r",
+                    "is in a 1.9 binary format and composed of one integer and nine fractional bits. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 225,
+        "name": "ADV7619_CP_REGISTERE1H",
+        "data": [
+            {
+                "name": "uCpAgcGain",
+                "size": 8,
+                "description": [
+                    "R A readback value of the gain used gain on the data of channel A. The value stored in this register has \r",
+                    "is in a 1.9 binary format and composed of one integer and nine fractional bits. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 243,
+        "name": "ADV7619_SYNC_DET_CNTRL_CH1_5",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCh1FlFrThreshold",
+                "size": 3,
+                "description": [
+                    "Threshold for difference between input video field length and internally stored standard to enter and exit \r",
+                    "freerun. \r",
+                    "is 31 lines. \r",
+                    "is 15 lines. \r",
+                    "is 7 lines. \r",
+                    "is 46 lines. \r",
+                    "is 63 lines. \r",
+                    "is 127 lines. \r",
+                    "is 255 lines. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Minimum difference to switch into free run is 36 lines. Maximum difference to switch out of free run \r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Minimum difference to switch into free run is 18 lines. Maximum difference to switch out of free run \r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Minimum difference to switch into free run is 10 lines. Maximum difference to switch out of free run \r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Minimum difference to switch into free run is 4 lines. Maximum difference to switch out of free run is \r"
+                    },
+                    {
+                        "value": "3 lines. \r",
+                        "description": "undefined"
+                    },
+                    {
+                        "value": "4",
+                        "description": "Minimum difference to switch into free run is 51 lines. Maximum difference to switch out of free run \r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "Minimum difference to switch into free run is 69 lines. Maximum difference to switch out of free run \r"
+                    },
+                    {
+                        "value": "6",
+                        "description": "Minimum difference to switch into free run is 134 lines. Maximum difference to switch out of free run \r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "Minimum difference to switch into free run is 263 lines. Maximum difference to switch out of free run \r"
+                    }
+                ]
+            },
+            {
+                "name": "uCh1FRunThr",
+                "size": 3,
+                "description": [
+                    "Free run threshold select for sync channel 1. Determines the horizontal conditions under which free run \r",
+                    "mode is entered or left. The length of the incoming video line is measured based on the crystal clock and \r",
+                    "compared to an internally stored parameter. The magnitude of the difference decides whether or not sync \r",
+                    "channel 1 will enter free run mode. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Minimum difference to switch into free run is 2. Maximum difference to switch out of free run is 1.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Minimum difference to switch into free run is 256. Maximum difference to switch out of free run is 200.\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Minimum difference to switch into free run is 128. Maximum difference to switch out of free run is 112.\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Minimum difference to switch into free run is 64. Maximum difference to switch out of free run is 48.\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "Minimum difference to switch into free run is 32. Maximum difference to switch out of free run is 24.\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "Minimum difference to switch into free run is 16. Maximum difference to switch out of free run is 12.\r"
+                    },
+                    {
+                        "value": "6",
+                        "description": "Minimum difference to switch into free run is 8. Maximum difference to switch out of free run is 6.\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "Minimum difference to switch into free run is 4. Maximum difference to switch out of free run is 3.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 244,
+        "name": "ADV7619_CSC_COEFF_SEL_RB",
+        "data": [
+            {
+                "name": "uCscCoeffSelRb",
+                "size": 4,
+                "description": [
+                    "Readback of the CP CSC conversion when configured in automatic mode\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "CSC is bypassed\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "YPbPr 601 to RGB\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "YPbPr 709 to RGB\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "RGB to YPbPr 601\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "RGB to YPbPr 709\r"
+                    },
+                    {
+                        "value": "9",
+                        "description": "YPbPr 709 to YPbPr 601\r"
+                    },
+                    {
+                        "value": "10",
+                        "description": "YPbPr 601 to YPbPr 709\r"
+                    },
+                    {
+                        "value": "15",
+                        "description": "CSC in manual mode\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_0",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 245,
+        "name": "ADV7619_CP_REGISTERF5H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uWdTimerDis",
+                "size": 1,
+                "description": [
+                    "frame start detection pulse when parameters like PLL_DIV_RATIO are to be updated on VSync \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Enable watchdog timer\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Disable watchdog timer\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_2",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uBypassStdi1Locking",
+                "size": 1,
+                "description": [
+                    "Bypass STDI locking for sync channel 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Update CH1_BL, CH1_LCF and CH1_LCVS only the sync channel 1 STDI locks and CH1_STDI_DVALID is set to 1\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Update CH1_BL, CH1_LCF,CH1_LCVS from the sync channel 1 STDI as they are measured\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved0",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 255,
+        "name": "ADV7619_CP_REGISTERFFH",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCpFreeRun",
+                "size": 1,
+                "description": [
+                    "Component processor freerun status\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The CP is not free running\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The CP is free running\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_0",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    }
+]
