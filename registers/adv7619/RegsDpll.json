@@ -1,0 +1,55 @@
+[
+    {
+        "offset": 181,
+        "name": "ADV7619_MCLK_FS",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [],
+                "values": []
+            },
+            {
+                "name": "uMclkFsN",
+                "size": 3,
+                "description": [
+                    "Selects the multiple of 128fs used for MCLK out.\r\n"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "128fs\r\n"
+                    },
+                    {
+                        "value": "1",
+                        "description": "256fs\r\n"
+                    },
+                    {
+                        "value": "2",
+                        "description": "384fs\r\n"
+                    },
+                    {
+                        "value": "3",
+                        "description": "512fs\r\n"
+                    },
+                    {
+                        "value": "4",
+                        "description": "640fs\r\n"
+                    },
+                    {
+                        "value": "5",
+                        "description": "768fs\r\n"
+                    },
+                    {
+                        "value": "6",
+                        "description": "Not Valid\r\n"
+                    },
+                    {
+                        "value": "7",
+                        "description": "Not Valid\r\n"
+                    }
+                ]
+            }
+        ]
+    }
+]
