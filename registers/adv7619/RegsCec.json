@@ -1,909 +1,1839 @@
-[{
-    "offset": 0,
-    "name": "ADV7619_CEC_REGISTER00H",
-    "data": [{
-        "uCecTxFrameHeader": {
-            "size": 8,
-            "description": ["Header block in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 1,
-    "name": "ADV7619_CEC_REGISTER01H",
-    "data": [{
-        "uCecTxFrameData0": {
-            "size": 8,
-            "description": ["Opcode block in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 2,
-    "name": "ADV7619_CEC_REGISTER02H",
-    "data": {
-        "uCecTxFrameData1": {
-            "size": 8,
-            "description": ["Operand 1 in the transmitted frame"]
-        }
+[
+    {
+        "offset": 0,
+        "name": "ADV7619_CEC_REGISTER00H",
+        "data": [
+            {
+                "name": "uCecTxFrameHeader",
+                "size": 8,
+                "description": [
+                    "Header block in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 1,
+        "name": "ADV7619_CEC_REGISTER01H",
+        "data": [
+            {
+                "name": "uCecTxFrameData0",
+                "size": 8,
+                "description": [
+                    "Opcode block in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 2,
+        "name": "ADV7619_CEC_REGISTER02H",
+        "data": [
+            {
+                "name": "uCecTxFrameData1",
+                "size": 8,
+                "description": [
+                    "Operand 1 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 3,
+        "name": "ADV7619_CEC_REGISTER03H",
+        "data": [
+            {
+                "name": "uCecTxFrameData2",
+                "size": 8,
+                "description": [
+                    "Operand 2 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 4,
+        "name": "ADV7619_CEC_REGISTER04H",
+        "data": [
+            {
+                "name": "uCecTxFrameData3",
+                "size": 8,
+                "description": [
+                    "Operand 3 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 5,
+        "name": "ADV7619_CEC_REGISTER05H",
+        "data": [
+            {
+                "name": "uCecTxFrameData4",
+                "size": 8,
+                "description": [
+                    "Operand 4 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 6,
+        "name": "ADV7619_CEC_REGISTER06H",
+        "data": [
+            {
+                "name": "uCecTxFrameData5",
+                "size": 8,
+                "description": [
+                    "Operand 5 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 7,
+        "name": "ADV7619_CEC_REGISTER07H",
+        "data": [
+            {
+                "name": "uCecTxFrameData6",
+                "size": 8,
+                "description": [
+                    "Operand 6 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 8,
+        "name": "ADV7619_CEC_REGISTER08H",
+        "data": [
+            {
+                "name": "uCecTxFrameData7",
+                "size": 8,
+                "description": [
+                    "Operand 7 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 9,
+        "name": "ADV7619_CEC_REGISTER09H",
+        "data": [
+            {
+                "name": "uCecTxFrameData8",
+                "size": 8,
+                "description": [
+                    "Operand 8 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 10,
+        "name": "ADV7619_CEC_REGISTER0AH",
+        "data": [
+            {
+                "name": "uCecTxFrameData9",
+                "size": 8,
+                "description": [
+                    "Operand 9 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 11,
+        "name": "ADV7619_CEC_REGISTER0BH",
+        "data": [
+            {
+                "name": "uCecTxFrameData10",
+                "size": 8,
+                "description": [
+                    "Operand 10 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 12,
+        "name": "ADV7619_CEC_REGISTER0CH",
+        "data": [
+            {
+                "name": "uCecTxFrameData11",
+                "size": 8,
+                "description": [
+                    "Operand 11 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 13,
+        "name": "ADV7619_CEC_REGISTER0DH",
+        "data": [
+            {
+                "name": "uCecTxFrameData12",
+                "size": 8,
+                "description": [
+                    "Operand 12 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 14,
+        "name": "ADV7619_CEC_REGISTER0EH",
+        "data": [
+            {
+                "name": "uCecTxFrameData13",
+                "size": 8,
+                "description": [
+                    "Operand 13 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 15,
+        "name": "ADV7619_CEC_REGISTER0FH",
+        "data": [
+            {
+                "name": "uCecTxFrameData14",
+                "size": 8,
+                "description": [
+                    "Operand 14 in the transmitted frame\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 16,
+        "name": "ADV7619_CEC_REGISTER10H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecTxFrameLength",
+                "size": 5,
+                "description": [
+                    "Message size of the transmitted frame. This is the number of byte in the outgoing message including the \r",
+                    "header. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 17,
+        "name": "ADV7619_CEC_REGISTER11H",
+        "data": [
+            {
+                "name": "uReserved7_1",
+                "size": 7,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecTxEnable",
+                "size": 1,
+                "description": [
+                    "This bit enables the TX section. When set to 1 it initiates the start of transmission of the message in \r",
+                    "the outgoing message buffer. When the message transmission is completed this bit is automatically reset to \r",
+                    "what stage of the transmission process has been reached. If the message transmission is sill in the \r",
+                    "the transmission will continue until the message is fully sent, or until an error condition occurs. \r",
+                    "0. If it is manually set to 0 during a message transmission it may terminate the transmission depending on \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Transmission mode disabled\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Transmission mode enabled and message transmission started\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 18,
+        "name": "ADV7619_CEC_REGISTER12H",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecTxRetry",
+                "size": 3,
+                "description": [
+                    "The number of times the CEC TX should try to retransmit the message if an error condition is encountered. \r",
+                    "Per the CEC spec this value should not be set to a value greater than 5. \r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Try to retransmit the message 1 time if an error occurs\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecRetrySft",
+                "size": 4,
+                "description": [
+                    "Signal Free Time of periods for retransmission retry. This parameter should be set to a value equal to or \r",
+                    "greater than 3 and strictly less than 5. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 19,
+        "name": "ADV7619_CEC_REGISTER13H",
+        "data": [
+            {
+                "name": "uCecTxSft2",
+                "size": 4,
+                "description": [
+                    "R/W Signal Free Time if the device is a new initiator. This parameter should be set to a value equal to or \r",
+                    "greater than 5 and strictly less than 7. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecTxSft1",
+                "size": 4,
+                "description": [
+                    "R/W Signal Free Time if the device transmits a next frame immediately after its previous frame. This \r",
+                    "parameter should be set to a value equal to or greater than 7 and strictly less than 10. \r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 20,
+        "name": "ADV7619_CEC_REGISTER14H",
+        "data": [
+            {
+                "name": "uCecTxLowdriveCounter",
+                "size": 4,
+                "description": [
+                    "The number of times that the LOWDRIVE error condition was encountered while trying to send the current \r",
+                    "message. This register is reset to 0b0000 when CEC_TX_ENABLE is set to 1. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No error condition\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecTxNackCounter",
+                "size": 4,
+                "description": [
+                    "The number of times that the NACK error condition was encountered while trying to send the current \r",
+                    "message. This register is reset to 0b0000 when CEC_TX_ENABLE is set to 1. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No error condition\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 21,
+        "name": "ADV7619_CEC_REGISTER15H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameHeader",
+                "size": 8,
+                "description": [
+                    "Header block of the received frame stored in receiver frame buffer 0.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 22,
+        "name": "ADV7619_CEC_REGISTER16H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData0",
+                "size": 8,
+                "description": [
+                    "Opcode block of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 23,
+        "name": "ADV7619_CEC_REGISTER17H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData1",
+                "size": 8,
+                "description": [
+                    "Operand 1 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 24,
+        "name": "ADV7619_CEC_REGISTER18H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData2",
+                "size": 8,
+                "description": [
+                    "Operand 2 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 25,
+        "name": "ADV7619_CEC_REGISTER19H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData3",
+                "size": 8,
+                "description": [
+                    "Operand 3 of the received frame in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 26,
+        "name": "ADV7619_CEC_REGISTER1AH",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData4",
+                "size": 8,
+                "description": [
+                    "Operand 4 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 27,
+        "name": "ADV7619_CEC_REGISTER1BH",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData5",
+                "size": 8,
+                "description": [
+                    "Operand 5 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 28,
+        "name": "ADV7619_CEC_REGISTER1CH",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData6",
+                "size": 8,
+                "description": [
+                    "Operand 6 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 29,
+        "name": "ADV7619_CEC_REGISTER1DH",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData7",
+                "size": 8,
+                "description": [
+                    "Operand 7 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 30,
+        "name": "ADV7619_CEC_REGISTER1EH",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData8",
+                "size": 8,
+                "description": [
+                    "Operand 8 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 31,
+        "name": "ADV7619_CEC_REGISTER1FH",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData9",
+                "size": 8,
+                "description": [
+                    "Operand 9 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 32,
+        "name": "ADV7619_CEC_REGISTER20H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData10",
+                "size": 8,
+                "description": [
+                    "Operand 10 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 33,
+        "name": "ADV7619_CEC_REGISTER21H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData11",
+                "size": 8,
+                "description": [
+                    "Operand 11 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 34,
+        "name": "ADV7619_CEC_REGISTER22H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData12",
+                "size": 8,
+                "description": [
+                    "Operand 12 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 35,
+        "name": "ADV7619_CEC_REGISTER23H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData13",
+                "size": 8,
+                "description": [
+                    "Operand 13 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 36,
+        "name": "ADV7619_CEC_REGISTER24H",
+        "data": [
+            {
+                "name": "uCecBuf0RxFrameData14",
+                "size": 8,
+                "description": [
+                    "Operand 14 of the received frame stored in receiver frame buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 37,
+        "name": "ADV7619_CEC_REGISTER25H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecBuf0RxFrameLength",
+                "size": 5,
+                "description": [
+                    "R xxxxx - The total number of bytes (including header byte) that were received into buffer 0\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 39,
+        "name": "ADV7619_CEC_REGISTER27H",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecLogicalAddressMask",
+                "size": 3,
+                "description": [
+                    "Logical Address mask of the CEC logical devices. Up to 3 logical devices are supported. When the mask bits \r",
+                    "are set for a particular logical device, the logical device is enabled and messages whose destination \r",
+                    "address matches that of the selected logical address will be accepted. \r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecErrorReportMode",
+                "size": 1,
+                "description": [
+                    "Error report mode\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Only report short bit period errors\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Report both short and long bit period errors\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecErrorDetMode",
+                "size": 1,
+                "description": [
+                    "Error detection mode\r",
+                    "drives the CEC line low for 3.6ms \r",
+                    "target CEC device, the CEC controller immediately drives the CEC line low for 3.6ms \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "If any short bit period error, except for start bit, is detected, the CEC controller immediately \r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "If a short bit period is detected in the data block where the destination is the CEC section or a \r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecForceNack",
+                "size": 1,
+                "description": [
+                    "Force NO-ACK Control\r",
+                    "Setting this bit forces the CEC controller not acknowledge any received messages.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Acknowledge received messages\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Do not acknowledge received messages\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecForceIgnore",
+                "size": 1,
+                "description": [
+                    "Force Ignore Control. Setting this bit forces the CEC controller to ignore any directly addressed \r",
+                    "messages. Normal operation should be kept for the broadcast message \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Do not ignore directly address messages\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Ignore any directly addressed message\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 40,
+        "name": "ADV7619_CEC_REGISTER28H",
+        "data": [
+            {
+                "name": "uCecLogicalAddress1",
+                "size": 4,
+                "description": [
+                    "Logical address 1 - this address must be enabled by setting CEC_LOGICAL_ADDRESS_MASK[1] to 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "15",
+                        "description": "Default value\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecLogicalAddress0",
+                "size": 4,
+                "description": [
+                    "Logical address 0 - this address must be enabled by setting CEC_LOGICAL_ADDRESS_MASK[0] to 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "15",
+                        "description": "Default value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 41,
+        "name": "ADV7619_CEC_REGISTER29H",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecLogicalAddress2",
+                "size": 4,
+                "description": [
+                    "Logical address 2 - this address must be enabled by setting CEC_LOGICAL_ADDRESS_MASK[2] to 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "15",
+                        "description": "Default value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 42,
+        "name": "ADV7619_CEC_REGISTER2AH",
+        "data": [
+            {
+                "name": "uReserved7_1",
+                "size": 7,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecPowerUp",
+                "size": 1,
+                "description": [
+                    "Power Mode of CEC module\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Power down the CEC module\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Power up the CEC module\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 43,
+        "name": "ADV7619_CEC_REGISTER2BH",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecGlitchFilterCtrl",
+                "size": 6,
+                "description": [
+                    "The CEC input signal is sampled by the input clock (XTAL clock). CEC_GLITCH_FILTER_CTRL specifies the \r",
+                    "minimum pulse width requirement in input clock cycles. Pulses of widths less than the minimum specified \r",
+                    "width are considered glitches and will be removed by the filter. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disable the glitch filter\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Filter out pulses with width less than 1 clock cycle\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Filter out pulses with width less than 2 clock cycles\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "Filter out pulses with width less than 7 clock cycles\r"
+                    },
+                    {
+                        "value": "63",
+                        "description": "Filter out pulses with width less than 63 clock cycles\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 44,
+        "name": "ADV7619_CEC_REGISTER2CH",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecClrRxRdy2",
+                "size": 1,
+                "description": [
+                    "Clear control for CEC_RX_RDY2\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Retain the value of the CEC_RX_RDY2 flag\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Clear the value of the CEC_RX_RDY2 flag\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecClrRxRdy1",
+                "size": 1,
+                "description": [
+                    "Clear control for CEC_RX_RDY1\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Retain the value of the CEC_ RX_RDY1 flag\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Clear the value of the CEC_RX_RDY1 flag\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecClrRxRdy0",
+                "size": 1,
+                "description": [
+                    "Clear control for CEC_RX_RDY0\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Retain the value of the CEC_RX_RDY0 flag\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Clear the value of the CEC_RX_RDY0 flag\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecSoftReset",
+                "size": 1,
+                "description": [
+                    "CEC module software reset.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No function\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Reset the CEC module\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 76,
+        "name": "ADV7619_CEC_REGISTER4CH",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecDisAutoMode",
+                "size": 1,
+                "description": [
+                    "A control to disable the automatic CEC power up feature when in chip powerdown mode.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Automatic power up feature enabled\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Automatic power up feature disabled\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1_0",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 83,
+        "name": "ADV7619_CEC_REGISTER53H",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecBuf2Timestamp",
+                "size": 2,
+                "description": [
+                    "Time stamp for frame stored in receiver frame buffer 2. This can be used to determine which frame should \r",
+                    "be read next from the receiver frame buffers. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Invalid timestamp, no frame is available in this frame buffer\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Of the frames currently buffered, this frame was the first to be received\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Of the frames currently buffered, this frame was the second to be received\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Of the frames currently buffered, this frame was the third to be received\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecBuf1Timestamp",
+                "size": 2,
+                "description": [
+                    "Time stamp for frame stored in receiver frame buffer 1. This can be used to determine which frame should \r",
+                    "be read next from the receiver frame buffers. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Invalid timestamp, no frame is available in this frame buffer\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Of the frames currently buffered, this frame was the first to be received\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Of the frames currently buffered, this frame was the second to be received\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Of the frames currently buffered, this frame was the third to be received\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecBuf0Timestamp",
+                "size": 2,
+                "description": [
+                    "Time stamp for frame stored in receiver frame buffer 0. This can be used to determine which frame should \r",
+                    "be read next from the receiver frame buffers. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Invalid timestamp, no frame is available in this frame buffer\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Of the frames currently buffered, this frame was the first to be received\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Of the frames currently buffered, this frame was the second to be received\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Of the frames currently buffered, this frame was the third to be received\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 84,
+        "name": "ADV7619_CEC_REGISTER54H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameHeader",
+                "size": 8,
+                "description": [
+                    "Header block of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 85,
+        "name": "ADV7619_CEC_REGISTER55H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData0",
+                "size": 8,
+                "description": [
+                    "Opcode block of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 86,
+        "name": "ADV7619_CEC_REGISTER56H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData1",
+                "size": 8,
+                "description": [
+                    "Operand 1 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 87,
+        "name": "ADV7619_CEC_REGISTER57H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData2",
+                "size": 8,
+                "description": [
+                    "Operand 2 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 88,
+        "name": "ADV7619_CEC_REGISTER58H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData3",
+                "size": 8,
+                "description": [
+                    "Operand 3 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 89,
+        "name": "ADV7619_CEC_REGISTER59H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData4",
+                "size": 8,
+                "description": [
+                    "Operand 4 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 90,
+        "name": "ADV7619_CEC_REGISTER5AH",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData5",
+                "size": 8,
+                "description": [
+                    "Operand 5 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 91,
+        "name": "ADV7619_CEC_REGISTER5BH",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData6",
+                "size": 8,
+                "description": [
+                    "Operand 6 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 92,
+        "name": "ADV7619_CEC_REGISTER5CH",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData7",
+                "size": 8,
+                "description": [
+                    "Operand 7 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 93,
+        "name": "ADV7619_CEC_REGISTER5DH",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData8",
+                "size": 8,
+                "description": [
+                    "Operand 8 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 94,
+        "name": "ADV7619_CEC_REGISTER5EH",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData9",
+                "size": 8,
+                "description": [
+                    "Operand 9 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 95,
+        "name": "ADV7619_CEC_REGISTER5FH",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData10",
+                "size": 8,
+                "description": [
+                    "Operand 10 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 96,
+        "name": "ADV7619_CEC_REGISTER60H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData11",
+                "size": 8,
+                "description": [
+                    "Operand 11 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 97,
+        "name": "ADV7619_CEC_REGISTER61H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData12",
+                "size": 8,
+                "description": [
+                    "Operand 12 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 98,
+        "name": "ADV7619_CEC_REGISTER62H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData13",
+                "size": 8,
+                "description": [
+                    "Operand 13 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 99,
+        "name": "ADV7619_CEC_REGISTER63H",
+        "data": [
+            {
+                "name": "uCecBuf1RxFrameData14",
+                "size": 8,
+                "description": [
+                    "Operand 14 of the received frame in receiver frame buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 100,
+        "name": "ADV7619_CEC_REGISTER64H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecBuf1RxFrameLength",
+                "size": 5,
+                "description": [
+                    "R xxxxx - The total number of bytes (including header byte) that were received into buffer 1\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 101,
+        "name": "ADV7619_CEC_REGISTER65H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameHeader",
+                "size": 8,
+                "description": [
+                    "Header block of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 102,
+        "name": "ADV7619_CEC_REGISTER66H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData0",
+                "size": 8,
+                "description": [
+                    "Opcode block of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 103,
+        "name": "ADV7619_CEC_REGISTER67H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData1",
+                "size": 8,
+                "description": [
+                    "Operand 1 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 104,
+        "name": "ADV7619_CEC_REGISTER68H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData2",
+                "size": 8,
+                "description": [
+                    "Operand 2 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 105,
+        "name": "ADV7619_CEC_REGISTER69H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData3",
+                "size": 8,
+                "description": [
+                    "Operand 3 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 106,
+        "name": "ADV7619_CEC_REGISTER6AH",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData4",
+                "size": 8,
+                "description": [
+                    "Operand 4 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 107,
+        "name": "ADV7619_CEC_REGISTER6BH",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData5",
+                "size": 8,
+                "description": [
+                    "Operand 5 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 108,
+        "name": "ADV7619_CEC_REGISTER6CH",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData6",
+                "size": 8,
+                "description": [
+                    "Operand 6 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 109,
+        "name": "ADV7619_CEC_REGISTER6DH",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData7",
+                "size": 8,
+                "description": [
+                    "Operand 7 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 110,
+        "name": "ADV7619_CEC_REGISTER6EH",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData8",
+                "size": 8,
+                "description": [
+                    "Operand 8 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 111,
+        "name": "ADV7619_CEC_REGISTER6FH",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData9",
+                "size": 8,
+                "description": [
+                    "Operand 9 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 112,
+        "name": "ADV7619_CEC_REGISTER70H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData10",
+                "size": 8,
+                "description": [
+                    "Operand 10 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 113,
+        "name": "ADV7619_CEC_REGISTER71H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData11",
+                "size": 8,
+                "description": [
+                    "Operand 11 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 114,
+        "name": "ADV7619_CEC_REGISTER72H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData12",
+                "size": 8,
+                "description": [
+                    "Operand 12 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 115,
+        "name": "ADV7619_CEC_REGISTER73H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData13",
+                "size": 8,
+                "description": [
+                    "Operand 13 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 116,
+        "name": "ADV7619_CEC_REGISTER74H",
+        "data": [
+            {
+                "name": "uCecBuf2RxFrameData14",
+                "size": 8,
+                "description": [
+                    "Operand 14 of the received frame in receiver frame buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 117,
+        "name": "ADV7619_CEC_REGISTER75H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecBuf2RxFrameLength",
+                "size": 5,
+                "description": [
+                    "R xxxxx - The total number of bytes (including header byte) that were received into buffer 2\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 118,
+        "name": "ADV7619_CEC_REGISTER76H",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecRxRdy2",
+                "size": 1,
+                "description": [
+                    "CEC_RX_RDY2 flags that a CEC frame has been received and is waiting to be read in receiver frame buffer 2. \r",
+                    "This flag must be cleared via CEC_CLR_RX_RDY2 before another message can be received in receiver frame \r",
+                    "buffer 2. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No CEC frame available in buffer 2\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "A CEC frame is available in buffer 2\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecRxRdy1",
+                "size": 1,
+                "description": [
+                    "CEC_RX_RDY1 flags that a CEC frame has been received and is waiting to be read in receiver frame buffer 2. \r",
+                    "This flag must be cleared via CEC_CLR_RX_RDY1 before another message can be received in receiver frame \r",
+                    "buffer 1. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No CEC frame available in buffer 1\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "A CEC frame is available in buffer 1\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCecRxRdy0",
+                "size": 1,
+                "description": [
+                    "CEC_RX_RDY0 flags that a CEC frame has been received and is waiting to be read in receiver frame buffer 2. \r",
+                    "This flag must be cleared via CEC_CLR_RX_RDY0 before another message can be received in receiver frame \r",
+                    "buffer 0. \r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No CEC frame available in buffer 0\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "A CEC frame is available in buffer 0\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 119,
+        "name": "ADV7619_CEC_REGISTER77H",
+        "data": [
+            {
+                "name": "uReserved7_1",
+                "size": 7,
+                "description": [
+                    "No description"
+                ],
+                "values": []
+            },
+            {
+                "name": "uCecUseAllBufs",
+                "size": 1,
+                "description": [
+                    "Control to enable supplementary receiver frame buffers.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Use only buffer 0 to store CEC frames\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Use all 3 buffers to stores the CEC frames\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 120,
+        "name": "ADV7619_CEC_REGISTER78H",
+        "data": [
+            {
+                "name": "uCecWakeOpcode0",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE0\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "109",
+                        "description": "POWER ON\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 121,
+        "name": "ADV7619_CEC_REGISTER79H",
+        "data": [
+            {
+                "name": "uCecWakeOpcode1",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE1\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "143",
+                        "description": "GIVE POWER STATUS\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 122,
+        "name": "ADV7619_CEC_REGISTER7AH",
+        "data": [
+            {
+                "name": "uCecWakeOpcode2",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE2\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "130",
+                        "description": "ACTIVE SOURCE\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 123,
+        "name": "ADV7619_CEC_REGISTER7BH",
+        "data": [
+            {
+                "name": "uCecWakeOpcode3",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE3\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "4",
+                        "description": "IMAGE VIEW ON\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 124,
+        "name": "ADV7619_CEC_REGISTER7CH",
+        "data": [
+            {
+                "name": "uCecWakeOpcode4",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE4\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "13",
+                        "description": "TEXT VIEW ON\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 125,
+        "name": "ADV7619_CEC_REGISTER7DH",
+        "data": [
+            {
+                "name": "uCecWakeOpcode5",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE5\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "112",
+                        "description": "SYSTEM AUDIO MODE REQUEST\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 126,
+        "name": "ADV7619_CEC_REGISTER7EH",
+        "data": [
+            {
+                "name": "uCecWakeOpcode6",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE6\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "66",
+                        "description": "DECK CONTROL\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 127,
+        "name": "ADV7619_CEC_REGISTER7FH",
+        "data": [
+            {
+                "name": "uCecWakeOpcode7",
+                "size": 8,
+                "description": [
+                    "CEC_WAKE_OPCODE7\r",
+                    "This value can be set to a CEC opcode that requires a response. On receipt of this opcode the Rx generates \r",
+                    "an interrupt that can be used to alert the system that a CEC opcode of interest has been received and \r",
+                    "requires a response. \r"
+                ],
+                "values": [
+                    {
+                        "value": "65",
+                        "description": "PLAY\r"
+                    }
+                ]
+            }
+        ]
     }
-}, {
-    "offset": 3,
-    "name": "ADV7619_CEC_REGISTER03H",
-    "data": {
-        "uCecTxFrameData2": {
-            "size": 8,
-            "description": ["Operand 2 in the transmitted frame"]
-        }
-    }
-}, {
-    "offset": 4,
-    "name": "ADV7619_CEC_REGISTER04H",
-    "data": [{
-        "uCecTxFrameData3": {
-            "size": 8,
-            "description": ["Operand 3 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 5,
-    "name": "ADV7619_CEC_REGISTER05H",
-    "data": [{
-        "uCecTxFrameData4": {
-            "size": 8,
-            "description": ["Operand 4 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 6,
-    "name": "ADV7619_CEC_REGISTER06H",
-    "data": [{
-        "uCecTxFrameData5": {
-            "size": 8,
-            "description": ["Operand 5 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 7,
-    "name": "ADV7619_CEC_REGISTER07H",
-    "data": [{
-        "uCecTxFrameData6": {
-            "size": 8,
-            "description": ["Operand 6 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 8,
-    "name": "ADV7619_CEC_REGISTER08H",
-    "data": [{
-        "uCecTxFrameData7": {
-            "size": 8,
-            "description": ["Operand 7 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 9,
-    "name": "ADV7619_CEC_REGISTER09H",
-    "data": [{
-        "uCecTxFrameData8": {
-            "size": 8,
-            "description": ["Operand 8 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 10,
-    "name": "ADV7619_CEC_REGISTER0AH",
-    "data": [{
-        "uCecTxFrameData9": {
-            "size": 8,
-            "description": ["Operand 9 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 11,
-    "name": "ADV7619_CEC_REGISTER0BH",
-    "data": [{
-        "uCecTxFrameData10": {
-            "size": 8,
-            "description": ["Operand 10 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 12,
-    "name": "ADV7619_CEC_REGISTER0CH",
-    "data": [{
-        "uCecTxFrameData11": {
-            "size": 8,
-            "description": ["Operand 11 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 13,
-    "name": "ADV7619_CEC_REGISTER0DH",
-    "data": [{
-        "uCecTxFrameData12": {
-            "size": 8,
-            "description": ["Operand 12 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 14,
-    "name": "ADV7619_CEC_REGISTER0EH",
-    "data": [{
-        "uCecTxFrameData13": {
-            "size": 8,
-            "description": ["Operand 13 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 15,
-    "name": "ADV7619_CEC_REGISTER0FH",
-    "data": [{
-        "uCecTxFrameData14": {
-            "size": 8,
-            "description": ["Operand 14 in the transmitted frame"]
-        }
-    }]
-}, {
-    "offset": 16,
-    "name": "ADV7619_CEC_REGISTER10H",
-    "data": [{
-        "uCecTxFrameLength": {
-            "size": 5,
-            "description": ["Message size of the transmitted frame. This is the number of byte in the outgoing message including the header"]
-        },
-        "uReserved7_5": {
-            "size": 3,
-            "description": ["Reserved"]
-        }
-    }]
-}, {
-    "offset": 17,
-    "name": "ADV7619_CEC_REGISTER11H",
-    "data": [{
-        "uCecTxEnable": {
-            "size": 1,
-            "description": ["This bit enables the TX section. When set to 1 it initiates the start of transmission of the message in ",
-                "the outgoing message buffer. When the message transmission is completed this bit is automatically reset to ",
-                "0. If it is manually set to 0 during a message transmission it may terminate the transmission depending on ",
-                "what stage of the transmission process has been reached. If the message transmission is sill in the ",
-                "'signal free time' stage the message transmission will be terminated. If data transmission has begun then ",
-                "the transmission will continue until the message is fully sent, or until an error condition occurs.",
-                "0 - Transmission mode disabled ",
-                "1 - Transmission mode enabled and message transmission started"
-            ]
-        },
-        "uReserved7_1": {
-            "size": 7,
-            "description": ["Reserved"]
-        }
-    }]
-}, {
-    "offset": 18,
-    "name": "ADV7619_CEC_REGISTER12H",
-    "data": [{
-        "uCecRetrySft": {
-            "size": 4,
-            "description": ["Signal Free Time of periods for retransmission retry. This parameter should be set to a value equal to or",
-                "greater than 3 and strictly less than 5."
-            ]
-        },
-        "uCecTxRetry": {
-            "size": 3,
-            "description": ["The number of times the CEC TX should try to retransmit the message if an error condition is encountered.",
-                "Per the CEC spec this value should not be set to a value greater than 5.",
-                "1 - Try to retransmit the message 1 time if an error occurs"
-            ]
-        },
-        "uReserved7": {
-            "size": 1,
-            "description": ["Reserved"]
-        }
-    }]
-}, {
-    "offset": 17,
-    "name": "ADV7619_CEC_REGISTER13H",
-    "data": [{
-        "uCecTxSft1": {
-            "size": 4,
-            "description": ["R/W Signal Free Time if the device transmits a next frame immediately after its previous frame. This",
-                "parameter should be set to a value equal to or greater than 7 and strictly less than 10."
-            ]
-        },
-        "uCecTxSft2": {
-            "size": 4,
-            "description": ["R/W Signal Free Time if the device is a new initiator. This parameter should be set to a value equal to or",
-                "greater than 5 and strictly less than 7"
-            ]
-        }
-    }]
-}, {
-    "offset": 18,
-    "name": "ADV7619_CEC_REGISTER14H",
-    "data": [{
-        "uCecTxNackCounter": {
-            "size": 4,
-            "description": ["The number of times that the NACK error condition was encountered while trying to send the current",
-                "message. This register is reset to 0b0000 when CEC_TX_ENABLE is set to 1."
-            ]
-        },
-        "uCecTxLowdriveCounter": {
-            "size": 4,
-            "description": ["The number of times that the LOWDRIVE error condition was encountered while trying to send the current",
-                "message. This register is reset to 0b0000 when CEC_TX_ENABLE is set to 1."
-            ]
-        }
-    }]
-}, {
-    "offset": 19,
-    "name": "ADV7619_CEC_REGISTER15H",
-    "data": [{
-        "uCecBuf0RxFrameHeader": {
-            "size": 8,
-            "description": ["Header block of the received frame stored in receiver frame buffer 0."]
-        }
-    }]
-}, {
-    "offset": 20,
-    "name": "ADV7619_CEC_REGISTER16H",
-    "data": [{
-        "uCecBuf0RxFrameData0": {
-            "size": 8,
-            "description": ["Operand 0 of the received frame stored in receiver frame buffer 0."]
-        }
-    }]
-}, {
-    "offset": 21,
-    "name": "ADV7619_CEC_REGISTER17H",
-    "data": [{
-        "uCecBuf0RxFrameData1": {
-            "size": 8,
-            "description": ["Operand 1 of the received frame stored in receiver frame buffer 0."]
-        }
-    }]
-}, {
-    "offset": 22,
-    "name": "ADV7619_CEC_REGISTER18H",
-    "data": [{
-        "uCecBuf0RxFrameData2": {
-            "size": 8,
-            "description": ["Operand 2 of the received frame stored in receiver frame buffer 0."]
-        }
-    }]
-}, {
-    "offset": 23,
-    "name": "ADV7619_CEC_REGISTER19H",
-    "data": [{
-        "uCecBuf0RxFrameData3": {
-            "size": 8,
-            "description": ["Operand 3 of the received frame stored in receiver frame buffer 0."]
-        }
-    }]
-}, {
-    "offset": 24,
-    "name": "ADV7619_CEC_REGISTER1AH",
-    "data": [{
-        "uCecBuf0RxFrameData4": {
-            "size": 8,
-            "description": ["Operand 4 of the received frame stored in receiver frame buffer 0."]
-        }
-    }]
-}, {
-    "offset": 25,
-    "name": "ADV7619_CEC_REGISTER19H",
-    "data": [{
-        "name": "uCecBuf0RxFrameData3",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 26,
-    "name": "ADV7619_CEC_REGISTER1AH",
-    "data": [{
-        "name": "uCecBuf0RxFrameData4",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 27,
-    "name": "ADV7619_CEC_REGISTER1BH",
-    "data": [{
-        "name": "uCecBuf0RxFrameData5",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 28,
-    "name": "ADV7619_CEC_REGISTER1CH",
-    "data": [{
-        "name": "uCecBuf0RxFrameData6",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 29,
-    "name": "ADV7619_CEC_REGISTER1DH",
-    "data": [{
-        "name": "uCecBuf0RxFrameData7",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 30,
-    "name": "ADV7619_CEC_REGISTER1EH",
-    "data": [{
-        "name": "uCecBuf0RxFrameData8",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 31,
-    "name": "ADV7619_CEC_REGISTER1FH",
-    "data": [{
-        "name": "uCecBuf0RxFrameData9",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 32,
-    "name": "ADV7619_CEC_REGISTER20H",
-    "data": [{
-        "name": "uCecBuf0RxFrameData10",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 33,
-    "name": "ADV7619_CEC_REGISTER21H",
-    "data": [{
-        "name": "uCecBuf0RxFrameData11",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 34,
-    "name": "ADV7619_CEC_REGISTER22H",
-    "data": [{
-        "name": "uCecBuf0RxFrameData12",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 35,
-    "name": "ADV7619_CEC_REGISTER23H",
-    "data": [{
-        "name": "uCecBuf0RxFrameData13",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 36,
-    "name": "ADV7619_CEC_REGISTER24H",
-    "data": [{
-        "name": "uCecBuf0RxFrameData14",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 37,
-    "name": "ADV7619_CEC_REGISTER25H",
-    "data": [{
-        "name": "uReserved7_5",
-        "size": "3",
-        "description": "Description to do"
-    }, {
-        "name": "uCecBuf0RxFrameLength",
-        "size": "5",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 39,
-    "name": "ADV7619_CEC_REGISTER27H",
-    "data": [{
-        "name": "uReserved7",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecLogicalAddressMask",
-        "size": "3",
-        "description": "Description to do"
-    }, {
-        "name": "uCecErrorReportMode",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecErrorDetMode",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecForceNack",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecForceIgnore",
-        "size": "1",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 40,
-    "name": "ADV7619_CEC_REGISTER28H",
-    "data": [{
-        "name": "uCecLogicalAddress1",
-        "size": "4",
-        "description": "Description to do"
-    }, {
-        "name": "uCecLogicalAddress0",
-        "size": "4",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 41,
-    "name": "ADV7619_CEC_REGISTER29H",
-    "data": [{
-        "name": "uReserved7_4",
-        "size": "4",
-        "description": "Description to do"
-    }, {
-        "name": "uCecLogicalAddress2",
-        "size": "4",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 42,
-    "name": "ADV7619_CEC_REGISTER2AH",
-    "data": [{
-        "name": "uReserved7_1",
-        "size": "7",
-        "description": "Description to do"
-    }, {
-        "name": "uCecPowerUp",
-        "size": "1",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 43,
-    "name": "ADV7619_CEC_REGISTER2BH",
-    "data": [{
-        "name": "uReserved7_6",
-        "size": "2",
-        "description": "Description to do"
-    }, {
-        "name": "uCecGlitchFilterCtrl",
-        "size": "6",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 44,
-    "name": "ADV7619_CEC_REGISTER2CH",
-    "data": [{
-        "name": "uReserved7_4",
-        "size": "4",
-        "description": "Description to do"
-    }, {
-        "name": "uCecClrRxRdy2",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecClrRxRdy1",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecClrRxRdy0",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecSoftReset",
-        "size": "1",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 76,
-    "name": "ADV7619_CEC_REGISTER4CH",
-    "data": [{
-        "name": "uReserved7_3",
-        "size": "5",
-        "description": "Description to do"
-    }, {
-        "name": "uCecDisAutoMode",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uReserved1_0",
-        "size": "2",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 83,
-    "name": "ADV7619_CEC_REGISTER53H",
-    "data": [{
-        "name": "uReserved7_6",
-        "size": "2",
-        "description": "Description to do"
-    }, {
-        "name": "uCecBuf2Timestamp",
-        "size": "2",
-        "description": "Description to do"
-    }, {
-        "name": "uCecBuf1Timestamp",
-        "size": "2",
-        "description": "Description to do"
-    }, {
-        "name": "uCecBuf0Timestamp",
-        "size": "2",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 84,
-    "name": "ADV7619_CEC_REGISTER54H",
-    "data": [{
-        "name": "uCecBuf1RxFrameHeader",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 85,
-    "name": "ADV7619_CEC_REGISTER55H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData0",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 86,
-    "name": "ADV7619_CEC_REGISTER56H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData1",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 87,
-    "name": "ADV7619_CEC_REGISTER57H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData2",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 88,
-    "name": "ADV7619_CEC_REGISTER58H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData3",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 89,
-    "name": "ADV7619_CEC_REGISTER59H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData4",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 90,
-    "name": "ADV7619_CEC_REGISTER5AH",
-    "data": [{
-        "name": "uCecBuf1RxFrameData5",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 91,
-    "name": "ADV7619_CEC_REGISTER5BH",
-    "data": [{
-        "name": "uCecBuf1RxFrameData6",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 92,
-    "name": "ADV7619_CEC_REGISTER5CH",
-    "data": [{
-        "name": "uCecBuf1RxFrameData7",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 93,
-    "name": "ADV7619_CEC_REGISTER5DH",
-    "data": [{
-        "name": "uCecBuf1RxFrameData8",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 94,
-    "name": "ADV7619_CEC_REGISTER5EH",
-    "data": [{
-        "name": "uCecBuf1RxFrameData9",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 95,
-    "name": "ADV7619_CEC_REGISTER5FH",
-    "data": [{
-        "name": "uCecBuf1RxFrameData10",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 96,
-    "name": "ADV7619_CEC_REGISTER60H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData11",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 97,
-    "name": "ADV7619_CEC_REGISTER61H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData12",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 98,
-    "name": "ADV7619_CEC_REGISTER62H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData13",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 99,
-    "name": "ADV7619_CEC_REGISTER63H",
-    "data": [{
-        "name": "uCecBuf1RxFrameData14",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 100,
-    "name": "ADV7619_CEC_REGISTER64H",
-    "data": [{
-        "name": "uReserved7_5",
-        "size": "3",
-        "description": "Description to do"
-    }, {
-        "name": "uCecBuf1RxFrameLength",
-        "size": "5",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 101,
-    "name": "ADV7619_CEC_REGISTER65H",
-    "data": [{
-        "name": "uCecBuf2RxFrameHeader",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 102,
-    "name": "ADV7619_CEC_REGISTER66H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData0",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 103,
-    "name": "ADV7619_CEC_REGISTER67H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData1",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 104,
-    "name": "ADV7619_CEC_REGISTER68H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData2",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 105,
-    "name": "ADV7619_CEC_REGISTER69H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData3",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 106,
-    "name": "ADV7619_CEC_REGISTER6AH",
-    "data": [{
-        "name": "uCecBuf2RxFrameData4",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 107,
-    "name": "ADV7619_CEC_REGISTER6BH",
-    "data": [{
-        "name": "uCecBuf2RxFrameData5",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 108,
-    "name": "ADV7619_CEC_REGISTER6CH",
-    "data": [{
-        "name": "uCecBuf2RxFrameData6",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 109,
-    "name": "ADV7619_CEC_REGISTER6DH",
-    "data": [{
-        "name": "uCecBuf2RxFrameData7",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 110,
-    "name": "ADV7619_CEC_REGISTER6EH",
-    "data": [{
-        "name": "uCecBuf2RxFrameData8",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 111,
-    "name": "ADV7619_CEC_REGISTER6FH",
-    "data": [{
-        "name": "uCecBuf2RxFrameData9",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 112,
-    "name": "ADV7619_CEC_REGISTER70H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData10",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 113,
-    "name": "ADV7619_CEC_REGISTER71H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData11",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 114,
-    "name": "ADV7619_CEC_REGISTER72H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData12",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 115,
-    "name": "ADV7619_CEC_REGISTER73H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData13",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 116,
-    "name": "ADV7619_CEC_REGISTER74H",
-    "data": [{
-        "name": "uCecBuf2RxFrameData14",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 117,
-    "name": "ADV7619_CEC_REGISTER75H",
-    "data": [{
-        "name": "uReserved7_5",
-        "size": "3",
-        "description": "Description to do"
-    }, {
-        "name": "uCecBuf2RxFrameLength",
-        "size": "5",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 118,
-    "name": "ADV7619_CEC_REGISTER76H",
-    "data": [{
-        "name": "uReserved7_3",
-        "size": "5",
-        "description": "Description to do"
-    }, {
-        "name": "uCecRxRdy2",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecRxRdy1",
-        "size": "1",
-        "description": "Description to do"
-    }, {
-        "name": "uCecRxRdy0",
-        "size": "1",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 119,
-    "name": "ADV7619_CEC_REGISTER77H",
-    "data": [{
-        "name": "uReserved7_1",
-        "size": "7",
-        "description": "Description to do"
-    }, {
-        "name": "uCecUseAllBufs",
-        "size": "1",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 120,
-    "name": "ADV7619_CEC_REGISTER78H",
-    "data": [{
-        "name": "uCecWakeOpcode0",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 121,
-    "name": "ADV7619_CEC_REGISTER79H",
-    "data": [{
-        "name": "uCecWakeOpcode1",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 122,
-    "name": "ADV7619_CEC_REGISTER7AH",
-    "data": [{
-        "name": "uCecWakeOpcode2",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 123,
-    "name": "ADV7619_CEC_REGISTER7BH",
-    "data": [{
-        "name": "uCecWakeOpcode3",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 124,
-    "name": "ADV7619_CEC_REGISTER7CH",
-    "data": [{
-        "name": "uCecWakeOpcode4",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 125,
-    "name": "ADV7619_CEC_REGISTER7DH",
-    "data": [{
-        "name": "uCecWakeOpcode5",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 126,
-    "name": "ADV7619_CEC_REGISTER7EH",
-    "data": [{
-        "name": "uCecWakeOpcode6",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}, {
-    "offset": 127,
-    "name": "ADV7619_CEC_REGISTER7FH",
-    "data": [{
-        "name": "uCecWakeOpcode7",
-        "size": "8",
-        "description": "Description to do"
-    }]
-}]
+]
