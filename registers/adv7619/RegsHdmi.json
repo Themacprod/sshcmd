@@ -1,0 +1,4150 @@
+[
+    {
+        "offset": 0,
+        "name": "ADV7619_HDMI_REGISTER00H",
+        "data": [
+            {
+                "name": "uHdcpA0",
+                "size": 1,
+                "description": [
+                    "A control to set the second LSB of the HDCP port I2C address.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "I2C address for HDCP port is 0x74. Used for Single-Link Mode or 1st Receiver in Dual-Link Mode\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "I2C address for HDCP port is 0x76. Used only for a 2nd receiver Dual-link Mode.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdcpOnlyMode",
+                "size": 1,
+                "description": [
+                    "A control to configure a HDCP only mode for simultaneous analog and HDMI modes. Refer to the\r",
+                    "ADC_HDMI_SIMULTANEOUS_MODE bit. By selecting HDCP only mode HDMI activity is reduced and it can be used as\r",
+                    "a power saving feature in simultaneous analog and HDMI operation.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Normal Operation\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HDCP Only Mode\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBgMeasPortSel",
+                "size": 3,
+                "description": [
+                    "BG_MEAS_PORT_SEL[1:0] selects a background port on which HDMI measurements are to be made and provided in\r",
+                    "the background measurement registers. The port in question must be set as a background port in order for\r",
+                    "this setting to be effective. There is no conflict if this matches the port selected by HDMI_PORT_SELECT.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Port A\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Port B\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdmiPortSelect",
+                "size": 3,
+                "description": [
+                    "This two bit control is used for HDMI primary port selection.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Port A\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Port B\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 1,
+        "name": "ADV7619_HDMI_REGISTER01H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uMuxDsdOut",
+                "size": 1,
+                "description": [
+                    "An override control for the DSD output\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Override by outputting I2S data\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Override by outputting DSD/DST data\r"
+                    }
+                ]
+            },
+            {
+                "name": "uOvrAutoMuxDsdOut",
+                "size": 1,
+                "description": [
+                    "DSD/DST override control. In automatic control DSD or I2S interface is selected according to the type of\r",
+                    "packet received. DSD/DST interface enabled if part receives DSD or\r",
+                    "DST audio sample packet. I2S interface is enabled when part receives audio sample packets or when no\r",
+                    "packet is received. In manual mode MUX_DSD_OUT selects the output interface.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Automatic DSD/DST output control\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Override DSD/DST output control\r"
+                    }
+                ]
+            },
+            {
+                "name": "uOvrMuxHbr",
+                "size": 1,
+                "description": [
+                    "A control to select automatic or manual configuration for HBR outputs. Automatically, HBR outputs are\r",
+                    "encoded as SPDIF streams. In manual mode MUX_HBR_OUT selects the audio output interface.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Automatic HBR output control\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Manual HBR output control\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMuxHbrOut",
+                "size": 1,
+                "description": [
+                    "A control to manually select the audio output interface for HBR data. Valid when OVR_MUX_HBR is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Override by outputting I2S data\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Override by outputting SPDIF data\r"
+                    }
+                ]
+            },
+            {
+                "name": "uTermAuto",
+                "size": 1,
+                "description": [
+                    "This bit allows the user to select automatic or manual control of clock termination. If automatic mode\r",
+                    "termination is enabled, then the termination on the port selected via HDMI_PORT_SELECT[1:0] is enabled.\r",
+                    "The termination is disabled on all other ports.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disable Termination automatic control\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Enable Termination automatic control\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 2,
+        "name": "ADV7619_HDMI_REGISTER_BG_PORT_ENABLE",
+        "data": [
+            {
+                "name": "uReserved7_2",
+                "size": 6,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uEnBgPortB",
+                "size": 1,
+                "description": [
+                    "Background mode enable for Port B. Sets the Port B in background mode to establish a HDCP link with its\r",
+                    "source even if the port is not selected by HDMI_PORT_SELECT. This control has no effect if the port is\r",
+                    "selected by HDMI_PORT_SELECT.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Port disabled, unless selected with HDMI_PORT_SELECT\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Port enabled in background mode.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uEnBgPortA",
+                "size": 1,
+                "description": [
+                    "Background mode enable for Port A. Sets Port A in background mode to establish a HDCP link with its source\r",
+                    "even if the port is not selected by HDMI_PORT_SELECT. This control has no effect if the port is selected\r",
+                    "by HDMI_PORT_SELECT.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Port disabled, unless selected with HDMI_PORT_SELECT\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Port enabled in background mode.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 3,
+        "name": "ADV7619_HDMI_REGISTER03H",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uI2soutmode",
+                "size": 2,
+                "description": [
+                    "A control to configure the I2S output interface.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "I2S Mode\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Right Justified\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Left Justified\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Raw SPDIF (IEC60958) Mode\r"
+                    }
+                ]
+            },
+            {
+                "name": "uI2sbitwidth",
+                "size": 5,
+                "description": [
+                    "A control to adjust the bit width for right justified mode on the I2S interface.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "0 bit\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "1 bit\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "2 bits\r"
+                    },
+                    {
+                        "value": "24",
+                        "description": "24 bits\r"
+                    },
+                    {
+                        "value": "30",
+                        "description": "30 bits\r"
+                    },
+                    {
+                        "value": "31",
+                        "description": "31 bits\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 4,
+        "name": "ADV7619_HDMI_REGISTER04H",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uAvMute",
+                "size": 1,
+                "description": [
+                    "Readback of AVMUTE status received in the last General Control packet received.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "AVMUTE not set\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "AVMUTE set\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdcpKeysRead",
+                "size": 1,
+                "description": [
+                    "A readback to indicate a successful read of the HDCP keys and/or KSV from the internal HDCP Key OTP ROM. A\r",
+                    "logic high is returned when the read is successful.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "HDCP keys and/or KSV not yet read\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HDCP keys and/or KSV HDCP keys read\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdcpKeyError",
+                "size": 1,
+                "description": [
+                    "A readback to indicate if a checksum error occurred while reading the HDCP and/or KSV from the HDCP Key\r",
+                    "ROM Returns 1 when HDCP Key master encounters an error while reading the HDCP Key OTP ROM\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No error occurred while reading HDCP keys\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HDCP keys read error\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdcpRiExpired",
+                "size": 1,
+                "description": [
+                    "Readback high when a calculated Ri has not been read by the source TX, on the active port. It remains high\r",
+                    "until next Aksv update\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uReserved2",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uTmdsPllLocked",
+                "size": 1,
+                "description": [
+                    "A readback to indicate if the TMDS PLL is locked to the TMDS clock input to the selected HDMI port.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The TMDS PLL is not locked\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The TMDS PLL is locked to the TMDS clock input to the selected HDMI port.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAudioPllLocked",
+                "size": 1,
+                "description": [
+                    "A readback to indicate the Audio DPLL lock status.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The audio DPLL is not locked\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The audio DPLL is locked\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 5,
+        "name": "ADV7619_HDMI_REGISTER05H",
+        "data": [
+            {
+                "name": "uHdmiMode",
+                "size": 1,
+                "description": [
+                    "A readback to indicate whether the stream processed by the HDMI core is a DVI or an HDMI stream.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "DVI Mode Detected\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HDMI Mode Detected\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdmiContentEncrypted",
+                "size": 1,
+                "description": [
+                    "A readback to indicate the use of HDCP encryption.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The input stream processed by the HDMI core is not HDCP encrypted\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The input stream processed by the HDMI core is HDCP encrypted\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDviHsyncPolarity",
+                "size": 1,
+                "description": [
+                    "A readback to indicate the polarity of the HSync encoded in the input stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The HSync is active low\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The HSync is active high\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDviVsyncPolarity",
+                "size": 1,
+                "description": [
+                    "A readback to indicate the polarity of the VSync encoded in the input stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The VSync is active low\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The VSync is active high\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdmiPixelRepetition",
+                "size": 4,
+                "description": [
+                    "A readback to provide the current HDMI pixel repetition value decoded from the AVI Infoframe received. The\r",
+                    "HDMI receiver automatically discards repeated pixel data and divides the pixel clock frequency\r",
+                    "appropriately as per the pixel repetition value.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "1x\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "2x\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "3x\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "4x\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "5x\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "6x\r"
+                    },
+                    {
+                        "value": "6",
+                        "description": "7x\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "8x\r"
+                    },
+                    {
+                        "value": "8",
+                        "description": "9x\r"
+                    },
+                    {
+                        "value": "9",
+                        "description": "10x\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 7,
+        "name": "ADV7619_LINE_WIDTH1",
+        "data": [
+            {
+                "name": "uVertFilterLocked",
+                "size": 1,
+                "description": [
+                    "Vertical filter lock status. Indicates whether or not the vertical filter is locked and vertical\r",
+                    "synchronization parameter measurements are valid for readback.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Vertical filter has not locked\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Vertical filter has locked\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAudioChannelMode",
+                "size": 1,
+                "description": [
+                    "Flags stereo or multichannel audio packets. Note stereo packets may carry compressed multi-channel audio.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Stereo Audio (may be compressed multichannel)\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Multichannel uncompressed audio detected (3-8 channels).\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDeRegenFilterLocked",
+                "size": 1,
+                "description": [
+                    "DE regeneration filter lock status. Indicates that the DE regeneration section has locked to the received\r",
+                    "DE and horizontal synchronization parameter measurements are valid for readback.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "DE regeneration not locked\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "DE regeneration locked to incoming DE\r"
+                    }
+                ]
+            },
+            {
+                "name": "uLineWidth",
+                "size": 5,
+                "description": [
+                    "Line width is a horizontal synchronization measurement. The gives the number of active pixels in a line.\r",
+                    "This measurement is only valid when the DE regeneration filter is locked.\r",
+                    "xxxxxxxxxxxxx - Total number of active pixels per line.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "Total number of active pixels per line.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 8,
+        "name": "ADV7619_LINE_WIDTH2",
+        "data": [
+            {
+                "name": "uLineWidth",
+                "size": 8,
+                "description": [
+                    "Line width is a horizontal synchronization measurement. The gives the number of active pixels in a line.\r",
+                    "This measurement is only valid when the DE regeneration filter is locked.\r",
+                    "xxxxxxxxxxxxx - Total number of active pixels per line.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "Total number of active pixels per line.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 9,
+        "name": "ADV7619_FIELD0_HEIGHT1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField0Height",
+                "size": 5,
+                "description": [
+                    "Field 0 Height is a vertical filter measurement. This readback gives the number of active lines in field\r",
+                    "xxxxxxxxxxxxx - The number of active lines in Field 0\r"
+                ],
+                "values": [
+                    {
+                        "value": "0.  This measurement is valid only when the vertical filter has locked.\r",
+                        "description": "undefined"
+                    },
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active lines in Field 0\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 10,
+        "name": "ADV7619_FIELD0_HEIGHT2",
+        "data": [
+            {
+                "name": "uField0Height",
+                "size": 8,
+                "description": [
+                    "Field 0 Height is a vertical filter measurement. This readback gives the number of active lines in field\r",
+                    "xxxxxxxxxxxxx - The number of active lines in Field 0\r"
+                ],
+                "values": [
+                    {
+                        "value": "0.  This measurement is valid only when the vertical filter has locked.\r",
+                        "description": "undefined"
+                    },
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active lines in Field 0\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 11,
+        "name": "ADV7619_FIELD1_HEIGHT1",
+        "data": [
+            {
+                "name": "uDeepColorMode",
+                "size": 2,
+                "description": [
+                    "A readback of the deep color mode information  extracted from the general control packet\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "8-bits per channel\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "10-bits  per channel\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "12-bits per channel\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "16-bits per channel (not supported)\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHdmiInterlaced",
+                "size": 1,
+                "description": [
+                    "HDMI input Interlace status, a vertical filter measurement.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Progressive Input\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Interlaced Input\r"
+                    }
+                ]
+            },
+            {
+                "name": "uField1Height",
+                "size": 5,
+                "description": [
+                    "Field 1 height is a vertical filter measurement. This readback gives the number of active lines in field.\r",
+                    "This measurement is valid only when the vertical filter has locked. Field 1 measurements are only valid\r",
+                    "when HDMI_INTERLACED is set to 1.\r",
+                    "xxxxxxxxxxxxx - The number of active lines in Field 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active lines in Field 1\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 12,
+        "name": "ADV7619_FIELD1_HEIGHT2",
+        "data": [
+            {
+                "name": "uField1Height",
+                "size": 8,
+                "description": [
+                    "Field 1 height is a vertical filter measurement. This readback gives the number of active lines in field.\r",
+                    "This measurement is valid only when the vertical filter has locked. Field 1 measurements are only valid\r",
+                    "when HDMI_INTERLACED is set to 1.\r",
+                    "xxxxxxxxxxxxx - The number of active lines in Field 1\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active lines in Field 1\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 13,
+        "name": "ADV7619_HDMI_REGISTER0DH",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uFreqtolerance",
+                "size": 4,
+                "description": [
+                    "Sets the tolerance in MHz for new TMDS frequency detection. This tolerance is used for the audio mute mask\r",
+                    "MT_MSK_VCLK_CHNG and the HDMI status bit NEW_TMDS_FRQ_RAW.\r",
+                    "xxxx - Tolerance in MHz for new TMDS frequency detection\r"
+                ],
+                "values": [
+                    {
+                        "value": "0100",
+                        "description": "Default tolerance in MHz for new TMDS frequency detection\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 15,
+        "name": "ADV7619_AUDIO_MUTE_SPEED",
+        "data": [
+            {
+                "name": "uManAudioDlBypass",
+                "size": 1,
+                "description": [
+                    "Audio Delay Bypass Manual Enable.  The audio delay line  is automatically active for stereo samples and\r",
+                    "bypassed for multichannel samples. By setting MAN_AUDIO_DL_BYPASS to 1 the Audio delay bypass\r",
+                    "configuration can be set by the user with the AUDIO_DELAY_LINE_BYPASS control.\r",
+                    "automatically enabled if stereo audio is received.\r",
+                    "AUDIO_DELAY_LINE_BYPASS control.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Audio delay line is automatically bypassed if multichannel audio is received. The audio delay line is\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Overrides automatic bypass of audio delay line. Audio delay line is applied depending on the\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAudioDelayLineBypass",
+                "size": 1,
+                "description": [
+                    "Manual bypass control for the audio delay line. Only valid if MAN_AUDIO_DL_BYPASS is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Enables the audio delay line.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Bypasses the audio delay line.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved5",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uAudioMuteSpeed",
+                "size": 5,
+                "description": [
+                    "Number of samples between each volume change of 1.5dB when muting and unmuting\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 16,
+        "name": "ADV7619_HDMI_REGISTER10H",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uCtsChangeThreshold",
+                "size": 6,
+                "description": [
+                    "Sets the tolerance for change in the CTS value. This tolerance is used for the audio mute mask\r",
+                    "MT_MSK_NEW_CTS and the HDMI status bit CTS_PASS_THRSH_RAW and the HDMI interrupt status bit\r",
+                    "CTS_PASS_THRSH_ST. This register controls the amounts of LSBs that the CTS can change before an audio\r",
+                    "mute, status change or interrupt is triggered.\r",
+                    "xxxxxx - Tolerance of CTS value for CTS_PASS_THRSH_RAW and MT_MSK_NEW_CTS\r"
+                ],
+                "values": [
+                    {
+                        "value": "100101",
+                        "description": "Tolerance of CTS value for CTS_PASS_THRSH_RAW and MT_MSK_NEW_CTS\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 17,
+        "name": "ADV7619_AUDIO_FIFO_ALMOST_FULL_THRESHOLD",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uAudioFifoAlmostFullThreshold",
+                "size": 7,
+                "description": [
+                    "Sets the threshold used for FIFO_NEAR_OVRFL_RAW. FIFO_NEAR_OVRFL_ST interrupt is triggered if audio FIFO\r",
+                    "reaches this level\r"
+                ],
+                "values": [
+                    {
+                        "value": "125",
+                        "description": "Default value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 18,
+        "name": "ADV7619_AUDIO_FIFO_ALMOST_EMPTY_THRESHOLD",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uAudioFifoAlmostEmptyThreshold",
+                "size": 7,
+                "description": [
+                    "Sets the threshold used for FIFO_NEAR_UFLO_RAW. FIFO_NEAR_UFLO_ST interrupt is triggered if audio FIFO\r",
+                    "goes below this level\r"
+                ],
+                "values": [
+                    {
+                        "value": "2",
+                        "description": "Default value\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 19,
+        "name": "ADV7619_AUDIO_COAST_MASK",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uAcMskVclkChng",
+                "size": 1,
+                "description": [
+                    "Audio Coast Mask for TMDS clock change. When set the audio DPLL coasts if the TMDS clock has any\r",
+                    "irregular/missing pulses.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio DPLL coasts if TMDS clock any irregular/missing pulses.\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Audio DPLL does not coast if TMDS clock any irregular/missing pulses.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAcMskVpllUnlock",
+                "size": 1,
+                "description": [
+                    "Audio Coast Mask for TMDS PLL Unlock. When set the audio DPLL coasts if the TMDS PLL unlocks.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio DPLL coasts if TMDS DPLL unlocks.\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Audio DPLL does not coast if TMDS DPLL unlocks.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uAcMskNewCts",
+                "size": 1,
+                "description": [
+                    "Audio Coast Mask for a new ACR CTS value. When set the audio DPLL coasts if CTS changes by more than\r",
+                    "threshold defined in CTS_CHANG_THRESHOLD[5:0].\r",
+                    "CTS_CHANGE_THRESHOLD[5:0].\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio DPLL coasts if CTS changes by more than the threshold set in register CTS_CHANGE_THRESHOLD[5:0].\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Audio DPLL does not coast if CTS changes by more than the threshold set in register\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAcMskNewN",
+                "size": 1,
+                "description": [
+                    "Audio Coast Mask for a new ACR N value. When set the audio DPLL coasts if N value changes.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio DPLL coasts if a change in the N value occurs.\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Audio DPLL does not coast if a change in the N value occurs.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAcMskChngPort",
+                "size": 1,
+                "description": [
+                    "Audio Coast Mask for a HDMI port change. When set the audio DPLL coasts if a change in the active port\r",
+                    "occurs.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio DPLL coasts if the active port is changed.\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Audio DPLL does not coast if the active port is changed\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAcMskVclkDet",
+                "size": 1,
+                "description": [
+                    "Audio Coast Mask for a TMDS clock detection. It sets the audio PLL to coast if no TMDS clock is detected\r",
+                    "on the active port.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio DPLL coasts if a TMDS clock is not detected on the active port.\r"
+                    },
+                    {
+                        "value": "0",
+                        "description": "Audio DPLL does not coast if a TMDS clock is not detected on the active port.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 20,
+        "name": "ADV7619_MUTE_MASK21_16",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uMtMskComprsAud",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for compressed audio. It sets the audio mutes if the audio received is in a compressed\r",
+                    "format.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if audio is received in compressed format.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskAudModeChng",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for audio mode change. It sets audio mutes if audio changes between any of the following\r",
+                    "PCM, DSD, HBR or DST formats.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if audio changes between any of the following PCM, DSD, HBR or DST formats.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_2",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uMtMskParityErr",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for a parity error. It sets the audio mutes if an audio sample packet is received with an\r",
+                    "incorrect parity bit.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if an audio sample packet is received with an incorrect parity bit.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskVclkChng",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for TMDS Clock Change. It sets the audio mutes if the TMDS clock has irregular/missing\r",
+                    "pulses.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if the TMDS clock has irregular/missing pulses.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 21,
+        "name": "ADV7619_MUTE_MASK15_8",
+        "data": [
+            {
+                "name": "uMtMskApllUnlock",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for Audio PLL Unlock. It sets the audio mutes if the Audio PLL unlocks.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if  the Audio PLL unlocks.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskVpllUnlock",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for TMDS PLL Unlock. When set audio mutes if the TMDS PLL unlocks.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if the TMDS PLL unlocks.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskAcrNotDet",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for ACR packet. When set the audio mutes if an ACR packet has not been received within one\r",
+                    "VSync.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if an ACR packet has not been received within one VSync.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uMtMskFlatlineDet",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for Flatline bit. When set the audio mutes if an audio packet is received with the\r",
+                    "flatline bit set.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if an audio packet is received with the flatline bit set.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved2",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uMtMskFifoUnderlfow",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask - FIFO Underflow\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uMtMskFifoOverflow",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask - FIFO Overflow\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 22,
+        "name": "ADV7619_MUTE_MASK7_0",
+        "data": [
+            {
+                "name": "uMtMskAvmute",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for AVMUTE. When set the audio mutes if a general Control packet is received with the\r",
+                    "SET_AVMUTE bit set.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if AVMUTE is set by a general control packet\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskNotHdmimode",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for a non HDMI input stream. When set the audio mutes if the HDMI_MODE bit goes low.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if HDMI mode bit goes low\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskNewCts",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for a change of ACR CTS. When set the audio mutes if the CTS changes by more than the\r",
+                    "specified threshold. CTS_CHANGE_THRESHOLD register sets this threshold.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if CTS changes\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskNewN",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for a New ACR N. If set the audio mutes if there is a change in the N value.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if N changes\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskChmodeChng",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for a audio channel mode change. When set the audio mutes if the channel mode changes\r",
+                    "between stereo and multichannel.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if channel mode changes\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskApcktEccErr",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for Audio Packet ECC Error. When set the audio mutes if an uncorrectable error is detected\r",
+                    "in audio packet by the ECC block.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if an uncorrectable error is detected in the audio packet by the ECC block\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskChngPort",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for HDMI Port Change. When set the audio mutes if HDMI port selection is changed.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if HDMI port selection is changed\r"
+                    }
+                ]
+            },
+            {
+                "name": "uMtMskVclkDet",
+                "size": 1,
+                "description": [
+                    "Audio Mute Mask for TMDS Clock. When set the audio mutes if a TMDS clock is not detected.\r"
+                ],
+                "values": [
+                    {
+                        "value": "1",
+                        "description": "Audio mute occurs if TMDS is not detected\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 24,
+        "name": "ADV7619_PACKETS_DETECTED2",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uHbrAudioPcktDet",
+                "size": 1,
+                "description": [
+                    "HBR Packet detection bit. This bit resets to zero on the 11th HSync leading edge following an HBR packet\r",
+                    "if a subsequent HBR packet has not been detected. It also resets if an Audio, DSD or DST packet sample\r",
+                    "packet has been received and after an HDMI reset condition.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No HBR audio packet received within the last 10 HSync.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HBR audio packet received within the last 10 HSync.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDstAudioPcktDet",
+                "size": 1,
+                "description": [
+                    "DST Audio Packet Detection bit. This bit resets to zero on the 11th HSync leading edge following an DST\r",
+                    "packet if a subsequent DST has not been received. Or if an Audio, DSD or HBR packet sample packet has been\r",
+                    "received or after an HDMI reset condition.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No DST packet received within the last 10 HSync.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "DST packet received within the last 10 HSync.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDsdPacketDet",
+                "size": 1,
+                "description": [
+                    "DSD Audio Packet Detection bit. This bit resets to zero on the 11th HSync leading edge following a DSD\r",
+                    "packet or if an Audio, DST or HBR packet sample packet has been received or after an HDMI reset condition.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No DSD packet received within the last 10 HSync.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "DSD packet received within the last 10 HSync.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAudioSamplePcktDet",
+                "size": 1,
+                "description": [
+                    "Audio Sample Packet Detection bit.  This bit resets to zero on the 11th HSync leading edge following an\r",
+                    "Audio packet if a subsequent audio sample packet has not been received or if a DSD, DST or HBR Audio\r",
+                    "packet sample packet has been received.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No L_PCM or IEC 61937 compressed audio sample packet received within the last 10 HSync.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "L_PCM or IEC 61937 compressed audio sample packet received within the last 10 HSyncs.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 25,
+        "name": "ADV7619_PACKETS_DETECTED3",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uDstDouble",
+                "size": 1,
+                "description": [
+                    "A flag to indicate when DST audio is double data rate.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No DST double data rate audio detected\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "DST double data rate audio detected\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1_0",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 26,
+        "name": "ADV7619_MUTE_CTRL",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uIgnoreParityErr",
+                "size": 1,
+                "description": [
+                    "A control to select the processing of audio samples even when they have a parity error.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Discard audio sample packet that have an invalid parity bit.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Process audio sample packets that have an invalid parity bit.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved5",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uMuteAudio",
+                "size": 1,
+                "description": [
+                    "A control to force an internal mute independently of the mute mask conditions\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Audio in normal operation\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Force audio mute\r"
+                    }
+                ]
+            },
+            {
+                "name": "uWaitUnmute",
+                "size": 3,
+                "description": [
+                    "A control to delay audio unmute. Once all mute conditions are inactive WAIT_UNMUTE[2:0] can specify a\r",
+                    "further delay time before unmuting. NOT_AUTO_UNMUTE must be set to 0 for this control to be effective.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disables/cancels delayed unmute. Audio unmutes directly after all mute conditions become inactive\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Unmutes 250 ms after all mute conditions become inactive\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "Unmutes 500 ms after all mute conditions become inactive\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "Unmutes 750 ms after all mute conditions become inactive\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "Unmutes 1 s after all\r"
+                    }
+                ]
+            },
+            {
+                "name": "uNotAutoUnmute",
+                "size": 1,
+                "description": [
+                    "A control to disable the auto unmute feature. When set to 1 audio can be unmuted manually if all mute\r",
+                    "conditions are inactive by setting NOT_AUTO_UNMUTE to 0 and  then back to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Audio unmutes following a delay set by WAIT_UNMUTE after all mute conditions have become inactive.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Prevents audio from unmuting automatically\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 27,
+        "name": "ADV7619_DEEPCOLOR_FIFO_DEBUG1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uDcfifoResetOnLock",
+                "size": 1,
+                "description": [
+                    "Enables the reset/re-centering of video FIFO on video PLL unlock\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Do not reset on video PLL lock\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Reset FIFO on video PLL lock\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDcfifoKillNotLocked",
+                "size": 1,
+                "description": [
+                    "DCFIFO_KILL_NOT_LOCKED controls whether or not the output of the Video FIFO is set to zero when the video\r",
+                    "PLL is unlocked.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "FIFO data is output regardless of video PLL lock status\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "FIFO output is zeroed if video PLL is unlocked\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDcfifoKillDis",
+                "size": 1,
+                "description": [
+                    "The Video FIFO output is zeroed if there is more than one resynchronization of the pointers within 2 FIFO\r",
+                    "cycles. This behavior can be disabled with this bit.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "FIFO output set to zero if more than one resynchronization is necessary during two FIFO cycles\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "FIFO output never set to zero regardless of how many resynchronizations occur\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1_0",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 28,
+        "name": "ADV7619_DEEPCOLOR_FIFO_DEBUG2",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uDcfifoLocked",
+                "size": 1,
+                "description": [
+                    "A readback to indicates if Video FIFO is locked.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Video FIFO is not locked. Video FIFO had to resynchronize between previous two Vsyncs\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Video FIFO is locked. Video FIFO did not have to resynchronize between previous two Vsyncs\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDcfifoLevel",
+                "size": 3,
+                "description": [
+                    "A readback that indicates the distance between the read and write pointers. Overflow/underflow would read\r",
+                    "as level 0. Ideal centered functionality would read as 0b100.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "FIFO has underflowed or overflowed\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "FIFO is about to overflow\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "FIFO has some margin.\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "FIFO has some margin.\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "FIFO perfectly balanced\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "FIFO has some margin.\r"
+                    },
+                    {
+                        "value": "6",
+                        "description": "FIFO has some margin.\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "FIFO is about to underflow\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 29,
+        "name": "ADV7619_REGISTER1DH",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uUpConversionMode",
+                "size": 1,
+                "description": [
+                    "A control to select linear or interpolated 4:2:2 to 4:4:4 conversion. A 4:2:2 incoming stream is\r",
+                    "upconverted to a 4:4:4 stream before being sent to the CP.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Cr and Cb samples are repeated in their respective channel.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Interpolate Cr and Cb values.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4_0",
+                "size": 5,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 30,
+        "name": "ADV7619_TOTAL_LINE_WIDTH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uTotalLineWidth",
+                "size": 6,
+                "description": [
+                    "Total line width is a horizontal synchronization measurement. This gives the total number of pixels per\r",
+                    "line. This measurement is valid only when the DE regeneration filter has locked.\r",
+                    "xxxxxxxxxxxxxx - Total number of pixels per line.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 31,
+        "name": "ADV7619_TOTAL_LINE_WIDTH2",
+        "data": [
+            {
+                "name": "uTotalLineWidth",
+                "size": 8,
+                "description": [
+                    "Total line width is a horizontal synchronization measurement. This gives the total number of pixels per\r",
+                    "line. This measurement is valid only when the DE regeneration filter has locked.\r",
+                    "xxxxxxxxxxxxxx - Total number of pixels per line.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 32,
+        "name": "ADV7619_HSYNC_FRONT_PORCH1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uHsyncFrontPorch",
+                "size": 5,
+                "description": [
+                    "HSync front porch width is a horizontal synchronization measurement. The unit of this measurement is\r",
+                    "unique pixels. This measurement is valid only when the DE regeneration  filter has locked.\r",
+                    "xxxxxxxxxxxxx - Total number of pixels in the front porch.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 33,
+        "name": "ADV7619_HSYNC_FRONT_PORCH2",
+        "data": [
+            {
+                "name": "uHsyncFrontPorch",
+                "size": 8,
+                "description": [
+                    "HSync front porch width is a horizontal synchronization measurement. The unit of this measurement is\r",
+                    "unique pixels. This measurement is valid only when the DE regeneration  filter has locked.\r",
+                    "xxxxxxxxxxxxx - Total number of pixels in the front porch.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 34,
+        "name": "ADV7619_HSYNC_PULSE_WIDTH1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uHsyncPulseWidth",
+                "size": 5,
+                "description": [
+                    "HSync pulse width is a horizontal synchronization measurement. The unit of this measurement is unique\r",
+                    "pixels. This measurement is valid only when the DE regeneration filter has locked.\r",
+                    "xxxxxxxxxxxxx - Total number of pixels in the hsync pulse.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 35,
+        "name": "ADV7619_HSYNC_PULSE_WIDTH2",
+        "data": [
+            {
+                "name": "uHsyncPulseWidth",
+                "size": 8,
+                "description": [
+                    "HSync pulse width is a horizontal synchronization measurement. The unit of this measurement is unique\r",
+                    "pixels. This measurement is valid only when the DE regeneration filter has locked.\r",
+                    "xxxxxxxxxxxxx - Total number of pixels in the hsync pulse.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 36,
+        "name": "ADV7619_HSYNC_BACK_PORCH1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uHsyncBackPorch",
+                "size": 5,
+                "description": [
+                    "HSync Back Porch width is a horizontal synchronization measurement. The unit of this measurement is unique\r",
+                    "pixels. This measurement is valid only when the DE regeneration filter has locked.\r",
+                    "xxxxxxxxxxxxx - Total number of pixels in the back porch.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 37,
+        "name": "ADV7619_HSYNC_BACK_PORCH2",
+        "data": [
+            {
+                "name": "uHsyncBackPorch",
+                "size": 8,
+                "description": [
+                    "HSync Back Porch width is a horizontal synchronization measurement. The unit of this measurement is unique\r",
+                    "pixels. This measurement is valid only when the DE regeneration filter has locked.\r",
+                    "xxxxxxxxxxxxx - Total number of pixels in the back porch.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 38,
+        "name": "ADV7619_FIELD0_TOTAL_HEIGHT1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField0TotalHeight",
+                "size": 6,
+                "description": [
+                    "Field 0 total height is a vertical synchronization measurement. This readback gives the total number of\r",
+                    "half lines in Field 0. This measurement is valid only when the vertical filter has locked.\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in Field 0. (Divide readback by 2 to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in Field 0. (Divide readback by 2 to get number of lines)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 39,
+        "name": "ADV7619_FIELD0_TOTAL_HEIGHT2",
+        "data": [
+            {
+                "name": "uField0TotalHeight",
+                "size": 8,
+                "description": [
+                    "Field 0 total height is a vertical synchronization measurement. This readback gives the total number of\r",
+                    "half lines in Field 0. This measurement is valid only when the vertical filter has locked.\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in Field 0. (Divide readback by 2 to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in Field 0. (Divide readback by 2 to get number of lines)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 40,
+        "name": "ADV7619_FIELD1_TOTAL_HEIGHT1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField1TotalHeight",
+                "size": 6,
+                "description": [
+                    "Field 1 total  height is a vertical synchronization measurement. This readback gives the total number of\r",
+                    "half lines in Field 1. This measurement is valid only when the vertical filter has locked. Field 1\r",
+                    "measurements are valid when HDMI_INTERLACED is set to 1.\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in Field 1. (Divide readback by 2 to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in Field 1. (Divide readback by 2 to get number of lines)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 41,
+        "name": "ADV7619_FIELD1_TOTAL_HEIGHT2",
+        "data": [
+            {
+                "name": "uField1TotalHeight",
+                "size": 8,
+                "description": [
+                    "Field 1 total  height is a vertical synchronization measurement. This readback gives the total number of\r",
+                    "half lines in Field 1. This measurement is valid only when the vertical filter has locked. Field 1\r",
+                    "measurements are valid when HDMI_INTERLACED is set to 1.\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in Field 1. (Divide readback by 2 to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in Field 1. (Divide readback by 2 to get number of lines)\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 42,
+        "name": "ADV7619_FIELD0_VS_FRONT_PORCH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField0VsFrontPorch",
+                "size": 6,
+                "description": [
+                    "Field 0 VSync front porch width is a vertical synchronization measurement. The unit of this measurement is\r",
+                    "half lines. This measurement is valid only when the vertical filter has locked.\r",
+                    "to get number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Front Porch of Field 0. (Divide readback by 2\r",
+                    "to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in the VSync Front Porch of Field 0. (Divide readback by 2\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 43,
+        "name": "ADV7619_FIELD0_VS_FRONT_PORCH2",
+        "data": [
+            {
+                "name": "uField0VsFrontPorch",
+                "size": 8,
+                "description": [
+                    "Field 0 VSync front porch width is a vertical synchronization measurement. The unit of this measurement is\r",
+                    "half lines. This measurement is valid only when the vertical filter has locked.\r",
+                    "to get number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Front Porch of Field 0. (Divide readback by 2\r",
+                    "to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in the VSync Front Porch of Field 0. (Divide readback by 2\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 44,
+        "name": "ADV7619_FIELD1_VS_FRONT_PORCH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField1VsFrontPorch",
+                "size": 6,
+                "description": [
+                    "Field 1 VSync front porch width is a vertical synchronization measurement. The unit of this measurement is\r",
+                    "half lines. This measurement is valid only when the vertical filter has locked. Field 1 measurements are\r",
+                    "valid when HDMI_INTERLACED is set to 1\r",
+                    "to get number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Front Porch of Field 1. (Divide readback by 2\r",
+                    "to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in the VSync Front Porch of Field 1. (Divide readback by 2\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 45,
+        "name": "ADV7619_FIELD1_VS_FRONT_PORCH2",
+        "data": [
+            {
+                "name": "uField1VsFrontPorch",
+                "size": 8,
+                "description": [
+                    "Field 1 VSync front porch width is a vertical synchronization measurement. The unit of this measurement is\r",
+                    "half lines. This measurement is valid only when the vertical filter has locked. Field 1 measurements are\r",
+                    "valid when HDMI_INTERLACED is set to 1\r",
+                    "to get number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Front Porch of Field 1. (Divide readback by 2\r",
+                    "to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in the VSync Front Porch of Field 1. (Divide readback by 2\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 46,
+        "name": "ADV7619_FIELD0_VS_PULSE_WIDTH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField0VsPulseWidth",
+                "size": 6,
+                "description": [
+                    "Field 0 VSync width is a vertical synchronization measurement. The unit for this measurement is half\r",
+                    "lines.  This measurement is valid only when the vertical filter has locked.\r",
+                    "number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Pulse of Field 0. (Divide readback by 2 to\r",
+                    "get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The total number of half lines in the VSync Pulse of Field 0. (Divide readback by 2 to get\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 47,
+        "name": "ADV7619_FIELD0_VS_PULSE_WIDTH2",
+        "data": [
+            {
+                "name": "uField0VsPulseWidth",
+                "size": 8,
+                "description": [
+                    "Field 0 VSync width is a vertical synchronization measurement. The unit for this measurement is half\r",
+                    "lines.  This measurement is valid only when the vertical filter has locked.\r",
+                    "number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Pulse of Field 0. (Divide readback by 2 to\r",
+                    "get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The total number of half lines in the VSync Pulse of Field 0. (Divide readback by 2 to get\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 48,
+        "name": "ADV7619_FIELD1_VS_PULSE_WIDTH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField1VsPulseWidth",
+                "size": 6,
+                "description": [
+                    "Field 1 VSync width is a vertical synchronization measurement. The unit for this measurement is half\r",
+                    "lines. This measurement is valid only when the vertical filter has locked. Field 1 measurements are valid\r",
+                    "when HDMI_INTERLACED is set to 1\r",
+                    "number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Pulse of Field 1. (Divide readback by 2 to\r",
+                    "get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The number of half lines in the VSync Pulse of Field 1. (Divide readback by 2 to get\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 49,
+        "name": "ADV7619_FIELD1_VS_PULSE_WIDTH2",
+        "data": [
+            {
+                "name": "uField1VsPulseWidth",
+                "size": 8,
+                "description": [
+                    "Field 1 VSync width is a vertical synchronization measurement. The unit for this measurement is half\r",
+                    "lines. This measurement is valid only when the vertical filter has locked. Field 1 measurements are valid\r",
+                    "when HDMI_INTERLACED is set to 1\r",
+                    "number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Pulse of Field 1. (Divide readback by 2 to\r",
+                    "get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The number of half lines in the VSync Pulse of Field 1. (Divide readback by 2 to get\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 50,
+        "name": "ADV7619_FIELD0_VS_BACK_PORCH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField0VsBackPorch",
+                "size": 6,
+                "description": [
+                    "Field 0 VSync back porch width is a vertical synchronization measurement. The unit for this measurement is\r",
+                    "half lines.\r",
+                    "to get number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Back Porch of Field 0. (Divide readback by 2\r",
+                    "to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in the VSync Back Porch of Field 0. (Divide readback by 2\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 51,
+        "name": "ADV7619_FIELD0_VS_BACK_PORCH2",
+        "data": [
+            {
+                "name": "uField0VsBackPorch",
+                "size": 8,
+                "description": [
+                    "Field 0 VSync back porch width is a vertical synchronization measurement. The unit for this measurement is\r",
+                    "half lines.\r",
+                    "to get number of lines)\r",
+                    "xxxxxxxxxxxxxx - The total number of half lines in the VSync Back Porch of Field 0. (Divide readback by 2\r",
+                    "to get number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The total number of half lines in the VSync Back Porch of Field 0. (Divide readback by 2\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 52,
+        "name": "ADV7619_FIELD1_VS_BACK_PORCH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uField1VsBackPorch",
+                "size": 6,
+                "description": [
+                    "Field 1 VSync back porch width is a vertical synchronization measurement. The unit for this measurement is\r",
+                    "half lines. This measurement is valid only when the vertical filter has locked. Field 1 measurements are\r",
+                    "valid when HDMI_INTERLACED is set to 1.\r",
+                    "number of lines)\r",
+                    "xxxxxxxxxxxxxx - The number of half lines in the VSync Back Porch of Field 1. (Divide readback by 2 to get\r",
+                    "number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The number of half lines in the VSync Back Porch of Field 1. (Divide readback by 2 to get\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 53,
+        "name": "ADV7619_FIELD1_VS_BACK_PORCH2",
+        "data": [
+            {
+                "name": "uField1VsBackPorch",
+                "size": 8,
+                "description": [
+                    "Field 1 VSync back porch width is a vertical synchronization measurement. The unit for this measurement is\r",
+                    "half lines. This measurement is valid only when the vertical filter has locked. Field 1 measurements are\r",
+                    "valid when HDMI_INTERLACED is set to 1.\r",
+                    "number of lines)\r",
+                    "xxxxxxxxxxxxxx - The number of half lines in the VSync Back Porch of Field 1. (Divide readback by 2 to get\r",
+                    "number of lines)\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000",
+                        "description": "The number of half lines in the VSync Back Porch of Field 1. (Divide readback by 2 to get\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 54,
+        "name": "ADV7619_CHANNEL_STATUS_DATA1",
+        "data": [
+            {
+                "name": "uCsData",
+                "size": 8,
+                "description": [
+                    "Readback registers for the Channel Status data bits collected from audio channel 0. Refer to the Hardware\r",
+                    "Manual for more details on the Channel Status data readbacks.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 55,
+        "name": "ADV7619_CHANNEL_STATUS_DATA2",
+        "data": [
+            {
+                "name": "uCsData",
+                "size": 8,
+                "description": [
+                    "Readback registers for the Channel Status data bits collected from audio channel 0. Refer to the Hardware\r",
+                    "Manual for more details on the Channel Status data readbacks.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 56,
+        "name": "ADV7619_CHANNEL_STATUS_DATA3",
+        "data": [
+            {
+                "name": "uCsData",
+                "size": 8,
+                "description": [
+                    "Readback registers for the Channel Status data bits collected from audio channel 0. Refer to the Hardware\r",
+                    "Manual for more details on the Channel Status data readbacks.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 57,
+        "name": "ADV7619_CHANNEL_STATUS_DATA4",
+        "data": [
+            {
+                "name": "uCsData",
+                "size": 8,
+                "description": [
+                    "Readback registers for the Channel Status data bits collected from audio channel 0. Refer to the Hardware\r",
+                    "Manual for more details on the Channel Status data readbacks.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 58,
+        "name": "ADV7619_CHANNEL_STATUS_DATA5",
+        "data": [
+            {
+                "name": "uCsData",
+                "size": 8,
+                "description": [
+                    "Readback registers for the Channel Status data bits collected from audio channel 0. Refer to the Hardware\r",
+                    "Manual for more details on the Channel Status data readbacks.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 60,
+        "name": "ADV7619_REGISTER3CH",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBypassAudioPassthru",
+                "size": 1,
+                "description": [
+                    "Enable/Disable for audio passthru mode.\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uReserved3_0",
+                "size": 4,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 64,
+        "name": "ADV7619_REGISTER40H",
+        "data": [
+            {
+                "name": "uReserved7",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uOverrideDeepColorMode",
+                "size": 1,
+                "description": [
+                    "A control to override the Deep Color mode.\r",
+                    "General Control packets. (Normal operation)\r",
+                    "video data according to the Deep Color mode set in DEEP_COLOR_MODE_USER[1:0].\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The HDMI section unpacks the video data according to the deep-color information extracted from the\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Override the deep color mode extracted from the General Control Packet. The HDMI section unpacks the\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDeepColorModeUser",
+                "size": 2,
+                "description": [
+                    "A control to manually set the Deep Color mode. The value set in this register is effective when\r",
+                    "OVERRIDE_DEEP_COLOR_MODE is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "8 bits per channel\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "10 bits per channel\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "12 bits per channel\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "16 bits per channel (not supported)\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_0",
+                "size": 4,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 65,
+        "name": "ADV7619_REGISTER41H",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uDerepNOverride",
+                "size": 1,
+                "description": [
+                    "This control allows the user to override the pixel repetition factor. The ADV7844 then uses\r",
+                    "DEREP_N instead of HDMI_PIXEL_REPETITION[3:0] to discard video pixel data from the incoming HDMI stream.\r",
+                    "information.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Automatic detection and processing of procession of pixel repeated modes using the AVI infoframe\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Enables manual setting of the pixel repetition factor as per DEREP_N[3:0].\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDerepN",
+                "size": 4,
+                "description": [
+                    "Sets the derepetition value if derepetition is overridden by setting DEREP_N_OVERRIDE.\r",
+                    "xxxx - DEREP_N+1 indicates the pixel and clock discard factor\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000",
+                        "description": "DEREP_N+1 indicates the pixel and clock discard factor\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 71,
+        "name": "ADV7619_REGISTER47H",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uQzeroItcDis",
+                "size": 1,
+                "description": [
+                    "A control to select manual control of the RGB colorimetry when the AVI infoframe field Q[1:0]=00. To be\r",
+                    "used in conjunction with QZERO_RGB_FULL\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "AVI InfoFrame ITC bit decides RGB-full or limited range in case Q[1:0]=00\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Manual RGB range as per QZERO_RGB_FULL.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uQzeroRgbFull",
+                "size": 1,
+                "description": [
+                    "A control to manually select the HDMI colorimetry when AVI infoframe field Q[1:0]=00. Valid only when\r",
+                    "QZERO_ITC_DIS is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "RGB-limited range  when Q[1:0]=00\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "RGB-full when Q[1:0]=00\r"
+                    }
+                ]
+            },
+            {
+                "name": "uAlwaysStoreInf",
+                "size": 1,
+                "description": [
+                    "A control to force InfoFrames with checksum errors to be stored.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Stores data from received InfoFrames only if their checksum is correct\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Always store the data from received InfoFrame regardless of their checksum\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 72,
+        "name": "ADV7619_REGISTER48H",
+        "data": [
+            {
+                "name": "uDisPwrdnb",
+                "size": 1,
+                "description": [
+                    "R/W A control to disable the effect of PWRDN1 pin. DIS_PWRDNB should be set to 1 if PWRDN1 pin is unused\r",
+                    "and unconnected.\r",
+                    "Normal mode).\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "PWRDN1 pin is used to set the power mode of the part (e.g. Power Down mode 0, Power Down mode 1 or\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "PWRDN1 has no effect\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDisCableDetRst",
+                "size": 1,
+                "description": [
+                    "This control disables the reset effects of cable detection. DIS_CABLE_DET_RST should be set to 1 if the +5\r",
+                    "V pins are unused and left unconnected.\r",
+                    "port A) is inactive\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Resets the HDMI section if the 5 V input pin corresponding to the selected HDMI port (e.g. RXA_5V for\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Do not use the 5 V input pins as reset signal for the HDMI section\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved5_0",
+                "size": 6,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 76,
+        "name": "ADV7619_HDMI_REGISTER4C",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uEnableNewVsParam",
+                "size": 1,
+                "description": [
+                    "Enables a new version of vertical parameter extraction\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uReserved1_0",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 80,
+        "name": "ADV7619_HDMI_REGISTER50",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uGamutIrqNextField",
+                "size": 1,
+                "description": [
+                    "A control set the NEW_GAMUT_MDATA_RAW interrupt to detect when the new contents are applicable to next\r",
+                    "field or to indicate that the Gamut packet is new. This is done using header information of the gamut\r",
+                    "packet.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Interrupt flag indicates that Gamut packet is new\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Interrupt flag  indicates that Gamut packet is to be applied next field\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved3_2",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uCsCopyrightManual",
+                "size": 1,
+                "description": [
+                    "A control to select automatic or manual setting of the copyright value of the channel status bit that is\r",
+                    "passed to the SPDIF output. Manual control is set with the CS_COPYRIGHT_VALUE bit.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Automatic CS copyright control\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Manual CS copyright control. Manual value is set by CS_COPYRIGHT_VALUE\r"
+                    }
+                ]
+            },
+            {
+                "name": "uCsCopyrightValue",
+                "size": 1,
+                "description": [
+                    "A control to set the CS Copyright value when in manual configuration of the CS Copyright bit that is\r",
+                    "passed to the SPDIF output.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Copyright value of channel status bit is 0. Valid only if CS_COPYRIGHT_MANUAL is set to 1\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Copyright value of channel status bit is 1. Valid only if CS_COPYRIGHT_MANUAL is set to 1\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 81,
+        "name": "ADV7619_HDMI_TMDSFREQ1",
+        "data": [
+            {
+                "name": "uTmdsfreq",
+                "size": 8,
+                "description": [
+                    "This register provides a full precision integer TMDS frequency measurement\r",
+                    "xxxxxxxxx - Outputs 9-bit TMDS frequency measurement in MHz\r"
+                ],
+                "values": [
+                    {
+                        "value": "000000000",
+                        "description": "Outputs 9-bit TMDS frequency measurement in MHz\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 82,
+        "name": "ADV7619_HDMI_TMDSFREQ2",
+        "data": [
+            {
+                "name": "uTmdsfreq",
+                "size": 1,
+                "description": [
+                    "This register provides a full precision integer TMDS frequency measurement\r",
+                    "xxxxxxxxx - Outputs 9-bit TMDS frequency measurement in MHz\r"
+                ],
+                "values": [
+                    {
+                        "value": "000000000",
+                        "description": "Outputs 9-bit TMDS frequency measurement in MHz\r"
+                    }
+                ]
+            },
+            {
+                "name": "uTmdsfreqFrac",
+                "size": 7,
+                "description": [
+                    "A readback to indicate the fractional bits of measured frequency of PLL recovered TMDS clock. The unit is\r",
+                    "xxxxxxx - Outputs 7-bit TMDS fractional frequency measurement in 1/128MHz\r"
+                ],
+                "values": [
+                    {
+                        "value": "1/128 MHz.\r",
+                        "description": "undefined"
+                    },
+                    {
+                        "value": "0000000",
+                        "description": "Outputs 7-bit TMDS fractional frequency measurement in 1/128MHz\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 83,
+        "name": "ADV7619_HDMI_COLORSPACE",
+        "data": [
+            {
+                "name": "uReserved7_4",
+                "size": 4,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uHdmiColorspace",
+                "size": 4,
+                "description": [
+                    "A readback of the HDMI input colorspace decoded from several fields in the AVI infoframe.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "RGB_LIMITED\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "RGB_FULL\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "YUV_601\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "YUV_709\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "XVYCC_601\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "XVYCC_709\r"
+                    },
+                    {
+                        "value": "6",
+                        "description": "YUV_601_FULL\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "YUV_709_FULL\r"
+                    },
+                    {
+                        "value": "8",
+                        "description": "sYCC 601\r"
+                    },
+                    {
+                        "value": "9",
+                        "description": "Adobe YCC 601\r"
+                    },
+                    {
+                        "value": "10",
+                        "description": "Adobe RGB\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 86,
+        "name": "ADV7619_FILT_5V_DET_REG",
+        "data": [
+            {
+                "name": "uFilt5vDetDis",
+                "size": 1,
+                "description": [
+                    "This bit is a control to disable the digital glitch filter on the HDMI 5V detect signals. The filtered\r",
+                    "signals are used as interrupt flags, and also used to reset the HDMI section. The filter works from an\r",
+                    "internal ring oscillator clock and is therefore available in power-down mode. The clock frequency of the\r",
+                    "ring oscillator is 42MHz +/-10%.\r",
+                    "Note: If the 5 V pins are not used and left unconnected, the 5 V detect circuitry should be disconnected\r",
+                    "from the HDMI reset signal by setting DIS_CABLE_DET_RST to 1. This avoids holding the HDMI section in\r",
+                    "reset.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Enabled\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Disabled\r"
+                    }
+                ]
+            },
+            {
+                "name": "uFilt5vDetTimer",
+                "size": 7,
+                "description": [
+                    "This bit is a control to set the timer for the digital glitch filter on the HDMI +5 V detect inputs. The\r",
+                    "unit of this parameter is 2 clock cycles of the ring oscillator (~ 47ns). The input must be constantly\r",
+                    "high for the duration of the timer, otherwise the filter output remains low. The output of the filter\r",
+                    "returns low as soon as any change in the +5 V power signal is detected.\r",
+                    "xxxxxxx - Time duration of +5 V deglitch filter. The unit of this parameter is 2 clock cycles of the ring\r",
+                    "oscillator (~47ns)\r"
+                ],
+                "values": [
+                    {
+                        "value": "1011000",
+                        "description": "Approximately 4.2us\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 90,
+        "name": "ADV7619_REGISTER5A",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgMeasReq",
+                "size": 1,
+                "description": [
+                    "This bit must be set to get correct measurements of the selected background port. Setting this control\r",
+                    "sends a request to update the synchronization parameter measurements of the currently selected background\r",
+                    "port. The port on which the measurement will be made is selected by BG_MEAS_PORT_SEL[1:0].\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No request to update selected background port synchronization parameter measurements\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Requests an update of the selected background port synchronization parameter measurements\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved4",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uHdcpReptEdidReset",
+                "size": 1,
+                "description": [
+                    "A reset control for the E-EDID/Repeater controller. When asserted it resets the E-EDID/Repeater controller.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Normal operation\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Resets the E-EDID/Repeater controller.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDcfifoRecenter",
+                "size": 1,
+                "description": [
+                    "A reset to recenter the Video FIFO. This is a self clearing bit.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Video FIFO normal operation.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Video FIFO to re-centre.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uReserved1",
+                "size": 1,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uForceNUpdate",
+                "size": 1,
+                "description": [
+                    "A control to force an N and CTS value update to the audio DPLL. The audio DPLL regenerates the audio clock.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No effect\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Forces an update on the N and CTS values for audio clock regeneration\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 91,
+        "name": "ADV7619_CTS_N1",
+        "data": [
+            {
+                "name": "uCts",
+                "size": 8,
+                "description": [
+                    "A readback for the CTS value received in the HDMI datastream.\r",
+                    "xxxxxxxxxxxxxxxxxxxx - CTS value readback from HDMI stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000000000",
+                        "description": "Default CTS value readback from HDMI stream\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 92,
+        "name": "ADV7619_CTS_N2",
+        "data": [
+            {
+                "name": "uCts",
+                "size": 8,
+                "description": [
+                    "A readback for the CTS value received in the HDMI datastream.\r",
+                    "xxxxxxxxxxxxxxxxxxxx - CTS value readback from HDMI stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000000000",
+                        "description": "Default CTS value readback from HDMI stream\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 93,
+        "name": "ADV7619_CTS_N3",
+        "data": [
+            {
+                "name": "uCts",
+                "size": 4,
+                "description": [
+                    "A readback for the CTS value received in the HDMI datastream.\r",
+                    "xxxxxxxxxxxxxxxxxxxx - CTS value readback from HDMI stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000000000",
+                        "description": "Default CTS value readback from HDMI stream\r"
+                    }
+                ]
+            },
+            {
+                "name": "uN",
+                "size": 4,
+                "description": [
+                    "A readback for the N value received in the HDMI datastream\r",
+                    "xxxxxxxxxxxxxxxxxxxx - N value readback from HDMI stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000000000",
+                        "description": "Default N value readback from HDMI stream\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 94,
+        "name": "ADV7619_CTS_N4",
+        "data": [
+            {
+                "name": "uN",
+                "size": 8,
+                "description": [
+                    "A readback for the N value received in the HDMI datastream\r",
+                    "xxxxxxxxxxxxxxxxxxxx - N value readback from HDMI stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000000000",
+                        "description": "Default N value readback from HDMI stream\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 95,
+        "name": "ADV7619_CTS_N5",
+        "data": [
+            {
+                "name": "uN",
+                "size": 8,
+                "description": [
+                    "A readback for the N value received in the HDMI datastream\r",
+                    "xxxxxxxxxxxxxxxxxxxx - N value readback from HDMI stream\r"
+                ],
+                "values": [
+                    {
+                        "value": "00000000000000000000",
+                        "description": "Default N value readback from HDMI stream\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 108,
+        "name": "ADV7619_HPA",
+        "data": [
+            {
+                "name": "uHpaDelaySel",
+                "size": 4,
+                "description": [
+                    "Sets a delay between +5 V detection and hot plug assertion on the HPA output pins, in increments of 100ms\r",
+                    "per bit.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No Delay\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "100 ms Delay\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "200 ms Delay\r"
+                    },
+                    {
+                        "value": "10",
+                        "description": "1 s Delay\r"
+                    },
+                    {
+                        "value": "15",
+                        "description": "1.5 s Delay\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHpaOvrTerm",
+                "size": 1,
+                "description": [
+                    "A control to set termination control to be overridden by the HPA setting. When this bit is set,\r",
+                    "termination on a specific port will be set according to the HPA status of that port.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Automatic or manual I2C control of port termination.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Termination controls disabled and overridden by HPA controls.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHpaAutoIntEdid",
+                "size": 2,
+                "description": [
+                    "Selects the type of automatic control on the HPA output pins. This bit has no effect when HPA_MANUAL is\r",
+                    "set to 1\r",
+                    "that port. The HPA of a specific HDMI port is de-asserted low immediately after the internal E-EDID is\r",
+                    "de-activated for that port.\r",
+                    "cable plug on that port. The HPA of an HDMI port is immediately de-asserted after the part detects a cable\r",
+                    "disconnect on that HDMI port.\r",
+                    "detailed as follows. 1. The internal EDID is active for that port. 2. The delayed version of the cable\r",
+                    "detect signal CABLE_DET_X_RAW for that port is high. The HPA of an HDMI port is immediately de-asserted\r",
+                    "after any of the following two conditions have been met 1. The internal EDID is de-activated for that port\r",
+                    "detailed as follows. 1. The internal EDID is active for that port. 2. The delayed version of the cable\r",
+                    "detect signal CABLE_DET_X_RAW for that port is high. 3. The user has set the manual HPA control for that\r",
+                    "port to 1 via the HPA_MAN_VALUE_X controls. The HPA of an HDMI port is immediately de-asserted after any\r",
+                    "of the following three conditions have been met 1.The internal EDID is de-activated for that port 2.The\r",
+                    "cable detect signal CABLE_DET_X_RAW for that port, is low. 3.The user sets the manual HPD control for that\r",
+                    "port to 0 via the HPA_MAN_VALUE_X controls\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "The HPA of an HDMI port is asserted high immediately after the internal EDID has been activated for\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "The HPA of an HDMI port is asserted high following a programmable delay after the part detects an HDMI\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "The HPA of an HDMI port is asserted high after two conditions have been met. The conditions are\r"
+                    },
+                    {
+                        "value": "2. The cable detect signal CABLE_DET_X_RAW for that port is low.\r",
+                        "description": "undefined"
+                    },
+                    {
+                        "value": "3",
+                        "description": "The HPA of an HDMI port is asserted high after three conditions have been met. The conditions are\r"
+                    }
+                ]
+            },
+            {
+                "name": "uHpaManual",
+                "size": 1,
+                "description": [
+                    "Manual control enable for the Hot Plug Assert output pins. By setting this bit any automatic control of\r",
+                    "these pins is disabled. Manual control is determined by the HPA_MAN_VALUE_X (where X = A, B, C, D & E)\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "HPA takes its value based on HPA_AUTO_INT_EDID\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HPA takes its value from HPA_MAN_VALUE_X\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 109,
+        "name": "ADV7619_I2S",
+        "data": [
+            {
+                "name": "uI2sTdmModeEnable",
+                "size": 1,
+                "description": [
+                    "Enables I2S TDM output mode, where all 4 stereo pairs come out through I2S[0] pin. This mode can only be\r",
+                    "used in multi channel modes. Only the following fs ratios for MCLKOUT are valid: 1, 2 or 4.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Disable TDM mode, each stereo pair will come out in  an APx pin.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Enable TDM mode, all 4 stereo pairs will be time multiplexed into AP1/I2S_TDM pin\r"
+                    }
+                ]
+            },
+            {
+                "name": "uI2sSpdifMapInv",
+                "size": 1,
+                "description": [
+                    "A control to invert the arrangement of the I2S/SPDIF interface on the audio output port pins. Note the\r",
+                    "arrangement of the I2S/SPDIF interface on the audio output port pins is determined by I2S_SPDIF_MAP_ROT.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Do not invert arrangement of I2S/SPDIF channels in audio output port pins\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Invert arrangement of I2S/SPDIF channels in audio output port pins\r"
+                    }
+                ]
+            },
+            {
+                "name": "uI2sSpdifMapRot",
+                "size": 2,
+                "description": [
+                    "A control to select the arrangement of the I2S/SPDIF interface on the audio output port pins.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "[I2S0/SPDIF0 on AP1] [I2S1/SPDIF1 on AP2] [I2S2/SPDIF2 on AP3] [I2S3/SPDIF3 on AP4]\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "[I2S3/SPDIF3 on AP1] [I2S0/SPDIF0 on AP2] [I2S1/SPDIF1 on AP3] [I2S2/SPDIF2 on AP4]\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "[I2S2/SPDIF2 on AP1] [I2S3/SPDIF3 on AP2] [I2S0/SPDIF0 on AP3] [I2S1/SPDIF1 on AP4]\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "[I2S1/SPDIF1 on AP1] [I2S2/SPDIF2 on AP2] [I2S3/SPDIF3 on AP3] [I2S0/SPDIF0 on AP4]\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDsdMapInv",
+                "size": 1,
+                "description": [
+                    "A control to invert the arrangement of the DSD interface on the audio output port pins. Note the\r",
+                    "arrangement of the DSD interface on the audio output port pins is determined by DSD_MAP_ROT.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Do not invert arrangement of the DSD channels on the audio output port pins\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Invert arrangement of the DSD channels on the audio output port pins\r"
+                    }
+                ]
+            },
+            {
+                "name": "uDsdMapRot",
+                "size": 3,
+                "description": [
+                    "A control to select the arrangement of the DSD interface on the audio output port pins.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "[DSD0A on AP0] [DSD0B on AP1] [DSD1A on AP2] [DSD1B on AP3] [DSD2A on AP4] [DSD2B on AP5]\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "[DSD2B on AP0] [DSD0A on AP1] [DSD0B on AP2] [DSD1A on AP3] [DSD1B on AP4] [DSD2A on AP5]\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "[DSD2A on AP0] [DSD2B on AP1] [DSD0A on AP2] [DSD0B on AP3] [DSD1A on AP4] [DSD1B on AP5]\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "[DSD1B on AP0] [DSD2A on AP1] [DSD2B on AP2] [DSD0A on AP3] [DSD0B on AP4] [DSD1A on AP5]\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "[DSD1A on AP0] [DSD1B on AP1] [DSD2A on AP2] [DSD2B on AP3] [DSD0A on AP4] [DSD0B on AP5]\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "[DSD0B on AP0] [DSD1A on AP1] [DSD1B on AP2] [DSD2A on AP3] [DSD2B on AP4] [DSD0A on AP5]\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 110,
+        "name": "ADV7619_DST",
+        "data": [
+            {
+                "name": "uReserved7_3",
+                "size": 5,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uDstMapRot",
+                "size": 3,
+                "description": [
+                    "A control to select the arrangement of the DST interface on the audio output port pins.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "[DST_S on AP0]  [DST_FF on AP5]\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "[DST_S on AP1]  [DST_FF on AP5]\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "[DST_S on AP2]  [DST_FF on AP5]\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "[DST_S on AP3]  [DST_FF on AP5]\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "[DST_S on AP4]  [DST_FF on AP5]\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 131,
+        "name": "ADV7619_HDMI_REGISTER02H",
+        "data": [
+            {
+                "name": "uReserved7_2",
+                "size": 6,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uClockTermbDisable",
+                "size": 1,
+                "description": [
+                    "Disable clock termination on port B. Can be used when TERM_AUTO set to 0\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Enable Termination port B\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Disable Termination port B\r"
+                    }
+                ]
+            },
+            {
+                "name": "uClockTermaDisable",
+                "size": 1,
+                "description": [
+                    "Disable clock termination on port A. Can be used when TERM_AUTO set to 0\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Enable Termination port A\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Disable Termination port A\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 224,
+        "name": "ADV7619_BG_TMDSFREQ1",
+        "data": [
+            {
+                "name": "uBgTmdsfreq",
+                "size": 8,
+                "description": [
+                    "This register provides a precision integer TMDS frequency measurement on the background port selected by\r",
+                    "BG_MEAS_PORT_SEL. The value provided is the result of a single measurement of the TMDS PLL frequency in\r",
+                    "MHz. This value is updated when an update request is made via the BG_MEAS_REQ control bit. This\r",
+                    "measurement is only valid when BG_PARAM_LOCK is set to 1.\r",
+                    "xxxxxxxxx - Outputs 9-bit TMDS frequency measurement in MHz\r"
+                ],
+                "values": [
+                    {
+                        "value": "000000000",
+                        "description": "Outputs 9-bit TMDS frequency measurement in MHz\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 225,
+        "name": "ADV7619_BG_TMDSFREQ2",
+        "data": [
+            {
+                "name": "uBgTmdsfreq",
+                "size": 1,
+                "description": [
+                    "This register provides a precision integer TMDS frequency measurement on the background port selected by\r",
+                    "BG_MEAS_PORT_SEL. The value provided is the result of a single measurement of the TMDS PLL frequency in\r",
+                    "MHz. This value is updated when an update request is made via the BG_MEAS_REQ control bit. This\r",
+                    "measurement is only valid when BG_PARAM_LOCK is set to 1.\r",
+                    "xxxxxxxxx - Outputs 9-bit TMDS frequency measurement in MHz\r"
+                ],
+                "values": [
+                    {
+                        "value": "000000000",
+                        "description": "Outputs 9-bit TMDS frequency measurement in MHz\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBgTmdsfreqFrac",
+                "size": 7,
+                "description": [
+                    "This register provides a precision fractional measurement of the TMDS frequency on the background port\r",
+                    "selected by BG_MEAS_PORT_SEL. The unit is 1/128 MHz and the value is updated when a update request is made\r",
+                    "via the BG_MEAS_REQ control bit.  This measurement is only valid when BG_PARAM_LOCK is set to 1.\r",
+                    "xxxxxxx - Outputs 7-bit TMDS fractional frequency measurement in 1/128MHz\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000",
+                        "description": "Outputs 7-bit TMDS fractional frequency measurement in 1/128MHz\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 226,
+        "name": "ADV7619_BG_LINE_WIDTH1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgLineWidth",
+                "size": 5,
+                "description": [
+                    "Background port line width, a horizontal synchronization measurement for the background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the number of active pixels in a line and is\r",
+                    "updated when a update request is made via the BG_MEAS_REQ control bit.\r",
+                    "xxxxxxxxxxxxx - The number of active pixels per line on the background measurement port.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active pixels per line on the background measurement port.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 227,
+        "name": "ADV7619_BG_LINE_WIDTH2",
+        "data": [
+            {
+                "name": "uBgLineWidth",
+                "size": 8,
+                "description": [
+                    "Background port line width, a horizontal synchronization measurement for the background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the number of active pixels in a line and is\r",
+                    "updated when a update request is made via the BG_MEAS_REQ control bit.\r",
+                    "xxxxxxxxxxxxx - The number of active pixels per line on the background measurement port.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active pixels per line on the background measurement port.\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 228,
+        "name": "ADV7619_BG_TOTAL_LINE_WIDTH1",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgTotalLineWidth",
+                "size": 6,
+                "description": [
+                    "Background port total line width, a horizontal synchronization measurement for the background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the total number of  pixels in a line and is\r",
+                    "updated when a update request is made via the BG_MEAS_REQ control bit.  This measurement is only valid\r",
+                    "when BG_PARAM_LOCK is set to 1.\r",
+                    "xxxxxxxxxxxxxx - The total number of pixels per line on the background measurement port\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 229,
+        "name": "ADV7619_BG_TOTAL_LINE_WIDTH2",
+        "data": [
+            {
+                "name": "uBgTotalLineWidth",
+                "size": 8,
+                "description": [
+                    "Background port total line width, a horizontal synchronization measurement for the background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the total number of  pixels in a line and is\r",
+                    "updated when a update request is made via the BG_MEAS_REQ control bit.  This measurement is only valid\r",
+                    "when BG_PARAM_LOCK is set to 1.\r",
+                    "xxxxxxxxxxxxxx - The total number of pixels per line on the background measurement port\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 230,
+        "name": "ADV7619_BG_FIELD_HEIGHT1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgFieldHeight",
+                "size": 5,
+                "description": [
+                    "Background port field height is a vertical synchronization measurement for a background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the number of  active lines in a field and is\r",
+                    "updated when a update request is made via the BG_MEAS_REQ control bit.\r",
+                    "xxxxxxxxxxxxx - The number of active lines in a Field on the background measurement port\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active lines in a Field on the background measurement port\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 231,
+        "name": "ADV7619_BG_FIELD_HEIGHT2",
+        "data": [
+            {
+                "name": "uBgFieldHeight",
+                "size": 8,
+                "description": [
+                    "Background port field height is a vertical synchronization measurement for a background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the number of  active lines in a field and is\r",
+                    "updated when a update request is made via the BG_MEAS_REQ control bit.\r",
+                    "xxxxxxxxxxxxx - The number of active lines in a Field on the background measurement port\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The number of active lines in a Field on the background measurement port\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 232,
+        "name": "ADV7619_BG_TOTAL_FIELD_HEIGHT1",
+        "data": [
+            {
+                "name": "uReserved7_5",
+                "size": 3,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgTotalFieldHeight",
+                "size": 5,
+                "description": [
+                    "Background port total field height is a vertical synchronization measurement for the background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the total number of lines in a field and is\r",
+                    "updated when an update request is made via the BG_MEAS_REQ control bit.\r",
+                    "xxxxxxxxxxxxx - The total number of lines in a Field on the background measurement port\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The total number of lines in a Field on the background measurement port\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 233,
+        "name": "ADV7619_BG_TOTAL_FIELD_HEIGHT2",
+        "data": [
+            {
+                "name": "uBgTotalFieldHeight",
+                "size": 8,
+                "description": [
+                    "Background port total field height is a vertical synchronization measurement for the background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The value represents the total number of lines in a field and is\r",
+                    "updated when an update request is made via the BG_MEAS_REQ control bit.\r",
+                    "xxxxxxxxxxxxx - The total number of lines in a Field on the background measurement port\r"
+                ],
+                "values": [
+                    {
+                        "value": "0000000000000",
+                        "description": "The total number of lines in a Field on the background measurement port\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 234,
+        "name": "ADV7619_HDMI_REGISTEREAH",
+        "data": [
+            {
+                "name": "uBgPixRep",
+                "size": 4,
+                "description": [
+                    "Background port pixel repetition status for the background HDMI port determined by BG_MEAS_PORT_SEL[1:0].\r",
+                    "The readback provides the pixel repetition value in AVI Infoframe and is updated when an update request is\r",
+                    "made via the BG_MEAS_REQ control bit. This measurement is only valid when BG_PARAM_LOCK is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "1x\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "2x\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "3x\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "4x\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "5x\r"
+                    },
+                    {
+                        "value": "5",
+                        "description": "6x\r"
+                    },
+                    {
+                        "value": "6",
+                        "description": "7x\r"
+                    },
+                    {
+                        "value": "7",
+                        "description": "8x\r"
+                    },
+                    {
+                        "value": "8",
+                        "description": "9x\r"
+                    },
+                    {
+                        "value": "9",
+                        "description": "10x\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBgDeepColorMode",
+                "size": 2,
+                "description": [
+                    "This readback provides the deep-color status for the background HDMI port determined by\r",
+                    "BG_MEAS_PORT_SEL[1:0]. The readback provides the HDMI color depth and is updated when an update request is\r",
+                    "made via the BG_MEAS_REQ control bit. This measurement is only valid when BG_PARAM_LOCK is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "8-bit color per channel\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "10-bit color per channel\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "12-bit color per channel\r"
+                    },
+                    {
+                        "value": "3",
+                        "description": "16-bit color per channel\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBgParamLock",
+                "size": 1,
+                "description": [
+                    "A flag to indicate that vertical and horizontal parameters have been locked during a background\r",
+                    "measurement.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Horizontal and Vertical were not locked when measurement for select background HDMI port were taken.\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Horizontal and Vertical were locked when measurement for select background HDMI port were taken.\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBgHdmiInterlaced",
+                "size": 1,
+                "description": [
+                    "Background port HDMI input interlace status is a vertical filter measurement for a background HDMI Port\r",
+                    "determined by BG_MEAS_PORT_SEL[1:0]. The status readback is updated when a update request is made via the\r",
+                    "BG_MEAS_REQ control bit. This measurement is only valid when BG_PARAM_LOCK is set to 1.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "Progressive Input\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Interlaced Input\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 235,
+        "name": "ADV7619_HDMI_REGISTEREBH",
+        "data": [
+            {
+                "name": "uReserved7_1",
+                "size": 7,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgHdmiMode",
+                "size": 1,
+                "description": [
+                    "This readback provides the HDMI/DVI mode status of the background port determined by BG_MEAS_PORT_SEL[1:0]\r",
+                    "and is updated continuously.\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "DVI Mode Detected\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "HDMI Mode Detected\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 238,
+        "name": "ADV7619_HDMI_REGISTEREEH",
+        "data": [
+            {
+                "name": "uReserved7_6",
+                "size": 2,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgAudioLayout",
+                "size": 1,
+                "description": [
+                    "Flags layout of audio channels in background port selected with BG_MEAS_PORT_SEL. Only valid when\r",
+                    "AUDIO_DETECTED_BG flags audio sample packets or DSD audio packets have been detected\r"
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgDstDouble",
+                "size": 1,
+                "description": [
+                    "Flags whether DST audio is sampled at single or double transfer rate in the background port with\r",
+                    "BG_MEAS_PORT_SEL. Only valid when AUDIO_DETECTED_BG flags DST packets have been received\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "DST sample rate equals transfer rate\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "DST sample rate doubles transfer rate\r"
+                    }
+                ]
+            },
+            {
+                "name": "uBgAudioDetected",
+                "size": 4,
+                "description": [
+                    "Flags which kind of audio samples were last received\r"
+                ],
+                "values": [
+                    {
+                        "value": "0",
+                        "description": "No audio samples detected\r"
+                    },
+                    {
+                        "value": "1",
+                        "description": "Audio sample detected\r"
+                    },
+                    {
+                        "value": "2",
+                        "description": "DSD audio detected\r"
+                    },
+                    {
+                        "value": "4",
+                        "description": "DST audio detected\r"
+                    },
+                    {
+                        "value": "8",
+                        "description": "HBR audio detected\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 239,
+        "name": "ADV7619_HDMI_REGISTEREFH",
+        "data": [
+            {
+                "name": "uBgHeaderRequested",
+                "size": 8,
+                "description": [
+                    "Byte 0 of header for the infoframe selected to be read in background port.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 240,
+        "name": "ADV7619_HDMI_REGISTERF0H",
+        "data": [
+            {
+                "name": "uBgHeaderByte1",
+                "size": 8,
+                "description": [
+                    "Byte 1 of header for the infoframe selected to be read in background port.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 241,
+        "name": "ADV7619_HDMI_REGISTERF1H",
+        "data": [
+            {
+                "name": "uBgPacketByte1",
+                "size": 8,
+                "description": [
+                    "Byte 1 of packet for the infoframe selected to be read in background port.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 242,
+        "name": "ADV7619_HDMI_REGISTERF2H",
+        "data": [
+            {
+                "name": "uBgPacketByte2",
+                "size": 8,
+                "description": [
+                    "Byte 2 of packet for the infoframe selected to be read in background port.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 243,
+        "name": "ADV7619_HDMI_REGISTERF3H",
+        "data": [
+            {
+                "name": "uBgPacketByte3",
+                "size": 8,
+                "description": [
+                    "Byte 3 of packet for the infoframe selected to be read in background port.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 244,
+        "name": "ADV7619_HDMI_REGISTERF4H",
+        "data": [
+            {
+                "name": "uBgPacketByte4",
+                "size": 8,
+                "description": [
+                    "Byte 4 of packet for the infoframe selected to be read in background port.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 245,
+        "name": "ADV7619_HDMI_REGISTERF5H",
+        "data": [
+            {
+                "name": "uBgPacketByte5",
+                "size": 8,
+                "description": [
+                    "Byte5 of packet for the infoframe selected to be read in background port.\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 246,
+        "name": "ADV7619_HDMI_REGISTERF6H",
+        "data": [
+            {
+                "name": "uReserved7_1",
+                "size": 7,
+                "description": [
+                    "No description."
+                ],
+                "values": []
+            },
+            {
+                "name": "uBgValidPacket",
+                "size": 1,
+                "description": [
+                    "Readbacks of packet in bg port are only valid if this signal is high\r"
+                ],
+                "values": []
+            }
+        ]
+    }
+]
