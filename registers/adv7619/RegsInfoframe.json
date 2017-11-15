@@ -1,0 +1,3597 @@
+[
+    {
+        "offset": 0,
+        "name": "ADV7619_AVI_INF_PB0_1",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 1,
+        "name": "ADV7619_AVI_INF_PB0_2",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 2,
+        "name": "ADV7619_AVI_INF_PB0_3",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 3,
+        "name": "ADV7619_AVI_INF_PB0_4",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 4,
+        "name": "ADV7619_AVI_INF_PB0_5",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 5,
+        "name": "ADV7619_AVI_INF_PB0_6",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 6,
+        "name": "ADV7619_AVI_INF_PB0_7",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 7,
+        "name": "ADV7619_AVI_INF_PB0_8",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 8,
+        "name": "ADV7619_AVI_INF_PB0_9",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 9,
+        "name": "ADV7619_AVI_INF_PB0_10",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 10,
+        "name": "ADV7619_AVI_INF_PB0_11",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 11,
+        "name": "ADV7619_AVI_INF_PB0_12",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 12,
+        "name": "ADV7619_AVI_INF_PB0_13",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 13,
+        "name": "ADV7619_AVI_INF_PB0_14",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 14,
+        "name": "ADV7619_AVI_INF_PB0_15",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 15,
+        "name": "ADV7619_AVI_INF_PB0_16",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 16,
+        "name": "ADV7619_AVI_INF_PB0_17",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 17,
+        "name": "ADV7619_AVI_INF_PB0_18",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 18,
+        "name": "ADV7619_AVI_INF_PB0_19",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 19,
+        "name": "ADV7619_AVI_INF_PB0_20",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 20,
+        "name": "ADV7619_AVI_INF_PB0_21",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 21,
+        "name": "ADV7619_AVI_INF_PB0_22",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 22,
+        "name": "ADV7619_AVI_INF_PB0_23",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 23,
+        "name": "ADV7619_AVI_INF_PB0_24",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 24,
+        "name": "ADV7619_AVI_INF_PB0_25",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 25,
+        "name": "ADV7619_AVI_INF_PB0_26",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 26,
+        "name": "ADV7619_AVI_INF_PB0_27",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 27,
+        "name": "ADV7619_AVI_INF_PB0_28",
+        "data": [
+            {
+                "name": "uAviInfPb",
+                "size": 8,
+                "description": [
+                    "AVI infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 28,
+        "name": "ADV7619_AUD_INF_PB0_1",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 29,
+        "name": "ADV7619_AUD_INF_PB0_2",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 30,
+        "name": "ADV7619_AUD_INF_PB0_3",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 31,
+        "name": "ADV7619_AUD_INF_PB0_4",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 32,
+        "name": "ADV7619_AUD_INF_PB0_5",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 33,
+        "name": "ADV7619_AUD_INF_PB0_6",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 34,
+        "name": "ADV7619_AUD_INF_PB0_7",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 35,
+        "name": "ADV7619_AUD_INF_PB0_8",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 36,
+        "name": "ADV7619_AUD_INF_PB0_9",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 37,
+        "name": "ADV7619_AUD_INF_PB0_10",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 38,
+        "name": "ADV7619_AUD_INF_PB0_11",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 39,
+        "name": "ADV7619_AUD_INF_PB0_12",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 40,
+        "name": "ADV7619_AUD_INF_PB0_13",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 41,
+        "name": "ADV7619_AUD_INF_PB0_14",
+        "data": [
+            {
+                "name": "uAudInfPb",
+                "size": 8,
+                "description": [
+                    "Audio infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 42,
+        "name": "ADV7619_SPD_INF_PB0_1",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 43,
+        "name": "ADV7619_SPD_INF_PB0_2",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 44,
+        "name": "ADV7619_SPD_INF_PB0_3",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 45,
+        "name": "ADV7619_SPD_INF_PB0_4",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 46,
+        "name": "ADV7619_SPD_INF_PB0_5",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 47,
+        "name": "ADV7619_SPD_INF_PB0_6",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 48,
+        "name": "ADV7619_SPD_INF_PB0_7",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 49,
+        "name": "ADV7619_SPD_INF_PB0_8",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 50,
+        "name": "ADV7619_SPD_INF_PB0_9",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 51,
+        "name": "ADV7619_SPD_INF_PB0_10",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 52,
+        "name": "ADV7619_SPD_INF_PB0_11",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 53,
+        "name": "ADV7619_SPD_INF_PB0_12",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 54,
+        "name": "ADV7619_SPD_INF_PB0_13",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 55,
+        "name": "ADV7619_SPD_INF_PB0_14",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 56,
+        "name": "ADV7619_SPD_INF_PB0_15",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 57,
+        "name": "ADV7619_SPD_INF_PB0_16",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 58,
+        "name": "ADV7619_SPD_INF_PB0_17",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 59,
+        "name": "ADV7619_SPD_INF_PB0_18",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 60,
+        "name": "ADV7619_SPD_INF_PB0_19",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 61,
+        "name": "ADV7619_SPD_INF_PB0_20",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 62,
+        "name": "ADV7619_SPD_INF_PB0_21",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 63,
+        "name": "ADV7619_SPD_INF_PB0_22",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 64,
+        "name": "ADV7619_SPD_INF_PB0_23",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 65,
+        "name": "ADV7619_SPD_INF_PB0_24",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 66,
+        "name": "ADV7619_SPD_INF_PB0_25",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 67,
+        "name": "ADV7619_SPD_INF_PB0_26",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 68,
+        "name": "ADV7619_SPD_INF_PB0_27",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 69,
+        "name": "ADV7619_SPD_INF_PB0_28",
+        "data": [
+            {
+                "name": "uSpdInfPb",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 70,
+        "name": "ADV7619_MS_INF_PB0_1",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 71,
+        "name": "ADV7619_MS_INF_PB0_2",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 72,
+        "name": "ADV7619_MS_INF_PB0_3",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 73,
+        "name": "ADV7619_MS_INF_PB0_4",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 74,
+        "name": "ADV7619_MS_INF_PB0_5",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 75,
+        "name": "ADV7619_MS_INF_PB0_6",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 76,
+        "name": "ADV7619_MS_INF_PB0_7",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 77,
+        "name": "ADV7619_MS_INF_PB0_8",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 78,
+        "name": "ADV7619_MS_INF_PB0_9",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 79,
+        "name": "ADV7619_MS_INF_PB0_10",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 80,
+        "name": "ADV7619_MS_INF_PB0_11",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 81,
+        "name": "ADV7619_MS_INF_PB0_12",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 82,
+        "name": "ADV7619_MS_INF_PB0_13",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 83,
+        "name": "ADV7619_MS_INF_PB0_14",
+        "data": [
+            {
+                "name": "uMsInfPb",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 84,
+        "name": "ADV7619_VS_INF_PB0_1",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 85,
+        "name": "ADV7619_VS_INF_PB0_2",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 86,
+        "name": "ADV7619_VS_INF_PB0_3",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 87,
+        "name": "ADV7619_VS_INF_PB0_4",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 88,
+        "name": "ADV7619_VS_INF_PB0_5",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 89,
+        "name": "ADV7619_VS_INF_PB0_6",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 90,
+        "name": "ADV7619_VS_INF_PB0_7",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 91,
+        "name": "ADV7619_VS_INF_PB0_8",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 92,
+        "name": "ADV7619_VS_INF_PB0_9",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 93,
+        "name": "ADV7619_VS_INF_PB0_10",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 94,
+        "name": "ADV7619_VS_INF_PB0_11",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 95,
+        "name": "ADV7619_VS_INF_PB0_12",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 96,
+        "name": "ADV7619_VS_INF_PB0_13",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 97,
+        "name": "ADV7619_VS_INF_PB0_14",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 98,
+        "name": "ADV7619_VS_INF_PB0_15",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 99,
+        "name": "ADV7619_VS_INF_PB0_16",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 100,
+        "name": "ADV7619_VS_INF_PB0_17",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 101,
+        "name": "ADV7619_VS_INF_PB0_18",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 102,
+        "name": "ADV7619_VS_INF_PB0_19",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 103,
+        "name": "ADV7619_VS_INF_PB0_20",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 104,
+        "name": "ADV7619_VS_INF_PB0_21",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 105,
+        "name": "ADV7619_VS_INF_PB0_22",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 106,
+        "name": "ADV7619_VS_INF_PB0_23",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 107,
+        "name": "ADV7619_VS_INF_PB0_24",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 108,
+        "name": "ADV7619_VS_INF_PB0_25",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 109,
+        "name": "ADV7619_VS_INF_PB0_26",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 110,
+        "name": "ADV7619_VS_INF_PB0_27",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 111,
+        "name": "ADV7619_VS_INF_PB0_28",
+        "data": [
+            {
+                "name": "uVsInfPb",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 112,
+        "name": "ADV7619_ACP_PB0_1",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 113,
+        "name": "ADV7619_ACP_PB0_2",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 114,
+        "name": "ADV7619_ACP_PB0_3",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 115,
+        "name": "ADV7619_ACP_PB0_4",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 116,
+        "name": "ADV7619_ACP_PB0_5",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 117,
+        "name": "ADV7619_ACP_PB0_6",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 118,
+        "name": "ADV7619_ACP_PB0_7",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 119,
+        "name": "ADV7619_ACP_PB0_8",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 120,
+        "name": "ADV7619_ACP_PB0_9",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 121,
+        "name": "ADV7619_ACP_PB0_10",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 122,
+        "name": "ADV7619_ACP_PB0_11",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 123,
+        "name": "ADV7619_ACP_PB0_12",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 124,
+        "name": "ADV7619_ACP_PB0_13",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 125,
+        "name": "ADV7619_ACP_PB0_14",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 126,
+        "name": "ADV7619_ACP_PB0_15",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 127,
+        "name": "ADV7619_ACP_PB0_16",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 128,
+        "name": "ADV7619_ACP_PB0_17",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 129,
+        "name": "ADV7619_ACP_PB0_18",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 130,
+        "name": "ADV7619_ACP_PB0_19",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 131,
+        "name": "ADV7619_ACP_PB0_20",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 132,
+        "name": "ADV7619_ACP_PB0_21",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 133,
+        "name": "ADV7619_ACP_PB0_22",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 134,
+        "name": "ADV7619_ACP_PB0_23",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 135,
+        "name": "ADV7619_ACP_PB0_24",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 136,
+        "name": "ADV7619_ACP_PB0_25",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 137,
+        "name": "ADV7619_ACP_PB0_26",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 138,
+        "name": "ADV7619_ACP_PB0_27",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 139,
+        "name": "ADV7619_ACP_PB0_28",
+        "data": [
+            {
+                "name": "uAcpPb",
+                "size": 8,
+                "description": [
+                    "ACP infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 140,
+        "name": "ADV7619_ISRC1_PB0_1",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 141,
+        "name": "ADV7619_ISRC1_PB0_2",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 142,
+        "name": "ADV7619_ISRC1_PB0_3",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 143,
+        "name": "ADV7619_ISRC1_PB0_4",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 144,
+        "name": "ADV7619_ISRC1_PB0_5",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 145,
+        "name": "ADV7619_ISRC1_PB0_6",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 146,
+        "name": "ADV7619_ISRC1_PB0_7",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 147,
+        "name": "ADV7619_ISRC1_PB0_8",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 148,
+        "name": "ADV7619_ISRC1_PB0_9",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 149,
+        "name": "ADV7619_ISRC1_PB0_10",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 150,
+        "name": "ADV7619_ISRC1_PB0_11",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 151,
+        "name": "ADV7619_ISRC1_PB0_12",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 152,
+        "name": "ADV7619_ISRC1_PB0_13",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 153,
+        "name": "ADV7619_ISRC1_PB0_14",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 154,
+        "name": "ADV7619_ISRC1_PB0_15",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 155,
+        "name": "ADV7619_ISRC1_PB0_16",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 156,
+        "name": "ADV7619_ISRC1_PB0_17",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 157,
+        "name": "ADV7619_ISRC1_PB0_18",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 158,
+        "name": "ADV7619_ISRC1_PB0_19",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 159,
+        "name": "ADV7619_ISRC1_PB0_20",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 160,
+        "name": "ADV7619_ISRC1_PB0_21",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 161,
+        "name": "ADV7619_ISRC1_PB0_22",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 162,
+        "name": "ADV7619_ISRC1_PB0_23",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 163,
+        "name": "ADV7619_ISRC1_PB0_24",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 164,
+        "name": "ADV7619_ISRC1_PB0_25",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 165,
+        "name": "ADV7619_ISRC1_PB0_26",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 166,
+        "name": "ADV7619_ISRC1_PB0_27",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 167,
+        "name": "ADV7619_ISRC1_PB0_28",
+        "data": [
+            {
+                "name": "uIsrc1Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 1 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 168,
+        "name": "ADV7619_ISRC2_PB0_1",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 169,
+        "name": "ADV7619_ISRC2_PB0_2",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 170,
+        "name": "ADV7619_ISRC2_PB0_3",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 171,
+        "name": "ADV7619_ISRC2_PB0_4",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 172,
+        "name": "ADV7619_ISRC2_PB0_5",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 173,
+        "name": "ADV7619_ISRC2_PB0_6",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 174,
+        "name": "ADV7619_ISRC2_PB0_7",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 175,
+        "name": "ADV7619_ISRC2_PB0_8",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 176,
+        "name": "ADV7619_ISRC2_PB0_9",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 177,
+        "name": "ADV7619_ISRC2_PB0_10",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 178,
+        "name": "ADV7619_ISRC2_PB0_11",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 179,
+        "name": "ADV7619_ISRC2_PB0_12",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 180,
+        "name": "ADV7619_ISRC2_PB0_13",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 181,
+        "name": "ADV7619_ISRC2_PB0_14",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 182,
+        "name": "ADV7619_ISRC2_PB0_15",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 183,
+        "name": "ADV7619_ISRC2_PB0_16",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 184,
+        "name": "ADV7619_ISRC2_PB0_17",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 185,
+        "name": "ADV7619_ISRC2_PB0_18",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 186,
+        "name": "ADV7619_ISRC2_PB0_19",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 187,
+        "name": "ADV7619_ISRC2_PB0_20",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 188,
+        "name": "ADV7619_ISRC2_PB0_21",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 189,
+        "name": "ADV7619_ISRC2_PB0_22",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 190,
+        "name": "ADV7619_ISRC2_PB0_23",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 191,
+        "name": "ADV7619_ISRC2_PB0_24",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 192,
+        "name": "ADV7619_ISRC2_PB0_25",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 193,
+        "name": "ADV7619_ISRC2_PB0_26",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 194,
+        "name": "ADV7619_ISRC2_PB0_27",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 195,
+        "name": "ADV7619_ISRC2_PB0_28",
+        "data": [
+            {
+                "name": "uIsrc2Pb",
+                "size": 8,
+                "description": [
+                    "ISRC 2 infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 196,
+        "name": "ADV7619_GAMUT_MDATA_PB0_1",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 197,
+        "name": "ADV7619_GAMUT_MDATA_PB0_2",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 198,
+        "name": "ADV7619_GAMUT_MDATA_PB0_3",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 199,
+        "name": "ADV7619_GAMUT_MDATA_PB0_4",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 200,
+        "name": "ADV7619_GAMUT_MDATA_PB0_5",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 201,
+        "name": "ADV7619_GAMUT_MDATA_PB0_6",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 202,
+        "name": "ADV7619_GAMUT_MDATA_PB0_7",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 203,
+        "name": "ADV7619_GAMUT_MDATA_PB0_8",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 204,
+        "name": "ADV7619_GAMUT_MDATA_PB0_9",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 205,
+        "name": "ADV7619_GAMUT_MDATA_PB0_10",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 206,
+        "name": "ADV7619_GAMUT_MDATA_PB0_11",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 207,
+        "name": "ADV7619_GAMUT_MDATA_PB0_12",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 208,
+        "name": "ADV7619_GAMUT_MDATA_PB0_13",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 209,
+        "name": "ADV7619_GAMUT_MDATA_PB0_14",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 210,
+        "name": "ADV7619_GAMUT_MDATA_PB0_15",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 211,
+        "name": "ADV7619_GAMUT_MDATA_PB0_16",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 212,
+        "name": "ADV7619_GAMUT_MDATA_PB0_17",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 213,
+        "name": "ADV7619_GAMUT_MDATA_PB0_18",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 214,
+        "name": "ADV7619_GAMUT_MDATA_PB0_19",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 215,
+        "name": "ADV7619_GAMUT_MDATA_PB0_20",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 216,
+        "name": "ADV7619_GAMUT_MDATA_PB0_21",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 217,
+        "name": "ADV7619_GAMUT_MDATA_PB0_22",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 218,
+        "name": "ADV7619_GAMUT_MDATA_PB0_23",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 219,
+        "name": "ADV7619_GAMUT_MDATA_PB0_24",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 220,
+        "name": "ADV7619_GAMUT_MDATA_PB0_25",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 221,
+        "name": "ADV7619_GAMUT_MDATA_PB0_26",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 222,
+        "name": "ADV7619_GAMUT_MDATA_PB0_27",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 223,
+        "name": "ADV7619_GAMUT_MDATA_PB0_28",
+        "data": [
+            {
+                "name": "uGbd",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe data\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 224,
+        "name": "ADV7619_AVI_PACKET_ID",
+        "data": [
+            {
+                "name": "uAviPacketId",
+                "size": 8,
+                "description": [
+                    "AVI infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x00 to 0x1B\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0x00 to 0x1B\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 225,
+        "name": "ADV7619_AVI_INF_VERS",
+        "data": [
+            {
+                "name": "uAviInfVers",
+                "size": 8,
+                "description": [
+                    "AVI infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 226,
+        "name": "ADV7619_AVI_INF_LEN",
+        "data": [
+            {
+                "name": "uAviInfLen",
+                "size": 8,
+                "description": [
+                    "AVI infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 227,
+        "name": "ADV7619_AUD_PACKET_ID",
+        "data": [
+            {
+                "name": "uAudPacketId",
+                "size": 8,
+                "description": [
+                    "Audio infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x1C to 0x29\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0x1C to 0x29\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 228,
+        "name": "ADV7619_AUD_INF_VERS",
+        "data": [
+            {
+                "name": "uAudInfVers",
+                "size": 8,
+                "description": [
+                    "Audio infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 229,
+        "name": "ADV7619_AUD_INF_LEN",
+        "data": [
+            {
+                "name": "uAudInfLen",
+                "size": 8,
+                "description": [
+                    "Audio infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 230,
+        "name": "ADV7619_SPD_PACKET_ID",
+        "data": [
+            {
+                "name": "uSpdPacketId",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x2A to 0x45\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0x2A to 0x45\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 231,
+        "name": "ADV7619_SPD_INF_VERS",
+        "data": [
+            {
+                "name": "uSpdInfVers",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 232,
+        "name": "ADV7619_SPD_INF_LEN",
+        "data": [
+            {
+                "name": "uSpdInfLen",
+                "size": 8,
+                "description": [
+                    "Source Prod infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 233,
+        "name": "ADV7619_MS_PACKET_ID",
+        "data": [
+            {
+                "name": "uMsPacketId",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x46 to 0x53\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0x46 to 0x53\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 234,
+        "name": "ADV7619_MS_INF_VERS",
+        "data": [
+            {
+                "name": "uMsInfVers",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 235,
+        "name": "ADV7619_MS_INF_LEN",
+        "data": [
+            {
+                "name": "uMsInfLen",
+                "size": 8,
+                "description": [
+                    "MPEG Source infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 236,
+        "name": "ADV7619_VS_PACKET_ID",
+        "data": [
+            {
+                "name": "uVsPacketId",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x54 to 0x6F\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x54 to 0x6F\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 237,
+        "name": "ADV7619_VS_INF_VERS",
+        "data": [
+            {
+                "name": "uVsInfVers",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 238,
+        "name": "ADV7619_VS_INF_LEN",
+        "data": [
+            {
+                "name": "uVsInfLen",
+                "size": 8,
+                "description": [
+                    "Vendor Specific infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 239,
+        "name": "ADV7619_ACP_PACKET_ID",
+        "data": [
+            {
+                "name": "uAcpPacketId",
+                "size": 8,
+                "description": [
+                    "ACP infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x70 to 0x8B\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0x70 to 0x8B\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 240,
+        "name": "ADV7619_ACP_TYPE",
+        "data": [
+            {
+                "name": "uAcpType",
+                "size": 8,
+                "description": [
+                    "ACP infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 241,
+        "name": "ADV7619_ACP_HEADER2",
+        "data": [
+            {
+                "name": "uAcpHeader2",
+                "size": 8,
+                "description": [
+                    "ACP infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 242,
+        "name": "ADV7619_ISRC1_PACKET_ID",
+        "data": [
+            {
+                "name": "uIsrc1PacketId",
+                "size": 8,
+                "description": [
+                    "ISRC1 infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0x8C to 0xA7\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0x8C to 0xA7\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 243,
+        "name": "ADV7619_ISRC1_HEADER1",
+        "data": [
+            {
+                "name": "uIsrc1Header1",
+                "size": 8,
+                "description": [
+                    "ISRC1 infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 244,
+        "name": "ADV7619_ISRC1_HEADER2",
+        "data": [
+            {
+                "name": "uIsrc1Header2",
+                "size": 8,
+                "description": [
+                    "ISRC1 infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 245,
+        "name": "ADV7619_ISRC2_PACKET_ID",
+        "data": [
+            {
+                "name": "uIsrc2PacketId",
+                "size": 8,
+                "description": [
+                    "ISRC2 infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0xA8 to 0xC3\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0xA8 to 0xC3\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 246,
+        "name": "ADV7619_ISRC2_HEADER1",
+        "data": [
+            {
+                "name": "uIsrc2Header1",
+                "size": 8,
+                "description": [
+                    "ISRC2 infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 247,
+        "name": "ADV7619_ISRC2_HEADER2",
+        "data": [
+            {
+                "name": "uIsrc2Header2",
+                "size": 8,
+                "description": [
+                    "ISRC2 infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 248,
+        "name": "ADV7619_GAMUT_PACKET_ID",
+        "data": [
+            {
+                "name": "uGamutPacketId",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe ID\r"
+                ],
+                "values": [
+                    {
+                        "value": "0xxxxxxx",
+                        "description": "Packet type value of packet stored in InfoFrame Map, Address 0xC4 to 0xDF\r"
+                    },
+                    {
+                        "value": "1xxxxxxx",
+                        "description": "Packet type value of InfoFrame stored in InfoFrame Map, Address 0xC4 to 0xDF\r"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "offset": 249,
+        "name": "ADV7619_GAMUT_HEADER1",
+        "data": [
+            {
+                "name": "uGamutHeader1",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe version\r"
+                ],
+                "values": []
+            }
+        ]
+    },
+    {
+        "offset": 250,
+        "name": "ADV7619_GAMUT_HEADER2",
+        "data": [
+            {
+                "name": "uGamutHeader2",
+                "size": 8,
+                "description": [
+                    "Gamut infoframe length\r"
+                ],
+                "values": []
+            }
+        ]
+    }
+]
