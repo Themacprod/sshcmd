@@ -18,6 +18,12 @@ $field-description: 200px;
 		background-color: $color-green-background;
 		transition: visibility 0s 1.5s, opacity 1.5s linear;
 	}
+
+	.registergrid-item {
+		display: inline-block;
+		border: 1px solid black;
+		width: 35px;
+	}
 }
 
 .registerdetail {

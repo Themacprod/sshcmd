@@ -5,7 +5,8 @@
 var React = require("react"),
     _ = require("lodash"),
     request = require("superagent"),
-    registerline = require("./registerline"),
+    registerlistlayout = require("./registerlistlayout"),
+    registergridlayout = require("./registergridlayout"),
     registerdetail = require("./registerdetail");
 
 module.exports = React.createClass({
@@ -73,7 +74,8 @@ module.exports = React.createClass({
         return {
             readData: _.fill(Array(this.props.data.length), "-"),
             detail: this.props.data[0],
-            value: "0x00"
+            value: "0x00",
+            layoutType: "grid"
         };
     },
     handleClick: function(offset) {
@@ -87,8 +89,37 @@ module.exports = React.createClass({
                 value: this.state.readData[index]
             });
         }
-	},
+    },
     render: function() {
+        var layout = null;
+
+        switch (this.state.layoutType) {
+            case "list":
+                layout = React.createElement(registerlistlayout, {
+                    data: this.props.data,
+                    readData: this.state.readData,
+                    callBack: this.handleClick
+                });
+                break;
+
+            case "grid":
+                layout = React.createElement(registergridlayout, {
+                    data: this.props.data,
+                    readData: this.state.readData,
+                    callBack: this.handleClick
+                });
+                break;
+
+            default:
+                // Not handled yet.
+                if (this.state.layoutType) {
+                    console.log(this.state.layoutType);
+                }
+
+                break;
+        }
+
+
         return React.DOM.div(
             {
                 className: "registercontainer"
@@ -97,40 +128,7 @@ module.exports = React.createClass({
                 {
                     className: "registerlist"
                 },
-                React.DOM.table(
-                    {
-                        className: "table table-hover table-sm table-bordered text-small"
-                    },
-                    React.DOM.thead(
-                        null,
-                        React.DOM.tr(
-                            {
-                                className: "table-dark"
-                            },
-                            React.DOM.th(
-                                null,
-                                "Offset"
-                            ),
-                            React.DOM.th(
-                                null,
-                                "Name"
-                            ),
-                            React.DOM.th(
-                                null,
-                                "Value"
-                            )
-                        )
-                    ),
-                    _.map(this.props.data, function(data, index) {
-                        return React.createElement(registerline, {
-                            key: index,
-                            offset: data.offset,
-                            name: data.name,
-                            value: this.state.readData[index],
-                            callBack: this.handleClick
-                        });
-                    }.bind(this))
-                )
+                layout
             ),
             React.createElement(registerdetail, {
                 detail: this.state.detail,
