@@ -75,7 +75,8 @@ module.exports = React.createClass({
             readData: _.fill(Array(this.props.data.length), "-"),
             detail: this.props.data[0],
             value: "0x00",
-            layoutType: "grid"
+            layoutType: "grid",
+            showDropdown: false
         };
     },
     handleClick: function(offset) {
@@ -89,6 +90,11 @@ module.exports = React.createClass({
                 value: this.state.readData[index]
             });
         }
+    },
+    changeDropDown: function() {
+        this.setState({
+            showDropdown: !this.state.showDropdown
+        });
     },
     render: function() {
         var layout = null;
@@ -119,11 +125,42 @@ module.exports = React.createClass({
                 break;
         }
 
+        var showDropdown = this.state.showDropdown ? " show" : "";
 
         return React.DOM.div(
             {
                 className: "registercontainer"
             },
+            React.DOM.div(
+                {
+                    className: "dropdown" + showDropdown,
+                    onClick: this.changeDropDown
+                },
+                React.DOM.button(
+                    {
+                        "className": "btn btn-secondary dropdown-toggle",
+                        "type": "button",
+                        "id": "dropdownMenuButton",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": this.state.showDropdown
+                    },
+                    "Dropdown button"
+                ),
+                React.DOM.div(
+                    {
+                        "className": "dropdown-menu" + showDropdown,
+                        "aria-labelledby": "dropdownMenuButton"
+                    },
+                    React.DOM.a(
+                        {
+                            className: "dropdown-item",
+                            href: "#"
+                        },
+                        "Action"
+                    )
+                )
+            ),
             React.DOM.div(
                 {
                     className: "registerlist"
