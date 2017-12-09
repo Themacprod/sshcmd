@@ -97,9 +97,19 @@ module.exports = React.createClass({
             dataIndex: index
         });
     },
+    handleLayoutClick: function(layout) {
+        this.setState({
+            layoutType: layout
+        });
+    },
     changeOffsetDropdown: function() {
         this.setState({
             showOffsetDropdown: !this.state.showOffsetDropdown
+        });
+    },
+    changeLayoutDropdown: function() {
+        this.setState({
+            showLayoutDropdown: !this.state.showLayoutDropdown
         });
     },
     getOffsetDropdown: function() {
@@ -141,6 +151,47 @@ module.exports = React.createClass({
             )
         );
     },
+    getLayoutDropdown: function() {
+        var showDropdown = this.state.showLayoutDropdown ? " show" : "";
+        var layouttypes = [
+            "list",
+            "grid"
+        ];
+
+        return React.DOM.div(
+            {
+                className: "dropdown" + showDropdown,
+                onClick: this.changeLayoutDropdown
+            },
+            React.DOM.button(
+                {
+                    "className": "btn btn-secondary dropdown-toggle",
+                    "type": "button",
+                    "id": "dropdownMenuButton",
+                    "data-toggle": "dropdown",
+                    "aria-haspopup": "true",
+                    "aria-expanded": this.state.showLayoutDropdown
+                },
+                this.state.layoutType
+            ),
+            React.DOM.div(
+                {
+                    "className": "dropdown-menu" + showDropdown,
+                    "aria-labelledby": "dropdownMenuButton"
+                },
+                _.map(layouttypes, function(layout, index) {
+                    return React.DOM.a(
+                        {
+                            className: "dropdown-item",
+                            key: index,
+                            onClick: this.handleLayoutClick.bind(this, layout)
+                        },
+                        layout
+                    );
+                }.bind(this))
+            )
+        );
+    },
     render: function() {
         var layout = null;
 
@@ -175,6 +226,7 @@ module.exports = React.createClass({
                 className: "registercontainer"
             },
             this.getOffsetDropdown(),
+            this.getLayoutDropdown(),
             React.DOM.div(
                 {
                     className: "registerlist"
