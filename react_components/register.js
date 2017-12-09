@@ -76,7 +76,7 @@ module.exports = React.createClass({
             detail: this.props.data[0].offset[0],
             value: "0x00",
             layoutType: "grid",
-            showDropdown: false,
+            showOffsetDropdown: false,
             dataIndex: 0
         };
     },
@@ -97,10 +97,49 @@ module.exports = React.createClass({
             dataIndex: index
         });
     },
-    changeDropDown: function() {
+    changeOffsetDropdown: function() {
         this.setState({
-            showDropdown: !this.state.showDropdown
+            showOffsetDropdown: !this.state.showOffsetDropdown
         });
+    },
+    getOffsetDropdown: function() {
+        var showDropdown = this.state.showOffsetDropdown ? " show" : "";
+
+        return React.DOM.div(
+            {
+                className: "dropdown" + showDropdown,
+                onClick: this.changeOffsetDropdown
+            },
+            React.DOM.button(
+                {
+                    "className": "btn btn-secondary dropdown-toggle",
+                    "type": "button",
+                    "id": "dropdownMenuButton",
+                    "data-toggle": "dropdown",
+                    "aria-haspopup": "true",
+                    "aria-expanded": this.state.showOffsetDropdown
+                },
+                "0x" + this.props.data[this.state.dataIndex].address.toString(16).toUpperCase() +
+                " - " + this.props.data[this.state.dataIndex].description
+            ),
+            React.DOM.div(
+                {
+                    "className": "dropdown-menu" + showDropdown,
+                    "aria-labelledby": "dropdownMenuButton"
+                },
+                _.map(this.props.data, function(data, index) {
+                    return React.DOM.a(
+                        {
+                            className: "dropdown-item",
+                            key: index,
+                            onClick: this.handleAddressClick.bind(this, index)
+                        },
+                        "0x" + data.address.toString(16).toUpperCase() +
+                        " - " + data.description
+                    );
+                }.bind(this))
+            )
+        );
     },
     render: function() {
         var layout = null;
@@ -131,47 +170,11 @@ module.exports = React.createClass({
                 break;
         }
 
-        var showDropdown = this.state.showDropdown ? " show" : "";
-
         return React.DOM.div(
             {
                 className: "registercontainer"
             },
-            React.DOM.div(
-                {
-                    className: "dropdown" + showDropdown,
-                    onClick: this.changeDropDown
-                },
-                React.DOM.button(
-                    {
-                        "className": "btn btn-secondary dropdown-toggle",
-                        "type": "button",
-                        "id": "dropdownMenuButton",
-                        "data-toggle": "dropdown",
-                        "aria-haspopup": "true",
-                        "aria-expanded": this.state.showDropdown
-                    },
-                    "0x" + this.props.data[this.state.dataIndex].address.toString(16).toUpperCase() +
-                    " - " + this.props.data[this.state.dataIndex].description
-                ),
-                React.DOM.div(
-                    {
-                        "className": "dropdown-menu" + showDropdown,
-                        "aria-labelledby": "dropdownMenuButton"
-                    },
-                    _.map(this.props.data, function(data, index) {
-                        return React.DOM.a(
-                            {
-                                className: "dropdown-item",
-                                key: index,
-                                onClick: this.handleAddressClick.bind(this, index)
-                            },
-                            "0x" + data.address.toString(16).toUpperCase() +
-                            " - " + data.description
-                        );
-                    }.bind(this))
-                )
-            ),
+            this.getOffsetDropdown(),
             React.DOM.div(
                 {
                     className: "registerlist"
