@@ -14,7 +14,7 @@ module.exports = React.createClass({
         var difference = -1,
             temp = [],
             result = [];
-        _.forEach(this.props.data, function(data, index) {
+        _.forEach(this.props.data[this.state.dataIndex].offset, function(data, index) {
             if (difference !== (data.offset - index)) {
                 if (difference !== -1) {
                     result.push(temp);
@@ -53,7 +53,7 @@ module.exports = React.createClass({
                 if (err) {
                     console.log("Read failed!");
                 } else {
-                    var startIndex = _.findIndex(this.props.data, function(o) {
+                    var startIndex = _.findIndex(this.props.data[this.state.dataIndex].offset, function(o) {
                         return o.offset === data.startoffset;
                     });
 
@@ -72,24 +72,30 @@ module.exports = React.createClass({
     },
     getInitialState: function() {
         return {
-            readData: _.fill(Array(this.props.data.length), "-"),
-            detail: this.props.data[0],
+            readData: _.fill(Array(this.props.data[0].offset.length), "-"),
+            detail: this.props.data[0].offset[0],
             value: "0x00",
             layoutType: "grid",
-            showDropdown: false
+            showDropdown: false,
+            dataIndex: 0
         };
     },
     handleClick: function(offset) {
-        var index = _.findIndex(this.props.data, function(o) {
+        var index = _.findIndex(this.props.data[this.state.dataIndex].offset, function(o) {
             return o.offset === offset;
         });
 
         if (index >= 0) {
             this.setState({
-                detail: this.props.data[index],
+                detail: this.props.data[this.state.dataIndex].offset[index],
                 value: this.state.readData[index]
             });
         }
+    },
+    handleAddressClick: function(index) {
+        this.setState({
+            dataIndex: index
+        });
     },
     changeDropDown: function() {
         this.setState({
@@ -102,7 +108,7 @@ module.exports = React.createClass({
         switch (this.state.layoutType) {
             case "list":
                 layout = React.createElement(registerlistlayout, {
-                    data: this.props.data,
+                    data: this.props.data[this.state.dataIndex].offset,
                     readData: this.state.readData,
                     callBack: this.handleClick
                 });
@@ -110,7 +116,7 @@ module.exports = React.createClass({
 
             case "grid":
                 layout = React.createElement(registergridlayout, {
-                    data: this.props.data,
+                    data: this.props.data[this.state.dataIndex].offset,
                     readData: this.state.readData,
                     callBack: this.handleClick
                 });
@@ -145,20 +151,25 @@ module.exports = React.createClass({
                         "aria-haspopup": "true",
                         "aria-expanded": this.state.showDropdown
                     },
-                    "Dropdown button"
+                    "0x" + this.props.data[this.state.dataIndex].address.toString(16).toUpperCase() +
+                    " - " + this.props.data[this.state.dataIndex].description
                 ),
                 React.DOM.div(
                     {
                         "className": "dropdown-menu" + showDropdown,
                         "aria-labelledby": "dropdownMenuButton"
                     },
-                    React.DOM.a(
-                        {
-                            className: "dropdown-item",
-                            href: "#"
-                        },
-                        "Action"
-                    )
+                    _.map(this.props.data, function(data, index) {
+                        return React.DOM.a(
+                            {
+                                className: "dropdown-item",
+                                key: index,
+                                onClick: this.handleAddressClick.bind(this, index)
+                            },
+                            "0x" + data.address.toString(16).toUpperCase() +
+                            " - " + data.description
+                        );
+                    }.bind(this))
                 )
             ),
             React.DOM.div(
