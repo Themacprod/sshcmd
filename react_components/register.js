@@ -44,7 +44,7 @@ module.exports = React.createClass({
                 ip: this.props.ip,
                 cmd: "I2cRead",
                 bus: this.props.bus,
-                address: this.props.address,
+                address: this.props.data[this.state.dataIndex].address,
                 offsetsize: this.props.offsetsize,
                 startoffset: data.startoffset,
                 datacount: data.count
