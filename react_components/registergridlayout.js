@@ -8,8 +8,10 @@ var toHex = function(data) {
         return data;
     }
 
-    if (Number.isInteger(data.substring(2))) {
-        return data.substring(2);
+    if (typeof data !== "undefined") {
+        if (Number.isInteger(data.substring(2))) {
+            return data.substring(2);
+        }
     }
 
     return "-";
