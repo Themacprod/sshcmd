@@ -21,6 +21,27 @@ module.exports = React.createClass({
     handleClick: function(offset) {
         this.props.callBack(offset);
     },
+    getTooltipsData: function(columnIdx, lineIdx) {
+        var offset = columnIdx + (lineIdx * 16);
+
+        var startIndex = _.findIndex(this.props.data, function(o) {
+            return o.offset === offset;
+        });
+
+        var description = "";
+
+        if (startIndex >= 0) {
+            description = " - " + this.props.data[startIndex].name;
+        }
+
+        var data = offset.toString(16).toUpperCase();
+
+        if (data.length === 1) {
+            data = "0" + data;
+        }
+
+        return "0x" + data + description;
+    },
     render: function() {
         var max = _.maxBy(this.props.data, function(data) {
             return data.offset;
@@ -60,9 +81,12 @@ module.exports = React.createClass({
                     _.map(line, function(data, columnIdx) {
                         return React.DOM.div(
                             {
-                                className: "registergrid-item",
-                                key: columnIdx,
-                                onClick: this.handleClick.bind(this, columnIdx + lineIdx)
+                                "className": "registergrid-item",
+                                "key": columnIdx,
+                                "onClick": this.handleClick.bind(this, columnIdx + lineIdx),
+                                "data-toggle": "tooltip",
+                                "data-placement": "top",
+                                "title": this.getTooltipsData(columnIdx, lineIdx)
                             },
                             toHex(data)
                         );
