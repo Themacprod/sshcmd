@@ -66,9 +66,18 @@ module.exports = React.createClass({
             }.bind(this));
     },
     componentDidMount: function() {
-        _.forEach(this.getConsecutiveOffsetChunk(), function(data) {
-            this.readData(data);
-        }.bind(this));
+        request
+            .get("/api/ping/" + this.props.ip)
+            .end(function(err, res) {
+                if (!err) {
+                    if (res.body === true) {
+                        // Do I2C access, only if source is alive.
+                        _.forEach(this.getConsecutiveOffsetChunk(), function(data) {
+                            this.readData(data);
+                        }.bind(this));
+                    }
+                }
+            }.bind(this));
     },
     getInitialState: function() {
         return {
