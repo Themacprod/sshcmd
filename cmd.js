@@ -15,39 +15,47 @@ var buildMtxI2cCmd = function(params) {
 };
 
 module.exports.i2cread = function(req, res) {
-    var conn = new Ssh2Client();
-    conn.on("ready", function() {
-        conn.exec(buildMtxI2cCmd(req.body), function(err, stream) {
-            if (err) {
-                throw err;
+    ping.promise.probe(req.body.ip, {
+            timeout: 0.1
+        })
+        .then(function(res2) {
+            if (res2.alive === true) {
+                var conn = new Ssh2Client();
+                conn.on("ready", function() {
+                    conn.exec(buildMtxI2cCmd(req.body), function(err, stream) {
+                        if (err) {
+                            throw err;
+                        }
+                        stream.on("close", function() {
+                            conn.end();
+                        }).on("data", function(data) {
+                            // Only return data because I2C tool return offset + data.
+                            var extracted = _.map(data.toString().split("\n"), function(line) {
+                                return line.slice(5, 9);
+                            });
+
+                            // Remove extra empty line, valid data value (0xXX) as length of 4.
+                            extracted = _.filter(extracted, function(o) {
+                                return (o.length === 4);
+                            });
+
+                            res.json({
+                                startoffset: req.body.startoffset,
+                                data: extracted
+                            });
+                        }).stderr.on("data", function(data) {
+                            res.json(data.toString());
+                        });
+                    });
+                }).connect({
+                    host: req.body.ip,
+                    port: 22,
+                    username: "root",
+                    password: ""
+                });
             }
-            stream.on("close", function() {
-                conn.end();
-            }).on("data", function(data) {
-                // Only return data because I2C tool return offset + data.
-                var extracted = _.map(data.toString().split("\n"), function(line) {
-                    return line.slice(5, 9);
-                });
-
-                // Remove extra empty line, valid data value (0xXX) as length of 4.
-                extracted = _.filter(extracted, function(o) {
-                    return (o.length === 4);
-                });
-
-                res.json({
-                    startoffset: req.body.startoffset,
-                    data: extracted
-                });
-            }).stderr.on("data", function(data) {
-                res.json(data.toString());
-            });
-        });
-    }).connect({
-        host: req.body.ip,
-        port: 22,
-        username: "root",
-        password: ""
-    });
+        })
+        .done();
 };
 
 module.exports.pingIp = function(req, res) {
