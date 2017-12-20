@@ -1,6 +1,7 @@
 "use strict";
 
-var React = require("react");
+var React = require("react"),
+    _ = require("lodash");
 
 module.exports = React.createClass({
     handleHome: function() {
@@ -11,7 +12,7 @@ module.exports = React.createClass({
             null,
             React.DOM.nav(
                 {
-                    className: "navbar navbar-dark bg-dark"
+                    className: "navbar navbar-expand-lg navbar-dark bg-dark"
                 },
                 React.DOM.a(
                     {
@@ -22,6 +23,31 @@ module.exports = React.createClass({
                         "aria-hidden": "true",
                         "onClick": this.handleHome
                     })
+                ),
+                React.DOM.div(
+                    {
+                        className: "collapse navbar-collapse",
+                        id: "navbarNavDropdown"
+                    },
+                    React.DOM.ul(
+                        {
+                            className: "navbar-nav"
+                        },
+                        React.DOM.li(
+                           {
+                               className: "nav-item"
+                           },
+                           React.DOM.a({
+                               className: "nav-link"
+                           }, "Home")
+                       ),
+                        _.map(this.props.data, function(data, key) {
+                            return React.DOM.li({
+                                    className: "nav-item",
+                                    key: key
+                                }, data);
+                        })
+                    )
                 )
             )
         );

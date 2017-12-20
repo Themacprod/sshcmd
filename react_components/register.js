@@ -235,9 +235,12 @@ module.exports = React.createClass({
             {
                 className: "registercontainer"
             },
-            React.createElement(navbar),
-            this.getOffsetDropdown(),
-            this.getLayoutDropdown(),
+            React.createElement(navbar, {
+                data: [
+                    this.getOffsetDropdown(),
+                    this.getLayoutDropdown()
+                ]
+            }),
             React.DOM.div(
                 {
                     className: "registerlist"
