@@ -127,8 +127,7 @@ module.exports = React.createClass({
 
         return React.DOM.div(
             {
-                className: "dropdown" + showDropdown,
-                onClick: this.changeOffsetDropdown
+                className: "dropdown" + showDropdown
             },
             React.DOM.button(
                 {
@@ -137,7 +136,8 @@ module.exports = React.createClass({
                     "id": "dropdownMenuButton",
                     "data-toggle": "dropdown",
                     "aria-haspopup": "true",
-                    "aria-expanded": this.state.showOffsetDropdown
+                    "aria-expanded": this.state.showOffsetDropdown,
+                    "onClick": this.changeOffsetDropdown
                 },
                 "0x" + this.props.data[this.state.dataIndex].address.toString(16).toUpperCase() +
                 " - " + this.props.data[this.state.dataIndex].description
@@ -170,8 +170,7 @@ module.exports = React.createClass({
 
         return React.DOM.div(
             {
-                className: "dropdown" + showDropdown,
-                onClick: this.changeLayoutDropdown
+                className: "dropdown" + showDropdown
             },
             React.DOM.button(
                 {
@@ -180,7 +179,8 @@ module.exports = React.createClass({
                     "id": "dropdownMenuButton",
                     "data-toggle": "dropdown",
                     "aria-haspopup": "true",
-                    "aria-expanded": this.state.showLayoutDropdown
+                    "aria-expanded": this.state.showLayoutDropdown,
+                    "onClick": this.changeLayoutDropdown
                 },
                 this.state.layoutType
             ),
