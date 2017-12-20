@@ -7,7 +7,8 @@ var React = require("react"),
     request = require("superagent"),
     registerlistlayout = require("./registerlistlayout"),
     registergridlayout = require("./registergridlayout"),
-    registerdetail = require("./registerdetail");
+    registerdetail = require("./registerdetail"),
+    navbar = require("./navbar");
 
 module.exports = React.createClass({
     getConsecutiveOffsetChunk: function() {
@@ -234,6 +235,7 @@ module.exports = React.createClass({
             {
                 className: "registercontainer"
             },
+            React.createElement(navbar),
             this.getOffsetDropdown(),
             this.getLayoutDropdown(),
             React.DOM.div(
