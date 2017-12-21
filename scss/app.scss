@@ -14,8 +14,17 @@
 
 .navbar {
 	color: white;
+	margin-bottom: 20px;
+
+	.navbar-brand {
+		margin-right: 0px;
+	}
 
 	.fa {
 		cursor: pointer;
 	}
+}
+
+.cursor-pointer{
+	cursor: pointer;
 }

@@ -35,10 +35,11 @@ module.exports = React.createClass({
                         },
                         React.DOM.li(
                            {
-                               className: "nav-item"
+                               className: "nav-item",
+                               onClick: this.handleHome
                            },
                            React.DOM.a({
-                               className: "nav-link"
+                               className: "nav-link cursor-pointer"
                            }, "Home")
                        ),
                         _.map(this.props.data, function(data, key) {
