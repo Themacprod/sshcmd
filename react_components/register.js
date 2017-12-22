@@ -8,7 +8,13 @@ var React = require("react"),
     registerlistlayout = require("./registerlistlayout"),
     registergridlayout = require("./registergridlayout"),
     registerdetail = require("./registerdetail"),
-    navbar = require("./navbar");
+    navbar = require("./navbar"),
+    dropdown = require("./dropdown");
+
+var layoutTypes = [
+    "list",
+    "grid"
+];
 
 module.exports = React.createClass({
     getConsecutiveOffsetChunk: function() {
@@ -85,8 +91,7 @@ module.exports = React.createClass({
             readData: _.fill(Array(this.props.data[0].offset.length), "-"),
             detail: this.props.data[0].offset[0],
             value: "0x00",
-            layoutType: "grid",
-            showOffsetDropdown: false,
+            layoutType: layoutTypes[0],
             dataIndex: 0
         };
     },
@@ -107,100 +112,34 @@ module.exports = React.createClass({
             dataIndex: index
         });
     },
-    handleLayoutClick: function(layout) {
+    handleLayoutClick: function(index) {
         this.setState({
-            layoutType: layout
-        });
-    },
-    changeOffsetDropdown: function() {
-        this.setState({
-            showOffsetDropdown: !this.state.showOffsetDropdown
-        });
-    },
-    changeLayoutDropdown: function() {
-        this.setState({
-            showLayoutDropdown: !this.state.showLayoutDropdown
+            layoutType: layoutTypes[index]
         });
     },
     getOffsetDropdown: function() {
-        var showDropdown = this.state.showOffsetDropdown ? " show" : "";
+        var values = _.map(this.props.data, function(data) {
+            return "0x" + data.address.toString(16).toUpperCase() +
+                " - " + data.description;
+        });
 
-        return React.DOM.div(
-            {
-                className: "dropdown" + showDropdown
-            },
-            React.DOM.button(
-                {
-                    "className": "btn btn-secondary dropdown-toggle",
-                    "type": "button",
-                    "id": "dropdownMenuButton",
-                    "data-toggle": "dropdown",
-                    "aria-haspopup": "true",
-                    "aria-expanded": this.state.showOffsetDropdown,
-                    "onClick": this.changeOffsetDropdown
-                },
-                "0x" + this.props.data[this.state.dataIndex].address.toString(16).toUpperCase() +
-                " - " + this.props.data[this.state.dataIndex].description
-            ),
-            React.DOM.div(
-                {
-                    "className": "dropdown-menu" + showDropdown,
-                    "aria-labelledby": "dropdownMenuButton"
-                },
-                _.map(this.props.data, function(data, index) {
-                    return React.DOM.a(
-                        {
-                            className: "dropdown-item",
-                            key: index,
-                            onClick: this.handleAddressClick.bind(this, index)
-                        },
-                        "0x" + data.address.toString(16).toUpperCase() +
-                        " - " + data.description
-                    );
-                }.bind(this))
-            )
-        );
+        var current = "0x" + this.props.data[this.state.dataIndex].address.toString(16).toUpperCase() +
+        " - " + this.props.data[this.state.dataIndex].description;
+
+        return React.createElement(dropdown, {
+            id: "offsetDropdown",
+            values: values,
+            current: current,
+            callBack: this.handleAddressClick
+        });
     },
     getLayoutDropdown: function() {
-        var showDropdown = this.state.showLayoutDropdown ? " show" : "";
-        var layouttypes = [
-            "list",
-            "grid"
-        ];
-
-        return React.DOM.div(
-            {
-                className: "dropdown" + showDropdown
-            },
-            React.DOM.button(
-                {
-                    "className": "btn btn-secondary dropdown-toggle",
-                    "type": "button",
-                    "id": "dropdownMenuButton",
-                    "data-toggle": "dropdown",
-                    "aria-haspopup": "true",
-                    "aria-expanded": this.state.showLayoutDropdown,
-                    "onClick": this.changeLayoutDropdown
-                },
-                this.state.layoutType
-            ),
-            React.DOM.div(
-                {
-                    "className": "dropdown-menu" + showDropdown,
-                    "aria-labelledby": "dropdownMenuButton"
-                },
-                _.map(layouttypes, function(layout, index) {
-                    return React.DOM.a(
-                        {
-                            className: "dropdown-item",
-                            key: index,
-                            onClick: this.handleLayoutClick.bind(this, layout)
-                        },
-                        layout
-                    );
-                }.bind(this))
-            )
-        );
+        return React.createElement(dropdown, {
+            id: "layoutDropdown",
+            values: layoutTypes,
+            current: this.state.layoutType,
+            callBack: this.handleLayoutClick
+        });
     },
     render: function() {
         var layout = null;
