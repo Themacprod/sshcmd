@@ -9,12 +9,11 @@ var React = require("react"),
     registergridlayout = require("./registergridlayout"),
     registerdetail = require("./registerdetail"),
     navbar = require("./navbar"),
-    dropdown = require("./dropdown");
-
-var layoutTypes = [
-    "list",
-    "grid"
-];
+    dropdown = require("./dropdown"),
+    layoutTypes = [
+        "list",
+        "grid"
+    ];
 
 module.exports = React.createClass({
     getConsecutiveOffsetChunk: function() {
