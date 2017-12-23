@@ -123,7 +123,7 @@ module.exports = React.createClass({
         });
 
         var current = "0x" + this.props.data[this.state.dataIndex].address.toString(16).toUpperCase() +
-        " - " + this.props.data[this.state.dataIndex].description;
+            " - " + this.props.data[this.state.dataIndex].description;
 
         return React.createElement(dropdown, {
             id: "offsetDropdown",
@@ -175,7 +175,13 @@ module.exports = React.createClass({
             },
             React.createElement(navbar, {
                 data: [
+                    React.DOM.a({
+                        className: "nav-link"
+                    }, "Offset :"),
                     this.getOffsetDropdown(),
+                    React.DOM.a({
+                        className: "nav-link"
+                    }, "Layout :"),
                     this.getLayoutDropdown()
                 ]
             }),
