@@ -48,7 +48,6 @@ module.exports = React.createClass({
             .post("/api/i2cread/")
             .send({
                 ip: this.props.ip,
-                cmd: "I2cRead",
                 bus: this.props.bus,
                 address: this.props.data[this.state.dataIndex].address,
                 offsetsize: this.props.offsetsize,
@@ -58,6 +57,33 @@ module.exports = React.createClass({
             .end(function(err, res) {
                 if (err) {
                     console.log("Read failed!");
+                } else {
+                    var startIndex = _.findIndex(this.props.data[this.state.dataIndex].offset, function(o) {
+                        return o.offset === data.startoffset;
+                    });
+
+                    for (var i = 0; i < data.count; i += 1) {
+                        this.state.readData[startIndex + i] = res.body.data[i];
+                    }
+
+                    this.forceUpdate();
+                }
+            }.bind(this));
+    },
+    writeData: function(startoffset, data) {
+        request
+            .post("/api/i2cwrite/")
+            .send({
+                ip: this.props.ip,
+                bus: this.props.bus,
+                address: this.props.data[this.state.dataIndex].address,
+                offsetsize: this.props.offsetsize,
+                startoffset: startoffset,
+                data: data
+            })
+            .end(function(err, res) {
+                if (err) {
+                    console.log("Write failed!");
                 } else {
                     var startIndex = _.findIndex(this.props.data[this.state.dataIndex].offset, function(o) {
                         return o.offset === data.startoffset;

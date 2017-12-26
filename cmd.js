@@ -4,12 +4,22 @@ var Ssh2Client = require("ssh2").Client,
     ping = require("ping"),
     _ = require("lodash");
 
-var buildMtxI2cCmd = function(params) {
+var buildI2cReadCmd = function(params) {
     var cmd = "/usr/local/bin/MtxI2cTool ";
     cmd += ("-b " + params.bus + " ");
     cmd += ("-a " + params.address + " ");
     cmd += ("-o" + params.offsetsize + " " + params.startoffset + " ");
     cmd += ("-r " + params.datacount);
+
+    return cmd;
+};
+
+var buildI2cWriteCmd = function(params) {
+    var cmd = "/usr/local/bin/MtxI2cTool ";
+    cmd += ("-b " + params.bus + " ");
+    cmd += ("-a " + params.address + " ");
+    cmd += ("-o" + params.offsetsize + " " + params.startoffset + " ");
+    cmd += ("-w " + params.data);
 
     return cmd;
 };
@@ -22,7 +32,7 @@ module.exports.i2cread = function(req, res) {
             if (res2.alive === true) {
                 var conn = new Ssh2Client();
                 conn.on("ready", function() {
-                    conn.exec(buildMtxI2cCmd(req.body), function(err, stream) {
+                    conn.exec(buildI2cReadCmd(req.body), function(err, stream) {
                         if (err) {
                             throw err;
                         }
@@ -45,6 +55,37 @@ module.exports.i2cread = function(req, res) {
                             });
                         }).stderr.on("data", function(data) {
                             res.json(data.toString());
+                        });
+                    });
+                }).connect({
+                    host: req.body.ip,
+                    port: 22,
+                    username: "root",
+                    password: ""
+                });
+            }
+        })
+        .done();
+};
+
+module.exports.i2cwrite = function(req, res) {
+    ping.promise.probe(req.body.ip, {
+            timeout: 0.1
+        })
+        .then(function(res2) {
+            if (res2.alive === true) {
+                var conn = new Ssh2Client();
+                conn.on("ready", function() {
+                    conn.exec(buildI2cWriteCmd(req.body), function(err, stream) {
+                        if (err) {
+                            throw err;
+                        }
+                        stream.on("close", function() {
+                            conn.end();
+                        }).on("data", function() {
+                            res.end();
+                        }).stderr.on("data", function() {
+                            res.end();
                         });
                     });
                 }).connect({

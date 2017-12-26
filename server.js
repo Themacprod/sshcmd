@@ -58,6 +58,8 @@ server.use(function(req, res, next) {
 
 server.post("/api/i2cread", cmd.i2cread);
 
+server.post("/api/i2cwrite", cmd.i2cwrite);
+
 server.get("/api/ping/:ip", cmd.pingIp);
 
 server.get("/api/user", user.getConfig);
