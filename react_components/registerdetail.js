@@ -7,47 +7,20 @@ var React = require("react"),
     registerfield = require("./registerfield");
 
 module.exports = React.createClass({
-    listOfValue: function(index) {
-        if (index >= 0) {
-            this.setState({
-                values: _.map(this.props.detail.data[index].values, function(value, key) {
-                    return React.DOM.div(
-                        {
-                            className: "values",
-                            key: key
-                        },
-                        value.value + " : " + value.description
-                    );
-                }),
-                description: _.map(this.props.detail.data[index].description, function(msg) {
-                    return msg;
-                })
-            });
-        } else {
-            this.setState({
-                values: "No value description",
-                description: "No description"
-            });
-        }
-    },
     handleClick: function(bitIndex) {
-        this.listOfValue(bitIndex);
+        this.setState({
+            bitIndex: bitIndex
+        });
 	},
     getInitialState: function() {
         return {
-            values: _.map(this.props.detail.data[0].values, function(value, key) {
-                return React.DOM.div(
-                    {
-                        className: "values",
-                        key: key
-                    },
-                    value.value + " : " + value.description
-                );
-            }),
-            description: _.map(this.props.detail.data[0].description, function(msg) {
-                return msg;
-            })
+            bitIndex: 0
         };
+    },
+    componentWillReceiveProps: function() {
+        this.setState({
+            bitIndex: 0
+        });
     },
     render: function() {
         return React.DOM.div(
@@ -87,7 +60,9 @@ module.exports = React.createClass({
                 {
                     className: "margin-sep"
                 },
-                this.state.description
+                _.map(this.props.detail.data[this.state.bitIndex].description, function(msg) {
+                   return msg;
+               })
             ),
             React.DOM.div(
                 {
@@ -100,7 +75,15 @@ module.exports = React.createClass({
                 {
                     className: "margin-sep"
                 },
-                this.state.values
+                _.map(this.props.detail.data[this.state.bitIndex].values, function(value, key) {
+                    return React.DOM.div(
+                        {
+                            className: "values",
+                            key: key
+                        },
+                        value.value + " : " + value.description
+                    );
+                })
             )
         );
     }
