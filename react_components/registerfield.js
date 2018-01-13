@@ -1,5 +1,3 @@
-/* global module:true */
-
 "use strict";
 
 var React = require("react"),
@@ -37,9 +35,10 @@ module.exports = React.createClass({
                     className: "field-detail-bit-detail-container text-center"
                 },
                 _.map(this.props.parent, function(field, index) {
+                    var selected = (index === this.props.index) ? " selected" : "";
                     return React.DOM.div(
                         {
-                            className: "field-detail-bit-detail1 table-bordered",
+                            className: "field-detail-bit-detail1 table-bordered" + selected,
                             key: index,
                             onClick: this.handleClick.bind(this, index),
                             style: {

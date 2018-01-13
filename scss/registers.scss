@@ -54,6 +54,10 @@ $field-description: 200px;
 		border: 1px solid black;
 	}
 
+	.selected {
+		background-color: $color-grey;
+	}
+
 	.field-detail-bit-detail-container {
 		height: $field-description;
 	}

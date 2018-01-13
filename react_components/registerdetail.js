@@ -47,7 +47,8 @@ module.exports = React.createClass({
             React.DOM.hr(null),
             React.createElement(registerfield, {
                 parent: this.props.detail.data,
-                callBack: this.handleClick
+                callBack: this.handleClick,
+                index: this.state.bitIndex
             }),
             React.DOM.div(
                 {
