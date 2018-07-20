@@ -1,20 +1,19 @@
-"use strict";
-
-var React = require("react"),
-    _ = require("lodash");
+var React = require('react'),
+    _ = require('lodash');
 
 module.exports = React.createClass({
-    renderColumn: function(index) {
+    renderColumn: function (index) {
         return React.DOM.div({
-            className: "field-detail-bit-index table-bordered text-center text-bold",
+            className: 'field-detail-bit-index table-bordered text-center text-bold',
             key: index
         }, index);
     },
-    handleClick: function(index) {
+    handleClick: function (index) {
         this.props.callBack(index);
     },
-    render: function() {
-        var indexDiv = [];
+    render: function () {
+        const that = this;
+        const indexDiv = [];
 
         for (let i = 7; i >= 0; i -= 1) {
             indexDiv.push(this.renderColumn(i));
@@ -22,34 +21,35 @@ module.exports = React.createClass({
 
         return React.DOM.div(
             {
-                className: "text-center"
+                className: 'text-center'
             },
             React.DOM.div(
                 {
-                    className: "register-field-container"
+                    className: 'register-field-container'
                 },
                 indexDiv
             ),
             React.DOM.div(
                 {
-                    className: "field-detail-bit-detail-container text-center"
+                    className: 'field-detail-bit-detail-container text-center'
                 },
-                _.map(this.props.parent, function(field, index) {
-                    var selected = (index === this.props.index) ? " selected" : "";
+                _.map(this.props.parent, (field, index) => {
+                    var selected = (index === that.props.index) ? ' selected' : '';
+                    const width = (35 * field.size);
                     return React.DOM.div(
                         {
-                            className: "field-detail-bit-detail1 table-bordered" + selected,
+                            className: `field-detail-bit-detail1 table-bordered${selected}`,
                             key: index,
-                            onClick: this.handleClick.bind(this, index),
+                            onClick: that.handleClick.bind(that, index),
                             style: {
-                                width: (35 * field.size) + "px"
+                                width: `${width}px`
                             }
                         },
                         React.DOM.div({
-                            className: "field-detail-bit-detail"
+                            className: 'field-detail-bit-detail'
                         }, field.name)
                     );
-                }.bind(this))
+                })
             )
         );
     }

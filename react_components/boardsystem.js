@@ -1,37 +1,33 @@
-/* global module:true */
-
-"use strict";
-
-var React = require("react");
+var React = require('react');
 
 module.exports = React.createClass({
-    render: function() {
+    render: function () {
         return React.DOM.div(
             {
-                className: "boardsystem"
+                className: 'boardsystem'
             },
             React.DOM.div(
                 {
-                    className: "card text-center"
+                    className: 'card text-center'
                 },
                 React.DOM.a(
                     {
-                        className: "nav-link",
-                        href: this.props.link + "/"
+                        className: 'nav-link',
+                        href: `${this.props.link}/`
                     },
                     React.DOM.div(
                         {
-                            className: "card-body"
+                            className: 'card-body'
                         },
                         React.DOM.h5(
                             {
-                                className: "card-title"
+                                className: 'card-title'
                             },
                             this.props.title
                         ),
                         React.DOM.h6(
                             {
-                                className: "card-subtitle"
+                                className: 'card-subtitle'
                             },
                             this.props.deviceName
                         )
@@ -40,9 +36,9 @@ module.exports = React.createClass({
             ),
             React.DOM.div(
                 {
-                    className: "padding"
+                    className: 'padding'
                 },
-                ""
+                ''
             )
         );
     }

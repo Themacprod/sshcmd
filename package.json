@@ -31,6 +31,7 @@
     "express": "^4.16.3",
     "font-awesome": "^4.6.3",
     "jquery": "^2.2.4",
+    "lodash": "^4.17.10",
     "mongodb": "^2.2.35",
     "node-sass": "^3.13.1",
     "ping": "^0.2.2",
@@ -45,7 +46,14 @@
     "uglify-js": "^2.7.3"
   },
   "devDependencies": {
+    "ajv": "^6.0.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
     "jshint": "^2.9.3",
-    "popper.js": "^1.14.3"
+    "popper": "^1.0.1",
+    "popper.js": "^1.12.9"
   }
 }

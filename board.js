@@ -1,17 +1,15 @@
-"use strict";
+var Ssh2Client = require('ssh2').Client;
 
-var Ssh2Client = require("ssh2").Client;
-
-module.exports.getInfo = function(req, res) {
+module.exports.getInfo = function (req, res) {
     var conn = new Ssh2Client();
-    conn.on("ready", function() {
-        conn.exec("/usr/local/bin/MtxBoardInfo", function(err, stream) {
+    conn.on('ready', () => {
+        conn.exec('/usr/local/bin/MtxBoardInfo', (err, stream) => {
             if (err) {
                 throw err;
             }
-            stream.on("close", function() {
+            stream.on('close', () => {
                 conn.end();
-            }).on("data", function(data) {
+            }).on('data', (data) => {
                 var strraw = data.toString();
                 var lineraw = null;
 
@@ -19,22 +17,22 @@ module.exports.getInfo = function(req, res) {
                 var serialNumber = null;
                 var pcbNumber = null;
 
-                var regexpProductName = /.*ProductName.*/m;
+                const regexpProductName = /.*ProductName.*/m;
                 lineraw = strraw.match(regexpProductName).toString();
                 if (lineraw) {
-                    productName = lineraw.substr(lineraw.indexOf(":") + 1).toString();
+                    productName = lineraw.substr(lineraw.indexOf(':') + 1).toString();
                 }
 
-                var regexpSerialNumber = /.*SerialNumber.*/m;
+                const regexpSerialNumber = /.*SerialNumber.*/m;
                 lineraw = strraw.match(regexpSerialNumber).toString();
                 if (lineraw) {
-                    serialNumber = lineraw.substr(lineraw.indexOf(":") + 1).toString();
+                    serialNumber = lineraw.substr(lineraw.indexOf(':') + 1).toString();
                 }
 
-                var regexpPcbNumber = /.*PcbNumber.*/m;
+                const regexpPcbNumber = /.*PcbNumber.*/m;
                 lineraw = strraw.match(regexpPcbNumber).toString();
                 if (lineraw) {
-                    pcbNumber = lineraw.substr(lineraw.indexOf(":") + 1).toString();
+                    pcbNumber = lineraw.substr(lineraw.indexOf(':') + 1).toString();
                 }
 
                 res.json({
@@ -42,14 +40,14 @@ module.exports.getInfo = function(req, res) {
                     SerialNumber: serialNumber,
                     PcbNumber: pcbNumber
                 });
-            }).stderr.on("data", function(data) {
+            }).stderr.on('data', (data) => {
                 console.log(data.toString());
             });
         });
     }).connect({
         host: req.params.ip,
         port: 22,
-        username: "root",
-        password: ""
+        username: 'root',
+        password: ''
     });
 };

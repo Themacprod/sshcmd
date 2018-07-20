@@ -1,19 +1,15 @@
-/* global module:true */
-
-"use strict";
-
-var React = require("react"),
-    sshconnect = require("./sshconnect");
+var React = require('react'),
+    sshconnect = require('./sshconnect');
 
 module.exports = React.createClass({
-    componentDidMount: function() {
-        global.jQuery = require("jquery");
-        require("../node_modules/bootstrap/dist/js/bootstrap");
+    componentDidMount: function () {
+        global.jQuery = require('jquery');
+        require('../node_modules/bootstrap/dist/js/bootstrap');
     },
-    render: function() {
+    render: function () {
         return React.DOM.div(
             {
-                className: "app"
+                className: 'app'
             },
             React.createElement(sshconnect)
         );

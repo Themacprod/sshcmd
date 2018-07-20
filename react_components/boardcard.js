@@ -1,103 +1,101 @@
-"use strict";
-
-var React = require("react"),
-    request = require("superagent");
+var React = require('react'),
+    request = require('superagent');
 
 module.exports = React.createClass({
-    checkConnection: function() {
+    checkConnection: function () {
+        const that = this;
         request
-            .get("/api/ping/" + this.props.boardIp)
-            .end(function(err, res) {
+            .get(`/api/ping/${that.props.boardIp}`)
+            .end((err, res) => {
                 if (err) {
                     // Stop ping loop process of server does not respond anymore.
-                    clearInterval(this.myInterval);
+                    clearInterval(that.myInterval);
                 } else {
-                    var state = null;
-                    var connexion = "ok";
-                    if (res.body === true) {
-                        state = "fa fa-check";
-                    } else {
-                        state = "fa fa-times";
-                        connexion = "nok";
+                    let state = 'fa fa-check';
+                    let connexion = 'ok';
+                    if (res.body === false) {
+                        state = 'fa fa-times';
+                        connexion = 'nok';
                     }
 
                     // Get board info only when going from dead to alive connection.
-                    if ((this.state.statelayout !== "fa fa-check") && (state === "fa fa-check")) {
-                        this.checkBoardInfo = true;
+                    if ((that.state.statelayout !== 'fa fa-check') && (state === 'fa fa-check')) {
+                        that.checkBoardInfo = true;
                     }
 
-                    this.setState({
+                    that.setState({
                         statelayout: state,
                         cardstatus: connexion
                     });
                 }
-            }.bind(this));
+            });
 
         if (this.checkBoardInfo === true) {
             this.getBoardInfo();
             this.checkBoardInfo = false;
         }
     },
-    getBoardInfo: function() {
+    getBoardInfo: function () {
+        const that = this;
         request
-            .get("/api/board/" + this.props.boardIp)
-            .end(function(err, res) {
+            .get(`/api/board/${that.props.boardIp}`)
+            .end((err, res) => {
                 if (err) {
                     console.log(err);
                 } else {
-                    this.setState({
+                    that.setState({
                         productName: res.body.ProductName,
                         serialNumber: res.body.SerialNumber,
                         pcbNumber: res.body.PcbNumber
                     });
                 }
-            }.bind(this));
+            });
     },
-    componentDidMount: function() {
+    componentDidMount: function () {
         this.checkBoardInfo = false;
         this.myInterval = setInterval(this.checkConnection, 2000);
     },
-    getInitialState: function() {
+    getInitialState: function () {
         return {
-            statelayout: "fa fa-refresh fa-spin",
-            productName: "Unknown",
-            serialNumber: "Unknown",
-            pcbNumber: "Unknown",
-            cardstatus: "check"
+            statelayout: 'fa fa-refresh fa-spin',
+            productName: 'Unknown',
+            serialNumber: 'Unknown',
+            pcbNumber: 'Unknown',
+            cardstatus: 'check'
         };
     },
-    render: function() {
+    render: function () {
         return React.DOM.div(
             {
-                className: "grid-item card",
+                className: 'grid-item card',
                 key: this.props.boardIp
             },
             React.DOM.a(
                 {
-                    className: this.state.cardstatus + " nav-link",
-                    href: this.props.boardIp + "/"
+                    className: `${this.state.cardstatus} nav-link`,
+                    href: `${this.props.boardIp}/`
                 },
                 React.DOM.div(
                     {
-                        className: "card-body"
+                        className: 'card-body'
                     },
                     React.DOM.h4(
                         {
-                            className: "card-title"
+                            className: 'card-title'
                         },
                         this.state.productName
                     ),
                     React.DOM.h6(
                         {
-                            className: "card-subtitle"
+                            className: 'card-subtitle'
                         },
                         this.props.boardIp
                     ),
                     React.DOM.p(
                         {
-                            className: "card-text"
+                            className: 'card-text'
                         },
-                        "Serial : " + this.state.serialNumber + " (PCB : " + this.state.pcbNumber + ")"
+                        `Serial : ${this.state.serialNumber} (PCB : ${this.state.pcbNumber})`
                     ),
                     React.DOM.i({
                         className: this.state.statelayout

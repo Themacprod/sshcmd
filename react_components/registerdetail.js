@@ -1,47 +1,46 @@
-/* global module:true */
-
-"use strict";
-
-var React = require("react"),
-    _ = require("lodash"),
-    registerfield = require("./registerfield");
+var React = require('react'),
+    _ = require('lodash'),
+    registerfield = require('./registerfield');
 
 module.exports = React.createClass({
-    handleClick: function(bitIndex) {
+    handleClick: function (bitIndex) {
         this.setState({
             bitIndex: bitIndex
         });
-	},
-    getInitialState: function() {
+    },
+    getInitialState: function () {
         return {
             bitIndex: 0
         };
     },
-    componentWillReceiveProps: function() {
+    componentWillReceiveProps: function () {
         this.setState({
             bitIndex: 0
         });
     },
-    render: function() {
+    render: function () {
+        const registerName = this.props.detail.name || 'REGISTER_NAME';
+        const resetValue = this.props.detail.resetvalue || '0x00';
+
         return React.DOM.div(
             {
-                className: "registerdetail"
+                className: 'registerdetail'
             },
             React.DOM.div(
                 {
-                    className: "title"
+                    className: 'title'
                 },
                 React.DOM.div(
                     {
-                        className: "registername text-bold"
+                        className: 'registername text-bold'
                     },
-                    "Register - " + (this.props.detail.name || "REGISTER_NAME")
+                    `Register - ${registerName}`
                 ),
                 React.DOM.div(
                     {
-                        className: "resetvalue text-italic text-right"
+                        className: 'resetvalue text-italic text-right'
                     },
-                    "(reset value = " + (this.props.detail.resetvalue || "0x00") + ")"
+                    `(reset value = ${resetValue})`
                 )
             ),
             React.DOM.hr(null),
@@ -52,37 +51,37 @@ module.exports = React.createClass({
             }),
             React.DOM.div(
                 {
-                    className: "text-bold"
+                    className: 'text-bold'
                 },
-                "Description"
+                'Description'
             ),
             React.DOM.hr(null),
             React.DOM.div(
                 {
-                    className: "margin-sep"
+                    className: 'margin-sep'
                 },
-                _.map(this.props.detail.data[this.state.bitIndex].description, function(msg) {
-                   return msg;
-               })
+                _.map(this.props.detail.data[this.state.bitIndex].description, (msg) => {
+                    return msg;
+                })
             ),
             React.DOM.div(
                 {
-                    className: "text-bold"
+                    className: 'text-bold'
                 },
-                "List of value"
+                'List of value'
             ),
             React.DOM.hr(null),
             React.DOM.div(
                 {
-                    className: "margin-sep"
+                    className: 'margin-sep'
                 },
-                _.map(this.props.detail.data[this.state.bitIndex].values, function(value, key) {
+                _.map(this.props.detail.data[this.state.bitIndex].values, (value, key) => {
                     return React.DOM.div(
                         {
-                            className: "values",
+                            className: 'values',
                             key: key
                         },
-                        value.value + " : " + value.description
+                        `${value.value} : ${value.description}`
                     );
                 })
             )

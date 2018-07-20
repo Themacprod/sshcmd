@@ -1,67 +1,64 @@
-/* global module:true */
-
-"use strict";
-
-var React = require("react"),
-    request = require("superagent"),
-    boardsystem = require("./boardsystem");
+var React = require('react'),
+    request = require('superagent'),
+    boardsystem = require('./boardsystem');
 
 module.exports = React.createClass({
-    checkConnection: function() {
+    checkConnection: function () {
+        const that = this;
         request
-            .get("/api/ping/" + this.props.params.ip)
-            .end(function(err, res) {
+            .get(`api/ping/${that.props.params.ip}`)
+            .end((err, res) => {
                 if (err) {
                     // Stop ping loop process of server does not respond anymore.
-                    clearInterval(this.myInterval);
+                    clearInterval(that.myInterval);
                 } else {
-                    var alertState = "alert-danger";
+                    let alertState = 'alert-danger';
                     if (res.body === true) {
-                        alertState = "alert-success";
+                        alertState = 'alert-success';
                     }
 
                     this.setState({
                         alertState: alertState
                     });
                 }
-            }.bind(this));
+            });
     },
-    componentDidMount: function() {
+    componentDidMount: function () {
         this.myInterval = setInterval(this.checkConnection, 2000);
     },
-    getInitialState: function() {
+    getInitialState: function () {
         return {
-            alertState: "alert-light"
+            alertState: 'alert-light'
         };
     },
-    render: function() {
+    render: function () {
         return React.DOM.div(
             null,
             React.DOM.div({
-                className: "alert " + this.state.alertState + " text-center",
-                role: "alert"
+                className: `alert ${this.state.alertState} text-center`,
+                role: 'alert'
             }, this.props.params.ip),
             React.DOM.div(
                 null,
                 React.createElement(boardsystem, {
-                    title: "Input #1",
-                    deviceName: "ADV7619",
-                    link: "ADV1"
+                    title: 'Input #1',
+                    deviceName: 'ADV7619',
+                    link: 'ADV1'
                 }),
                 React.createElement(boardsystem, {
-                    title: "Input #2",
-                    deviceName: "ADV7619",
-                    link: "ADV2"
+                    title: 'Input #2',
+                    deviceName: 'ADV7619',
+                    link: 'ADV2'
                 }),
                 React.createElement(boardsystem, {
-                    title: "Input #3",
-                    deviceName: "ADV7619",
-                    link: "ADV3"
+                    title: 'Input #3',
+                    deviceName: 'ADV7619',
+                    link: 'ADV3'
                 }),
                 React.createElement(boardsystem, {
-                    title: "Input #4",
-                    deviceName: "ADV7619",
-                    link: "ADV4"
+                    title: 'Input #4',
+                    deviceName: 'ADV7619',
+                    link: 'ADV4'
                 })
             )
         );

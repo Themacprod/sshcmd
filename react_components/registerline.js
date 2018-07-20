@@ -1,45 +1,41 @@
-/* global module:true */
-
-"use strict";
-
-var React = require("react");
+var React = require('react');
 
 module.exports = React.createClass({
-    toHexadecimal: function(integer) {
+    toHexadecimal: function (integer) {
         if (integer < 16) {
-            return "0x0" + integer.toString(16).toUpperCase();
+            return `0x0${integer.toString(16).toUpperCase()}`;
         }
 
-        return "0x" + integer.toString(16).toUpperCase();
+        return `0x${integer.toString(16).toUpperCase()}`;
     },
-    getInitialState: function() {
+    getInitialState: function () {
         return {
-            value: "-",
-            fade: ""
+            value: '-',
+            fade: ''
         };
     },
     componentWillReceiveProps(nextProps) {
         if (nextProps.value !== this.state.value) {
             this.setState({
                 value: nextProps.value,
-                fade: "-fadeout"
+                fade: '-fadeout'
             });
 
-            var that = this;
-            setTimeout(function() {
+            const that = this;
+            setTimeout(() => {
                 that.setState({
-                    fade: ""
+                    fade: ''
                 });
             }, 1500);
         }
     },
-    handleClick: function(offset) {
+    handleClick: function (offset) {
         this.props.callBack(offset);
-	},
-    render: function() {
+    },
+    render: function () {
         return React.DOM.tbody(
             {
-                className: "item" + this.state.fade,
+                className: `item${this.state.fade}`,
                 key: this.props.key,
                 onClick: this.handleClick.bind(this, this.props.offset)
             },
@@ -47,8 +43,8 @@ module.exports = React.createClass({
                 null,
                 React.DOM.th(
                     {
-                        className: "text-center",
-                        scope: "row"
+                        className: 'text-center',
+                        scope: 'row'
                     },
                     this.toHexadecimal(this.props.offset)
                 ),
@@ -58,7 +54,7 @@ module.exports = React.createClass({
                 ),
                 React.DOM.td(
                     {
-                        className: "text-center"
+                        className: 'text-center'
                     },
                     this.state.value
                 )

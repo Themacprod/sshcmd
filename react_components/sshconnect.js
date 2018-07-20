@@ -1,29 +1,26 @@
-/* global module:true */
-
-"use strict";
-
-var React = require("react"),
-    request = require("superagent"),
-    boardcardgroup = require("./boardcardgroup");
+var React = require('react'),
+    request = require('superagent'),
+    boardcardgroup = require('./boardcardgroup');
 
 module.exports = React.createClass({
-    componentWillMount: function() {
+    componentWillMount: function () {
+        var that = this;
         request
-            .get("/api/user")
-            .end(function(err, res) {
+            .get('/api/user')
+            .end((err, res) => {
                 if (err) {
                     console.log(err);
                 } else {
-                    this.createBoardCard(res.body);
+                    that.createBoardCard(res.body);
                 }
-            }.bind(this));
+            });
     },
-    getInitialState: function() {
+    getInitialState: function () {
         return {
-            boardlayout: "Getting configuration ..."
+            boardlayout: 'Getting configuration ...'
         };
     },
-    createBoardCard: function(data) {
+    createBoardCard: function (data) {
         var boardlayout = React.createElement(boardcardgroup, {
             data: data
         });
@@ -32,7 +29,7 @@ module.exports = React.createClass({
             boardlayout: boardlayout
         });
     },
-    render: function() {
+    render: function () {
         return React.DOM.div(
             null,
             this.state.boardlayout

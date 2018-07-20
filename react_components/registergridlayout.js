@@ -1,98 +1,98 @@
-"use strict";
+var React = require('react'),
+    _ = require('lodash');
 
-var React = require("react"),
-    _ = require("lodash");
-
-var toHex = function(data) {
-    if (data === "-") {
+var toHex = function (data) {
+    if (data === '-') {
         return data;
     }
 
-    if (typeof data !== "undefined") {
+    if (typeof data !== 'undefined') {
         if (Number.isInteger(data.substring(2))) {
             return data.substring(2);
         }
     }
 
-    return "-";
+    return '-';
 };
 
 module.exports = React.createClass({
-    handleClick: function(offset) {
+    handleClick: function (offset) {
         this.props.callBack(offset);
     },
-    getTooltipsData: function(columnIdx, lineIdx) {
+    getTooltipsData: function (columnIdx, lineIdx) {
         var offset = columnIdx + (lineIdx * 16);
 
-        var startIndex = _.findIndex(this.props.data, function(o) {
+        var startIndex = _.findIndex(this.props.data, (o) => {
             return o.offset === offset;
         });
 
-        var description = "";
+        var description = '';
 
         if (startIndex >= 0) {
-            description = " - " + this.props.data[startIndex].name;
+            description = ` - ${this.props.data[startIndex].name}`;
         }
 
-        var data = offset.toString(16).toUpperCase();
+        let data = offset.toString(16).toUpperCase();
 
         if (data.length === 1) {
-            data = "0" + data;
+            data = `0${data}`;
         }
 
-        return "0x" + data + description;
+        return `0x${data}${description}`;
     },
-    render: function() {
-        var max = _.maxBy(this.props.data, function(data) {
+    render: function () {
+        var max = _.maxBy(this.props.data, (data) => {
             return data.offset;
         });
 
-        var gridData = _.fill(Array(max.offset + 1), "-");
+        var gridData = _.fill(Array(max.offset + 1), '-');
+        const that = this;
 
-        _.forEach(this.props.data, function(data, index) {
-            gridData[data.offset] = this.props.readData[index];
-        }.bind(this));
+        _.forEach(this.props.data, (data, index) => {
+            gridData[data.offset] = that.props.readData[index];
+        });
 
-        var header = [];
+        const header = [];
 
-        for (var i = 0; i < 16; i += 1) {
+        for (let i = 0; i < 16; i += 1) {
             header.push(React.DOM.div(
                 {
-                    className: "registergrid-item text-bold",
+                    className: 'registergrid-item text-bold',
                     key: i
                 },
-                "0" + i.toString(16).toUpperCase()
+                `0${i.toString(16).toUpperCase()}`
             ));
         }
+
         return React.DOM.div(
             {
-                className: "registergridlayout"
+                className: 'registergridlayout'
             },
             React.DOM.div({
-                    className: "text-center",
-                    key: 0
-                }, header),
-            _.map(_.chunk(gridData, 16), function(line, lineIdx) {
+                className: 'text-center',
+                key: 0
+            }, header),
+            _.map(_.chunk(gridData, 16), (line, lineIdx) => {
                 return React.DOM.div(
                     {
-                        className: "text-center",
+                        className: 'text-center',
                         key: lineIdx
                     },
-                    _.map(line, function(data, columnIdx) {
+                    _.map(line, (data, columnIdx) => {
                         return React.DOM.div(
                             {
-                                "className": "registergrid-item",
-                                "key": columnIdx,
-                                "onClick": this.handleClick.bind(this, columnIdx + lineIdx),
-                                "data-toggle": "tooltip",
-                                "data-placement": "top",
-                                "title": this.getTooltipsData(columnIdx, lineIdx)
+                                className: 'registergrid-item',
+                                key: columnIdx,
+                                onClick: that.handleClick.bind(that, columnIdx + lineIdx),
+                                'data-toggle': 'tooltip',
+                                'data-placement': 'top',
+                                title: that.getTooltipsData(columnIdx, lineIdx)
                             },
                             toHex(data)
                         );
-                    }.bind(this))
+                    })
                 );
-            }.bind(this))
+            })
         );
     }
 });

@@ -1,44 +1,43 @@
-"use strict";
-
-var React = require("react"),
-    _ = require("lodash"),
-    registerline = require("./registerline");
+var React = require('react'),
+    _ = require('lodash'),
+    registerline = require('./registerline');
 
 module.exports = React.createClass({
-    render: function() {
+    render: function () {
+        const that = this;
         return React.DOM.table(
             {
-                className: "table table-hover table-sm table-bordered text-small"
+                className: 'table table-hover table-sm table-bordered text-small'
             },
             React.DOM.thead(
                 null,
                 React.DOM.tr(
                     {
-                        className: "table-dark"
+                        className: 'table-dark'
                     },
                     React.DOM.th(
                         null,
-                        "Offset"
+                        'Offset'
                     ),
                     React.DOM.th(
                         null,
-                        "Name"
+                        'Name'
                     ),
                     React.DOM.th(
                         null,
-                        "Value"
+                        'Value'
                     )
                 )
             ),
-            _.map(this.props.data, function(data, index) {
+            _.map(this.props.data, (data, index) => {
                 return React.createElement(registerline, {
                     key: index,
                     offset: data.offset,
                     name: data.name,
-                    value: this.props.readData[index],
-                    callBack: this.props.callBack
+                    value: that.props.readData[index],
+                    callBack: that.props.callBack
                 });
-            }.bind(this))
+            })
         );
     }
 });
