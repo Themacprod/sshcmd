@@ -2,30 +2,36 @@ var React = require('react');
 
 module.exports = React.createClass({
     render: function () {
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             {
                 className: 'boardsystem'
             },
-            React.DOM.div(
+            React.createElement(
+                'div',
                 {
                     className: 'card text-center'
                 },
-                React.DOM.a(
+                React.createElement(
+                    'a',
                     {
                         className: 'nav-link',
                         href: `${this.props.link}/`
                     },
-                    React.DOM.div(
+                    React.createElement(
+                        'div',
                         {
                             className: 'card-body'
                         },
-                        React.DOM.h5(
+                        React.createElement(
+                            'h5',
                             {
                                 className: 'card-title'
                             },
                             this.props.title
                         ),
-                        React.DOM.h6(
+                        React.createElement(
+                            'h6',
                             {
                                 className: 'card-subtitle'
                             },
@@ -34,7 +40,8 @@ module.exports = React.createClass({
                     )
                 )
             ),
-            React.DOM.div(
+            React.createElement(
+                'div',
                 {
                     className: 'padding'
                 },

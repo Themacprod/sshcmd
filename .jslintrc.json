@@ -1,7 +1,7 @@
 {
     "extends": [
         "eslint:all",
-        "airbnb"
+        "airbnb-base"
     ],
     "env": {
         "browser": true,
@@ -29,7 +29,6 @@
         "no-param-reassign": "off",
         "no-var": "off",
         "object-shorthand": "off",
-        "one-var": "off",
-        "prefer-arrow-callback": "off"
+        "one-var": "off"
     }
 }

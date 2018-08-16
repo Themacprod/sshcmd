@@ -1,20 +1,14 @@
-var path = require('path'),
-    express = require('express'),
-    bodyParser = require('body-parser'),
-    cookieParser = require('cookie-parser'),
-    favicon = require('serve-favicon'),
-    server = express(),
-    cacheMaxAge = process.env.NODE_ENV === 'development' ? 0 : 3600000,
-    fs = require('fs'),
-    _ = require('lodash'),
-    // eslint-disable-next-line no-sync
-    indexTemplate = _.template(fs.readFileSync(path.join(__dirname, '/public/index.tpl'), {
-        encoding: 'utf8'
-    })),
-    url = require('url'),
-    cmd = require('./cmd'),
-    user = require('./user'),
-    board = require('./board');
+const path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const favicon = require('serve-favicon');
+const cmd = require('./cmd');
+const board = require('./board');
+const registersDb = require('./registersDb');
+
+const server = express();
+const cacheMaxAge = process.env.NODE_ENV === 'development' ? 0 : 3600000;
 
 // Server setup.
 
@@ -26,9 +20,9 @@ server.use(express.query());
 
 server.use(bodyParser.json());
 
-server.use(bodyParser.urlencoded({
-    extended: false
-}));
+// server.use(bodyParser.urlencoded({
+//     extended: false
+// }));
 
 server.use(cookieParser());
 
@@ -36,23 +30,9 @@ server.use(express.static(path.join(__dirname, 'public'), {
     maxAge: cacheMaxAge
 }));
 
-server.use((req, res, next) => {
-    var urlObj = url.parse(req.url);
-    var regexp = /\/((?:en)|(?:fr))\//;
-    var regexpAPI = /\/((?:api))\//;
+server.get('/api/getDeviceType', registersDb.getDeviceType);
 
-    if (urlObj.pathname.match(regexpAPI)) {
-        // If the request comes to the /api, don't redirect it
-        next();
-    } else if (urlObj.pathname.match(regexp)) {
-        // If we have the locale param in the URL, pass the request along
-        next();
-    } else {
-        // If not, redirect the request to /fr
-        urlObj.pathname = `/fr${urlObj.pathname}`;
-        res.redirect(301, url.format(urlObj));
-    }
-});
+server.get('/api/:deviceType/getRegistersList', registersDb.getRegistersList);
 
 server.post('/api/i2cread', cmd.i2cread);
 
@@ -60,19 +40,15 @@ server.post('/api/i2cwrite', cmd.i2cwrite);
 
 server.get('/api/ping/:ip', cmd.pingIp);
 
-server.get('/api/user', user.getConfig);
-
 server.get('/api/board/:ip', board.getInfo);
 
 server.get('*', (req, res) => {
-    res.send(indexTemplate({
-        lang: req.params.lang
-    }));
+    res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
 // Unhandled exception handler.
 server.use((err, req, res) => {
-    console.log(err);
+    console.error(err);
     res.sendStatus(500);
 });
 

@@ -1,8 +1,9 @@
-var React = require('react'),
-    request = require('superagent'),
-    boardcardgroup = require('./boardcardgroup');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const request = require('superagent');
+const boardcardgroup = require('./boardcardgroup');
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     componentWillMount: function () {
         var that = this;
         request
@@ -30,7 +31,8 @@ module.exports = React.createClass({
         });
     },
     render: function () {
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             null,
             this.state.boardlayout
         );

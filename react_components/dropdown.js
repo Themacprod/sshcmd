@@ -1,43 +1,55 @@
-var React = require('react'),
-    _ = require('lodash');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const _ = require('lodash');
 
-module.exports = React.createClass({
-    handleItemClick: function (index, value) {
-        this.props.callBack(index, value);
+module.exports = CreateReactClass({
+    onSelectChange: function (e) {
+        if (this.props.callbackChange) {
+            this.props.callbackChange(e, document.getElementById(`${e.target.id}`).value);
+        }
     },
     render: function () {
-        const that = this;
-
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             {
-                className: 'dropdown'
+                className: 'selector'
             },
-            React.DOM.button(
+            React.createElement(
+                'div',
                 {
-                    className: 'btn btn-secondary dropdown-toggle',
-                    type: 'button',
-                    id: this.props.id,
-                    'data-toggle': 'dropdown',
-                    'aria-haspopup': 'true',
-                    onClick: this.handleButtonClick
+                    className: 'input-group mb-3 text-small'
                 },
-                this.props.current
-            ),
-            React.DOM.div(
-                {
-                    className: 'dropdown-menu',
-                    'aria-labelledby': this.props.id
-                },
-                _.map(this.props.values, (value, index) => {
-                    return React.DOM.a(
+                React.createElement(
+                    'div',
+                    {
+                        className: 'input-group-prepend'
+                    },
+                    React.createElement(
+                        'label',
                         {
-                            className: 'dropdown-item',
-                            key: index,
-                            onClick: that.handleItemClick.bind(that, index, value)
+                            className: 'input-group-text'
                         },
-                        value
-                    );
-                })
+                        this.props.descriptor
+                    ),
+                    React.createElement(
+                        'select',
+                        {
+                            className: 'form-control',
+                            id: this.props.id,
+                            onChange: this.onSelectChange
+                        },
+                        _.map(this.props.data, function (option, key) {
+                            return React.createElement(
+                                'option',
+                                {
+                                    value: option,
+                                    key: key
+                                },
+                                option
+                            );
+                        })
+                    )
+                )
             )
         );
     }

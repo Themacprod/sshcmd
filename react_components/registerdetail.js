@@ -1,8 +1,9 @@
-var React = require('react'),
-    _ = require('lodash'),
-    registerfield = require('./registerfield');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const _ = require('lodash');
+const registerfield = require('./registerfield');
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     handleClick: function (bitIndex) {
         this.setState({
             bitIndex: bitIndex
@@ -21,69 +22,95 @@ module.exports = React.createClass({
     render: function () {
         const registerName = this.props.detail.name || 'REGISTER_NAME';
         const resetValue = this.props.detail.resetvalue || '0x00';
+        let msg = null;
+        let values = null;
 
-        return React.DOM.div(
+        if (this.props.detail.data) {
+            msg = _.map(this.props.detail.data[this.state.bitIndex].description, (msg) => {
+                return msg;
+            });
+
+            values = _.map(this.props.detail.data[this.state.bitIndex].values, (value, key) => {
+                return React.createElement(
+                    'div',
+                    {
+                        className: 'values',
+                        key: key
+                    },
+                    `${value.value} : ${value.description}`
+                );
+            });
+        }
+
+        return React.createElement(
+            'div',
             {
                 className: 'registerdetail'
             },
-            React.DOM.div(
+            React.createElement(
+                'div',
                 {
                     className: 'title'
                 },
-                React.DOM.div(
+                React.createElement(
+                    'div',
                     {
                         className: 'registername text-bold'
                     },
                     `Register - ${registerName}`
                 ),
-                React.DOM.div(
+                React.createElement(
+                    'div',
                     {
                         className: 'resetvalue text-italic text-right'
                     },
                     `(reset value = ${resetValue})`
                 )
             ),
-            React.DOM.hr(null),
+            React.createElement(
+                'hr',
+                null
+            ),
             React.createElement(registerfield, {
                 parent: this.props.detail.data,
                 callBack: this.handleClick,
                 index: this.state.bitIndex
             }),
-            React.DOM.div(
+            React.createElement(
+                'div',
                 {
                     className: 'text-bold'
                 },
                 'Description'
             ),
-            React.DOM.hr(null),
-            React.DOM.div(
+            React.createElement(
+                'hr',
+                null
+            ),
+            React.createElement(
+                'div',
                 {
                     className: 'margin-sep'
                 },
-                _.map(this.props.detail.data[this.state.bitIndex].description, (msg) => {
-                    return msg;
-                })
+                msg
             ),
-            React.DOM.div(
+            React.createElement(
+                'div',
                 {
                     className: 'text-bold'
                 },
                 'List of value'
             ),
-            React.DOM.hr(null),
-            React.DOM.div(
+            React.createElement(
+                'hr',
+                null
+            ),
+            React.createElement(
+                'div',
                 {
                     className: 'margin-sep'
                 },
-                _.map(this.props.detail.data[this.state.bitIndex].values, (value, key) => {
-                    return React.DOM.div(
-                        {
-                            className: 'values',
-                            key: key
-                        },
-                        `${value.value} : ${value.description}`
-                    );
-                })
+                values
             )
         );
     }

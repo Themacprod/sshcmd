@@ -1,39 +1,46 @@
-var React = require('react'),
-    _ = require('lodash'),
-    registerline = require('./registerline');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const _ = require('lodash');
+const registerline = require('./registerline');
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     render: function () {
         const that = this;
-        return React.DOM.table(
+        return React.createElement(
+            'table',
             {
                 className: 'table table-hover table-sm table-bordered text-small'
             },
-            React.DOM.thead(
+            React.createElement(
+                'thead',
                 null,
-                React.DOM.tr(
+                React.createElement(
+                    'tr',
                     {
                         className: 'table-dark'
                     },
-                    React.DOM.th(
+                    React.createElement(
+                        'th',
                         null,
                         'Offset'
                     ),
-                    React.DOM.th(
+                    React.createElement(
+                        'th',
                         null,
                         'Name'
                     ),
-                    React.DOM.th(
+                    React.createElement(
+                        'th',
                         null,
                         'Value'
                     )
                 )
             ),
-            _.map(this.props.data, (data, index) => {
+            _.map(this.props.registersDefinition, function (registerDefinition, index) {
                 return React.createElement(registerline, {
                     key: index,
-                    offset: data.offset,
-                    name: data.name,
+                    offset: registerDefinition.offset,
+                    name: registerDefinition.name,
                     value: that.props.readData[index],
                     callBack: that.props.callBack
                 });

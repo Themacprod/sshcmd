@@ -1,0 +1,71 @@
+$field-width: 35px;
+$field-height: 250px;
+$field-description: 200px;
+
+.registerlist
+	display: inline-block
+	width: 45%
+
+	.table
+		cursor: pointer
+
+	.item
+		transition: visibility 0s 1.5s, opacity 1.5s linear
+
+	.item-fadeout
+		background-color: $color-green-background
+		transition: visibility 0s 1.5s, opacity 1.5s linear
+
+	.registergrid-item
+		display: inline-block
+		border: 1px solid black
+		width: 35px
+		cursor: pointer
+
+.registerdetail
+	display: inline-block
+	vertical-align: top
+	width: 50%
+	margin: 2.5%
+	position: fixed
+
+	.registername
+		display: inline-block
+		width: 50%
+
+	.resetvalue
+		display: inline-block
+		width: 50%
+
+	.field-detail-bit-index
+		width: $field-width
+		margin: 0
+		display: inline-block
+
+	.table-bordered
+		border: 1px solid black
+
+	.selected
+		background-color: $color-grey
+
+	.field-detail-bit-detail-container
+		height: $field-description
+
+	.field-detail-bit-detail1
+		cursor: pointer
+		margin: 0
+		display: inline-block
+		height: 100%
+
+	.field-detail-bit-detail
+		transform: rotate(90deg)
+		transform-origin: bottom left
+		width: $field-description
+		height: $field-width
+		margin-top: -$field-width
+
+	.margin-sep
+		margin-bottom: 20px
+
+	.values
+		cursor: pointer

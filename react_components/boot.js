@@ -1,26 +1,11 @@
-var React = require('react'),
-    ReactDOM = require('react-dom'),
-    ReactRouter = require('react-router');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const ReactDOM = require('react-dom');
+const app = require('./app');
 
-var Boot = React.createClass({
+const Boot = CreateReactClass({
     render: function () {
-        return React.createElement(
-            ReactRouter.Router, {
-                history: ReactRouter.browserHistory
-            },
-            React.createElement(ReactRouter.Route, {
-                path: '/:lang',
-                component: require('./app')
-            }),
-            React.createElement(ReactRouter.Route, {
-                path: '/:lang/:ip',
-                component: require('./board')
-            }),
-            React.createElement(ReactRouter.Route, {
-                path: '/:lang/:ip/adv:id',
-                component: require('./adv')
-            })
-        );
+        return React.createElement(app);
     }
 });
 

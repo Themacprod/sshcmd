@@ -1,4 +1,6 @@
 var co = require('co');
+const database = require('./database');
+const server = require('./server');
 
 // Unhandled exception handler.
 process.on('uncaughtException', (err) => {
@@ -7,12 +9,12 @@ process.on('uncaughtException', (err) => {
 
 co(function* () {
     // Wait for database to connect.
-    yield require('./database').connect();
-    console.log('Database connected.');
+    yield database.connect();
 
     // Run server.
-    require('./server').listen(process.env.PORT);
-    console.log('Server listening...');
+    const port = process.env.PORT || 5019;
+    server.listen(port);
+    console.log(`Server listening on port ${port} ...`);
 }).catch((err) => {
-    console.log(err);
+    console.error(err);
 });

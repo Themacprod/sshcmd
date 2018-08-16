@@ -65,41 +65,50 @@ module.exports = React.createClass({
         };
     },
     render: function () {
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             {
                 className: 'grid-item card',
                 key: this.props.boardIp
             },
-            React.DOM.a(
+            React.createElement(
+                'a',
                 {
                     className: `${this.state.cardstatus} nav-link`,
                     href: `${this.props.boardIp}/`
                 },
-                React.DOM.div(
+                React.createElement(
+                    'div',
                     {
                         className: 'card-body'
                     },
-                    React.DOM.h4(
+                    React.createElement(
+                        'h4',
                         {
                             className: 'card-title'
                         },
                         this.state.productName
                     ),
-                    React.DOM.h6(
+                    React.createElement(
+                        'h6',
                         {
                             className: 'card-subtitle'
                         },
                         this.props.boardIp
                     ),
-                    React.DOM.p(
+                    React.createElement(
+                        'p',
                         {
                             className: 'card-text'
                         },
                         `Serial : ${this.state.serialNumber} (PCB : ${this.state.pcbNumber})`
                     ),
-                    React.DOM.i({
-                        className: this.state.statelayout
-                    })
+                    React.createElement(
+                        'i',
+                        {
+                            className: this.state.statelayout
+                        }
+                    )
                 )
             )
         );

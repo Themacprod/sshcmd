@@ -1,7 +1,8 @@
-var React = require('react'),
-    register = require('./register');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const register = require('./register');
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     render: function () {
         return React.createElement(register, {
             data: [

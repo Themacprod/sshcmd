@@ -1,8 +1,9 @@
-var React = require('react'),
-    request = require('superagent'),
-    boardsystem = require('./boardsystem');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const request = require('superagent');
+const boardsystem = require('./boardsystem');
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     checkConnection: function () {
         const that = this;
         request
@@ -32,13 +33,18 @@ module.exports = React.createClass({
         };
     },
     render: function () {
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             null,
-            React.DOM.div({
-                className: `alert ${this.state.alertState} text-center`,
-                role: 'alert'
-            }, this.props.params.ip),
-            React.DOM.div(
+            React.createElement(
+                'div',
+                {
+                    className: `alert ${this.state.alertState} text-center`,
+                    role: 'alert'
+                }, this.props.params.ip
+            ),
+            React.createElement(
+                'div',
                 null,
                 React.createElement(boardsystem, {
                     title: 'Input #1',

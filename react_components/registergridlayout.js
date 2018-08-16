@@ -1,5 +1,6 @@
-var React = require('react'),
-    _ = require('lodash');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const _ = require('lodash');
 
 var toHex = function (data) {
     if (data === '-') {
@@ -15,7 +16,7 @@ var toHex = function (data) {
     return '-';
 };
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     handleClick: function (offset) {
         this.props.callBack(offset);
     },
@@ -55,7 +56,8 @@ module.exports = React.createClass({
         const header = [];
 
         for (let i = 0; i < 16; i += 1) {
-            header.push(React.DOM.div(
+            header.push(React.createElement(
+                'div',
                 {
                     className: 'registergrid-item text-bold',
                     key: i
@@ -64,22 +66,28 @@ module.exports = React.createClass({
             ));
         }
 
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             {
                 className: 'registergridlayout'
             },
-            React.DOM.div({
-                className: 'text-center',
-                key: 0
-            }, header),
-            _.map(_.chunk(gridData, 16), (line, lineIdx) => {
-                return React.DOM.div(
+            React.createElement(
+                'div',
+                {
+                    className: 'text-center',
+                    key: 0
+                }, header
+            ),
+            _.map(_.chunk(gridData, 16), function (line, lineIdx) {
+                return React.createElement(
+                    'div',
                     {
                         className: 'text-center',
                         key: lineIdx
                     },
-                    _.map(line, (data, columnIdx) => {
-                        return React.DOM.div(
+                    _.map(line, function (data, columnIdx) {
+                        return React.createElement(
+                            'div',
                             {
                                 className: 'registergrid-item',
                                 key: columnIdx,

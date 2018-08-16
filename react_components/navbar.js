@@ -1,50 +1,66 @@
-var React = require('react'),
-    _ = require('lodash');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const _ = require('lodash');
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     handleHome: function () {
         window.location.replace('/');
     },
     render: function () {
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             null,
-            React.DOM.nav(
+            React.createElement(
+                'nav',
                 {
                     className: 'navbar navbar-expand-lg navbar-dark bg-dark'
                 },
-                React.DOM.a(
+                React.createElement(
+                    'a',
                     {
                         className: 'navbar-brand'
                     },
-                    React.DOM.i({
-                        className: 'fa fa-home',
-                        'aria-hidden': 'true',
-                        onClick: this.handleHome
-                    })
+                    React.createElement(
+                        'i',
+                        {
+                            className: 'fa fa-home',
+                            'aria-hidden': 'true',
+                            onClick: this.handleHome
+                        }
+                    )
                 ),
-                React.DOM.div(
+                React.createElement(
+                    'div',
                     {
                         className: 'collapse navbar-collapse',
                         id: 'navbarNavDropdown'
                     },
-                    React.DOM.ul(
+                    React.createElement(
+                        'ul',
                         {
                             className: 'navbar-nav'
                         },
-                        React.DOM.li(
+                        React.createElement(
+                            'li',
                             {
                                 className: 'nav-item',
                                 onClick: this.handleHome
                             },
-                            React.DOM.a({
-                                className: 'nav-link cursor-pointer'
-                            }, 'Home')
+                            React.createElement(
+                                'a',
+                                {
+                                    className: 'nav-link cursor-pointer'
+                                }, 'Home'
+                            )
                         ),
-                        _.map(this.props.data, (data, key) => {
-                            return React.DOM.li({
-                                className: 'nav-item',
-                                key: key
-                            }, data);
+                        _.map(this.props.data, function (data, key) {
+                            return React.createElement(
+                                'li',
+                                {
+                                    className: 'nav-item',
+                                    key: key
+                                }, data
+                            );
                         })
                     )
                 )

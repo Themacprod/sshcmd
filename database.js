@@ -1,10 +1,19 @@
-var mongoClient = require('mongodb').MongoClient;
+const mongoClient = require('mongodb').MongoClient;
 
-module.exports.connect = function () {
-    var promise = mongoClient.connect('mongodb://localhost:27017/sshcmd');
+module.exports.connect = () => {
+    console.log(`Connecting to ${process.env.MONGODB_URL} ...`);
+
+    const promise = mongoClient.connect(
+        process.env.MONGODB_URL,
+        { useNewUrlParser: true }
+    );
 
     return promise.then((database) => {
-        module.exports.instance = database;
-        module.exports.users = database.collection('users');
+        console.log('Database connected.');
+
+        const currentDb = database.db('SshCmd');
+
+        module.exports.instance = currentDb;
+        module.exports.registers = currentDb.collection('registers');
     });
 };

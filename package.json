@@ -3,58 +3,74 @@
   "description": "SSH cmd",
   "private": true,
   "version": "1.0.0",
-  "engines": {
-    "node": "6.11.2",
-    "npm": "5.4.2"
-  },
   "scripts": {
-    "sass": "node-sass --include-path scss scss/index.scss public/bundle.css",
+    "sass": "node-sass --include-path sass sass/index.sass public/bundle.css",
     "browserify": "browserify react_components/boot.js -t envify -o public/bundle.js",
     "uglifyjs": "uglifyjs public/bundle.js -m -o public/bundle.js",
     "cleancss": "cleancss -o public/bundle.css public/bundle.css",
     "build": "npm run browserify && npm run sass",
-    "release": "npm run build && npm run cleancss",
+    "release": "npm run build && npm run uglifyjs && npm run cleancss",
+    "postinstall": "npm run release",
     "start": "node index.js"
   },
   "contributors": [
     "Mathieu Albrespy <mathieu.albrespy@gmail.com>"
   ],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
   "license": "Proprietary",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "bootstrap": "github:twbs/bootstrap#v4-dev",
+    "bootstrap": "^4.1.3",
     "browserify": "^14.5.0",
     "clean-css": "^3.4.19",
     "co": "^4.6.0",
     "connect-mongo": "^2.0.1",
     "cookie-parser": "^1.4.1",
+    "create-react-class": "^15.6.3",
+    "envify": "^4.1.0",
     "express": "^4.16.3",
     "font-awesome": "^4.6.3",
-    "jquery": "^2.2.4",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
     "lodash": "^4.17.10",
-    "mongodb": "^2.2.35",
-    "node-sass": "^3.13.1",
+    "mongodb": "^3.1.3",
+    "node-sass": "^4.9.3",
     "ping": "^0.2.2",
-    "react": "^0.14.8",
+    "react": "^16.4.2",
     "react-bootstrap": "^0.30.10",
-    "react-dom": "^0.14.8",
+    "react-dom": "^16.4.2",
     "react-masonry-component": "^6.2.1",
-    "react-router": "^2.0.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "serve-favicon": "^2.5.0",
     "ssh2": "^0.5.5",
     "superagent": "^3.8.3",
+    "uglify-es": "^3.3.9",
     "uglify-js": "^2.7.3"
   },
   "devDependencies": {
     "ajv": "^6.0.0",
     "ajv-keywords": "^3.2.0",
-    "eslint": "^4.9.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "jshint": "^2.9.3",
-    "popper": "^1.0.1",
-    "popper.js": "^1.12.9"
-  }
+    "popper.js": "^1.14.4"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Themacprod/sshcmd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Themacprod/sshcmd/issues"
+  },
+  "homepage": "https://github.com/Themacprod/sshcmd#readme"
 }

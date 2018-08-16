@@ -1,6 +1,7 @@
-var React = require('react');
+const React = require('react');
+const CreateReactClass = require('create-react-class');
 
-module.exports = React.createClass({
+module.exports = CreateReactClass({
     toHexadecimal: function (integer) {
         if (integer < 16) {
             return `0x0${integer.toString(16).toUpperCase()}`;
@@ -30,29 +31,35 @@ module.exports = React.createClass({
         }
     },
     handleClick: function (offset) {
+        console.log(offset);
         this.props.callBack(offset);
     },
     render: function () {
-        return React.DOM.tbody(
+        return React.createElement(
+            'tbody',
             {
                 className: `item${this.state.fade}`,
                 key: this.props.key,
                 onClick: this.handleClick.bind(this, this.props.offset)
             },
-            React.DOM.tr(
+            React.createElement(
+                'tr',
                 null,
-                React.DOM.th(
+                React.createElement(
+                    'th',
                     {
                         className: 'text-center',
                         scope: 'row'
                     },
                     this.toHexadecimal(this.props.offset)
                 ),
-                React.DOM.td(
+                React.createElement(
+                    'td',
                     null,
                     this.props.name
                 ),
-                React.DOM.td(
+                React.createElement(
+                    'td',
                     {
                         className: 'text-center'
                     },

@@ -1,17 +1,19 @@
-var React = require('react'),
-    _ = require('lodash'),
-    request = require('superagent'),
-    registerlistlayout = require('./registerlistlayout'),
-    registergridlayout = require('./registergridlayout'),
-    registerdetail = require('./registerdetail'),
-    navbar = require('./navbar'),
-    dropdown = require('./dropdown'),
-    layoutTypes = [
-        'list',
-        'grid'
-    ];
+const React = require('react');
+const CreateReactClass = require('create-react-class');
+const _ = require('lodash');
+const request = require('superagent');
+const registerlistlayout = require('./registerlistlayout');
+const registergridlayout = require('./registergridlayout');
+const registerdetail = require('./registerdetail');
+const navbar = require('./navbar');
+const dropdown = require('./dropdown');
 
-module.exports = React.createClass({
+const layoutTypes = [
+    'list',
+    'grid',
+];
+
+module.exports = CreateReactClass({
     getConsecutiveOffsetChunk: function () {
         var difference = -1,
             temp = [],
@@ -32,7 +34,7 @@ module.exports = React.createClass({
         }
 
         // From [0,1,2] [4,5] [7] get [0,3] [4,2] [7,1]
-        return _.map(result, (chunk) => {
+        return _.map(result, function (chunk) {
             return {
                 startoffset: chunk[0],
                 count: chunk.length
@@ -111,9 +113,17 @@ module.exports = React.createClass({
             });
     },
     getInitialState: function () {
+        let readData = _.fill(Array(128), '-');
+        let detail = '-';
+
+        if (this.props.data.length > 0) {
+            readData = _.fill(Array(this.props.data[0].offset.length), '-');
+            detail = this.props.data[0].offset[0];
+        }
+
         return {
-            readData: _.fill(Array(this.props.data[0].offset.length), '-'),
-            detail: this.props.data[0].offset[0],
+            readData: readData,
+            detail: detail,
             value: '0x00',
             layoutType: layoutTypes[0],
             dataIndex: 0
@@ -142,18 +152,22 @@ module.exports = React.createClass({
         });
     },
     getOffsetDropdown: function () {
-        const values = _.map(this.props.data, (data) => {
-            return `0x${data.address.toString(16).toUpperCase()} - ${data.description}`;
-        });
+        if (this.props.data.length > 0) {
+            const values = _.map(this.props.data, (data) => {
+                return `0x${data.address.toString(16).toUpperCase()} - ${data.description}`;
+            });
 
-        const current = `0x${this.props.data[this.state.dataIndex].address.toString(16).toUpperCase()} - ${this.props.data[this.state.dataIndex].description}`;
+            const current = `0x${this.props.data[this.state.dataIndex].address.toString(16).toUpperCase()} - ${this.props.data[this.state.dataIndex].description}`;
 
-        return React.createElement(dropdown, {
-            id: 'offsetDropdown',
-            values: values,
-            current: current,
-            callBack: this.handleAddressClick
-        });
+            return React.createElement(dropdown, {
+                id: 'offsetDropdown',
+                values: values,
+                current: current,
+                callBack: this.handleAddressClick
+            });
+        }
+
+        return null;
     },
     getLayoutDropdown: function () {
         return React.createElement(dropdown, {
@@ -166,10 +180,16 @@ module.exports = React.createClass({
     render: function () {
         var layout = null;
 
+        var data = [];
+
+        if (this.props.data.length > 0) {
+            data = this.props.data[this.state.dataIndex].offset;
+        }
+
         switch (this.state.layoutType) {
         case 'list':
             layout = React.createElement(registerlistlayout, {
-                data: this.props.data[this.state.dataIndex].offset,
+                data: data,
                 readData: this.state.readData,
                 callBack: this.handleClick
             });
@@ -177,7 +197,7 @@ module.exports = React.createClass({
 
         case 'grid':
             layout = React.createElement(registergridlayout, {
-                data: this.props.data[this.state.dataIndex].offset,
+                data: data,
                 readData: this.state.readData,
                 callBack: this.handleClick
             });
@@ -192,23 +212,31 @@ module.exports = React.createClass({
             break;
         }
 
-        return React.DOM.div(
+        return React.createElement(
+            'div',
             {
                 className: 'registercontainer'
             },
             React.createElement(navbar, {
                 data: [
-                    React.DOM.a({
-                        className: 'nav-link'
-                    }, 'Offset :'),
-                    this.getOffsetDropdown(),
-                    React.DOM.a({
-                        className: 'nav-link'
-                    }, 'Layout :'),
+                    React.createElement(
+                        'a',
+                        {
+                            className: 'nav-link'
+                        }, 'Offset :'
+                    ),
+                    // this.getOffsetDropdown(),
+                    React.createElement(
+                        'a',
+                        {
+                            className: 'nav-link'
+                        }, 'Layout :'
+                    ),
                     this.getLayoutDropdown(),
                 ]
             }),
-            React.DOM.div(
+            React.createElement(
+                'div',
                 {
                     className: 'registerlist'
                 },
